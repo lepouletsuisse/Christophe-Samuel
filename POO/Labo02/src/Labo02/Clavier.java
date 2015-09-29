@@ -1,4 +1,4 @@
-// classe fournissant des fonctions de lecture au clavier
+package Labo02;// classe fournissant des fonctions de lecture au clavier
 import java.io.* ;
 
 public class Clavier {

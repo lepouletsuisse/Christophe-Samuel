@@ -12,6 +12,7 @@
  Compilateur : jdk1.8.0_60
  -----------------------------------------------------------------------------------
 */
+import Labo02.Clavier;
 
 public class Main {
     public static void main(String args[]) {
