@@ -1,30 +1,30 @@
 /* 
  * File:   SymbolGraph.h
- * Author: Olivier Cuisenaire
+ * Author: Samuel Darcey & Christophe Peretti
  *
- * Created on 26. septembre 2014, 15:08
+ * Created on 27. septembre 2015
  */
 
-#ifndef SYMBOLGRAPH_OC2015_H
-#define	SYMBOLGRAPH_OC2015_H
+#ifndef SYMBOLGRAPH_H
+#define	SYMBOLGRAPH_H
 
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <sstream>
 #include <algorithm>
-#include <map>
 #include <vector>
+#include <map>
+#include <list>
 
 #include "Util.h"
+
 
 template<typename GraphType>
 class SymbolGraph
 {
     typedef GraphType Graph; 
 private:
-    std::map<std::string,int> symbolTable;
-    std::vector<std::string> keys;
     Graph* g;
     
 public:
@@ -32,79 +32,84 @@ public:
     ~SymbolGraph()
     {
         delete g; 
-    }            
-       
+    }
+    // map pour associer un numéro à chaque film/acteur
+    std::map<std::string, int> indices;
+
     //creation du SymbolGraph a partir du fichier movies.txt
-    SymbolGraph(const std::string& filename) {         
+    SymbolGraph(const std::string& filename) {
+
         //lecture du fichier, ligne par ligne puis element par element (separe par des /)
         std::string line;
-        int cnt=0; 
-
+        int cnt=0;
         std::ifstream s(filename);
-        while (std::getline(s, line))
-        {
+
+        while (std::getline(s, line)){
             auto names = split(line,'/');
-            for( auto name : names ) 
-                if(!contains(name))
-                    symbolTable[name] = cnt++;
+            for( auto name : names ) {
+                //Remplie la map si le nom n'y apparait pas déjà
+                if (!contains(name)) {
+                    indices[name] = cnt++;
+                }
+            }
         }
-        s.close();
-        
-        keys.resize(cnt);
-        for(const auto& pair : symbolTable)
-            keys[pair.second] = pair.first; 
-        
+        //Création du graphe
         g = new Graph(cnt);
-        
-        s.open(filename);
-        while (std::getline(s, line))
-        {
+
+        //Retour au début du fichier
+        s.clear();
+        s.seekg(0, s.beg);
+
+        //Deuxième lecture du fichier
+        while (std::getline(s, line)){
             auto names = split(line,'/');
-           
-            int v = symbolTable[names[0]];
-            for( size_t i = 1; i < names.size(); ++i ) {
-                int w = symbolTable[names[i]];
-                g->addEdge(v,w);
+            for(int i = 1 ; i < names.size() ; i++){
+                //On créée les arêtes entre le film et tous ses acteurs
+                g->addEdge(index(names.at(0)),index(names.at(i)));
             }
         }
         s.close();
-        
     }
     
     //verifie la presence d'un symbole
-    bool contains(const std::string& name) const {
-        return symbolTable.find(name) != symbolTable.end();
+    bool contains(const std::string& name) {
+        return indices.count(name);
     }
     
     //index du sommet correspondant au symbole
-    int index(const std::string& name) const {
-        return symbolTable.at(name);
+    int index(const std::string& name) {
+        return indices[name];
     }
     
     //symbole correspondant au sommet
-    std::string name(int idx) const {
-        return keys[idx];
+    std::string name(int idx) {
+        for(auto pair : indices){
+            if(pair.second == idx){
+                return pair.first;
+            }
+        }
     }
-    
-    std::vector<std::string> adjacent(const std::string & name) const
-    {
-        if(!contains(name)) 
-            return std::vector<std::string>(0);
-        
-        auto& adjIdx = g->adjacent( index(name));
-        int N = adjIdx.size();
-        std::vector<std::string> adjStr(N);
 
-        std::transform(adjIdx.cbegin(), adjIdx.cend(), adjStr.begin(), [&](int i){ return this->name(i); } );
-        
-        return adjStr; 
+    //symboles adjacents a un symbole
+    std::vector<std::string> adjacent(const std::string & str) {
+        std::vector<std::string> nomsAdjacents;
+        //On va rechercher la liste d'adjacence (par numéro)
+        std::list<int> numAdjacents = g->adjacent(index(str));
+        std::string nom;
+
+        for(auto i : numAdjacents){
+            //On retrouve les noms des films/acteurs correspondant aux numéros et on rempli notre vecteur
+            nomsAdjacents.push_back(name(i));
+        }
+        return nomsAdjacents;
+
     }
     
-    const Graph& G() const {
+    const Graph& G() {
         return *g; 
     }
     
 };
 
-#endif	/* SYMBOLGRAPH_OC2015_H */
 
+#endif	/* SYMBOLGRAPH_H */
