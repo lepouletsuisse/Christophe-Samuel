@@ -5,315 +5,369 @@
  Auteur(s)   : Samuel Darcey & Christophe Peretti
  Date        : 29.09.2015
 
- But         : Trouver la relation f() entre L et la taille N d'un probl�me de grille
+ But         : Trouver la relation f() entre L et la taille N d'un problème de grille
 
- Remarque(s) : Travail � 2
+ Remarque(s) :
 
  Compilateur : jdk1.8.0_60
  -----------------------------------------------------------------------------------
 */
 
-import Labo02.Clavier;
-import com.sun.org.apache.bcel.internal.generic.NOP;
+/*
+Testé pour 1000 experimentation par taille en 24 secondes
+Testé pour 2000 experimentation par taille en 51 secondes
+Testé pour 3000 experimentation par taille en 76 secondes
+Testé pour 4000 experimentation par taille en 103 secondes
+Testé pour 5000 experimentation par taille en 129 secondes
+Testé pour 6000 experimentation par taille en 155 secondes
+Testé pour 7000 experimentation par taille en 180 secondes
+Testé pour 8000 experimentation par taille en 205 secondes
+Testé pour 9000 experimentation par taille en 232 secondes
+Testé pour 10000 experimentation par taille en 256 secondes
+ */
 
 import java.util.Random;
 
 public class Main {
-    //Constant for direction
-    static final int EAST = 1;
-    static final int NE = 2;
-    static final int NORTH = 3;
-    static final int NW = 4;
-    static final int WEST = 5;
-    static final int SW = 6;
-    static final int SOUTH = 7;
-    static final int SE = 8;
+   //CONSTANTES----------------------------------------------------------------------
+   //Constantes pour les directions
+   static final int EST = 1;
+   static final int NORD_EST = 2;
+   static final int NORD = 3;
+   static final int NORD_OUEST = 4;
+   static final int OUEST = 5;
+   static final int SUD_OUEST = 6;
+   static final int SUD = 7;
+   static final int SUD_EST = 8;
 
-    //Constant for arithmetic
-    static final double DIAG_LEN = Math.sqrt(2);
-    static int nbExperimentation;
-    static double average = 0;
-    static int limite = 3;
+   //Constante pour le robot
+   static final int ROBOT_VITESSE_INITIALE = 1;
 
-    //Robot variable
-    static int rX = 0;
-    static int rY = 0;
-    static int rInitialSpeed = 1;
-    static int rFactorSpeed = 1;
-    static double distance = 0;
-    static boolean touchedEast = false;
-    static boolean touchedNorth = false;
-    static boolean touchedWest = false;
-    static boolean touchedSouth = false;
+   //Constante pour l'arithmétique
+   static final double LONGUEUR_PAS = 1;
+   static final double LONGUEUR_PAS_DIAG = Math.sqrt(2);
 
-    //Grid variable
-    static int gridSize;
+   //VARIABLES-----------------------------------------------------------------------
+   //Variables du robot
+   static int robotX = 0;
+   static int robotY = 0;
+   static int robotVitesseFacteur = 1;
+   static double distance = 0;
+   static boolean estTouché = false;
+   static boolean nordTouché = false;
+   static boolean ouestTouché = false;
+   static boolean sudTouché = false;
 
-    /*
-    * Grid axe:
-    * /------------X
-    * |
-    * |
-    * |
-    * |
-    * Y
-    * */
-    public static void main(String args[]) {
-        setInitialState();
-        for(gridSize = 10; gridSize <= 100 ; gridSize += 2){
-            for(int i = 0 ; i <= nbExperimentation ; i++) {
-                while (!isEnd()) {
-                    moveRandom();
-                    limite = 3;
-                }
-                average += distance;
-                resetInitialState();
+   //Variables de la grille
+   static int grilleTaille = 10;
+   static int nbCroisement = grilleTaille + 1;
+
+   //Variables arithmétique & logique
+   static double moyenne = 0;
+   static int limiteRebondie = 3; //Nombre maximal de rebondissement par mouvement
+
+   //Variable utilisateur
+   static int nbExperimentation;
+
+   /*
+    Axes de la grille:
+    0 ------------- X
+    |
+    |
+    |
+    |
+    Y
+    */
+   public static void main(String args[]) {
+      initialisation();
+      for (grilleTaille = 10; grilleTaille <= 100; grilleTaille += 2) {
+         nbCroisement = grilleTaille + 1;
+         for (int i = 0; i <= nbExperimentation; i++) {
+            while (!estFini()) {
+               mouvementAléatoire();
+               limiteRebondie = 3;
             }
-            average /= (double)nbExperimentation;
-            System.out.println("Gridsize: " + gridSize + " // Average: " + average);
-            average = 0;
-        }
-        System.out.println("Done!");
-    }
+            moyenne += distance;
+            réinitialiserEtat();
+         }
+         moyenne /= (double) nbExperimentation;
+         System.out.println("Taille de grille: " + grilleTaille + " // Moyenne: " + moyenne);
+         moyenne = 0;
 
-    public static void setInitialState() {
-        System.out.print("Enter the number of experimentation per sample (1'000 - 10'000): ");
-        nbExperimentation = Clavier.lireInt();
-        rX = gridSize / 2;
-        rY = gridSize / 2;
-    }
+      }
+   }
 
-    public static void resetInitialState(){
-        rX = gridSize / 2;
-        rY = gridSize / 2;
-        distance = 0;
-        rFactorSpeed = 1;
-        touchedEast = false;
-        touchedNorth = false;
-        touchedWest = false;
-        touchedSouth = false;
-    }
+   /*
+   * Demande le nombre d'expérimentation à l'utilisateur et met le robot à l'état
+   * initiale
+   * */
+   public static void initialisation() {
+      System.out.print("Entrez le nombre d'expérimentation (1'000 - 10'000): ");
+      nbExperimentation = Clavier.lireInt();
+      robotX = grilleTaille / 2;
+      robotY = grilleTaille / 2;
+   }
 
-    public static void printInfo() {
-        System.out.println(
-                "rX: " + rX +
-                        " // rY: " + rY +
-                        " // rFactorSpeed: " + rFactorSpeed +
-                        " // gridSize: " + gridSize +
-                        " // distance: " + distance +
-                        " // Wall touched: " +
-                        (touchedEast ? "East " : "") +
-                        (touchedNorth ? "North " : "") +
-                        (touchedWest ? "West " : "") +
-                        (touchedSouth ? "South " : ""));
-    }
+   /*
+   * Reinitialise l'état du robot afin de faire une nouvelle experimentation
+   * */
+   public static void réinitialiserEtat() {
+      distance = 0;
+      robotVitesseFacteur = 1;
+      estTouché = false;
+      nordTouché = false;
+      ouestTouché = false;
+      sudTouché = false;
+   }
 
-    public static void printGraphic() {
-        System.out.println("Speed: " + rInitialSpeed * rFactorSpeed);
-        for (int row = 0; row < gridSize; row++) {
-            for (int col = 0; col < gridSize; col++) {
-                if (row == rY && col == rX) {
-                    System.out.print("X ");
-                } else {
-                    System.out.print("O ");
-                }
+   /*
+   * Affiche les différentes informations concernant le robot ainsi que la grille
+   * */
+   public static void afficherInformation() {
+      System.out.println(
+              "robotX: " + robotX +
+                      " // robotY: " + robotY +
+                      " // robotVitesseFacteur: " + robotVitesseFacteur +
+                      " // grilleTaille: " + grilleTaille +
+                      " // nbCroisement: " + nbCroisement +
+                      " // distance: " + distance +
+                      " // Mur touché: " +
+                      (estTouché ? "Est " : "") +
+                      (nordTouché ? "Nord " : "") +
+                      (ouestTouché ? "Ouest " : "") +
+                      (sudTouché ? "Sud " : ""));
+   }
+
+   /*
+   * Affiche le robot et la grille de manière graphique ou X est le robot
+   * */
+   public static void afficherGraphique() {
+      System.out.println("Vitesse: " + ROBOT_VITESSE_INITIALE * robotVitesseFacteur);
+      for (int ligne = 0; ligne < nbCroisement; ligne++) {
+         for (int colonne = 0; colonne < nbCroisement; colonne++) {
+            if (ligne == robotY && colonne == robotX) {
+               System.out.print("X "); //Affiche le robot
+            } else {
+               System.out.print("O "); //Affiche un croisement vide
             }
-            System.out.println();
-        }
-    }
+         }
+         System.out.println();
+      }
+   }
 
-    public static void debug(int direction, int loop){
-        printGraphic();
-        System.out.print("Moving ");
-        if(direction == EAST) System.out.print("East");
-        if(direction == NE) System.out.print("North-East");
-        if(direction == NORTH) System.out.print("North");
-        if(direction == NW) System.out.print("North-West");
-        if(direction == WEST) System.out.print("West");
-        if(direction == SW) System.out.print("South-West");
-        if(direction == SOUTH) System.out.print("South");
-        if(direction == SE) System.out.print("South-East");
-        System.out.println(" for " + loop + "x");
-        printInfo();
+   /*
+   * Fonction de debug affichant des informations supplémentaire utilisant la
+    *direction actuelle du robot et son nombre de pas
+   * */
+   public static void déverminer(int direction, int nbPas) {
+      afficherGraphique();
+      System.out.print("Bouge direction ");
+      if (direction == EST) System.out.print("Est");
+      if (direction == NORD_EST) System.out.print("Nord-Est");
+      if (direction == NORD) System.out.print("Nord");
+      if (direction == NORD_OUEST) System.out.print("Nord-Ouest");
+      if (direction == OUEST) System.out.print("Ouest");
+      if (direction == SUD_OUEST) System.out.print("Sud-Ouest");
+      if (direction == SUD) System.out.print("Sud");
+      if (direction == SUD_EST) System.out.print("Sud-Est");
+      System.out.println(" pour " + nbPas + " pas");
+      afficherInformation();
+   }
 
-    }
+   /*
+   * Demande au robot de faire un mouvement aléatoire avec sa vitesse actuelle
+   * */
+   public static void mouvementAléatoire() {
+      Random aléatoire = new Random();
+      int nombreAléatoire = 0;
+      while (nombreAléatoire <= 0) { // Ne prends que les nombre positif
+         nombreAléatoire = (aléatoire.nextInt() % 8) + 1;
+      }
+      mouvement(nombreAléatoire, ROBOT_VITESSE_INITIALE * robotVitesseFacteur);
+   }
 
-    public static void moveRandom() {
-        Random rand = new Random();
-        int r = 0;
-        while(r <= 0){
-            r = (rand.nextInt() % 8) + 1;
-        }
-        move(r, rInitialSpeed * rFactorSpeed);
-    }
+   /*
+   * Demande au robot de faire un mouvement dans une direction précis de nbPas pas
+   * et effectue le controle si le robot est toujours dans la grille après son
+   * mouvement ou si il va rebondire
+   * */
+   public static void mouvement(int direction, int nbPas) {
+      BOUCLE: //Label pour break la boucle
+      for (int i = 0; i < nbPas; i++) {
+         switch (direction) {
+            case EST: // Est
+               if (estMouvementAutorisé(robotX + 1, robotY)) {
+                  pas(1, 0);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+            case NORD_EST: // North-East
+               if (estMouvementAutorisé(robotX + 1, robotY - 1)) {
+                  pas(1, -1);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+            case NORD: // North
+               if (estMouvementAutorisé(robotX, robotY - 1)) {
+                  pas(0, -1);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+            case NORD_OUEST: // North-West
+               if (estMouvementAutorisé(robotX - 1, robotY - 1)) {
+                  pas(-1, -1);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+            case OUEST: // West
+               if (estMouvementAutorisé(robotX - 1, robotY)) {
+                  pas(-1, 0);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+            case SUD_OUEST: // South-West
+               if (estMouvementAutorisé(robotX - 1, robotY + 1)) {
+                  pas(-1, 1);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+            case SUD: // South
+               if (estMouvementAutorisé(robotX, robotY + 1)) {
+                  pas(0, 1);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+            case SUD_EST: // South-East
+               if (estMouvementAutorisé(robotX + 1, robotY + 1)) {
+                  pas(1, 1);
+               } else {
+                  rebondie(direction);
+                  break BOUCLE;
+               }
+               break;
+         }
+      }
+   }
 
-    public static void move(int direction, int loop){
-        LOOP: for(int i = 0 ; i < loop ; i++){
-            switch(direction){
-                case EAST: // East
-                    if(isAllow(rX + 1, rY)){
-                        step(1,0);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
-                case NE: // North-East
-                    if(isAllow(rX + 1, rY - 1)){
-                        step(1,-1);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
-                case NORTH: // North
-                    if(isAllow(rX, rY - 1)){
-                        step(0,-1);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
-                case NW: // North-West
-                    if(isAllow(rX - 1, rY - 1)){
-                        step(-1,-1);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
-                case WEST: // West
-                    if(isAllow(rX - 1, rY)){
-                        step(-1,0);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
-                case SW: // South-West
-                    if(isAllow(rX - 1, rY + 1)){
-                        step(-1,1);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
-                case SOUTH: // South
-                    if(isAllow(rX, rY + 1)){
-                        step(0,1);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
-                case SE: // South-East
-                    if(isAllow(rX + 1, rY + 1)){
-                        step(1,1);
-                    }
-                    else{
-                        bounce(direction);
-                        break LOOP;
-                    }
-                    break;
+   /*
+   * Effectue un mouvement de 1 pas en ajoutant x et y au positions du robot et
+   * incrémente la distance
+   * */
+   public static void pas(int x, int y) {
+      robotX += x;
+      robotY += y;
+      if (x != 0 && y != 0) distance += LONGUEUR_PAS_DIAG;
+      else distance += LONGUEUR_PAS;
+   }
+
+   /*
+   * Ordonne au robot de rebondir dans le sens opposé dont il vient. Controle
+   * également que le robot ne soit pas coincer dans une boucle infinie
+   * */
+   public static void rebondie(int directionSource) {
+      int directionDestination = (directionSource + 4) % 8;
+      if (limiteRebondie == 0) return; //Controle que le robot ne soit pas coincé
+      limiteRebondie--;
+      murTouché(directionSource);
+      if (directionDestination != 0) {
+         mouvement(directionDestination, 1);
+      } else {
+         mouvement(SUD_EST, 1);
+      }
+   }
+
+   /*
+   * Controle si la position du robot + x,y est autorisé (dans la grille)
+   * */
+   public static boolean estMouvementAutorisé(int x, int y) {
+      return x < nbCroisement && x >= 0 && y < nbCroisement && y >= 0;
+   }
+
+   /*
+   * Signal que le robot à touché un mur et met à jour les booleens
+   * */
+   public static void murTouché(int direction) {
+      if (robotX == 0 && robotY == 0 && direction == NORD_OUEST
+              || robotX == nbCroisement - 1 && robotY == 0 && direction == NORD_EST
+              || robotX == 0 && robotY == nbCroisement - 1 && direction == SUD_OUEST
+              || robotX == nbCroisement - 1 && robotY == nbCroisement - 1 && direction == SUD_EST) {
+         return;
+      }
+      switch (direction) {
+         case EST:
+            if (!estTouché && robotVitesseFacteur < 4) robotVitesseFacteur++;
+            estTouché = true;
+            break;
+         case NORD_EST:
+            if (robotY - 1 < 0 && !nordTouché) {
+               nordTouché = true;
+               robotVitesseFacteur++;
+            } else if (robotX + 1 >= nbCroisement && !estTouché) {
+               estTouché = true;
+               robotVitesseFacteur++;
             }
-        }
-    }
+            break;
+         case NORD:
+            if (!nordTouché && robotVitesseFacteur < 4) robotVitesseFacteur++;
+            nordTouché = true;
+            break;
+         case NORD_OUEST:
+            if (robotY - 1 < 0 && !nordTouché) {
+               nordTouché = true;
+               robotVitesseFacteur++;
+            } else if (robotX - 1 < 0 && !ouestTouché) {
+               ouestTouché = true;
+               robotVitesseFacteur++;
+            }
+            break;
+         case OUEST:
+            if (!ouestTouché && robotVitesseFacteur < 4) robotVitesseFacteur++;
+            ouestTouché = true;
+            break;
+         case SUD_OUEST:
+            if (robotY + 1 >= nbCroisement && !sudTouché) {
+               sudTouché = true;
+               robotVitesseFacteur++;
+            } else if (robotX - 1 < 0 && !ouestTouché) {
+               ouestTouché = true;
+               robotVitesseFacteur++;
+            }
+            break;
+         case SUD:
+            if (!sudTouché && robotVitesseFacteur < 4) robotVitesseFacteur++;
+            sudTouché = true;
+            break;
+         case SUD_EST:
+            if (robotY + 1 >= nbCroisement && !sudTouché) {
+               sudTouché = true;
+               robotVitesseFacteur++;
+            } else if (robotX + 1 >= nbCroisement && !estTouché) {
+               estTouché = true;
+               robotVitesseFacteur++;
+            }
+            break;
+         default:
+      }
+   }
 
-    public static void step(int x, int y){
-        rX += x;
-        rY += y;
-        if(x != 0 && y != 0) distance += DIAG_LEN;
-        else distance += 1;
-    }
-
-    public static void bounce(int directionSrc){
-        if(limite == 0) return;
-        limite--;
-        touchedWall(directionSrc);
-        int directionDest = (directionSrc + 4) % 8;
-        move((directionDest != 0 ? directionDest : 8), 1);
-    }
-
-    public static boolean isAllow(int x, int y){
-        return x < gridSize && x >= 0 && y < gridSize && y >= 0;
-    }
-
-    public static void touchedWall(int direction) {
-        if(rX == 0 && rY == 0 && direction == NW
-                || rX == gridSize - 1 && rY == 0 && direction == NE
-                ||rX == 0 && rY == gridSize - 1 && direction == SW
-                || rX == gridSize - 1 && rY == gridSize - 1 && direction == SE) {
-            return;
-        }
-        switch (direction) {
-            case EAST:
-                if (!touchedEast && rFactorSpeed < 4) rFactorSpeed++;
-                touchedEast = true;
-                break;
-            case NE:
-                if(rY - 1 < 0 && !touchedNorth){
-                    touchedNorth = true;
-                    rFactorSpeed++;
-                }
-                else if(rX + 1 >= gridSize && !touchedEast){
-                    touchedEast = true;
-                    rFactorSpeed++;
-                }
-                break;
-            case NORTH:
-                if (!touchedNorth && rFactorSpeed < 4) rFactorSpeed++;
-                touchedNorth = true;
-                break;
-            case NW:
-                if(rY - 1 < 0 && !touchedNorth){
-                    touchedNorth = true;
-                    rFactorSpeed++;
-                }
-                else if(rX - 1 < 0 && !touchedWest){
-                    touchedWest = true;
-                    rFactorSpeed++;
-                }
-                break;
-            case WEST:
-                if (!touchedWest && rFactorSpeed < 4) rFactorSpeed++;
-                touchedWest = true;
-                break;
-            case SW:
-                if(rY + 1 >= gridSize && !touchedSouth){
-                    touchedSouth = true;
-                    rFactorSpeed++;
-                }
-                else if(rX - 1 < 0 && !touchedWest){
-                    touchedWest= true;
-                    rFactorSpeed++;
-                }
-                break;
-            case SOUTH:
-                if (!touchedSouth && rFactorSpeed < 4) rFactorSpeed++;
-                touchedSouth = true;
-                break;
-            case SE:
-                if(rY + 1 >= gridSize && !touchedSouth){
-                    touchedSouth = true;
-                    rFactorSpeed++;
-                }
-                else if(rX + 1 >= gridSize && !touchedEast){
-                    touchedEast = true;
-                    rFactorSpeed++;
-                }
-                break;
-            default:
-        }
-    }
-
-    public static boolean isEnd() {
-        return touchedNorth && touchedEast && touchedSouth && touchedWest;
-    }
+   /*
+   * Controle si le robot a touché les 4 murs
+   * */
+   public static boolean estFini() {
+      return nordTouché && estTouché && sudTouché && ouestTouché;
+   }
 }
