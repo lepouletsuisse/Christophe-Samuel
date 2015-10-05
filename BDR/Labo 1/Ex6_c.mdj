@@ -3161,7 +3161,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+prof_id {id}",
+											"text": "+prof_id",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -4642,7 +4642,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Pourcent {id}",
+											"text": "+Pourcent",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -5364,7 +5364,7 @@
 									"isUnique": false,
 									"isDerived": false,
 									"aggregation": "none",
-									"isID": true
+									"isID": false
 								}
 							],
 							"isAbstract": false,
@@ -5862,12 +5862,13 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
+									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
 									"isDerived": false,
 									"aggregation": "none",
-									"isID": true
+									"isID": false
 								}
 							],
 							"isAbstract": false,

@@ -3597,7 +3597,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+prof_id {id}",
+											"text": "+prof_id",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -5045,7 +5045,7 @@
 									"isUnique": false,
 									"isDerived": false,
 									"aggregation": "none",
-									"isID": true
+									"isID": false
 								}
 							],
 							"isAbstract": false,
