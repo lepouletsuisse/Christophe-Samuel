@@ -26,6 +26,7 @@ class SymbolGraph
     typedef GraphType Graph; 
 private:
     Graph* g;
+    char delimiteur = ',';
     
 public:
     
@@ -45,7 +46,7 @@ public:
         std::ifstream s(filename);
 
         while (std::getline(s, line)){
-            auto names = split(line,'/');
+            auto names = split(line,delimiteur);
             for( auto name : names ) {
                 //Remplie la map si le nom n'y apparait pas déjà
                 if (!contains(name)) {
@@ -62,7 +63,7 @@ public:
 
         //Deuxième lecture du fichier
         while (std::getline(s, line)){
-            auto names = split(line,'/');
+            auto names = split(line,delimiteur);
             for(int i = 1 ; i < names.size() ; i++){
                 //On créée les arêtes entre le film et tous ses acteurs
                 g->addEdge(index(names.at(0)),index(names.at(i)));

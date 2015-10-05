@@ -22,7 +22,7 @@ bool checkOrder(const std::vector<int>& order,
                 const SymbolGraph<DiGraph>& SG,
                 const std::string& filename,
                 char delim) {
-
+/*
     std::vector<int> positionInOrder(order.size());
     for( size_t i = 0; i < order.size(); ++i )
         positionInOrder[order[i]] = int(i);
@@ -48,8 +48,8 @@ bool checkOrder(const std::vector<int>& order,
         }
     }
     s.close();
-    
-    return ok;
+
+    return ok;*/
 }
 
 int main(int argc, const char * argv[]) {
