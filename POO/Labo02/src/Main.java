@@ -91,7 +91,8 @@ public class Main {
             réinitialiserEtat();
          }
          moyenne /= (double) nbExperimentation;
-         System.out.println("Taille de grille: " + grilleTaille + " // Moyenne: " + moyenne);
+         System.out.println("Taille de grille: " + grilleTaille + " // Moyenne: "
+                 + moyenne);
          moyenne = 0;
 
       }
@@ -301,12 +302,16 @@ public class Main {
    * Signal que le robot à touché un mur et met à jour les booleens
    * */
    public static void murTouché(int direction) {
-      if (robotX == 0 && robotY == 0 && direction == NORD_OUEST
-              || robotX == nbCroisement - 1 && robotY == 0 && direction == NORD_EST
-              || robotX == 0 && robotY == nbCroisement - 1 && direction == SUD_OUEST
-              || robotX == nbCroisement - 1 && robotY == nbCroisement - 1 && direction == SUD_EST) {
-         return;
-      }
+      boolean condNO = robotX == 0 && robotY == 0 && direction == NORD_OUEST;
+      boolean condNE = robotX == nbCroisement - 1 && robotY == 0 && direction ==
+              NORD_EST;
+      boolean condSO = robotX == 0 && robotY == nbCroisement - 1 && direction ==
+              SUD_OUEST;
+      boolean condSE = robotX == nbCroisement - 1 && robotY == nbCroisement - 1 &&
+              direction == SUD_EST;
+
+      if (condNO || condNE || condSO || condSE) return;
+
       switch (direction) {
          case EST:
             if (!estTouché && robotVitesseFacteur < 4) robotVitesseFacteur++;
