@@ -64,7 +64,6 @@ public class Main {
 
    //Variables arithmétique & logique
    static double moyenne = 0;
-   static int limiteRebondie = 3; //Nombre maximal de rebondissement par mouvement
 
    //Variable utilisateur
    static int nbExperimentation;
@@ -80,21 +79,24 @@ public class Main {
     */
    public static void main(String args[]) {
       initialisation();
-      for (grilleTaille = 10; grilleTaille <= 100; grilleTaille += 2) {
+      for (grilleTaille = 10; grilleTaille <= 100; grilleTaille += 1) {
          nbCroisement = grilleTaille + 1;
-         for (int i = 0; i <= nbExperimentation; i++) {
+         robotX = grilleTaille / 2;
+         robotY = grilleTaille / 2;
+         for (int i = 0; i < nbExperimentation; i++) {
             while (!estFini()) {
                mouvementAléatoire();
-               limiteRebondie = 3;
             }
             moyenne += distance;
+            /*afficherGraphique();
+            afficherInformation();
+            Clavier.lireInt();*/
             réinitialiserEtat();
          }
          moyenne /= (double) nbExperimentation;
          System.out.println("Taille de grille: " + grilleTaille + " // Moyenne: "
                  + moyenne);
          moyenne = 0;
-
       }
    }
 
@@ -105,8 +107,6 @@ public class Main {
    public static void initialisation() {
       System.out.print("Entrez le nombre d'expérimentation (1'000 - 10'000): ");
       nbExperimentation = Clavier.lireInt();
-      robotX = grilleTaille / 2;
-      robotY = grilleTaille / 2;
    }
 
    /*
@@ -158,7 +158,7 @@ public class Main {
 
    /*
    * Fonction de debug affichant des informations supplémentaire utilisant la
-    *direction actuelle du robot et son nombre de pas
+   * direction actuelle du robot et son nombre de pas
    * */
    public static void déverminer(int direction, int nbPas) {
       afficherGraphique();
@@ -173,6 +173,7 @@ public class Main {
       if (direction == SUD_EST) System.out.print("Sud-Est");
       System.out.println(" pour " + nbPas + " pas");
       afficherInformation();
+      Clavier.lireInt();
    }
 
    /*
@@ -190,16 +191,20 @@ public class Main {
    /*
    * Demande au robot de faire un mouvement dans une direction précis de nbPas pas
    * et effectue le controle si le robot est toujours dans la grille après son
-   * mouvement ou si il va rebondire
+   * mouvement ou si il va rebondire. C'est un mouvement séquentiel, donc le robot
+   * ne peut se déplacer que de 1 pas par itération de la boucle.
    * */
    public static void mouvement(int direction, int nbPas) {
-      BOUCLE: //Label pour break la boucle
+      //déverminer(direction,nbPas);
+      BOUCLE:
+      //Label pour break la boucle
       for (int i = 0; i < nbPas; i++) {
          switch (direction) {
             case EST: // Est
                if (estMouvementAutorisé(robotX + 1, robotY)) {
                   pas(1, 0);
                } else {
+                  pas(1, 0);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -208,6 +213,7 @@ public class Main {
                if (estMouvementAutorisé(robotX + 1, robotY - 1)) {
                   pas(1, -1);
                } else {
+                  pas(1, -1);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -216,6 +222,7 @@ public class Main {
                if (estMouvementAutorisé(robotX, robotY - 1)) {
                   pas(0, -1);
                } else {
+                  pas(0, -1);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -224,6 +231,7 @@ public class Main {
                if (estMouvementAutorisé(robotX - 1, robotY - 1)) {
                   pas(-1, -1);
                } else {
+                  pas(-1, -1);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -232,6 +240,7 @@ public class Main {
                if (estMouvementAutorisé(robotX - 1, robotY)) {
                   pas(-1, 0);
                } else {
+                  pas(-1, 0);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -240,6 +249,7 @@ public class Main {
                if (estMouvementAutorisé(robotX - 1, robotY + 1)) {
                   pas(-1, 1);
                } else {
+                  pas(-1, 1);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -248,6 +258,7 @@ public class Main {
                if (estMouvementAutorisé(robotX, robotY + 1)) {
                   pas(0, 1);
                } else {
+                  pas(0, 1);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -256,6 +267,7 @@ public class Main {
                if (estMouvementAutorisé(robotX + 1, robotY + 1)) {
                   pas(1, 1);
                } else {
+                  pas(1, 1);
                   rebondie(direction);
                   break BOUCLE;
                }
@@ -276,13 +288,10 @@ public class Main {
    }
 
    /*
-   * Ordonne au robot de rebondir dans le sens opposé dont il vient. Controle
-   * également que le robot ne soit pas coincer dans une boucle infinie
+   * Ordonne au robot de rebondir dans le sens opposé dont il vient.
    * */
    public static void rebondie(int directionSource) {
       int directionDestination = (directionSource + 4) % 8;
-      if (limiteRebondie == 0) return; //Controle que le robot ne soit pas coincé
-      limiteRebondie--;
       murTouché(directionSource);
       if (directionDestination != 0) {
          mouvement(directionDestination, 1);
@@ -295,7 +304,7 @@ public class Main {
    * Controle si la position du robot + x,y est autorisé (dans la grille)
    * */
    public static boolean estMouvementAutorisé(int x, int y) {
-      return x < nbCroisement && x >= 0 && y < nbCroisement && y >= 0;
+      return x < nbCroisement - 1 && x > 0 && y < nbCroisement - 1 && y > 0;
    }
 
    /*
