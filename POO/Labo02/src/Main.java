@@ -79,10 +79,8 @@ public class Main {
     */
    public static void main(String args[]) {
       initialisation();
-      for (grilleTaille = 10; grilleTaille <= 100; grilleTaille += 1) {
+      for (grilleTaille = 10; grilleTaille <= 100; grilleTaille += 2) {
          nbCroisement = grilleTaille + 1;
-         robotX = grilleTaille / 2;
-         robotY = grilleTaille / 2;
          for (int i = 0; i < nbExperimentation; i++) {
             while (!estFini()) {
                mouvementAléatoire();
@@ -107,6 +105,7 @@ public class Main {
    public static void initialisation() {
       System.out.print("Entrez le nombre d'expérimentation (1'000 - 10'000): ");
       nbExperimentation = Clavier.lireInt();
+      réinitialiserEtat();
    }
 
    /*
@@ -115,6 +114,8 @@ public class Main {
    public static void réinitialiserEtat() {
       distance = 0;
       robotVitesseFacteur = 1;
+      robotX = grilleTaille / 2;
+      robotY = grilleTaille / 2;
       estTouché = false;
       nordTouché = false;
       ouestTouché = false;
