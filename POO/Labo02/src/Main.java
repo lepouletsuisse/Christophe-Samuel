@@ -84,9 +84,12 @@ public class Main {
          for (int i = 0; i < nbExperimentation; i++) {
             while (!estFini()) {
                mouvementAléatoire();
+              /* afficherGraphique();
+               afficherInformation();
+               Clavier.lireInt();*/
             }
             moyenne += distance;
-            /*afficherGraphique();
+           /* afficherGraphique();
             afficherInformation();
             Clavier.lireInt();*/
             réinitialiserEtat();
@@ -100,7 +103,7 @@ public class Main {
 
    /*
    * Demande le nombre d'expérimentation à l'utilisateur et met le robot à l'état
-   * initiale
+   * initial
    * */
    public static void initialisation() {
       System.out.print("Entrez le nombre d'expérimentation (1'000 - 10'000): ");
@@ -141,7 +144,7 @@ public class Main {
    }
 
    /*
-   * Affiche le robot et la grille de manière graphique ou X est le robot
+   * Affiche le robot et la grille de manière graphique où X est le robot
    * */
    public static void afficherGraphique() {
       System.out.println("Vitesse: " + ROBOT_VITESSE_INITIALE * robotVitesseFacteur);
@@ -158,7 +161,7 @@ public class Main {
    }
 
    /*
-   * Fonction de debug affichant des informations supplémentaire utilisant la
+   * Fonction de debug affichant des informations supplémentaires utilisant la
    * direction actuelle du robot et son nombre de pas
    * */
    public static void déverminer(int direction, int nbPas) {
@@ -190,9 +193,9 @@ public class Main {
    }
 
    /*
-   * Demande au robot de faire un mouvement dans une direction précis de nbPas pas
+   * Demande au robot de faire un mouvement dans une direction précise de nbPas pas
    * et effectue le controle si le robot est toujours dans la grille après son
-   * mouvement ou si il va rebondire. C'est un mouvement séquentiel, donc le robot
+   * mouvement ou si il va rebondir. C'est un mouvement séquentiel, donc le robot
    * ne peut se déplacer que de 1 pas par itération de la boucle.
    * */
    public static void mouvement(int direction, int nbPas) {
@@ -309,7 +312,7 @@ public class Main {
    }
 
    /*
-   * Signal que le robot à touché un mur et met à jour les booleens
+   * Signal que le robot a touché un mur et met à jour les booleens
    * */
    public static void murTouché(int direction) {
       boolean condNO = robotX == 0 && robotY == 0 && direction == NORD_OUEST;
