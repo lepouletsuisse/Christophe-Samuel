@@ -62,7 +62,7 @@ public class Main {
    static int grilleTaille = 10;
    static int nbCroisement = grilleTaille + 1;
 
-   //Variables arithmétique & logique
+   //Variable arithmétique
    static double moyenne = 0;
 
    //Variable utilisateur
@@ -84,14 +84,8 @@ public class Main {
          for (int i = 0; i < nbExperimentation; i++) {
             while (!estFini()) {
                mouvementAléatoire();
-              /* afficherGraphique();
-               afficherInformation();
-               Clavier.lireInt();*/
             }
             moyenne += distance;
-           /* afficherGraphique();
-            afficherInformation();
-            Clavier.lireInt();*/
             réinitialiserEtat();
          }
          moyenne /= (double) nbExperimentation;
@@ -126,69 +120,12 @@ public class Main {
    }
 
    /*
-   * Affiche les différentes informations concernant le robot ainsi que la grille
-   * */
-   public static void afficherInformation() {
-      System.out.println(
-              "robotX: " + robotX +
-                      " // robotY: " + robotY +
-                      " // robotVitesseFacteur: " + robotVitesseFacteur +
-                      " // grilleTaille: " + grilleTaille +
-                      " // nbCroisement: " + nbCroisement +
-                      " // distance: " + distance +
-                      " // Mur touché: " +
-                      (estTouché ? "Est " : "") +
-                      (nordTouché ? "Nord " : "") +
-                      (ouestTouché ? "Ouest " : "") +
-                      (sudTouché ? "Sud " : ""));
-   }
-
-   /*
-   * Affiche le robot et la grille de manière graphique où X est le robot
-   * */
-   public static void afficherGraphique() {
-      System.out.println("Vitesse: " + ROBOT_VITESSE_INITIALE * robotVitesseFacteur);
-      for (int ligne = 0; ligne < nbCroisement; ligne++) {
-         for (int colonne = 0; colonne < nbCroisement; colonne++) {
-            if (ligne == robotY && colonne == robotX) {
-               System.out.print("X "); //Affiche le robot
-            } else {
-               System.out.print("O "); //Affiche un croisement vide
-            }
-         }
-         System.out.println();
-      }
-   }
-
-   /*
-   * Fonction de debug affichant des informations supplémentaires utilisant la
-   * direction actuelle du robot et son nombre de pas
-   * */
-   public static void déverminer(int direction, int nbPas) {
-      afficherGraphique();
-      System.out.print("Bouge direction ");
-      if (direction == EST) System.out.print("Est");
-      if (direction == NORD_EST) System.out.print("Nord-Est");
-      if (direction == NORD) System.out.print("Nord");
-      if (direction == NORD_OUEST) System.out.print("Nord-Ouest");
-      if (direction == OUEST) System.out.print("Ouest");
-      if (direction == SUD_OUEST) System.out.print("Sud-Ouest");
-      if (direction == SUD) System.out.print("Sud");
-      if (direction == SUD_EST) System.out.print("Sud-Est");
-      System.out.println(" pour " + nbPas + " pas");
-      afficherInformation();
-      Clavier.lireInt();
-   }
-
-   /*
    * Demande au robot de faire un mouvement aléatoire avec sa vitesse actuelle
    * */
    public static void mouvementAléatoire() {
       Random aléatoire = new Random();
       int nombreAléatoire = 0;
-      while (nombreAléatoire <= 0) { // Ne prends que les nombre positif
-         nombreAléatoire = (aléatoire.nextInt() % 8) + 1;
-      }
+      nombreAléatoire = aléatoire.nextInt(8) + 1;
       mouvement(nombreAléatoire, ROBOT_VITESSE_INITIALE * robotVitesseFacteur);
    }
 
@@ -199,12 +136,11 @@ public class Main {
    * ne peut se déplacer que de 1 pas par itération de la boucle.
    * */
    public static void mouvement(int direction, int nbPas) {
-      //déverminer(direction,nbPas);
       BOUCLE:
       //Label pour break la boucle
       for (int i = 0; i < nbPas; i++) {
          switch (direction) {
-            case EST: // Est
+            case EST:
                if (estMouvementAutorisé(robotX + 1, robotY)) {
                   pas(1, 0);
                } else {
@@ -213,7 +149,7 @@ public class Main {
                   break BOUCLE;
                }
                break;
-            case NORD_EST: // North-East
+            case NORD_EST:
                if (estMouvementAutorisé(robotX + 1, robotY - 1)) {
                   pas(1, -1);
                } else {
@@ -222,7 +158,7 @@ public class Main {
                   break BOUCLE;
                }
                break;
-            case NORD: // North
+            case NORD:
                if (estMouvementAutorisé(robotX, robotY - 1)) {
                   pas(0, -1);
                } else {
@@ -231,7 +167,7 @@ public class Main {
                   break BOUCLE;
                }
                break;
-            case NORD_OUEST: // North-West
+            case NORD_OUEST:
                if (estMouvementAutorisé(robotX - 1, robotY - 1)) {
                   pas(-1, -1);
                } else {
@@ -240,7 +176,7 @@ public class Main {
                   break BOUCLE;
                }
                break;
-            case OUEST: // West
+            case OUEST:
                if (estMouvementAutorisé(robotX - 1, robotY)) {
                   pas(-1, 0);
                } else {
@@ -249,7 +185,7 @@ public class Main {
                   break BOUCLE;
                }
                break;
-            case SUD_OUEST: // South-West
+            case SUD_OUEST:
                if (estMouvementAutorisé(robotX - 1, robotY + 1)) {
                   pas(-1, 1);
                } else {
@@ -258,7 +194,7 @@ public class Main {
                   break BOUCLE;
                }
                break;
-            case SUD: // South
+            case SUD:
                if (estMouvementAutorisé(robotX, robotY + 1)) {
                   pas(0, 1);
                } else {
@@ -267,7 +203,7 @@ public class Main {
                   break BOUCLE;
                }
                break;
-            case SUD_EST: // South-East
+            case SUD_EST:
                if (estMouvementAutorisé(robotX + 1, robotY + 1)) {
                   pas(1, 1);
                } else {
@@ -300,6 +236,8 @@ public class Main {
       if (directionDestination != 0) {
          mouvement(directionDestination, 1);
       } else {
+      /*Exception car la direction 0 n'existe pas mais correspond en realiter
+      a 8 (SUD_EST).*/
          mouvement(SUD_EST, 1);
       }
    }
@@ -315,6 +253,7 @@ public class Main {
    * Signal que le robot a touché un mur et met à jour les booleens
    * */
    public static void murTouché(int direction) {
+      //Crée les booleens qui spécifie si notre robot se trouve 
       boolean condNO = robotX == 0 && robotY == 0 && direction == NORD_OUEST;
       boolean condNE = robotX == nbCroisement - 1 && robotY == 0 && direction ==
               NORD_EST;
