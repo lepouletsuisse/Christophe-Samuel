@@ -5,26 +5,15 @@
  Auteur(s)   : Samuel Darcey & Christophe Peretti
  Date        : 29.09.2015
 
- But         : Trouver la relation f() entre L et la taille N d'un problème de grille
+ But         : Trouver la relation f() entre L et N où L est la distance parcourus
+               par un robot qui effectue des mouvement aléatoire sur une grille de
+               taille N x N
 
  Remarque(s) :
 
  Compilateur : jdk1.8.0_60
  -----------------------------------------------------------------------------------
 */
-
-/*
-Testé pour 1000 experimentation par taille en 24 secondes
-Testé pour 2000 experimentation par taille en 51 secondes
-Testé pour 3000 experimentation par taille en 76 secondes
-Testé pour 4000 experimentation par taille en 103 secondes
-Testé pour 5000 experimentation par taille en 129 secondes
-Testé pour 6000 experimentation par taille en 155 secondes
-Testé pour 7000 experimentation par taille en 180 secondes
-Testé pour 8000 experimentation par taille en 205 secondes
-Testé pour 9000 experimentation par taille en 232 secondes
-Testé pour 10000 experimentation par taille en 256 secondes
- */
 
 import java.util.Random;
 
@@ -44,6 +33,8 @@ public class Main {
    static final int ROBOT_VITESSE_INITIALE = 1;
 
    //Constante pour l'arithmétique
+   static final int MIN_TAILLE_GRILLE = 10;
+   static final int MAX_TAILLE_GRILLE = 100;
    static final double LONGUEUR_PAS = 1;
    static final double LONGUEUR_PAS_DIAG = Math.sqrt(2);
 
@@ -79,7 +70,7 @@ public class Main {
     */
    public static void main(String args[]) {
       initialisation();
-      for (grilleTaille = 10; grilleTaille <= 100; grilleTaille += 2) {
+      for (grilleTaille = MIN_TAILLE_GRILLE; grilleTaille <= MAX_TAILLE_GRILLE; grilleTaille += 2) {
          nbCroisement = grilleTaille + 1;
          for (int i = 0; i < nbExperimentation; i++) {
             while (!estFini()) {
@@ -136,8 +127,7 @@ public class Main {
    * ne peut se déplacer que de 1 pas par itération de la boucle.
    * */
    public static void mouvement(int direction, int nbPas) {
-      BOUCLE:
-      //Label pour break la boucle
+
       for (int i = 0; i < nbPas; i++) {
          switch (direction) {
             case EST:
@@ -146,7 +136,7 @@ public class Main {
                } else {
                   pas(1, 0);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
             case NORD_EST:
@@ -155,7 +145,7 @@ public class Main {
                } else {
                   pas(1, -1);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
             case NORD:
@@ -164,7 +154,7 @@ public class Main {
                } else {
                   pas(0, -1);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
             case NORD_OUEST:
@@ -173,7 +163,7 @@ public class Main {
                } else {
                   pas(-1, -1);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
             case OUEST:
@@ -182,7 +172,7 @@ public class Main {
                } else {
                   pas(-1, 0);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
             case SUD_OUEST:
@@ -191,7 +181,7 @@ public class Main {
                } else {
                   pas(-1, 1);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
             case SUD:
@@ -200,7 +190,7 @@ public class Main {
                } else {
                   pas(0, 1);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
             case SUD_EST:
@@ -209,7 +199,7 @@ public class Main {
                } else {
                   pas(1, 1);
                   rebondie(direction);
-                  break BOUCLE;
+                  return;
                }
                break;
          }
@@ -236,7 +226,7 @@ public class Main {
       if (directionDestination != 0) {
          mouvement(directionDestination, 1);
       } else {
-      /*Exception car la direction 0 n'existe pas mais correspond en realiter
+      /* Exception car la direction 0 n'existe pas mais correspond en realiter
       a 8 (SUD_EST).*/
          mouvement(SUD_EST, 1);
       }
@@ -253,17 +243,27 @@ public class Main {
    * Signal que le robot a touché un mur et met à jour les booleens
    * */
    public static void murTouché(int direction) {
-      //Crée les booleens qui spécifie si notre robot se trouve 
+      //Crée les booleens qui spécifie si notre robot se trouve dans un coin
+
+      //Coin Nord-Ouest
       boolean condNO = robotX == 0 && robotY == 0 && direction == NORD_OUEST;
-      boolean condNE = robotX == nbCroisement - 1 && robotY == 0 && direction ==
-              NORD_EST;
-      boolean condSO = robotX == 0 && robotY == nbCroisement - 1 && direction ==
-              SUD_OUEST;
+
+      //Coin Nord-Est
+      boolean condNE = robotX == nbCroisement - 1 && robotY == 0 &&
+              direction == NORD_EST;
+
+      //Coin Sud-Ouest
+      boolean condSO = robotX == 0 && robotY == nbCroisement - 1 &&
+              direction == SUD_OUEST;
+
+      //Coin Sud-Est
       boolean condSE = robotX == nbCroisement - 1 && robotY == nbCroisement - 1 &&
               direction == SUD_EST;
 
       if (condNO || condNE || condSO || condSE) return;
 
+      /* Si nous sommes pas dans un coin, on set le boolean correspondant au bord
+         qu'on touche à TRUE  */
       switch (direction) {
          case EST:
             if (!estTouché && robotVitesseFacteur < 4) robotVitesseFacteur++;
