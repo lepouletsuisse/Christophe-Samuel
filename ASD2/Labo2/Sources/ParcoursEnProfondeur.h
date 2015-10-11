@@ -12,6 +12,7 @@
 #include <vector>
 #include <stack>
 #include <utility>
+#include <algorithm>
 
 template<typename GraphType> class DFSIter {
 private:

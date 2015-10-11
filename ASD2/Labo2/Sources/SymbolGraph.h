@@ -26,7 +26,6 @@ class SymbolGraph
     typedef GraphType Graph; 
 private:
     Graph* g;
-    char delimiteur = ',';
     
 public:
     
@@ -38,7 +37,7 @@ public:
     std::map<std::string, int> indices;
 
     //creation du SymbolGraph a partir du fichier movies.txt
-    SymbolGraph(const std::string& filename) {
+    SymbolGraph(const std::string& filename, char delimiteur) {
 
         //lecture du fichier, ligne par ligne puis element par element (separe par des /)
         std::string line;
@@ -73,17 +72,17 @@ public:
     }
     
     //verifie la presence d'un symbole
-    bool contains(const std::string& name) {
+    bool contains(const std::string& name) const{
         return indices.count(name);
     }
     
     //index du sommet correspondant au symbole
-    int index(const std::string& name) {
-        return indices[name];
+    int index(const std::string& name) const{
+        return indices.at(name);
     }
     
     //symbole correspondant au sommet
-    std::string name(int idx) {
+    std::string name(int idx) const{
         for(auto pair : indices){
             if(pair.second == idx){
                 return pair.first;
