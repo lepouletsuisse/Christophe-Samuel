@@ -16,8 +16,8 @@ CREATE TABLE employee (
 CREATE TABLE department (
 	Dname varchar(15) NOT NULL, 
 	Dnumber int(11) NOT NULL, 
-	Mgr_ssn char(9) NOT NULL, 
-	Mgr_Start_Date date NOT NULL, 
+	Mgr_ssn char(9), 
+	Mgr_Start_Date date, 
 	primary key (Dnumber));
 	
 CREATE TABLE dept_locations (

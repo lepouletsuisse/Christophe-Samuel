@@ -1,14 +1,17 @@
 use company;
 
--- update department set Dnumber = 9 where Dnumber = 1;
+alter table employee add foreign key (Super_ssn) references employee (Ssn);
+alter table employee add foreign key (Dno) references department (Dnumber);
 
-ALTER table employee drop foreign key employee_ibfk_2;
-alter table employee add foreign key (Dno) references department (Dnumber) ON UPDATE cascade;
+alter table department add foreign key (Mgr_ssn) references employee (Ssn);
 
-ALTER table dept_locations drop foreign key dept_locations_ibfk_2;
-alter table dept_locations add foreign key (Dnumber) references department (Dnumber) ON UPDATE cascade;
+alter table dept_locations add foreign key (Dlocation) references location (Lnumber);
+alter table dept_locations add foreign key (Dnumber) references department (Dnumber);
 
-ALTER table project drop foreign key project_ibfk_2;
-alter table project add foreign key (Dnum) references department (Dnumber) ON UPDATE cascade;
+alter table project add foreign key (Plocation) references location (Lnumber);
+alter table project add foreign key (Dnum) references department (Dnumber);
 
-update department set Dnumber = 9 where Dnumber = 1;
+alter table works_on add foreign key (Essn) references employee (Ssn);
+alter table works_on add foreign key (Pno) references project (Pnumber);
+
+alter table dependent add foreign key (Essn) references employee (Ssn);

@@ -1,0 +1,106 @@
+Réponse question BDR labo 02
+
+Note: Les noms des scripts et questions correpsondent aux chiffre des questions et non aux
+sections
+
+Question 3.2: 
+
+
+INSERT INTO works_on VALUES('123456789', 3, 10);
+
+INSERT INTO works_on VALUES('123456789', 5, 10);
+
+
+
+Nous constatons que ces 2 datas ont bien étés ajouter dans la base de donnée
+ 
+
+
+
+DELETE FROM department WHERE Dnumber = 5;
+
+ 
+
+Nous constatons a présent que le departement 5 a bien été
+ 
+supprimé de la table department mais que la table works_on
+n'a pas été mis à jour et donc que une entrée de cette table
+ 
+pointe vers un departement qui n'existe pas.
+
+Question 4.3: 
+Cela est uniquement possible si on met le FOREIGN_KEY_CHECK à 0 car
+il ne faut pas que notre programme vérifie si les valeurs qu'on ajoute correspondent aux table,
+sinon il faudrait le faire dans l'ordre logique que les valeurs doivent être ajoutées. En faisant sa,
+notre programme ne va pas vérifier si la ligne que l'on insère a bien une clé étrangère
+existante dans une autre table.
+
+Question 5.1:
+
+
+delete from employee where Ssn = '333445555';
+
+
+Refuse car si il est delete, le Super_ssn d'un autre employée pointera vers 
+
+un employée qui n'existe pas.
+
+
+
+ALTER table employee drop foreign key employee_ibfk_1;
+
+alter table employee add foreign key (Super_ssn) references employee (Ssn) ON DELETE set null;
+
+
+Ne marche pas en soit mais si on change le Msg_ssn et on permet le NULL, 
+alors c'est possible.
+
+
+
+alter table department drop foreign key department_ibfk_1;
+
+alter table department add foreign key (Mgr_ssn) references employee (Ssn) ON DELETE set null;
+
+
+Supprime en cascade les ligne accorder a cette employee.
+
+
+
+alter table works_on drop foreign key works_on_ibfk_1;
+
+alter table works_on add foreign key (Essn) references employee (Ssn) on delete cascade;
+
+
+alter table dependent drop foreign key dependent_ibfk_1;
+
+alter table dependent add foreign key (Essn) references employee (Ssn) on delete cascade;
+
+
+
+
+Question 5.2:
+update department set Dnumber = 9 where Dnumber = 1;
+
+Ne marche pas car on ne peut pas update la valeur sinon toutes les clé étrangère qui 
+pointe vers Dnumber = 1 ne pointeront plus vers rien.
+
+Correction du problème:
+
+
+ALTER table employee drop foreign key employee_ibfk_2;
+
+alter table employee add foreign key (Dno) references department (Dnumber) ON UPDATE cascade;
+
+
+ALTER table dept_locations drop foreign key dept_locations_ibfk_2;
+
+alter table dept_locations add foreign key (Dnumber) references department (Dnumber) ON UPDATE cascade;
+
+
+ALTER table project drop foreign key project_ibfk_2;
+
+alter table project add foreign key (Dnum) references department (Dnumber) ON UPDATE cascade;
+
+
+update department set Dnumber = 9 where Dnumber = 1;
+

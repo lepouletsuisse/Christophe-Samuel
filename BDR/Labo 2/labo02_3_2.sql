@@ -1,17 +1,25 @@
+
 use company;
 
-alter table employee add foreign key (Super_ssn) references employee (Ssn);
-alter table employee add foreign key (Dno) references department (Dnumber);
+-- --------------------------------------------------------
 
-alter table department add foreign key (Mgr_ssn) references employee (Ssn);
+--
+-- Change from the exercice
+--
 
-alter table dept_locations add foreign key (Dlocation) references location (Lnumber);
-alter table dept_locations add foreign key (Dnumber) references department (Dnumber);
+INSERT INTO works_on VALUES('123456789', 3, 10);
+INSERT INTO works_on VALUES('123456789', 5, 10);
 
-alter table project add foreign key (Plocation) references location (Lnumber);
-alter table project add foreign key (Dnum) references department (Dnumber);
+--
+-- Nous constatons que ces 2 datas ont bien étés ajouter 
+-- dans la base de donnée
+-- 
 
-alter table works_on add foreign key (Essn) references employee (Ssn);
-alter table works_on add foreign key (Pno) references project (Pnumber);
+DELETE FROM department WHERE Dnumber = 5;
 
-alter table dependent add foreign key (Essn) references employee (Ssn);
+-- 
+-- Nous constatons a présent que le departement 5 a bien été
+-- supprimé de la table department mais que la table works_on
+-- n'a pas été mis à jour et donc que une entrée de cette table
+-- pointe vers un departement qui n'existe pas.
+-- 
