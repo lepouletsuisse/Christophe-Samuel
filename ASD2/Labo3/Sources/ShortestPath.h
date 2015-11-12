@@ -83,18 +83,42 @@ public:
 
     DijkstraSP(const GraphType &g, int v) {
         std::set<std::pair<Weight, int>> Q;
+        this->distanceTo.resize(g.V());
+        this->edgeTo.resize(g.V());
         this->distanceTo[v] = 0;
-        std::pair tmpPair;
-        for (int i = 0; i < g.V(); ++v) {
+        std::pair<Weight,int> tmpPair;
+        std::vector<bool> marque(g.V());
+        for(int i = 0; i < marque.size(); i++){
+            marque.at(i) = false;
+        }
+
+        for (int i = 0; i < g.V(); ++i) {
             if (i != v){
-                this->distanceTo[v] = std::numeric_limits<double>::infinity();
+                this->distanceTo[i] = std::numeric_limits<double>::infinity();
             }
+
             tmpPair.first = this->distanceTo[i];
             tmpPair.second = i;
             Q.insert(tmpPair);
         }
+        std::cout << this->distanceTo[v];
         while(!Q.empty()){
-            std::pair<Weight, int> u = *(Q.begin());
+            int u = Q.begin()->second;
+            Q.erase(Q.begin());
+            marque.at(u) = true;
+            Weight distThruE;
+            int w;
+            g.forEachAdjacentEdge(u, [&](Edge e) {
+                int w = e.To();
+                if (!marque.at(w)) {
+                    Weight distThruE = this->distanceTo[u] + e.Weight();
+
+                    if (this->distanceTo[w] > distThruE) {
+                        this->distanceTo[w] = distThruE;
+                        this->edgeTo[w] = e;
+                    }
+                }
+            });
         }
     }
 };
