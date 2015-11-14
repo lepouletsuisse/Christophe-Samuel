@@ -15,7 +15,7 @@
 #include <limits>
 #include <set>
 #include <functional>
-
+#include <list>
 
 // Classe parente de toutes les classes de plus court chemin.
 // Defini les membres edgeTo et distanceTo commun à toutes ces
@@ -101,26 +101,29 @@ public:
             tmpPair.second = i;
             Q.insert(tmpPair);
         }
-        std::cout << this->distanceTo[v];
         while(!Q.empty()){
             int u = Q.begin()->second;
             Q.erase(Q.begin());
-            marque.at(u) = true;
             Weight distThruE;
             int w;
+
             g.forEachAdjacentEdge(u, [&](Edge e) {
                 int w = e.To();
-                if (!marque.at(w)) {
-                    Weight distThruE = this->distanceTo[u] + e.Weight();
+                Weight distThruE = this->distanceTo[u] + e.Weight();
 
-                    if (this->distanceTo[w] > distThruE) {
-                        this->distanceTo[w] = distThruE;
-                        this->edgeTo[w] = e;
-                    }
+                if (this->distanceTo[w] > distThruE) {
+                    this->distanceTo[w] = distThruE;
+                    this->edgeTo[w] = e;
+                    tmpPair.first = this->distanceTo[w];
+                    tmpPair.second = w;
+                    Q.insert(tmpPair);
+
                 }
             });
         }
+
     }
+
 };
 
 // Algorithme de BellmanFord.

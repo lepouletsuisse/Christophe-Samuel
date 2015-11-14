@@ -17,4 +17,4 @@ set(SOURCE_FILES
     Sources/Util.cpp
     Sources/Util.h)
 
-add_executable(Labo3 ${SOURCE_FILES})
+add_executable(Labo3 ${SOURCE_FILES} Sources/RoadGraphWrapper.h)

@@ -16,14 +16,16 @@
 
 #include "EdgeWeightedGraph.h"
 #include "EdgeWeightedDiGraph.h"
+#include "RoadGraphWrapper.h"
 
 using namespace std;
 
 // Calcule et affiche le plus court chemin de la ville depart a la ville arrivee
 // en passant par le reseau routier rn. Le critere a optimiser est la distance.
 
-void PlusCourtChemin(const string& depart, const string& arrivee, RoadNetwork& rn) {   
-    /* A IMPLEMENTER */
+void PlusCourtChemin(const string& depart, const string& arrivee, RoadNetwork& rn) {
+    RoadGraphWrapper<double> rgw(rn);
+    auto mst = MinimumSpanningTree<RoadGraphWrapper>::Kruskal(rgw);
 }
 
 // Calcule et affiche le plus rapide chemin de la ville depart a la ville arrivee via la ville "via"
