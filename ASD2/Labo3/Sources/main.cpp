@@ -133,6 +133,7 @@ void PlusRapideChemin(const string& depart, const string& arrivee, const string&
                 }
                 std::cout << arrivee << std::endl;
                 std::cout << (int)temps << " Min" << std::endl << std::endl;
+
             }
         }
     }
@@ -159,7 +160,6 @@ void ReseauLeMoinsCher(RoadNetwork &rn) {
         prixTotal += e.weight;
         std::cout << rn.cities.at(e.v1).name << " - "
         << rn.cities.at(e.v2).name << std::endl;
-        std::cout << prixTotal << "M CHF" << std::endl;
     }
     std::cout << "Cout Total des renovations : " << std::endl;
     std::cout << prixTotal << "M CHF" << std::endl;
