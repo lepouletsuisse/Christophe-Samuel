@@ -205,7 +205,7 @@ int main(int argc, const char * argv[]) {
     testShortestPath("tinyEWD.txt");
     testShortestPath("mediumEWD.txt");
     testShortestPath("1000EWD.txt");
-    //testShortestPath("10000EWD.txt");
+    testShortestPath("10000EWD.txt");
     //testShortestPath("largeEWD.txt"); // disponible sur le moodle du cours
     
     RoadNetwork rn("reseau.txt");
