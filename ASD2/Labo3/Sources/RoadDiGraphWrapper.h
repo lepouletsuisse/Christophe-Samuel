@@ -1,20 +1,19 @@
 //
-// Created by Christophe on 14.11.2015.
+// Created by Christophe on 15.11.2015.
 //
 
-#ifndef LABO3_ROADGRAPHWRAPPER_H
-#define LABO3_ROADGRAPHWRAPPER_H
-
+#ifndef LABO3_ROADDIGRAPHWRAPPER_H
+#define LABO3_ROADDIGRAPHWRAPPER_H
 
 #include "RoadNetwork.h"
-#include "EdgeWeightedGraph.h"
+#include "EdgeWeightedDiGraph.h"
 #include <list>
 #include <functional>
 
-class RoadGraphWrapper {
+class RoadDiGraphWrapper {
 public:
     // Type des arcs/arêtes.
-    typedef WeightedEdge<double> Edge;
+    typedef WeightedDirectedEdge<double> Edge;
 
     //typedef double WeightType;
     // Type de donnée pour les poids
@@ -29,7 +28,7 @@ private:
 
 public:
 
-    RoadGraphWrapper(const RoadNetwork& roadNetwork, std::function<WeightType (int)> func):rn(roadNetwork), weightFunc(func) { }
+    RoadDiGraphWrapper(const RoadNetwork& roadNetwork, std::function<WeightType (int)> func):rn(roadNetwork), weightFunc(func) { }
 
     // Renvoie le nombre de sommets V
     int V() const{
@@ -51,6 +50,18 @@ public:
                     f(Edge(v1,v2,weightFunc(road)));
             }
     }
-};
 
-#endif //LABO3_ROADGRAPHWRAPPER_H
+    // Parcours des arcs/arêtes adjacentes au sommet v.
+    // la fonction f doit prendre un seul argument de type
+    // EdgeWeightedGraphCommon::Edge
+    template<typename Func>
+    void forEachAdjacentEdge(int v, Func f) const  {
+        int v1, v2;
+        for(int road : rn.cities.at(v).roads){
+            v1 = rn.roads.at(road).cities.first;
+            v2 = rn.roads.at(road).cities.second;
+            f(Edge(v1,v2,weightFunc(road)));
+        }
+    }
+};
+#endif //LABO3_ROADDIGRAPHWRAPPER_H

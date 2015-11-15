@@ -25,7 +25,7 @@ public:
     // Type de donnée pour les poids.
     typedef T WeightType;
     
-protected:
+public:
     // v1 et v2 sont les deux sommets de l'arc/arête
     int v1,v2;
     

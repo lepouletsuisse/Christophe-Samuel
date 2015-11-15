@@ -94,7 +94,7 @@ public:
 	// EdgeWeightedGraph::Edge
 	template<typename Func>
 	void forEachEdge(Func f) const  {
-		for(int v=0;v<this->V();++v)
+		for(int v = 0; v < this->V(); ++v)
 			for(const Edge& e : this->adjacentEdges(v))
 				if(e.Other(v) >= v)
 					f(e);
