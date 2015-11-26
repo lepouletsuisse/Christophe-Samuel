@@ -1,13 +1,15 @@
 USE sakila;
 
 -- Exercice 01
-SELECT *
+SELECT title, release_year
 FROM film
-WHERE 1 = 1;
+WHERE rating = "G" and length > 100 and replacement_cost = 29.99;
 -- END Exercice 01
 
 -- Exercice 02
-
+select customer_id, first_name, last_name
+from customer
+where first_name = "tracey" and store_id = 1;
 -- END Exercice 02
 
 -- Exercice 03
