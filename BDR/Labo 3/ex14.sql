@@ -1,17 +1,17 @@
-use sakila;
+USE sakila;
 
-select
+SELECT
 	film.film_id,
     film.title,
-    film.rental_rate as 'prix'
-from film
-where title not in (
-	select distinct
+    film.rental_rate AS 'prix'
+FROM film
+WHERE title NOT IN (
+	SELECT DISTINCT
 		film.title
-	from film
-		inner join inventory
-			on film.film_id = inventory.inventory_id
-		inner join rental
-			on inventory.inventory_id = rental.inventory_id
+	FROM film
+		INNER JOIN inventory
+			ON film.film_id = inventory.film_id
+		INNER JOIN rental
+			ON inventory.inventory_id = rental.inventory_id
 	)
-and film.rental_rate < 2.99;
+AND film.rental_rate < 2;

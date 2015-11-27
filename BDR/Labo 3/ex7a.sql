@@ -1,15 +1,15 @@
-use sakila;
+USE sakila;
 
-select distinct
+SELECT DISTINCT
 	last_name, 
     first_name
-from actor
-inner join film_actor
-	on actor.actor_id = film_actor.actor_id
-inner join film_category
-	on film_actor.film_id = film_category.film_id
-inner join category
-	on film_category.category_id = category.category_id
-where category.name = 'Action'
-	and first_name Like 'B%' 
-	or last_name like 'A%'
+FROM actor
+INNER JOIN film_actor
+	ON actor.actor_id = film_actor.actor_id
+INNER JOIN film_category
+	ON film_actor.film_id = film_category.film_id
+INNER JOIN category
+	ON film_category.category_id = category.category_id
+WHERE category.name = 'Action'
+	AND first_name LIKE 'B%' 
+	OR last_name LIKE 'A%';

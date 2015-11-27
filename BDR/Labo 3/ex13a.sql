@@ -1,25 +1,25 @@
-use sakila;
+USE sakila;
 
-select
-	film.film_id as 'id',
-    film.title as 'titre'
-from film
-	inner join film_actor
-		on film.film_id = film_actor.film_id
-where film_actor.actor_id in (
-	select actor_id
-	from (
-		select
+SELECT
+	film.film_id AS 'id',
+    film.title AS 'titre'
+FROM film
+	INNER JOIN film_actor
+		ON film.film_id = film_actor.film_id
+WHERE film_actor.actor_id IN (
+	SELECT actor_id
+	FROM (
+		SELECT
 			actor.actor_id,
-			count(film.film_id) as 'nombre_films'
-		from actor
-			inner join film_actor
-				on actor.actor_id = film_actor.actor_id
-			inner join film
-				on film_actor.film_id = film.film_id
-		group by actor_id
-		having nombre_films > 35
-		) as a
+			COUNT(film.film_id) AS 'nombre_films'
+		FROM actor
+			INNER JOIN film_actor
+				ON actor.actor_id = film_actor.actor_id
+			INNER JOIN film
+				ON film_actor.film_id = film.film_id
+		GROUP BY actor_id
+		HAVING nombre_films > 35
+		) AS a
 	)
-and film.film_id < 100
-order by id;
+AND film.film_id < 100
+ORDER BY id;

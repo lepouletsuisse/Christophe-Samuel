@@ -1,5 +1,5 @@
-use sakila;
-select customer_id, first_name, last_name
-from customer
-where first_name = "tracy" and store_id = 1
-order by customer_id desc;
+USE sakila;
+SELECT customer_id, first_name, last_name
+FROM customer
+WHERE first_name = "tracy" AND store_id = 1
+ORDER BY customer_id DESC;

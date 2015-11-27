@@ -1,24 +1,24 @@
-use sakila;
+USE sakila;
 
-select distinct
-	customer.customer_id as 'id',
-    customer.last_name as 'nom',
-    customer.first_name as 'prénom',
-    country.country as 'pays'
-from customer
-	inner join rental
-		on customer.customer_id = rental.customer_id
-	inner join address
-		on customer.address_id = address.address_id
-	inner join city
-		on address.city_id = city.city_id
-	inner join country
-		on city.country_id = country.country_id
-where customer.customer_id in (
-	select customer.customer_id
-	from rental
-	where customer.customer_id = rental.customer_id
-    and rental.return_date is null
+SELECT DISTINCT
+	customer.customer_id AS 'id',
+    customer.last_name AS 'nom',
+    customer.first_name AS 'prénom',
+    country.country AS 'pays'
+FROM customer
+	INNER JOIN rental
+		ON customer.customer_id = rental.customer_id
+	INNER JOIN address
+		ON customer.address_id = address.address_id
+	INNER JOIN city
+		ON address.city_id = city.city_id
+	INNER JOIN country
+		ON city.country_id = country.country_id
+WHERE customer.customer_id IN (
+	SELECT customer.customer_id
+	FROM rental
+	WHERE customer.customer_id = rental.customer_id
+    AND rental.return_date IS NULL
     )
-and country.country = 'Japan' or country.country = 'France'
-order by pays, nom;
+AND country.country = 'Japan' OR country.country = 'France'
+ORDER BY pays, nom;

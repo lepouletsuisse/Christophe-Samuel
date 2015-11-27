@@ -1,40 +1,40 @@
-use sakila;
+USE sakila;
 
-select distinct
+SELECT DISTINCT
 	c.customer_id, 
     c.first_name,
     c.last_name
-from (select distinct
+FROM (SELECT DISTINCT
 			 customer.customer_id, 
 			 customer.first_name,
 			 customer.last_name,
              film.title
-		from 
+		FROM 
 		customer
-		inner join rental
-			on customer.customer_id = rental.customer_id
-		inner join inventory
-			on rental.inventory_id = inventory.inventory_id
-		inner join film
-			on inventory.film_id = film.film_id
-		where film.film_id 
-		in (select distinct film_id 
-			from actor
-			inner join film_actor
-				on actor.actor_id = film_actor.actor_id
-			where actor.first_name = 'EMILY'
-			and actor.last_name = 'DEE'
+		INNER JOIN rental
+			ON customer.customer_id = rental.customer_id
+		INNER JOIN inventory
+			ON rental.inventory_id = inventory.inventory_id
+		INNER JOIN film
+			ON inventory.film_id = film.film_id
+		WHERE film.film_id 
+		IN (SELECT DISTINCT film_id 
+			FROM actor
+			INNER JOIN film_actor
+				ON actor.actor_id = film_actor.actor_id
+			WHERE actor.first_name = 'EMILY'
+			AND actor.last_name = 'DEE'
 		)
-	 ) as c
-
-group by c.customer_id
-having count(c.customer_id) = (select count(*) 
-								from (select distinct film_id 
-										from actor
-										inner join film_actor
-											on actor.actor_id = film_actor.actor_id
-										where actor.first_name = 'EMILY'
-										and actor.last_name = 'DEE'
-									 ) as film2
-							  )
+	 ) AS c
+GROUP BY c.customer_id
+HAVING COUNT(c.customer_id) = (
+	SELECT COUNT(*) 
+		FROM (SELECT DISTINCT film_id 
+				FROM actor
+				INNER JOIN film_actor
+					ON actor.actor_id = film_actor.actor_id
+				WHERE actor.first_name = 'EMILY'
+				AND actor.last_name = 'DEE'
+			 ) AS film2
+	  );
                  

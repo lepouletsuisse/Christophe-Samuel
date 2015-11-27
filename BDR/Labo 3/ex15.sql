@@ -1,5 +1,5 @@
-use sakila;
+USE sakila;
 
-select 
-	ceiling(sum(length)/(60 * 16)) as jours
-from film;
+SELECT 
+	CEILING(SUM(length)/(60 * 16)) AS jours
+FROM film;
