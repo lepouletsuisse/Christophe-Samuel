@@ -48,7 +48,10 @@ namespace std
         size_t operator()(const DirectoryWithoutAVS& d) const
         {
             //we use stl hash function for string type on name, we could do much better...
-            return std::hash<string>()(d.getName()); /* A AMELIORER */
+            return std::hash<string>()(d.getName())
+                   ^ std::hash<string>()(d.getBirthday())
+                   ^ std::hash<string>()(d.getFirstname())
+                   ^ std::hash<string>()(d.getGender());
         }
     };
 }
