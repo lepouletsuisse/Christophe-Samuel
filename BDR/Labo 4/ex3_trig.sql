@@ -8,8 +8,7 @@ before insert on staff
 for each row
 begin
 	set
-		NEW.amount = NEW.amount * 1.08,
-		NEW.last_update = NOW();
+		NEW.email = concat(NEW.first_name, '.', New.last_name, '@sakilastaff.com');
 end; $$
 
 DELIMITER ;
