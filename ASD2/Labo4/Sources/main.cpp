@@ -9,7 +9,7 @@
 
 #define FILENAME "liste1.txt"
 //#define FILENAME "liste2.txt"
-#define MAX_LOAD_FACTOR 0.3f
+#define MAX_LOAD_FACTOR 2.f
 
 #include <cstdlib>
 #include <iostream>
