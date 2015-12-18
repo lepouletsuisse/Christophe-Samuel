@@ -188,7 +188,6 @@ CREATE TABLE Hist_Deplacement(
     date_entree DATETIME NOT NULL,
     date_sortie DATETIME NOT NULL,
     
-    primary key (utilisateur_id, presence_id),
     constraint fk_Hist_Deplacement_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
     constraint fk_Hist_Deplacement_presence foreign key (presence_id) references Presence(capteur_id) on delete cascade on update cascade
 );
@@ -199,7 +198,6 @@ CREATE TABLE Hist_Utilisation(
     date_debut DATETIME NOT NULL,
     date_fin DATETIME NOT NULL,
     
-    primary key (utilisateur_id, objet_id),
     constraint fk_Hist_Utilisation_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
     constraint fk_Hist_Utilisation_objet foreign key (objet_id) references Objet(id) on delete cascade on update cascade
 );
