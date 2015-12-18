@@ -10,6 +10,7 @@
 #define SearchTrees_AVLTree_h
 
 #include <algorithm>
+#include <stack>
 
 template < typename KeyType, typename ValueType >
 class AVLTree {
@@ -127,36 +128,30 @@ public:
     
 private:
     Node* put(Node* x, const KeyType& key, const ValueType& value) {
+        std::stack<Node**> pileNoeuds;
+        Node ** ptrActuel = &x;
 
-        while (x != nullptr){
-            if ( key < x->key ){
-                x = x->left;
-            } else if ( key > x->key){
-                x = x->right;
-            } else {// x->key == key
-                x->value = value;
-                updateNodeSize(x);
-                return restoreBalance(x);  // AVL. sinon on aurait return x;
+        while (*ptrActuel) {
+            pileNoeuds.push(ptrActuel);
+            if (key < (*ptrActuel)->key) {
+                ptrActuel = &(*ptrActuel)->left;
+            } else if (key > (*ptrActuel)->key){
+                ptrActuel = &(*ptrActuel)->right;
+            } else {
+                (*ptrActuel)->value = value;
+                break;
             }
         }
-        return new Node(key, value);
-
-        /* A TRANSFORMER EN VERSION ITERATIVE */
-/*
-        if (x==nullptr)
-            return new Node(key, value);
-        
-        if ( key < x->key )
-            x->left = put(x->left,key,value);
-        else if ( key > x->key)
-            x->right = put(x->right,key,value);
-        else // x->key == key
-            x->value = value;
-
-        updateNodeSize(x);
-
-        return restoreBalance(x);  // AVL. sinon on aurait return x;
-*/
+        if (*ptrActuel == nullptr){
+            *ptrActuel = new Node(key,value);
+        }
+        while(!pileNoeuds.empty()){
+            ptrActuel = pileNoeuds.top();
+            pileNoeuds.pop();
+            updateNodeSize(*ptrActuel);
+            *ptrActuel = restoreBalance(*ptrActuel);
+        }
+        return x;
     }
     
     //

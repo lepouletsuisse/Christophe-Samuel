@@ -8,7 +8,7 @@ create table customer_store_log(
     last_store_id int,
     register_date DATE,
     unregister_date DATE
-    )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 DELIMITER $$
