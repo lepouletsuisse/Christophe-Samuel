@@ -25,4 +25,4 @@ end;$$
 
 DELIMITER ;
 
-update customer set store_id = 4 where customer_id = 1;
+update customer set store_id = 1 where customer_id = 4;
