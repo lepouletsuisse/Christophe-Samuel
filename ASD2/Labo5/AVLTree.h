@@ -4,6 +4,7 @@
 //
 //  Created by Olivier Cuisenaire on 25.11.14.
 //  Copyright (c) 2014 Olivier Cuisenaire. All rights reserved.
+//  Modifié par Samuel Darcey et Christophe Peretti
 //
 
 #ifndef SearchTrees_AVLTree_h
@@ -129,22 +130,28 @@ public:
 private:
     Node* put(Node* x, const KeyType& key, const ValueType& value) {
         std::stack<Node**> pileNoeuds;
-        Node ** ptrActuel = &x;
+        Node ** ptrActuel = &x;     // double pointeur pour avoir une longueur d'avance sur le noeud
 
+        // On boucle tant que l'on ne se trouve pas sur un pointeur nul (ou qu'on a trouvé la valeur, voir dans la boucle)
         while (*ptrActuel) {
+            // On empile les noeuds pour garder la trace de tous les noeuds parcourus (pour pouvoir rééquilibrer)
             pileNoeuds.push(ptrActuel);
             if (key < (*ptrActuel)->key) {
                 ptrActuel = &(*ptrActuel)->left;
             } else if (key > (*ptrActuel)->key){
                 ptrActuel = &(*ptrActuel)->right;
             } else {
+                // Si la clé était déjà présente, on remplace juste la valeur
                 (*ptrActuel)->value = value;
                 break;
             }
         }
+        // Dans le cas où la clé n'était pas présente, on créé le noeud
         if (*ptrActuel == nullptr){
             *ptrActuel = new Node(key,value);
         }
+
+        // On parcoure la pile pour rééquilibrer l'arbre
         while(!pileNoeuds.empty()){
             ptrActuel = pileNoeuds.top();
             pileNoeuds.pop();
@@ -281,29 +288,54 @@ public:
     }
 private:
     Node* deleteElement( Node* x, const KeyType& key) {
-        
-        /* A TRANSFORMER EN VERSION ITERATIVE */
-        
-        if ( x == nullptr )
-            return nullptr; // element pas trouve.
-        
-        if ( key < x->key )
-            x->left = deleteElement( x->left, key );
-        else if ( key > x->key )
-            x->right = deleteElement( x->right, key );
-        else { // x->key == key
-            if ( x->right == nullptr )
-                return deleteAndReturn(x,x->left);
-            if ( x->left == nullptr )
-                return deleteAndReturn(x,x->right);
-            
-            Node* y = min(x->right);
-            x->key = y->key;
-            x->value = y->value;
-            x->right = deleteMin(x->right);
+        std::stack<Node**> pileNoeuds;
+        Node ** ptrActuel = &x;
+
+        while (*ptrActuel) {
+            // On empile les noeuds pour garder la trace de tous les noeuds parcourus (pour pouvoir rééquilibrer)
+            pileNoeuds.push(ptrActuel);
+            if (key < (*ptrActuel)->key) {
+                ptrActuel = &(*ptrActuel)->left;
+            } else if (key > (*ptrActuel)->key){
+                ptrActuel = &(*ptrActuel)->right;
+            } else {
+                if ((*ptrActuel)->right == nullptr ){
+                    if ((*ptrActuel)->left == nullptr ){
+                        // Cas où les deux enfants sont nuls
+                        delete (*ptrActuel);
+                        (*ptrActuel) = nullptr;
+                        // On dépile le dernier élément qui est désormais nul et ne nécessite pas de rééquilibrage
+                        pileNoeuds.pop();
+                        break;
+                    } else {
+                        // S'il y a un enfant à droite, on va supprimer le plus petit et
+                        // mettre sa clé et sa valeur à la place de notre noeud
+                        Node* y = max((*ptrActuel)->left);
+                        (*ptrActuel)->key = y->key;
+                        (*ptrActuel)->value = y->value;
+                        (*ptrActuel)->left = deleteMax((*ptrActuel)->left);
+                        break;
+                    }
+                } else {
+                    // Sinon, s'il y a un enfant à gauche, on va supprimer le plus grand et
+                    // mettre sa clé et sa valeur à la place de notre noeud
+                    Node* y = min((*ptrActuel)->right);
+                    (*ptrActuel)->key = y->key;
+                    (*ptrActuel)->value = y->value;
+                    (*ptrActuel)->right = deleteMin((*ptrActuel)->right);
+                    break;
+                }
+            }
         }
-        updateNodeSize(x);
-        return restoreBalance(x);
+
+        // On parcoure la pile pour rééquilibrer l'arbre
+        while(!pileNoeuds.empty()){
+            ptrActuel = pileNoeuds.top();
+            pileNoeuds.pop();
+            updateNodeSize(*ptrActuel);
+            *ptrActuel = restoreBalance(*ptrActuel);
+        }
+        return x;
     }
     
     //
