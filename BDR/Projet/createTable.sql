@@ -2,8 +2,8 @@ DROP schema if exists domotique;
 CREATE DATABASE domotique;
 USE domotique;
 
-CREATE TABLE Adresse(
-	id int,
+CREATE TABLE adresse(
+	id int NOT NULL AUTO_INCREMENT,
     ville varchar(64) NOT NULL,
     npa int NOT NULL,
     rue varchar(64) NOT NULL,
@@ -12,19 +12,19 @@ CREATE TABLE Adresse(
     primary key(id)
 );
 
-CREATE TABLE Maison (
-	id int,
+CREATE TABLE maison (
+	id int NOT NULL AUTO_INCREMENT,
 	nom_famille varchar(64),
     nb_personne int,
     nb_piece int NOT NULL,
     adresse_id int NOT NULL,
     
 	primary key (id),
-    constraint fk__Maison_adresse foreign key (adresse_id) references Adresse(id) on delete restrict on update cascade
+    constraint fk__maison_adresse foreign key (adresse_id) references adresse(id) on delete restrict on update cascade
     );
 
-CREATE TABLE Piece (
-	id int,
+CREATE TABLE piece (
+	id int NOT NULL AUTO_INCREMENT,
     maison_id int NOT NULL,
     nom varchar(64) NOT NULL,
     type_piece varchar(64) NOT NULL,
@@ -32,11 +32,11 @@ CREATE TABLE Piece (
     estExterieur char(1) NOT NULL,
     
     primary key (id),
-    constraint fk_Piece_maison foreign key (maison_id) references Maison(id) on delete cascade on update cascade
+    constraint fk_piece_maison foreign key (maison_id) references maison(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Utilisateur(
-	id int,
+CREATE TABLE utilisateur(
+	id int NOT NULL AUTO_INCREMENT,
     sexe char(1) NOT NULL,
     avs int NOT NULL UNIQUE,
     naissance DATE NOT NULL,
@@ -44,178 +44,178 @@ CREATE TABLE Utilisateur(
     primary key (id)
 );
 
-CREATE TABLE Utilisateur_Prenom(
+CREATE TABLE utilisateur_prenom(
 	utilisateur_id int NOT NULL,
     prenom varchar(64) NOT NULL,
     
     primary key (utilisateur_id, prenom),
-    constraint fk__Utilisateur_Prenom_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade
+    constraint fk__utilisateur_prenom_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Utilisateur_Nom(
+CREATE TABLE utilisateur_nom(
 	utilisateur_id int NOT NULL,
     nom varchar(64) NOT NULL,
     
     primary key (utilisateur_id, nom),
-    constraint fk__Utilisateur_Nom_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade
+    constraint fk__utilisateur_nom_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Visiteur(
+CREATE TABLE visiteur(
 	utilisateur_id int,
     date_arrivee DATE NOT NULL,
     date_depart DATE NOT NULL,
     adresse_id int NOT NULL,
     
     primary key(utilisateur_id),
-    constraint fk_Visiteur_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Visiteur_adresse foreign key (adresse_id) references Adresse(id) on delete restrict on update cascade
+    constraint fk_visiteur_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_visiteur_adresse foreign key (adresse_id) references adresse(id) on delete restrict on update cascade
 );
 
-CREATE TABLE Enfant(
+CREATE TABLE enfant(
 	utilisateur_id int,
     adresse_ecole_id int NOT NULL,
     
     primary key(utilisateur_id),
-	constraint fk_Enfant_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Enfant_adresse foreign key (adresse_ecole_id) references Adresse(id) on delete cascade on update cascade
+	constraint fk_enfant_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_enfant_adresse foreign key (adresse_ecole_id) references adresse(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Parent(
+CREATE TABLE parent(
 	utilisateur_id int,
     adresse_job_id int NOT NULL,
     
     primary key(utilisateur_id),
-	constraint fk_Parent_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Parent_adresse foreign key (adresse_job_id) references Adresse(id) on delete restrict on update cascade
+	constraint fk_parent_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_parent_adresse foreign key (adresse_job_id) references adresse(id) on delete restrict on update cascade
 );
 
-CREATE TABLE Proprietaire(
+CREATE TABLE proprietaire(
 	utilisateur_id int,
     adresse_id int NOT NULL,
     
     primary key(utilisateur_id),
-	constraint fk_Proprietaire_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Proprietaire_adresse foreign key (adresse_id) references Adresse(id) on delete restrict on update cascade
+	constraint fk_proprietaire_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_proprietaire_adresse foreign key (adresse_id) references adresse(id) on delete restrict on update cascade
 );
 
-CREATE TABLE Capteur(
-	id int,
+CREATE TABLE capteur(
+	id int NOT NULL AUTO_INCREMENT,
     piece_id int NOT NULL,
     
     primary key(id),
-    constraint fk_Capteur_piece foreign key (piece_id) references Piece(id) on delete cascade on update cascade
+    constraint fk_capteur_piece foreign key (piece_id) references piece(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Presence(
+CREATE TABLE presence(
 	capteur_id int,
     nb_personne int,
     
     primary key(capteur_id),
-    constraint fk_Presence_capteur foreign key (capteur_id) references Capteur(id) on delete cascade on update cascade
+    constraint fk_presence_capteur foreign key (capteur_id) references capteur(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Luxmetre(
+CREATE TABLE luxmetre(
 	capteur_id int,
     nb_lux int,
     
     primary key(capteur_id),
-    constraint fk_Luxmetre_capteur foreign key (capteur_id) references Capteur(id) on delete cascade on update cascade
+    constraint fk_luxmetre_capteur foreign key (capteur_id) references capteur(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Thermometre(
+CREATE TABLE thermometre(
 	capteur_id int,
     degres_celsius int,
     
     primary key(capteur_id),
-    constraint fk_Thermometre_capteur foreign key (capteur_id) references Capteur(id) on delete cascade on update cascade
+    constraint fk_thermometre_capteur foreign key (capteur_id) references capteur(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Anemometre(
+CREATE TABLE anemometre(
 	capteur_id int,
     km_h int,
     
     primary key(capteur_id),
-    constraint fk_Anemometre_capteur foreign key (capteur_id) references Capteur(id) on delete cascade on update cascade
+    constraint fk_anemometre_capteur foreign key (capteur_id) references capteur(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Etat(
-	id int,
+CREATE TABLE etat(
+	id int NOT NULL AUTO_INCREMENT,
     nom varchar(64) NOT NULL UNIQUE,
     
     primary key (id)
 );
 
-CREATE TABLE Objet(
-	id int,
+CREATE TABLE objet(
+	id int NOT NULL AUTO_INCREMENT,
     piece_id int NOT NULL,
     nom varchar(64) NOT NULL,
     date_aquisition DATE,
     etat_id int NOT NULL,
     
     primary key(id),
-    constraint fk_Objet_piece foreign key (piece_id) references Piece(id) on delete cascade on update cascade,
-    constraint fk_Objet_etat foreign key (etat_id) references Etat(id) on delete restrict on update cascade
+    constraint fk_objet_piece foreign key (piece_id) references piece(id) on delete cascade on update cascade,
+    constraint fk_objet_etat foreign key (etat_id) references etat(id) on delete restrict on update cascade
 );
 
-CREATE TABLE Objet_Passif(
+CREATE TABLE objet_passif(
 	objet_id int,
     
     primary key (objet_id),
-    constraint fk_Objet_Passif_objet foreign key (objet_id) references Objet(id) on delete cascade on update cascade
+    constraint fk_objet_passif_objet foreign key (objet_id) references objet(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Objet_Utilisable(
+CREATE TABLE objet_utilisable(
 	objet_id int,
     nb_utilisation int NOT NULL,
     
     primary key (objet_id),
-    constraint fk_Objet_Utilisable_objet foreign key (objet_id) references Objet(id) on delete cascade on update cascade
+    constraint fk_objet_utilisable_objet foreign key (objet_id) references objet(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Consommation(
+CREATE TABLE consommation(
 	objet_id int,
-    id int,
+    id int NOT NULL AUTO_INCREMENT,
     nom varchar(64) NOT NULL,
     quantite int,
     
-    primary key (objet_id, id),
-    constraint fk_Consommation_objet foreign key (objet_id) references Objet(id) on delete cascade on update cascade
+    primary key (id),
+    constraint fk_consommation_objet foreign key (objet_id) references objet(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Hist_Deplacement(
+CREATE TABLE hist_deplacement(
 	utilisateur_id int,
     presence_id int,
     date_entree DATETIME NOT NULL,
     date_sortie DATETIME NOT NULL,
     
-    constraint fk_Hist_Deplacement_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Hist_Deplacement_presence foreign key (presence_id) references Presence(capteur_id) on delete cascade on update cascade
+    constraint fk_hist_deplacement_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_hist_deplacement_presence foreign key (presence_id) references presence(capteur_id) on delete cascade on update cascade
 );
 
-CREATE TABLE Hist_Utilisation(
+CREATE TABLE hist_utilisation(
 	utilisateur_id int,
     objet_id int,
     date_debut DATETIME NOT NULL,
     date_fin DATETIME NOT NULL,
     
-    constraint fk_Hist_Utilisation_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Hist_Utilisation_objet foreign key (objet_id) references Objet(id) on delete cascade on update cascade
+    constraint fk_hist_utilisation_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_hist_utilisation_objet foreign key (objet_id) references objet(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Droit_Entree(
+CREATE TABLE droit_entree(
 	utilisateur_id int,
     piece_id int,
     
     primary key (utilisateur_id, piece_id),
-    constraint fk_Droit_Entree_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Droit_Entree_piece foreign key (piece_id) references Piece(id) on delete cascade on update cascade
+    constraint fk_droit_entree_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_droit_entree_piece foreign key (piece_id) references piece(id) on delete cascade on update cascade
 );
 
-CREATE TABLE Droit_Utilisation(
+CREATE TABLE droit_utilisation(
 	utilisateur_id int,
     objet_id int,
     
     primary key (utilisateur_id, objet_id),
-    constraint fk_Droit_Utilisation_utilisateur foreign key (utilisateur_id) references Utilisateur(id) on delete cascade on update cascade,
-    constraint fk_Droit_Utilisation_objet foreign key (objet_id) references Objet(id) on delete cascade on update cascade
+    constraint fk_droit_utilisation_utilisateur foreign key (utilisateur_id) references utilisateur(id) on delete cascade on update cascade,
+    constraint fk_droit_utilisation_objet foreign key (objet_id) references objet(id) on delete cascade on update cascade
 );

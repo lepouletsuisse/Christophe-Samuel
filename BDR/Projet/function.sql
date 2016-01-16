@@ -37,6 +37,3 @@ select count(*) into nombre from
 return nombre;
 end; //
 DELIMITER ;
-
-insert into hist_utilisation values(1,1, now(), now());
-select countUse(1,1);
