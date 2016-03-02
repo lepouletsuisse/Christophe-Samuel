@@ -1,0 +1,436 @@
+*entscheidungsproblem
+
+*herbrand
+2:herb rand
+2:her brand
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*boolos
+2:bool os
+2:boo los
+4:obolos
+1:bools
+1:bolos
+
+*boolos
+2:bool os
+2:boo los
+4:obolos
+1:bools
+1:bolos
+
+*authors'
+4:author's
+1:authors
+
+*employees'
+4:employee's
+1:employees
+
+*students'
+4:student's
+1:students
+
+*'elegant
+3:delegant
+1:elegant
+
+*'elegant'
+
+*computors
+3:computers
+
+*computor
+3:computer
+3:compotor
+
+*melzak's
+2:mel zak's
+
+*lambek's
+3:lamber's
+
+*lambek's
+3:lamber's
+
+*melzak
+2:mel zak
+
+*lambek
+3:lambes
+3:lamber
+3:lambed
+
+*computor
+3:computer
+3:compotor
+
+*computor
+3:computer
+3:compotor
+
+*computor
+3:computer
+3:compotor
+
+*computor
+3:computer
+3:compotor
+
+*emde
+2:em de
+2:e mde
+4:mede
+4:edme
+3:emda
+3:emie
+3:emee
+3:eyde
+3:erde
+3:ende
+3:eide
+3:eade
+1:eme
+1:ede
+1:mde
+2:emden
+2:remde
+2:emyde
+
+*tausworthe
+
+*jacopini
+2:jaco pini
+
+*jacopini
+2:jaco pini
+
+*largestnumber
+2:largest number
+
+*numbers'
+4:number's
+1:numbers
+2:numbers's
+
+*nicomachus'
+
+*nicomachus'
+
+*nichomachus'
+
+*tausworthe
+
+*throughs
+2:through s
+2:thro ughs
+2:th roughs
+1:through
+1:troughs
+2:thoroughs
+
+*'effort'
+
+*algorithmics
+2:algorithmic s
+2:algorithm ics
+1:algorithmic
+
+*parallelizable
+
+*warshall
+2:wars hall
+2:war shall
+3:parshall
+3:marshall
+
+*memoization
+2:memorization
+
+*memoization
+2:memorization
+
+*memoization
+2:memorization
+
+*memoization
+2:memorization
+
+*kruskal
+2:kru skal
+
+*sollin
+2:soll in
+2:sol lin
+3:sollie
+3:solein
+3:rollin
+3:hollin
+3:gollin
+3:dollin
+3:collin
+
+*'generic'
+
+*zpp
+2:z pp
+3:zpg
+3:zip
+3:zep
+3:zap
+3:spp
+3:ppp
+3:opp
+3:npp
+3:mpp
+3:lpp
+3:fpp
+3:epp
+3:dpp
+3:cpp
+3:app
+1:pp
+
+*hypercomputation
+2:hyper computation
+
+*diehr
+2:die hr
+2:di ehr
+3:diehl
+1:dier
+
+*unisys'
+
+*lzw
+2:lz w
+3:lpw
+3:low
+3:lew
+3:lbw
+3:law
+1:lz
+1:lw
+
+*khwarithmi
+
+*khwarezm
+
+*algoritmi
+
+*indorum
+
+*algoritmi
+
+*algoritmi
+
+*algorismus
+2:algorism us
+3:algorism's
+1:algorisms
+
+*algorithme
+2:algorithm e
+3:algorithms
+1:algorithm
+
+*dilson
+2:dil son
+3:dillon
+3:wilson
+3:nilson
+3:milson
+3:gilson
+
+*babbage's
+2:babb age's
+2:bab bage's
+3:cabbage's
+
+*babbage's
+2:babb age's
+2:bab bage's
+3:cabbage's
+
+*jevons'
+4:jevon's
+1:jevons
+
+*karnaugh
+2:karna ugh
+2:karn augh
+
+*jevons's
+2:jevon s's
+1:jevon's
+2:jeavons's
+
+*baudot
+2:baud ot
+2:bau dot
+3:bardot
+
+*stibitz
+
+*burdensome'
+1:burdensome
+
+*stibitz
+
+*gottlob
+2:gott lob
+
+*heijenoort
+
+*'formula
+1:formula
+
+*language'
+3:languages
+3:languaged
+1:language
+2:language's
+
+*characterica
+2:character ica
+2:charact erica
+2:characterical
+
+*mathematica
+2:mathematic a
+3:mathematics
+1:mathematic
+2:mathematical
+
+*burali
+2:bura li
+2:bur ali
+2:b urali
+3:ourali
+1:urali
+
+*forti
+2:fort i
+2:for ti
+2:fo rti
+3:forty
+3:forts
+3:forth
+3:forte
+3:forta
+3:forli
+3:foeti
+3:corti
+1:fort
+2:fortin
+2:fortis
+
+*entscheidungsproblem
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*herbrand
+2:herb rand
+2:her brand
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*entscheidungsproblem
+
+*entscheidungsproblem
+
+*kleene's
+2:klee ne's
+1:keene's
+2:kleenex's
+
+*kleene's
+2:klee ne's
+1:keene's
+2:kleenex's
+
+*stibitz
+
+*stibitz
+
+*'mechanical'
+
+*'simple
+1:simple
+
+*operations'
+4:operation's
+1:operations
+
+*herbrand
+2:herb rand
+2:her brand
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*'effective
+1:effective
+
+*method'
+3:methody
+3:methods
+1:method
+2:method's
+
+*'effective
+1:effective
+
+*method'
+3:methody
+3:methods
+1:method
+2:method's
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*herbrand
+2:herb rand
+2:her brand
+
+*mathematica
+2:mathematic a
+3:mathematics
+1:mathematic
+2:mathematical
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
+*kleene
+2:klee ne
+1:keene
+2:kleenex
+
