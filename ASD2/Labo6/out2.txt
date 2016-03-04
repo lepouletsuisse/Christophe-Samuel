@@ -1,0 +1,6283 @@
+*gutenberg's
+2: guttenberg's
+
+*boscombe
+2: bos combe
+
+*trepoff
+
+*'g'
+
+*'t'
+
+*'gesellschaft
+1: gesellschaft
+
+*'company
+1: company
+
+*'co
+1: co
+3: aco
+3: dco
+3: eco
+3: fco
+3: nco
+3: oco
+3: pco
+3: rco
+3: sco
+3: vco
+
+*'p
+1: p
+3: ap
+3: bp
+3: cp
+3: dp
+3: ep
+3: fp
+3: gp
+3: hp
+3: ip
+3: jp
+3: kp
+3: lp
+3: mp
+3: np
+3: op
+3: pp
+3: qp
+3: rp
+3: sp
+3: tp
+3: up
+3: vp
+3: wp
+3: xp
+3: yp
+
+*'papier
+1: papier
+
+*'eg
+1: eg
+3: beg
+3: deg
+3: eeg
+3: jeg
+3: keg
+3: leg
+3: meg
+3: neg
+3: peg
+3: reg
+3: seg
+3: teg
+3: veg
+
+*eglow
+2: reglow
+1: glow
+3: aglow
+3: eglon
+2: e glow
+2: eg low
+
+*eglonitz
+
+*egria
+2: egeria
+1: eria
+3: agria
+3: egrid
+2: eg ria
+
+*'remarkable
+1: remarkable
+
+*'this
+1: this
+
+*horses'
+1: horses
+4: horse's
+
+*kramm
+1: kram
+3: dramm
+3: krama
+3: krams
+2: kra mm
+2: kram m
+
+*ormstein
+3: ortstein
+2: orm stein
+
+*gottsreich
+
+*ormstein
+3: ortstein
+2: orm stein
+
+*felstein
+2: feldstein
+
+*lothman
+1: othman
+1: lohman
+3: lothian
+2: l othman
+2: loth man
+
+*meningen
+3: meninges
+2: mening en
+
+*kramm
+1: kram
+3: dramm
+3: krama
+3: krams
+2: kra mm
+2: kram m
+
+*'drive
+1: drive
+
+*'first
+1: first
+
+*edgeware
+2: edge ware
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'thank
+1: thank
+
+*'you'll
+1: you'll
+
+*'what
+1: what
+
+*'come
+1: come
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*edgeware
+2: edge ware
+
+*arnsworth
+2: farnsworth
+3: ainsworth
+
+*irene's
+2: eirene's
+2: pirene's
+2: sirene's
+1: rene's
+1: iene's
+3: arene's
+3: ilene's
+3: irena's
+4: ierne's
+2: i rene's
+2: ir ene's
+2: ire ne's
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*fishes'
+1: fishes
+
+*'omne
+3: somne
+
+*ignotum
+3: ignotus
+2: ig notum
+
+*ezekiah
+2: hezekiah
+2: ezek iah
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'why
+1: why
+
+*'why
+1: why
+
+*'here's
+1: here's
+3: chere's
+3: shere's
+3: there's
+3: where's
+
+*wits'
+2: wits's
+1: wits
+4: wit's
+
+*'why
+1: why
+
+*'have
+1: have
+3: bhave
+3: chave
+3: shave
+3: thave
+
+*'never
+1: never
+
+*'why
+1: why
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'tell
+1: tell
+3: stell
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'you
+1: you
+
+*ezekiah
+2: hezekiah
+2: ezek iah
+
+*'but
+1: but
+3: abut
+
+*'there
+1: there
+
+*'not
+1: not
+3: knot
+3: snot
+
+*'you
+1: you
+
+*'this
+1: this
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'he
+1: he
+3: ahe
+3: che
+3: mhe
+3: rhe
+3: she
+3: the
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'you
+1: you
+
+*'there
+1: there
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'my
+1: my
+3: amy
+
+*'is
+1: is
+3: ais
+3: bis
+3: cis
+3: dis
+3: eis
+3: gis
+3: his
+3: jis
+3: lis
+3: mis
+3: nis
+3: ois
+3: pis
+3: qis
+3: sis
+3: tis
+3: uis
+3: vis
+3: wis
+3: xis
+3: yis
+4: i's
+
+*'dear
+1: dear
+
+*'that
+1: that
+
+*'in
+1: in
+3: ain
+3: bin
+3: din
+3: ein
+3: fin
+3: gin
+3: hin
+3: iin
+3: jin
+3: kin
+3: lin
+3: min
+3: pin
+3: rin
+3: sin
+3: tin
+3: vin
+3: win
+3: yin
+3: zin
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'what
+1: what
+
+*'ten
+1: ten
+3: aten
+3: eten
+3: iten
+3: kten
+3: sten
+
+*'that
+1: that
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'is
+1: is
+3: ais
+3: bis
+3: cis
+3: dis
+3: eis
+3: gis
+3: his
+3: jis
+3: lis
+3: mis
+3: nis
+3: ois
+3: pis
+3: qis
+3: sis
+3: tis
+3: uis
+3: vis
+3: wis
+3: xis
+3: yis
+4: i's
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'is
+1: is
+3: ais
+3: bis
+3: cis
+3: dis
+3: eis
+3: gis
+3: his
+3: jis
+3: lis
+3: mis
+3: nis
+3: ois
+3: pis
+3: qis
+3: sis
+3: tis
+3: uis
+3: vis
+3: wis
+3: xis
+3: yis
+4: i's
+
+*'what
+1: what
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'it's
+1: it's
+3: ait's
+3: bit's
+3: dit's
+3: fit's
+3: git's
+3: hit's
+3: jit's
+3: kit's
+3: lit's
+3: mit's
+3: nit's
+3: oit's
+3: pit's
+3: tit's
+3: wit's
+3: zit's
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'neither
+1: neither
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'is
+1: is
+3: ais
+3: bis
+3: cis
+3: dis
+3: eis
+3: gis
+3: his
+3: jis
+3: lis
+3: mis
+3: nis
+3: ois
+3: pis
+3: qis
+3: sis
+3: tis
+3: uis
+3: vis
+3: wis
+3: xis
+3: yis
+4: i's
+
+*'certainly
+1: certainly
+
+*'then
+1: then
+
+*'encyclopaedia
+1: encyclopaedia
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'what
+1: what
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'his
+1: his
+3: chis
+3: ghis
+3: khis
+3: phis
+3: this
+
+*'where
+1: where
+3: owhere
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*sarasate
+2: sara sate
+
+*aldersgate
+2: alders gate
+
+*mortimer's
+3: morticer's
+3: mortiser's
+2: mor timer's
+2: mort imer's
+
+*mcfarlane's
+2: macfarlane's
+1: mcfarlan's
+3: mcfarland's
+2: mcfarlan e's
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*sholto
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*merryweather
+2: merry weather
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*'sir'
+
+*'please
+1: please
+
+*merryweather
+2: merry weather
+
+*'encyclopaedia
+1: encyclopaedia
+
+*'l'homme
+
+*c'est
+1: cest
+3: chest
+3: crest
+
+*rien
+2: risen
+2: ripen
+2: riven
+2: brien
+2: urien
+2: riden
+1: ien
+1: ren
+1: rin
+1: rie
+3: bien
+3: gien
+3: lien
+3: mien
+3: pien
+3: sien
+3: tien
+3: wien
+3: reen
+3: rgen
+3: ruen
+3: ryen
+3: rijn
+3: rion
+3: riel
+3: riem
+3: rier
+3: ries
+4: rein
+4: rine
+2: r ien
+2: ri en
+2: rie n
+
+*l'oeuvre
+3: d'oeuvre
+
+*c'est
+1: cest
+3: chest
+3: crest
+
+*'a
+1: a
+3: aa
+3: ba
+3: ca
+3: da
+3: ea
+3: fa
+3: ga
+3: ha
+3: ia
+3: ja
+3: ka
+3: la
+3: ma
+3: na
+3: oa
+3: pa
+3: qa
+3: ra
+3: sa
+3: ta
+3: ua
+3: va
+3: wa
+3: xa
+3: ya
+3: za
+
+*coeur
+2: coleur
+1: cour
+1: coer
+3: coeus
+2: co eur
+2: coe ur
+
+*windibank
+
+*windibank
+
+*windibank
+
+*gasfitters'
+
+*windibank
+
+*windibank
+
+*gasfitters'
+
+*leadenhall
+2: leaden hall
+
+*leadenhall
+2: leaden hall
+
+*leadenhall
+2: leaden hall
+
+*windibank
+
+*pancras
+2: pancreas
+2: pan cras
+
+*westhouse
+3: pesthouse
+3: resthouse
+2: wes thouse
+2: west house
+
+*marbank
+1: mabank
+2: mar bank
+
+*fenchurch
+1: enchurch
+2: f enchurch
+2: fen church
+
+*'pon
+1: pon
+3: upon
+
+*typewritist
+
+*pince
+2: prince
+2: pincer
+2: pinche
+1: pnce
+1: pice
+1: pine
+3: mince
+3: since
+3: vince
+3: wince
+3: yince
+3: pance
+3: pence
+3: ponce
+3: punce
+3: piece
+3: pinge
+3: pinte
+3: pinch
+2: pi nce
+2: pin ce
+
+*nez
+2: inez
+2: ynez
+2: knez
+1: ez
+1: nz
+1: ne
+3: bez
+3: fez
+3: gez
+3: jez
+3: lez
+3: mez
+3: rez
+3: sez
+3: tez
+3: nrz
+3: nea
+3: neb
+3: nec
+3: ned
+3: nee
+3: nef
+3: neg
+3: neh
+3: nei
+3: nek
+3: nel
+3: neo
+3: nep
+3: nes
+3: net
+3: neu
+3: nev
+3: new
+3: ney
+2: n ez
+2: ne z
+
+*leadenhall
+2: leaden hall
+
+*'hosmer
+1: hosmer
+
+*angel'
+2: angel's
+1: angel
+3: angela
+3: angele
+3: angeli
+3: angell
+3: angelo
+3: angels
+
+*leadenhall
+2: leaden hall
+
+*windibank
+
+*nouement
+
+*windibank
+
+*windibank
+
+*windibank
+
+*windibank
+
+*'e
+1: e
+3: ae
+3: be
+3: ce
+3: de
+3: ee
+3: fe
+3: ge
+3: he
+3: ie
+3: je
+3: ke
+3: le
+3: me
+3: ne
+3: oe
+3: pe
+3: qe
+3: re
+3: se
+3: te
+3: ve
+3: we
+3: xe
+3: ye
+
+*'r
+1: r
+3: ar
+3: br
+3: cr
+3: dr
+3: er
+3: fr
+3: gr
+3: hr
+3: ir
+3: jr
+3: kr
+3: lr
+3: mr
+3: nr
+3: or
+3: pr
+3: qr
+3: rr
+3: sr
+3: tr
+3: ur
+3: vr
+3: wr
+3: xr
+3: yr
+3: zr
+
+*windibank
+
+*'e's'
+
+*'r's'
+
+*windibank
+
+*windibank
+
+*windibank
+
+*windibank
+
+*windibank
+
+*windibank
+
+*windibank
+
+*westhouse
+3: pesthouse
+3: resthouse
+2: wes thouse
+2: west house
+
+*marbank
+1: mabank
+2: mar bank
+
+*fenchurch
+1: enchurch
+2: f enchurch
+2: fen church
+
+*windibank
+
+*voil
+2: voile
+1: oil
+1: vil
+1: vol
+3: boil
+3: coil
+3: foil
+3: koil
+3: moil
+3: noil
+3: poil
+3: roil
+3: soil
+3: toil
+3: vail
+3: veil
+3: vril
+3: void
+3: voir
+3: vois
+4: viol
+2: v oil
+2: vo il
+
+*'there
+1: there
+
+*boscombe
+2: bos combe
+
+*boscombe
+2: bos combe
+
+*anstruther
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*boscombe
+2: bos combe
+
+*hatherley
+
+*mccarthys
+1: mccarthy
+2: mccarthy s
+
+*hatherley
+
+*boscombe
+2: bos combe
+
+*boscombe
+2: bos combe
+
+*hatherley
+
+*boscombe
+2: bos combe
+
+*mccarthys
+1: mccarthy
+2: mccarthy s
+
+*boscombe
+2: bos combe
+
+*boscombe
+2: bos combe
+
+*mccarthys
+1: mccarthy
+2: mccarthy s
+
+*boscombe
+2: bos combe
+
+*'wilful
+1: wilful
+
+*murder'
+2: murder's
+1: murder
+3: murders
+
+*hatherley
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*boscombe
+2: bos combe
+
+*hatherley
+
+*'cooee'
+
+*'do
+1: do
+3: ado
+3: cdo
+3: edo
+3: ido
+3: odo
+3: sdo
+3: tdo
+3: udo
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'you
+1: you
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'how
+1: how
+3: chow
+3: dhow
+3: jhow
+3: show
+3: thow
+3: whow
+
+*'a
+1: a
+3: aa
+3: ba
+3: ca
+3: da
+3: ea
+3: fa
+3: ga
+3: ha
+3: ia
+3: ja
+3: ka
+3: la
+3: ma
+3: na
+3: oa
+3: pa
+3: qa
+3: ra
+3: sa
+3: ta
+3: ua
+3: va
+3: wa
+3: xa
+3: ya
+3: za
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'about
+1: about
+
+*'then
+1: then
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*minutes'
+1: minutes
+3: minutest
+4: minute's
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*mccarthy's
+2: maccarthy's
+1: mccarty's
+2: mc carthy's
+
+*'cooee
+1: cooee
+
+*hatherley
+
+*boscombe
+2: bos combe
+
+*mccarthy's
+2: maccarthy's
+1: mccarty's
+2: mc carthy's
+
+*hatherley
+
+*hatherley
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*boscombe
+2: bos combe
+
+*boscombe
+2: bos combe
+
+*boscombe
+2: bos combe
+
+*hatherley
+
+*hatherley
+
+*mccarthy's
+2: maccarthy's
+1: mccarty's
+2: mc carthy's
+
+*verrons
+3: perrons
+
+*mccarthy's
+2: maccarthy's
+1: mccarty's
+2: mc carthy's
+
+*'cooee
+1: cooee
+
+*'cooee
+1: cooee
+
+*'cooee
+1: cooee
+
+*'cooee'
+
+*boscombe
+2: bos combe
+
+*arat
+2: carat
+2: karat
+2: marat
+2: arhat
+2: arati
+2: barat
+2: darat
+1: rat
+1: art
+1: ara
+3: brat
+3: drat
+3: erat
+3: frat
+3: grat
+3: prat
+3: trat
+3: adat
+3: amat
+3: anat
+3: asat
+3: atat
+3: awat
+3: aret
+3: arst
+3: arab
+3: arad
+3: arae
+3: arak
+3: aral
+3: aram
+3: aran
+3: arar
+3: aras
+4: arta
+2: a rat
+2: ar at
+2: ara t
+
+*'s
+2: a's
+2: j's
+2: l's
+2: m's
+2: r's
+2: x's
+2: z's
+2: b's
+2: c's
+2: d's
+2: e's
+2: f's
+2: g's
+2: h's
+2: i's
+2: k's
+2: n's
+2: o's
+2: p's
+2: s's
+2: t's
+2: u's
+2: v's
+2: w's
+2: y's
+2: q's
+1: s
+3: as
+3: bs
+3: cs
+3: ds
+3: es
+3: fs
+3: gs
+3: hs
+3: is
+3: js
+3: ks
+3: ls
+3: ms
+3: ns
+3: os
+3: ps
+3: qs
+3: rs
+3: ss
+3: ts
+3: us
+3: vs
+3: ws
+3: xs
+3: ys
+3: zs
+
+*'here
+1: here
+3: chere
+3: shere
+3: there
+3: where
+
+*'we'll
+1: we'll
+
+*'there
+1: there
+
+*paradol
+1: parado
+3: panadol
+3: parasol
+3: parador
+3: parados
+3: paradox
+2: para dol
+2: parado l
+
+*patersons
+1: paterson
+2: pater sons
+2: paters ons
+2: paterson s
+
+*uffa
+2: luffa
+2: buffa
+1: ffa
+1: ufa
+3: affa
+3: offa
+3: urfa
+2: u ffa
+
+*pince
+2: prince
+2: pincer
+2: pinche
+1: pnce
+1: pice
+1: pine
+3: mince
+3: since
+3: vince
+3: wince
+3: yince
+3: pance
+3: pence
+3: ponce
+3: punce
+3: piece
+3: pinge
+3: pinte
+3: pinch
+2: pi nce
+2: pin ce
+
+*nez
+2: inez
+2: ynez
+2: knez
+1: ez
+1: nz
+1: ne
+3: bez
+3: fez
+3: gez
+3: jez
+3: lez
+3: mez
+3: rez
+3: sez
+3: tez
+3: nrz
+3: nea
+3: neb
+3: nec
+3: ned
+3: nee
+3: nef
+3: neg
+3: neh
+3: nei
+3: nek
+3: nel
+3: neo
+3: nep
+3: nes
+3: net
+3: neu
+3: nev
+3: new
+3: ney
+2: n ez
+2: ne z
+
+*tankerville
+2: tanker ville
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*'from
+1: from
+
+*'pondicherry
+1: pondicherry
+
+*'k
+1: k
+3: ak
+3: bk
+3: ck
+3: dk
+3: gk
+3: hk
+3: ik
+3: mk
+3: ok
+3: pk
+3: sk
+3: tk
+3: uk
+3: wk
+3: zk
+
+*'my
+1: my
+3: amy
+
+*'what
+1: what
+
+*'death
+1: death
+3: sdeath
+
+*'they
+1: they
+3: athey
+
+*'tell
+1: tell
+3: stell
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'to
+1: to
+3: ato
+3: bto
+3: cto
+3: eto
+3: gto
+3: ito
+3: mto
+3: nto
+3: oto
+3: pto
+3: qto
+3: vto
+
+*'suicide
+1: suicide
+
+*'letters
+1: letters
+
+*register'
+2: register's
+1: register
+3: registers
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*'why
+1: why
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'so
+1: so
+3: aso
+3: bso
+3: cso
+3: dso
+3: eso
+3: iso
+3: mso
+3: nso
+3: oso
+3: pso
+3: qso
+3: sso
+3: tso
+3: uso
+3: vso
+3: yso
+
+*'here
+1: here
+3: chere
+3: shere
+3: there
+3: where
+
+*'put
+1: put
+3: sput
+
+*'what
+1: what
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'but
+1: but
+3: abut
+
+*'pooh
+1: pooh
+
+*'we
+1: we
+3: awe
+3: ewe
+3: lwe
+3: owe
+3: rwe
+
+*'from
+1: from
+
+*'some
+1: some
+
+*'what
+1: what
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'then
+1: then
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*freebody
+2: free body
+
+*portsdown
+3: portadown
+2: ports down
+
+*'death
+1: death
+3: sdeath
+
+*'k
+1: k
+3: ak
+3: bk
+3: ck
+3: dk
+3: gk
+3: hk
+3: ik
+3: mk
+3: ok
+3: pk
+3: sk
+3: tk
+3: uk
+3: wk
+3: zk
+
+*'put
+1: put
+3: sput
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*paramore
+3: paramere
+2: para more
+2: param ore
+2: paramo re
+
+*paramore
+3: paramere
+2: para more
+2: param ore
+2: paramo re
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*sholtos
+
+*'american
+1: american
+
+*encyclopaedia'
+2: encyclopaedia's
+1: encyclopaedia
+3: encyclopaediac
+3: encyclopaedial
+3: encyclopaedian
+3: encyclopaedias
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*'ku
+1: ku
+3: aku
+3: pku
+3: sku
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*'sent
+1: sent
+3: msent
+3: usent
+
+*c'
+2: c's
+1: c
+3: ca
+3: cb
+3: cc
+3: cd
+3: ce
+3: cf
+3: cg
+3: ch
+3: ci
+3: cj
+3: ck
+3: cl
+3: cm
+3: cn
+3: co
+3: cp
+3: cq
+3: cr
+3: cs
+3: ct
+3: cu
+3: cv
+3: cw
+3: cy
+3: cz
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*openshaw's
+2: open shaw's
+2: opens haw's
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*'tragedy
+1: tragedy
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*'lone
+1: lone
+3: alone
+3: clone
+3: ilone
+3: slone
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*'lone
+1: lone
+3: alone
+3: clone
+3: ilone
+3: slone
+
+*'lone
+1: lone
+3: alone
+3: clone
+3: ilone
+3: slone
+
+*star'
+2: star's
+1: star
+3: stare
+3: stark
+3: starn
+3: starr
+3: stars
+3: start
+3: starw
+3: stary
+
+*'lone
+1: lone
+3: alone
+3: clone
+3: ilone
+3: slone
+
+*star'
+2: star's
+1: star
+3: stare
+3: stark
+3: starn
+3: starr
+3: stars
+3: start
+3: starw
+3: stary
+
+*goodwins
+2: goodwin's
+1: goodwin
+3: goodwine
+2: good wins
+2: goodwin s
+
+*openshaw
+2: open shaw
+2: opens haw
+
+*swandam
+2: swan dam
+
+*swandam
+2: swan dam
+
+*d'you
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*horses'
+1: horses
+4: horse's
+
+*'pon
+1: pon
+3: upon
+
+*swandam
+2: swan dam
+
+*swandam
+2: swan dam
+
+*swandam
+2: swan dam
+
+*threadneedle
+2: thread needle
+
+*soie
+2: sofie
+2: sosie
+2: sotie
+1: oie
+1: sie
+1: soe
+3: joie
+3: zoie
+3: spie
+3: stie
+3: soce
+3: soke
+3: sole
+3: some
+3: sone
+3: sope
+3: sore
+3: soil
+3: soir
+2: s oie
+2: so ie
+
+*'dearest
+1: dearest
+
+*swandam
+2: swan dam
+
+*swandam
+2: swan dam
+
+*swandam
+2: swan dam
+
+*goodge
+1: goode
+3: noodge
+3: goodie
+2: good ge
+
+*'for
+1: for
+
+*baker'
+2: baker's
+1: baker
+3: bakers
+3: bakery
+
+*'h
+1: h
+3: ah
+3: bh
+3: ch
+3: dh
+3: eh
+3: gh
+3: hh
+3: lh
+3: mh
+3: nh
+3: oh
+3: ph
+3: qh
+3: rh
+3: sh
+3: th
+3: uh
+3: wh
+
+*morcar's
+1: morar's
+3: mortar's
+2: mor car's
+
+*morcar
+1: morar
+3: mortar
+2: mor car
+
+*morcar
+1: morar
+3: mortar
+2: mor car
+
+*ryder's
+2: rydder's
+1: ryde's
+3: cyder's
+3: rider's
+3: ruder's
+3: ryter's
+2: ry der's
+2: ryde r's
+
+*'found
+1: found
+3: rfound
+
+*goodge
+1: goode
+3: noodge
+3: goodie
+2: good ge
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*disjecta
+1: disject
+3: disjects
+2: disject a
+
+*membra
+2: membral
+3: cembra
+2: mem bra
+
+*windigate
+
+*doctors'
+1: doctors
+4: doctor's
+
+*wimpole
+1: wimple
+2: wim pole
+2: wimp ole
+
+*wigmore
+3: wilmore
+2: wig more
+
+*years'
+1: years
+4: year's
+
+*endell
+2: wendell
+2: kendell
+2: bendell
+3: encell
+2: en dell
+2: end ell
+2: ende ll
+
+*'where
+1: where
+3: owhere
+
+*'who
+1: who
+
+*'what
+1: what
+
+*d'you
+
+*d'you
+
+*oakshott
+2: oak shott
+
+*brixton
+1: briton
+3: braxton
+3: broxton
+3: britton
+2: brix ton
+
+*'mrs
+1: mrs
+3: tmrs
+3: vmrs
+
+*oakshott
+2: oak shott
+
+*brixton
+1: briton
+3: braxton
+3: broxton
+3: britton
+2: brix ton
+
+*'december
+1: december
+
+*'sold
+1: sold
+
+*windigate
+
+*'pink
+1: pink
+3: spink
+
+*'un'
+
+*oakshott
+2: oak shott
+
+*oakshott
+2: oak shott
+
+*oakshott
+2: oak shott
+
+*proosia
+2: proo sia
+2: proos ia
+
+*brixton
+1: briton
+3: braxton
+3: broxton
+3: britton
+2: brix ton
+
+*oakshott
+2: oak shott
+
+*brixton
+1: briton
+3: braxton
+3: broxton
+3: britton
+2: brix ton
+
+*windigate
+
+*unclaspings
+1: unclasping
+2: un claspings
+2: unclasping s
+
+*morcar's
+1: morar's
+3: mortar's
+2: mor car's
+
+*oakshott
+2: oak shott
+
+*brixton
+1: briton
+3: braxton
+3: broxton
+3: britton
+2: brix ton
+
+*brixton
+1: briton
+3: braxton
+3: broxton
+3: britton
+2: brix ton
+
+*maudsley
+1: audsley
+3: maudslay
+2: m audsley
+2: maud sley
+2: mauds ley
+
+*pentonville
+3: bentonville
+
+*kilburn
+3: lilburn
+3: milburn
+3: wilburn
+2: kil burn
+
+*kilburn
+3: lilburn
+3: milburn
+3: wilburn
+2: kil burn
+
+*'whatever
+1: whatever
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'you
+1: you
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'we've
+1: we've
+
+*'thank
+1: thank
+
+*'but
+1: but
+3: abut
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'never
+1: never
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'which
+1: which
+
+*'that
+1: that
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*kilburn
+3: lilburn
+3: milburn
+3: wilburn
+2: kil burn
+
+*'where
+1: where
+3: owhere
+
+*'gone
+1: gone
+3: agone
+
+*'which
+1: which
+
+*'breckinridge
+1: breckinridge
+
+*'but
+1: but
+3: abut
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*roylotts
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott
+2: roy lott
+
+*farintosh
+2: far intosh
+
+*farintosh
+2: far intosh
+
+*roylotts
+
+*roylott
+2: roy lott
+
+*roylott
+2: roy lott
+
+*roylott
+2: roy lott
+
+*roylott
+2: roy lott
+
+*westphail
+1: westphal
+2: west phail
+
+*roylott's
+2: roy lott's
+
+*roylott
+2: roy lott
+
+*'tell
+1: tell
+3: stell
+
+*'have
+1: have
+3: bhave
+3: chave
+3: shave
+3: thave
+
+*'never
+1: never
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'certainly
+1: certainly
+
+*'because
+1: because
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'very
+1: very
+3: avery
+3: every
+
+*'ah
+1: ah
+3: aah
+3: bah
+3: dah
+3: fah
+3: hah
+3: iah
+3: jah
+3: lah
+3: mah
+3: nah
+3: pah
+3: rah
+3: sah
+3: wah
+3: yah
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*roylott's
+2: roy lott's
+
+*roylott
+2: roy lott
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott
+2: roy lott
+
+*doctors'
+1: doctors
+4: doctor's
+
+*eley's
+2: elegy's
+2: edley's
+2: elery's
+2: elsey's
+1: ley's
+1: ele's
+3: aley's
+3: oley's
+3: sley's
+3: evey's
+3: elly's
+3: eloy's
+3: elsy's
+2: e ley's
+2: ele y's
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott
+2: roy lott
+
+*roylott
+2: roy lott
+
+*roylott's
+2: roy lott's
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott's
+2: roy lott's
+
+*roylott
+2: roy lott
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott
+2: roy lott
+
+*roylott's
+2: roy lott's
+
+*goodness'
+2: goodness's
+1: goodness
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*roylott's
+2: roy lott's
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott
+2: roy lott
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott
+2: roy lott
+
+*'band
+1: band
+3: aband
+
+*grimesby
+1: grimsby
+2: grimes by
+
+*roylott's
+2: roy lott's
+
+*hatherley's
+
+*warburton's
+2: war burton's
+
+*dooties
+2: dhooties
+3: booties
+3: cooties
+3: footies
+3: rooties
+3: dhoties
+3: doobies
+3: doodies
+3: doolies
+3: doozies
+2: doo ties
+
+*hatherley
+
+*caraffe
+1: carafe
+2: ca raffe
+
+*hatherley
+
+*'colonel
+1: colonel
+
+*stark'
+1: stark
+3: starke
+3: starks
+3: starky
+
+*'mr
+1: mr
+3: amr
+3: bmr
+3: emr
+3: fmr
+3: nmr
+3: rmr
+3: smr
+3: tmr
+3: vmr
+
+*hatherley
+
+*'you
+1: you
+
+*hatherley
+
+*'may
+1: may
+3: amay
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'that
+1: that
+
+*'but
+1: but
+3: abut
+
+*'undoubtedly
+1: undoubtedly
+
+*'if
+1: if
+3: aif
+3: cif
+3: dif
+3: gif
+3: kif
+3: lif
+3: mif
+3: pif
+3: rif
+3: sif
+3: zif
+
+*'you
+1: you
+
+*'do
+1: do
+3: ado
+3: cdo
+3: edo
+3: ido
+3: odo
+3: sdo
+3: tdo
+3: udo
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'absolute
+1: absolute
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'very
+1: very
+3: avery
+3: every
+
+*'that's
+1: that's
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'my
+1: my
+3: amy
+
+*'how
+1: how
+3: chow
+3: dhow
+3: jhow
+3: show
+3: thow
+3: whow
+
+*'most
+1: most
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'precisely
+1: precisely
+
+*'where
+1: where
+3: owhere
+
+*'to
+1: to
+3: ato
+3: bto
+3: cto
+3: eto
+3: gto
+3: ito
+3: mto
+3: nto
+3: oto
+3: pto
+3: qto
+3: vto
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*'very
+1: very
+3: avery
+3: every
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'there
+1: there
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*'then
+1: then
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'that
+1: that
+
+*'we
+1: we
+3: awe
+3: ewe
+3: lwe
+3: owe
+3: rwe
+
+*'not
+1: not
+3: knot
+3: snot
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'quite
+1: quite
+
+*'entirely
+1: entirely
+
+*'then
+1: then
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'some
+1: some
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'ah
+1: ah
+3: aah
+3: bah
+3: dah
+3: fah
+3: hah
+3: iah
+3: jah
+3: lah
+3: mah
+3: nah
+3: pah
+3: rah
+3: sah
+3: wah
+3: yah
+
+*'we
+1: we
+3: awe
+3: ewe
+3: lwe
+3: owe
+3: rwe
+
+*hatherley
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*'perhaps
+1: perhaps
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'but
+1: but
+3: abut
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'you
+1: you
+
+*'for
+1: for
+
+*'get
+1: get
+3: aget
+
+*'this
+1: this
+
+*'by
+1: by
+3: aby
+3: oby
+
+*'on
+1: on
+3: bon
+3: con
+3: don
+3: eon
+3: fon
+3: gon
+3: hon
+3: ion
+3: jon
+3: kon
+3: lon
+3: mon
+3: non
+3: oon
+3: pon
+3: ron
+3: son
+3: ton
+3: von
+3: won
+3: yon
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'perhaps
+1: perhaps
+
+*'mr
+1: mr
+3: amr
+3: bmr
+3: emr
+3: fmr
+3: nmr
+3: rmr
+3: smr
+3: tmr
+3: vmr
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'what
+1: what
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'we
+1: we
+3: awe
+3: ewe
+3: lwe
+3: owe
+3: rwe
+
+*'actually
+1: actually
+3: factually
+3: tactually
+
+*'what
+1: what
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'very
+1: very
+3: avery
+3: every
+
+*'you
+1: you
+
+*'hullo
+1: hullo
+3: chullo
+
+*'hullo
+1: hullo
+3: chullo
+
+*'come
+1: come
+
+*'they
+1: they
+3: athey
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'fritz
+1: fritz
+
+*'remember
+1: remember
+
+*'you
+1: you
+
+*'you
+1: you
+
+*'lost
+1: lost
+3: alost
+3: glost
+
+*hayling
+1: haling
+1: haying
+3: rayling
+3: hailing
+3: halling
+3: harling
+3: hauling
+2: hay ling
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*hatherley
+
+*eyford
+3: lyford
+3: efford
+2: ey ford
+
+*becher's
+2: belcher's
+2: baecher's
+2: bechler's
+2: brecher's
+2: bencher's
+3: lecher's
+3: blcher's
+3: bucher's
+3: becker's
+3: bechet's
+2: bec her's
+2: beche r's
+
+*hatherley
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*'my
+1: my
+3: amy
+
+*'lord
+1: lord
+
+*'arms
+1: arms
+3: barms
+3: farms
+3: harms
+3: marms
+3: warms
+
+*'a
+1: a
+3: aa
+3: ba
+3: ca
+3: da
+3: ea
+3: fa
+3: ga
+3: ha
+3: ia
+3: ja
+3: ka
+3: la
+3: ma
+3: na
+3: oa
+3: pa
+3: qa
+3: ra
+3: sa
+3: ta
+3: ua
+3: va
+3: wa
+3: xa
+3: ya
+3: za
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'there
+1: there
+
+*westbury
+2: west bury
+
+*birchmoor
+2: birch moor
+
+*petersfield
+2: peters field
+
+*'singular
+1: singular
+
+*wedding'
+2: wedding's
+1: wedding
+3: weddings
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'jumping
+1: jumping
+
+*'you
+1: you
+
+*'oct
+1: oct
+3: coct
+
+*foie
+2: fogie
+2: fosie
+2: foxie
+2: folie
+1: oie
+1: fie
+1: foe
+3: joie
+3: zoie
+3: foge
+3: fole
+3: fone
+3: fore
+3: fose
+3: foxe
+3: foia
+3: foid
+3: foil
+3: foin
+3: foix
+2: f oie
+2: fo ie
+
+*mcquire's
+3: mcguire's
+2: mc quire's
+
+*'frisco
+1: frisco
+
+*'why
+1: why
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*miners'
+1: miners
+4: miner's
+
+*'frisco
+1: frisco
+
+*'frisco
+1: frisco
+
+*'frisco
+1: frisco
+
+*simon's
+2: simone's
+2: simony's
+2: saimon's
+2: simona's
+2: simson's
+2: simeon's
+2: simoon's
+1: sion's
+1: simons
+3: kimon's
+3: limon's
+3: timon's
+3: symon's
+3: sidon's
+3: sihon's
+3: sinon's
+2: si mon's
+2: sim on's
+
+*miners'
+1: miners
+4: miner's
+
+*threadneedle
+2: thread needle
+
+*'mr
+1: mr
+3: amr
+3: bmr
+3: emr
+3: fmr
+3: nmr
+3: rmr
+3: smr
+3: tmr
+3: vmr
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'that
+1: that
+
+*'for
+1: for
+
+*'next
+1: next
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'were
+1: were
+3: twere
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'you
+1: you
+
+*'one
+1: one
+3: bone
+3: cone
+3: done
+3: fone
+3: gone
+3: hone
+3: ione
+3: jone
+3: kone
+3: lone
+3: mone
+3: none
+3: pone
+3: rone
+3: sone
+3: tone
+3: wone
+3: zone
+
+*'precisely
+1: precisely
+
+*'there
+1: there
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'you
+1: you
+
+*'not
+1: not
+3: knot
+3: snot
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'ample
+1: ample
+3: cample
+3: sample
+3: wample
+
+*'you
+1: you
+
+*bankers'
+1: bankers
+4: banker's
+
+*streatham
+1: stratham
+
+*'where
+1: where
+3: owhere
+
+*'in
+1: in
+3: ain
+3: bin
+3: din
+3: ein
+3: fin
+3: gin
+3: hin
+3: iin
+3: jin
+3: kin
+3: lin
+3: min
+3: pin
+3: rin
+3: sin
+3: tin
+3: vin
+3: win
+3: yin
+3: zin
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'look
+1: look
+3: flook
+3: plook
+
+*'can
+1: can
+3: ican
+3: scan
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'you
+1: you
+
+*'but
+1: but
+3: abut
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'you
+1: you
+
+*'tell
+1: tell
+3: stell
+
+*'did
+1: did
+
+*'certainly
+1: certainly
+
+*'she
+1: she
+3: ashe
+3: bshe
+3: mshe
+
+*'you
+1: you
+
+*'quite
+1: quite
+
+*'then
+1: then
+
+*'arthur
+1: arthur
+
+*'you
+1: you
+
+*'you
+1: you
+
+*'you
+1: you
+
+*'stolen
+1: stolen
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'there
+1: there
+
+*'there
+1: there
+
+*'you
+1: you
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'you
+1: you
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'you
+1: you
+
+*'if
+1: if
+3: aif
+3: cif
+3: dif
+3: gif
+3: kif
+3: lif
+3: mif
+3: pif
+3: rif
+3: sif
+3: zif
+
+*'at
+1: at
+3: bat
+3: cat
+3: dat
+3: eat
+3: fat
+3: gat
+3: hat
+3: jat
+3: kat
+3: lat
+3: mat
+3: nat
+3: oat
+3: pat
+3: qat
+3: rat
+3: sat
+3: tat
+3: vat
+3: wat
+3: xat
+3: yat
+3: zat
+
+*'you
+1: you
+
+*'that
+1: that
+
+*'you
+1: you
+
+*'you
+1: you
+
+*'keep
+1: keep
+
+*streatham
+1: stratham
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*tradesmen's
+3: tradesman's
+2: trades men's
+
+*tradesmen's
+3: tradesman's
+2: trades men's
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*o'
+2: o's
+1: o
+3: oa
+3: ob
+3: oc
+3: od
+3: oe
+3: of
+3: og
+3: oh
+3: oi
+3: oj
+3: ok
+3: ol
+3: om
+3: on
+3: oo
+3: op
+3: or
+3: os
+3: ot
+3: ou
+3: ov
+3: ow
+3: ox
+3: oy
+3: oz
+
+*streatham
+1: stratham
+
+*'my
+1: my
+3: amy
+
+*servants'
+1: servants
+4: servant's
+
+*tradesmen's
+3: tradesman's
+2: trades men's
+
+*streatham
+1: stratham
+
+*'why
+1: why
+
+*'i've
+1: i've
+
+*westaway's
+2: west away's
+
+*'that
+1: that
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'you
+1: you
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'as
+1: as
+3: aas
+3: bas
+3: cas
+3: das
+3: eas
+3: fas
+3: gas
+3: has
+3: ias
+3: jas
+3: kas
+3: las
+3: mas
+3: nas
+3: oas
+3: pas
+3: qas
+3: ras
+3: sas
+3: tas
+3: vas
+3: was
+3: yas
+3: zas
+4: a's
+
+*'yes
+1: yes
+3: ayes
+3: byes
+3: dyes
+3: eyes
+3: gyes
+3: hyes
+3: kyes
+3: lyes
+3: nyes
+3: oyes
+3: pyes
+3: ryes
+3: syes
+3: tyes
+3: wyes
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'how
+1: how
+3: chow
+3: dhow
+3: jhow
+3: show
+3: thow
+3: whow
+
+*'my
+1: my
+3: amy
+
+*'a
+1: a
+3: aa
+3: ba
+3: ca
+3: da
+3: ea
+3: fa
+3: ga
+3: ha
+3: ia
+3: ja
+3: ka
+3: la
+3: ma
+3: na
+3: oa
+3: pa
+3: qa
+3: ra
+3: sa
+3: ta
+3: ua
+3: va
+3: wa
+3: xa
+3: ya
+3: za
+
+*'tut
+1: tut
+3: stut
+
+*'this
+1: this
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'to
+1: to
+3: ato
+3: bto
+3: cto
+3: eto
+3: gto
+3: ito
+3: mto
+3: nto
+3: oto
+3: pto
+3: qto
+3: vto
+
+*'may
+1: may
+3: amay
+
+*'hampshire
+1: hampshire
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'one
+1: one
+3: bone
+3: cone
+3: done
+3: fone
+3: gone
+3: hone
+3: ione
+3: jone
+3: kone
+3: lone
+3: mone
+3: none
+3: pone
+3: rone
+3: sone
+3: tone
+3: wone
+3: zone
+
+*'my
+1: my
+3: amy
+
+*'are
+1: are
+3: bare
+3: care
+3: dare
+3: fare
+3: gare
+3: hare
+3: iare
+3: kare
+3: lare
+3: mare
+3: nare
+3: pare
+3: rare
+3: sare
+3: tare
+3: vare
+3: ware
+3: yare
+3: zare
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'your
+1: your
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'quite
+1: quite
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'or
+1: or
+3: aor
+3: bor
+3: cor
+3: dor
+3: for
+3: gor
+3: hor
+3: jor
+3: kor
+3: lor
+3: mor
+3: nor
+3: oor
+3: por
+3: sor
+3: tor
+3: vor
+3: xor
+3: yor
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'or
+1: or
+3: aor
+3: bor
+3: cor
+3: dor
+3: for
+3: gor
+3: hor
+3: jor
+3: kor
+3: lor
+3: mor
+3: nor
+3: oor
+3: por
+3: sor
+3: tor
+3: vor
+3: xor
+3: yor
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*ladies'
+1: ladies
+
+*ladies'
+1: ladies
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'ah
+1: ah
+3: aah
+3: bah
+3: dah
+3: fah
+3: hah
+3: iah
+3: jah
+3: lah
+3: mah
+3: nah
+3: pah
+3: rah
+3: sah
+3: wah
+3: yah
+
+*'do
+1: do
+3: ado
+3: cdo
+3: edo
+3: ido
+3: odo
+3: sdo
+3: tdo
+3: udo
+
+*'if
+1: if
+3: aif
+3: cif
+3: dif
+3: gif
+3: kif
+3: lif
+3: mif
+3: pif
+3: rif
+3: sif
+3: zif
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*'you
+1: you
+
+*'the
+1: the
+3: ethe
+3: othe
+
+*'dear
+1: dear
+
+*jephro
+3: jethro
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*southerton's
+2: souther ton's
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'we
+1: we
+3: awe
+3: ewe
+3: lwe
+3: owe
+3: rwe
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*pertoire
+
+*rucastle
+2: ru castle
+
+*'jephro
+
+*'there
+1: there
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*'dear
+1: dear
+
+*'surely
+1: surely
+
+*'no
+1: no
+3: cno
+3: eno
+3: ino
+3: jno
+3: ono
+3: uno
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*'look
+1: look
+3: flook
+3: plook
+
+*rucastle
+2: ru castle
+
+*'is
+1: is
+3: ais
+3: bis
+3: cis
+3: dis
+3: eis
+3: gis
+3: his
+3: jis
+3: lis
+3: mis
+3: nis
+3: ois
+3: pis
+3: qis
+3: sis
+3: tis
+3: uis
+3: vis
+3: wis
+3: xis
+3: yis
+4: i's
+
+*'don't
+1: don't
+
+*'it's
+1: it's
+3: ait's
+3: bit's
+3: dit's
+3: fit's
+3: git's
+3: hit's
+3: jit's
+3: kit's
+3: lit's
+3: mit's
+3: nit's
+3: oit's
+3: pit's
+3: tit's
+3: wit's
+3: zit's
+
+*goodness'
+2: goodness's
+1: goodness
+
+*rucastles
+2: ru castles
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*'ah
+1: ah
+3: aah
+3: bah
+3: dah
+3: fah
+3: hah
+3: iah
+3: jah
+3: lah
+3: mah
+3: nah
+3: pah
+3: rah
+3: sah
+3: wah
+3: yah
+
+*'you
+1: you
+
+*'by
+1: by
+3: aby
+3: oby
+
+*'you
+1: you
+
+*'photography
+1: photography
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*'so
+1: so
+3: aso
+3: bso
+3: cso
+3: dso
+3: eso
+3: iso
+3: mso
+3: nso
+3: oso
+3: pso
+3: qso
+3: sso
+3: tso
+3: uso
+3: vso
+3: yso
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'oh
+1: oh
+3: boh
+3: coh
+3: doh
+3: foh
+3: hoh
+3: joh
+3: koh
+3: moh
+3: noh
+3: ooh
+3: poh
+3: roh
+3: soh
+3: toh
+
+*'my
+1: my
+3: amy
+
+*'and
+1: and
+3: band
+3: cand
+3: dand
+3: fand
+3: gand
+3: hand
+3: iand
+3: kand
+3: land
+3: mand
+3: nand
+3: pand
+3: rand
+3: sand
+3: wand
+3: yand
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'but
+1: but
+3: abut
+
+*'only
+1: only
+3: fonly
+3: nonly
+3: sonly
+
+*'why
+1: why
+
+*'why
+1: why
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'it
+1: it
+3: ait
+3: bit
+3: cit
+3: dit
+3: fit
+3: git
+3: hit
+3: jit
+3: kit
+3: lit
+3: mit
+3: nit
+3: oit
+3: pit
+3: rit
+3: sit
+3: tit
+3: uit
+3: wit
+3: zit
+
+*'i
+1: i
+3: ai
+3: bi
+3: ci
+3: di
+3: ei
+3: fi
+3: gi
+3: hi
+3: ii
+3: ji
+3: ki
+3: li
+3: mi
+3: ni
+3: oi
+3: pi
+3: qi
+3: ri
+3: si
+3: ti
+3: ui
+3: vi
+3: wi
+3: xi
+3: yi
+3: zi
+
+*'well
+1: well
+3: dwell
+3: ewell
+3: swell
+
+*again'
+1: again
+
+*'i'll
+1: i'll
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastles
+2: ru castles
+
+*rucastles
+2: ru castles
+
+*rucastle
+2: ru castle
+
+*fianc
+2: fianca
+3: franc
+3: fiann
+3: fiant
+2: fi anc
+2: fia nc
+
+*rucastle
+2: ru castle
+
+*rucastle's
+2: ru castle's
+
+*holmes'
+2: holmes's
+1: holmes
+4: holme's
+
+*rucastles
+2: ru castles
+
+*rucastle's
+2: ru castle's
+
+*rucastle
+2: ru castle
+
+*ha'
+2: ha's
+1: ha
+3: haa
+3: hab
+3: hac
+3: had
+3: hae
+3: haf
+3: hag
+3: hah
+3: haj
+3: hak
+3: hal
+3: ham
+3: han
+3: hao
+3: hap
+3: has
+3: hat
+3: hau
+3: hav
+3: haw
+3: hax
+3: hay
+
+*rucastle's
+2: ru castle's
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle
+2: ru castle
+
+*rucastle's
+2: ru castle's
+
+*rucastle
+2: ru castle
+
+*pglaf
+3: pilaf
+2: pg laf
+
+*'as
+1: as
+3: aas
+3: bas
+3: cas
+3: das
+3: eas
+3: fas
+3: gas
+3: has
+3: ias
+3: jas
+3: kas
+3: las
+3: mas
+3: nas
+3: oas
+3: pas
+3: qas
+3: ras
+3: sas
+3: tas
+3: vas
+3: was
+3: yas
+3: zas
+4: a's
+
+*is'
+1: is
+3: isa
+3: isc
+3: ise
+3: isf
+3: ish
+3: isi
+3: isl
+3: ism
+3: isn
+3: iso
+3: isr
+3: iss
+3: ist
+3: isv
+3: isy
+3: isz
+4: i's
+
+*merchantibility
+3: merchantability
+
+*pglaf
+3: pilaf
+2: pg laf
+
+*pglaf
+3: pilaf
+2: pg laf
+
+*pglaf
+3: pilaf
+2: pg laf
+
+*pglaf
+3: pilaf
+2: pg laf
+
+*gbnewby
+2: gb newby
+
+*pglaf
+3: pilaf
+2: pg laf
+
+*pglaf
+3: pilaf
+2: pg laf
+
+*pglaf
+3: pilaf
+2: pg laf
+
