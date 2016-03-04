@@ -1,0 +1,29 @@
+<!ELEMENT cinema (projection*)>
+        <!ELEMENT projection (date, numeroSalle, film, acteur*)>
+        <!ELEMENT date (#PCDATA)>
+        <!ELEMENT numeroSalle (#PCDATA)>
+        <!ELEMENT film (titre, synopsis, duree, critiques*, genres*, motCle*, langages*, image, role*)>
+        <!ELEMENT titre (#PCDATA)>
+        <!ELEMENT synopsis (#PCDATA)>
+        <!ELEMENT duree (#PCDATA)>
+        <!ELEMENT critiques (texte, note)>
+        <!ELEMENT texte (#PCDATA)>
+        <!ELEMENT note (#PCDATA)>
+        <!ELEMENT genres (#PCDATA)>
+        <!ELEMENT motCle (#PCDATA)>
+        <!ELEMENT langages (#PCDATA)>
+        <!ELEMENT image (#PCDATA)>
+        <!ELEMENT role (idActeur, nomRole, place)>
+        <!ELEMENT idActeur (#PCDATA)>
+        <!ELEMENT nomRole (#PCDATA)>
+        <!ELEMENT place (#PCDATA)>
+        <!ELEMENT acteur (nom, nomNaissance, biographie, sexe, dateNaissance, dateDecee)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT nomNaissance (#PCDATA)>
+        <!ELEMENT biographie (#PCDATA)>
+        <!ELEMENT sexe (#PCDATA)>
+        <!ELEMENT dateNaissance (#PCDATA)>
+        <!ELEMENT dateDecee (#PCDATA)>
+        <!ATTLIST projection id CDATA #REQUIRED>
+        <!ATTLIST film id CDATA #REQUIRED>
+        <!ATTLIST acteur id CDATA #REQUIRED>

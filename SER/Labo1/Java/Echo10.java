@@ -51,7 +51,7 @@ public class Echo10 extends DefaultHandler
         DefaultHandler handler = new Echo10();
         // Use the validating parser
         SAXParserFactory factory = SAXParserFactory.newInstance();
-        factory.setValidating(true);  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!! A Mettre en commentaire pour éviter la validation
+        factory.setValidating(true);  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!! A Mettre en commentaire pour ï¿½viter la validation
         //factory.setNamespaceAware(true);
         try {
             // Set up output stream
