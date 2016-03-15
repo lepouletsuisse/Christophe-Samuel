@@ -12,4 +12,5 @@ TEMPLATE = app
 SOURCES += main.cpp
 
 HEADERS += \
-    mythread.h
+    mythread.h \
+    utils.h

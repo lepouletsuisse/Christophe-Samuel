@@ -46,7 +46,8 @@ OBJECTS_DIR   = release
 SOURCES       = ..\Labo2\main.cpp 
 OBJECTS       = release/main.o
 
-DIST          =  ..\Labo2\mythread.h ..\Labo2\main.cpp
+DIST          =  ..\Labo2\mythread.h \
+		..\Labo2\utils.h ..\Labo2\main.cpp
 QMAKE_TARGET  = Labo2
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = Labo2.exe
@@ -101,7 +102,64 @@ compiler_clean:
 
 ####### Compile
 
-release/main.o: ../Labo2/main.cpp 
+release/main.o: ../Labo2/main.cpp ../Labo2/mythread.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/QThread \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qthread.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qobject.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qobjectdefs.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qglobal.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qconfig.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qfeatures.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qtypetraits.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qisenum.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qlogging.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qflags.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_gcc.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv7.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv6.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv5.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_ia64.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_x86.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qatomic_unix.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qmutex.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qstring.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qchar.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qlist.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qalgorithms.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qiterator.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qhashfunctions.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qpair.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qbytearraylist.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qstringlist.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qregexp.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qstringmatcher.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qcoreevent.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qscopedpointer.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qmetatype.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qvarlengtharray.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qcontainerfwd.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qobject_impl.h \
+		../Labo2/utils.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Labo2\main.cpp
 
 ####### Install
