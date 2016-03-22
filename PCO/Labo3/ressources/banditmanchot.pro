@@ -17,3 +17,5 @@ SOURCES += banditmanchot.cpp main.cpp \
     bmmanager.cpp
 
 QT += widgets
+
+CONFIG += c++11
