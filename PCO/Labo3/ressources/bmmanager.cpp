@@ -196,7 +196,7 @@ void BmManager::boutonStop()
         }
         //No matches
         else{
-            stream << "You have won nothing!!! Try again :)" << std::endl;
+            stream << "You have won nothing!!! Try again :)" << ceil(50/4.) << std::endl;
             finished = true;
         }
         setMessage(QString(stream.str().c_str()));
