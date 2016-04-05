@@ -137,21 +137,21 @@ void BmManager::boutonStop()
         while(!thread[0]->canRead() || !thread[1]->canRead() || !thread[2]->canRead());
         //3 matches
         if(thread[0]->getValeur() == thread[1]->getValeur() && thread[0]->getValeur() == thread[2]->getValeur()){
-            stream << "You have won half the jackpot! this is " << ceil(jackpotValue / 2) << "!" << std::endl;
-            jackpotValue -= ceil(jackpotValue / 2);
+            stream << "You have won half the jackpot! this is " << ceil(jackpotValue / 2.) << "!" << std::endl;
+            jackpotValue -= ceil(jackpotValue / 2.);
             setJackpot(jackpotValue);
             finished = true;
         }
         //2 matches
         else if(thread[0]->getValeur() == thread[1]->getValeur() || thread[0]->getValeur() == thread[2]->getValeur() || thread[1]->getValeur() == thread[2]->getValeur()){
-            stream << "You have won a quarter of the jackpot! this is " << ceil(jackpotValue / 4) << "!" << std::endl;
-            jackpotValue -= ceil(jackpotValue / 4);
+            stream << "You have won a quarter of the jackpot! this is " << ceil(jackpotValue / 4.) << "!" << std::endl;
+            jackpotValue -= ceil(jackpotValue / 4.);
             setJackpot(jackpotValue);
             finished = true;
         }
         //No matches
         else{
-            stream << "You have won nothing!!! Try again :)" << std::endl;
+            stream << "You have won nothing!!! Try again :)" << ceil(50/4.) << std::endl;
             finished = true;
         }
         setMessage(QString(stream.str().c_str()));
