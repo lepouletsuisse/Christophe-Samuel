@@ -1,3 +1,32 @@
+/* PCO
+ * ---------------------------------------------------------------------------
+ * Laboratoire: 03 Bandit Manchot
+ * Auteur: Christophe Peretti & Samuel Darcey
+ * Date: 30.03.2016
+ * But: Completer l'application "Bandimanchot" qui consiste à faire tourner 3
+ *      cylindres et gérer un jackpot quand il y a victoire.
+ * Rapport:
+ *      REMARQUE:
+ *          Nous avons décider d'ajouter incrJackpot au jackpot a chaque fois
+ *          que on introduit une pièce dans le jeux. (Non demandé dans la
+ *          consigne)
+ *      TEST:
+ *          Pour tester notre application, nous avonss essayer toutes les
+ *          possibilités possibles des boutons, telle que cliquer sur le
+ *          bouton Stop quand il est arreter ou cliquer sur le bouton Pièce
+ *          introduite quand le jeux tourne.
+ *      RESULTAT:
+ *          - Le gain du jackpot est correctement arrondi et juste
+ *          - Les boutons sont bien traiter aux bon moment
+ *          - La séparation des threads est bien faite
+ *          - Les rouleaux s'arrête bien après 4 secondes et ce même si on
+ *              clique sur le bouton stop juste avant qu'il se stop
+ *              automatiquement.
+ *          - Il n'y a pas de problème de concurrence
+ * ---------------------------------------------------------------------------
+*/
+
+
 #include <QString>
 #include <QThread>
 #include <cmath>
@@ -16,16 +45,22 @@ int jackpotValue = 100;
 bool finished = true;
 QTimer* timer;
 
+// Array for all the threads
+RouleauThread* thread[nbThread];
 
-// En microsecondes
+// Microsecondes
 #define DelaiLocal  4000000
 
+
+/*
+ * Class for each roll. This is only for a new thread!
+*/
 class RouleauThread : public QThread
 {
 private:
     int numRouleau;
     QSemaphore sem;
-    //running is use to setermine if the thread has to run or not
+    //running is use to determine if the thread has to run or not
     bool running = true;
     //valeurSet is used to determine if the value has already been set
     bool valeurSet = false;
@@ -76,8 +111,9 @@ public:
     }
 };
 
-RouleauThread* thread[nbThread];
-
+/*
+ * Start the game
+*/
 void BmManager::start()
 {
     //Create a timer and when it overflow, it will simply press the stop button
@@ -94,6 +130,9 @@ void BmManager::start()
 
 }
 
+/*
+ * End the game
+*/
 void BmManager::end()
 {
     for(int i = 0 ; i < nbThread ; i++){
@@ -101,6 +140,9 @@ void BmManager::end()
     }
 }
 
+/*
+ * Start a new round
+*/
 void BmManager::pieceIntroduite()
 {
     //The new game button can only be pressed if all the thread has been stopped
@@ -120,6 +162,9 @@ void BmManager::pieceIntroduite()
     }
 }
 
+/*
+ * Stop one roll
+*/
 void BmManager::boutonStop()
 {
     //if the game has been finished, stop the timer
@@ -137,15 +182,15 @@ void BmManager::boutonStop()
         while(!thread[0]->canRead() || !thread[1]->canRead() || !thread[2]->canRead());
         //3 matches
         if(thread[0]->getValeur() == thread[1]->getValeur() && thread[0]->getValeur() == thread[2]->getValeur()){
-            stream << "You have won half the jackpot! this is " << ceil(jackpotValue / 2) << "!" << std::endl;
-            jackpotValue -= ceil(jackpotValue / 2);
+            stream << "You have won half the jackpot! this is " << ceil(jackpotValue / 2.) << "!" << std::endl;
+            jackpotValue -= ceil(jackpotValue / 2.);
             setJackpot(jackpotValue);
             finished = true;
         }
         //2 matches
         else if(thread[0]->getValeur() == thread[1]->getValeur() || thread[0]->getValeur() == thread[2]->getValeur() || thread[1]->getValeur() == thread[2]->getValeur()){
-            stream << "You have won a quarter of the jackpot! this is " << ceil(jackpotValue / 4) << "!" << std::endl;
-            jackpotValue -= ceil(jackpotValue / 4);
+            stream << "You have won a quarter of the jackpot! this is " << ceil(jackpotValue / 4.) << "!" << std::endl;
+            jackpotValue -= ceil(jackpotValue / 4.);
             setJackpot(jackpotValue);
             finished = true;
         }
