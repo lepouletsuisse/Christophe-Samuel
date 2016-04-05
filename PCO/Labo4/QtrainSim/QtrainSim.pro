@@ -13,6 +13,8 @@ TARGET = QtrainSim
 TEMPLATE = app
 DESTDIR = dist
 
+CONFIG += c++11
+
 #Configuration
 CONFIG += debug
 
