@@ -17,13 +17,13 @@
         <!ELEMENT idActeur (#PCDATA)>
         <!ELEMENT nomRole (#PCDATA)>
         <!ELEMENT place (#PCDATA)>
-        <!ELEMENT acteur (nom, nomNaissance, biographie, sexe, dateNaissance, dateDecee)>
+        <!ELEMENT acteur (nom, nomNaissance, biographie, sexe, dateNaissance, dateDeces)>
         <!ELEMENT nom (#PCDATA)>
         <!ELEMENT nomNaissance (#PCDATA)>
         <!ELEMENT biographie (#PCDATA)>
         <!ELEMENT sexe (#PCDATA)>
         <!ELEMENT dateNaissance (#PCDATA)>
-        <!ELEMENT dateDecee (#PCDATA)>
+        <!ELEMENT dateDeces (#PCDATA)>
         <!ATTLIST projection id CDATA #REQUIRED>
         <!ATTLIST film id CDATA #REQUIRED>
         <!ATTLIST acteur id CDATA #REQUIRED>
