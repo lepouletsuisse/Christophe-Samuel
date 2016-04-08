@@ -6,15 +6,14 @@
          <numeroSalle>1</numeroSalle>
          <film id="1">
              <titre>One Punch Man</titre>
-             <synopsis>Il est cool!</synopsis>
-             <duree>20:50</duree>
+             <synopsis>Il arrive et tue tout le monde</synopsis>
+             <duree>2:50</duree>
              <critiques>
                  <texte>Ce film est trop cooolllllll!! By JeanKevin</texte>
                  <note>11/10</note>
              </critiques>
              <genres>Action</genres>
              <genres>Aventure</genres>
-             <genres>Romance</genres>
              <motCle>Baston</motCle>
              <motCle>Punch</motCle>
              <langages>Francais</langages>
@@ -37,7 +36,7 @@
              <biographie>C'est un bon acteur, quoi que un peu vieux!</biographie>
              <sexe>Homme</sexe>
              <dateNaissance>20.03.1800</dateNaissance>
-             <dateDecee></dateDecee>
+             <dateDeces></dateDeces>
          </acteur>
          <acteur id="2">
              <nom>Samantha Carter</nom>
@@ -45,7 +44,53 @@
              <biographie>C'est une bonne actrice, quoi que un peu jeune!</biographie>
              <sexe>Femme</sexe>
              <dateNaissance>01.01.2015</dateNaissance>
-             <dateDecee></dateDecee>
+             <dateDeces></dateDeces>
+         </acteur>
+     </projection>
+	 <projection id="2">
+         <date>10.02.2016</date>
+         <numeroSalle>2</numeroSalle>
+         <film id="2">
+             <titre>Matrix</titre>
+             <synopsis>A la fin, il meurt</synopsis>
+             <duree>1:30</duree>
+             <critiques>
+                 <texte>Ce film est trop nulllllll!! By Billy</texte>
+                 <note>0/10</note>
+             </critiques>
+             <genres>Action</genres>
+             <genres>Romance</genres>
+             <motCle>Love</motCle>
+             <motCle>Amour</motCle>
+             <langages>Francais</langages>
+             <langages>Allemand</langages>
+             <image>http://www.test2.com</image>
+             <role>
+                 <idActeur>3</idActeur>
+                 <nomRole>Bob</nomRole>
+                 <place>1</place>
+             </role>
+             <role>
+                 <idActeur>4</idActeur>
+                 <nomRole>Bill</nomRole>
+                 <place>2</place>
+             </role>
+         </film>
+         <acteur id="3">
+             <nom>Brad Pitt</nom>
+             <nomNaissance>Pitt</nomNaissance>
+             <biographie>C'est un excellent acteur!</biographie>
+             <sexe>Homme</sexe>
+             <dateNaissance>20.03.1970</dateNaissance>
+             <dateDeces></dateDeces>
+         </acteur>
+         <acteur id="4">
+             <nom>Leonardo DiCaprio</nom>
+             <nomNaissance>DiCaprio</nomNaissance>
+             <biographie>C'est un tres mauvais acteur!</biographie>
+             <sexe>Homme</sexe>
+             <dateNaissance>01.01.1979</dateNaissance>
+             <dateDeces></dateDeces>
          </acteur>
      </projection>
  </cinema> 
