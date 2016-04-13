@@ -8,6 +8,7 @@ import ch.heigvd.iict.cours.ser.imdb.models.*;
 import com.thoughtworks.xstream.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.net.URLDecoder;
 import java.util.Map;
 
 public class ControleurGeneral {
@@ -115,8 +116,8 @@ public class ControleurGeneral {
 		Data data = new Data();
 		java.net.URL urlMoviesFile = ORMAccess.class.getResource("/resources/movies_v1.xml");
 		java.net.URL urlPersonsFile = ORMAccess.class.getResource("/resources/persons_v1.xml");
-		data.setPersons((Map<Long, Person>)readFromFile(urlPersonsFile.getPath(), xstream));
-		data.setMovies((Map<Long, Movie>)readFromFile(urlMoviesFile.getPath(), xstream));
+		data.setPersons((Map<Long, Person>)readFromFile(URLDecoder.decode(urlPersonsFile.getPath()), xstream));
+		data.setMovies((Map<Long, Movie>)readFromFile(URLDecoder.decode(urlMoviesFile.getPath()), xstream));
 		System.out.println("Chargement du contenu XML: OK");
 		return data;
 	}
