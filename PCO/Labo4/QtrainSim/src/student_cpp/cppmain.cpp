@@ -7,6 +7,12 @@
 #include <QSemaphore>
 #include <QMutex>
 
+int numTrain1 = 2;
+int numTrain2 = 14;
+
+int vitesseLoco1 = 3;
+int vitesseLoco2 = 5;
+
 //Sorte de sémaphore non bloquant
 class ZoneCritique{
 private:
@@ -15,10 +21,14 @@ private:
     bool libre;
     QPair<int, int> aiguillageCrit1;
     QPair<int, int> aiguillageCrit2;
+    int nbLoco;
+    bool derivation;
 public:
     ZoneCritique(QPair<int, int> aiguillageCrit1, QPair<int, int> aiguillageCrit2, QSemaphore* sem){
         libre = true;
+        derivation = false;
         mutex = new QMutex();
+        nbLoco = 0;
         this->sem = sem;
         this->aiguillageCrit1 = aiguillageCrit1;
         this->aiguillageCrit2 = aiguillageCrit2;
@@ -29,17 +39,19 @@ public:
         mutex->lock();
         bool resultat = false;
         if(libre){
-            if(numLocomotive == 1){
+            if(numLocomotive == numTrain1){
                 diriger_aiguillage(aiguillageCrit1.first, DEVIE, 0);
                 diriger_aiguillage(aiguillageCrit1.second, DEVIE, 0);
             }
+            bloquer();
             libre = false;
             resultat = true;
         }
         else{
-            if(numLocomotive == 1){
+            if(numLocomotive == numTrain1){
                 diriger_aiguillage(aiguillageCrit2.first, DEVIE, 0);
                 diriger_aiguillage(aiguillageCrit2.second, DEVIE, 0);
+                derivation = true;
             }
         }
         mutex->unlock();
@@ -47,11 +59,19 @@ public:
     }
 
     void sortir(int numLocomotive){
-        if(numLocomotive == 1){
+        if(numLocomotive == numTrain1){
             diriger_aiguillage(aiguillageCrit1.first, TOUT_DROIT, 0);
             diriger_aiguillage(aiguillageCrit1.second, TOUT_DROIT, 0);
             diriger_aiguillage(aiguillageCrit2.first, TOUT_DROIT, 0);
             diriger_aiguillage(aiguillageCrit2.second, TOUT_DROIT, 0);
+
+            if(!derivation){
+                liberer();
+            }
+            derivation = false;
+        }
+        if(numLocomotive == numTrain2){
+            liberer();
         }
         afficher_message(qPrintable(QString("Exiting the critical Area!")));
         libre = true;
@@ -62,13 +82,7 @@ public:
     }
 
     void liberer(){
-        mutex->lock();
-        if(sem->available() <= 0) sem->release();
-        mutex->unlock();
-    }
-
-    void essayerBloquer(){
-        sem->tryAcquire();
+        sem->release();
     }
 };
 
@@ -114,8 +128,8 @@ public:
         while(true){
             contact(parcours.at(pos));
             if(parcours.at(pos) == capteurCritique.first || parcours.at(pos) == capteurCritique.second){
-               if(locomotive->numero() == 1) zoneCritique->essayerBloquer();
-               if(!zoneCritique->peutEntrer(locomotive->numero()) && locomotive->numero() == 2){
+               //if(locomotive->numero() == 1) zoneCritique->essayerBloquer();
+               if(!zoneCritique->peutEntrer(locomotive->numero()) && locomotive->numero() == numTrain2){
                    arreter();
                    zoneCritique->bloquer();
                    depart();
@@ -126,7 +140,6 @@ public:
                }
                contact(parcours.at(pos));
                zoneCritique->sortir(locomotive->numero());
-               zoneCritique->liberer();
             }
             pos = prochainePosition(pos);
         }
@@ -197,8 +210,8 @@ int cmain()
     ZoneCritique* zoneCritique = new ZoneCritique(QPair<int, int>(1, 22), QPair<int, int>(2, 21), new QSemaphore(1));
 
     //Initialisation des locomotives
-    locomotives.append(new LocomotiveThread(1, 10, QPair<int,int>(16,23), true, parcours1, critique1, zoneCritique));
-    locomotives.append(new LocomotiveThread(2, 10, QPair<int,int>(13,19), true, parcours2, critique2, zoneCritique));
+    locomotives.append(new LocomotiveThread(numTrain1, vitesseLoco1, QPair<int,int>(16,23), true, parcours1, critique1, zoneCritique));
+    locomotives.append(new LocomotiveThread(numTrain2, vitesseLoco2, QPair<int,int>(13,19), true, parcours2, critique2, zoneCritique));
 
     //Initialisation des aiguillages pour loco 1
     diriger_aiguillage(8,  DEVIE,       0);
