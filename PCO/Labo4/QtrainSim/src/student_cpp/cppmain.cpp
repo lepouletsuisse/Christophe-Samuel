@@ -1,19 +1,44 @@
+/* Fichier  :   cppmain.cpp
+ * Auteurs  :   Samuel Darcey & Christophe Peretti
+ * Date     :   26.04.2016
+ * But      :   Ce fichier est le fichier de définition des comportements des locomotives dans la
+ *              simulation de train. Il définit la configuration initiale de la maquette, les parcours
+ *              des locomotives, ainsi que la zone critique commune entre les loco et le comportement
+ *              à adopter lorsqu'elles se retrouvent toutes les deux dedans en même temps.
+ */
+
 #include "ctrain_handler.h"
 #include "locomotive.h"
-
 #include <QThread>
 #include <QList>
 #include <QPair>
 #include <QSemaphore>
 #include <QMutex>
 
+/* Les numéros des trains doivent correspondre aux numéros des vraies locomotives dans la maquette, afin
+ * que les capteurs reconnaissent bien les loco. Pour la simulation, deux numéros différents suffisent.
+ */
 int numTrain1 = 2;
 int numTrain2 = 14;
 
+/* La vitesse des locomotives peuvent valoir n'importe quelle valeur dans la simulation (tant que l'inertie
+ * est désactivée). Lors de l'utilisation de la maquette, celles-ci ne devraient pas dépasser 10, pour des raisons
+ * mécaniques.
+ */
 int vitesseLoco1 = 3;
 int vitesseLoco2 = 5;
 
-//Sorte de sémaphore non bloquant
+/* Les deux loco avertissent quand la zone est occupée, mais elles auront un comportement différent dans
+ * celle-ci. Si la zone est libre lorsque la loco 1 arrive, elle entre normalement et la 2 va s'arrêter.
+ * Dans l'autre situation, si la 2 entre dans la zone critique avant la 1, cela ne bloque pas la 1, mais
+ * active la dérivation, donc la mise en parallèle des deux loco.
+ *
+ * A la sortie de la zone critique, la loco 2 remet la zone comme étant libre (dans tous les cas) et
+ * pour la loco 1, elle le fait uniquement si elle n'a pas été déviée (donc pas de concurrence sur libre)
+ *
+ *
+ */
+
 class ZoneCritique{
 private:
     QMutex* mutex;
@@ -67,14 +92,15 @@ public:
 
             if(!derivation){
                 liberer();
+                libre = true;
             }
             derivation = false;
         }
         if(numLocomotive == numTrain2){
             liberer();
+            libre = true;
         }
         afficher_message(qPrintable(QString("Exiting the critical Area!")));
-        libre = true;
     }
 
     void bloquer(){
@@ -123,12 +149,15 @@ public:
     void run() Q_DECL_OVERRIDE{
         depart();
 
-        //Attente du passage sur les contacts
+        /* Attente du passage sur les contacts. La zone critique n'a pas de début ou de fin, mais des bornes
+         * (utile pour gérer les deux sens)
+         *
+         *
+         */
         int pos = 0;
         while(true){
             contact(parcours.at(pos));
             if(parcours.at(pos) == capteurCritique.first || parcours.at(pos) == capteurCritique.second){
-               //if(locomotive->numero() == 1) zoneCritique->essayerBloquer();
                if(!zoneCritique->peutEntrer(locomotive->numero()) && locomotive->numero() == numTrain2){
                    arreter();
                    zoneCritique->bloquer();
@@ -161,7 +190,7 @@ public:
         if(nbTour == 2){
             sens = (sens ? false : true);
             nbTour = 0;
-            pos = (sens ? 0 : parcours.size() - 1);
+            pos = (sens ? 1 : parcours.size() - 2);
             locomotive->inverserSens();
         }
 
