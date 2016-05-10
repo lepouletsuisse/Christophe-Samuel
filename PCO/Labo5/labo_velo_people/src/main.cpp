@@ -10,6 +10,9 @@
 
 #include <QApplication>
 #include "bikinginterface.h"
+#include <deque>
+#include <QWaitCondition>
+#include <QMutex>
 
 
 // Pour utiliser cout, cin
@@ -28,6 +31,68 @@ using namespace std;
 BikingInterface *gui_interface;
 
 #include <QThread>
+
+class Site{
+public:
+    Site(unsigned int nbBorne) : nbBorne(nbBorne) {
+        habitantEnAttente = new deque<unsigned int>();
+        moniteur = new QWaitCondition();
+        mutex = new QMutex();
+        nbVelo = nbBorne - 2;
+    }
+
+    void ajouterVelo(unsigned int idHabitant){
+        mutex->lock();
+        //Si les vélo sont plein, on met en attente l'habitant qui essaie d'ajouter un vélo
+        if(nbVelo >= nbBorne){
+            habitantEnAttente->push_back(idHabitant);
+            moniteur->wait(mutex);
+            while(habitantEnAttente->front() != idHabitant){
+                moniteur->wait(mutex);
+            }
+            habitantEnAttente->pop_front();
+            nbVelo++;
+        }
+        //Si les vélo ne sont pas plein, on ajoute simplement le vélo
+        else{
+            nbVelo++;
+        }
+        //On wakeAll si il reste des places libre car si la camionette prends plusieurs vélo, il faut que plusieurs utilisateurs soient capable de prendre les vélos ensuite
+        if(nbVelo < nbBorne) moniteur->wakeAll();
+        mutex->unlock();
+    }
+
+    void enleverVelo(unsigned int idHabitant){
+        mutex->lock();
+        //Si les vélo sont vide, on met en attente l'habitant qui essaie de prendre un vélo
+        if(nbVelo <= 0){
+            habitantEnAttente->push_back(idHabitant);
+            moniteur->wait(mutex);
+            while(habitantEnAttente->front() != idHabitant){
+                moniteur->wait(mutex);
+            }
+            habitantEnAttente->pop_front();
+            nbVelo--;
+        }
+        //Si les vélo ne sont pas vide, on réveille les potentiel habitant qui attendent d'ajouter un vélo
+        else{
+            nbVelo--;
+
+        }
+        //On wakeAll si il y reste des vélo car si la camionette ramene plusieurs vélo, il faut que plusieurs utilisateurs soit capable de laisser leur vélo.++
+        if(nbVelo > 0) moniteur->wakeAll();
+        mutex->unlock();
+    }
+
+private:
+
+    unsigned int nbBorne;
+    unsigned int nbVelo;
+    std::deque<unsigned int>* habitantEnAttente;
+    QWaitCondition* moniteur;
+    QMutex* mutex;
+
+};
 
 /**
   Tâche illustrant les différents appels pouvant être faits à l'interface
