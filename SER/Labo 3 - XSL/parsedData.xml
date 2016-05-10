@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cinema>
+  <Projections>
+    <projection id="5">
+      <date>Fri Apr 29 07:34:25 CEST 2016</date>
+      <film id="2053403">
+        <titre>Casino Royale</titre>
+        <synopsis>Casino Royale introduces James Bond before he holds his license to kill. But Bond is no less dangerous, and with two professional assassinations in quick succession, he is elevated to '00' status. Bond's first 007 mission takes him to Uganda where he is to spy on a terrorist, Mollaka. Not everything goes to plan and Bond decides to investigate, independently of MI6, in order to track down the rest of the terrorist cell. Following a lead to the Bahamas, he encounters Dimitrios and his girlfriend, Solange. He learns that Dimitrios is involved with Le Chiffre, banker to the world's terrorist organizations. Secret Service intelligence reveals that Le Chiffre is planning to raise money in a high-stakes poker game in Montenegro at Le Casino Royale. MI6 assigns 007 to play against him, knowing that if Le Chiffre loses, it will destroy his organization. 'M' places Bond under the watchful eye of the beguiling Vesper Lynd. At first skeptical of what value Vesper can provide, Bond's interest in her deepens as they brave danger together and even torture at the hands of Le Chiffre. In Montenegro, Bond allies himself with Mathis MI6's local field agent, and Felix Leiter who is representing the interests of the CIA. The marathon game proceeds with dirty tricks and violence, raising the stakes beyond blood money and reaching a terrifying climax.</synopsis>
+        <duree>144</duree>
+        <roles>
+          <role place="4">
+            <idActeur>2220301</idActeur>
+            <personnage>M</personnage>
+          </role>
+          <role place="67">
+            <idActeur>598987</idActeur>
+            <personnage>Venice Hotel Concierge</personnage>
+          </role>
+          <role place="20">
+            <idActeur>1583928</idActeur>
+            <personnage>Kratt</personnage>
+          </role>
+          <role place="48">
+            <idActeur>1654011</idActeur>
+            <personnage>Pilot</personnage>
+          </role>
+          <role place="32">
+            <idActeur>2167366</idActeur>
+            <personnage>Ocean Club Receptionist</personnage>
+          </role>
+          <role place="10">
+            <idActeur>319401</idActeur>
+            <personnage>Mr. White</personnage>
+          </role>
+          <role place="54">
+            <idActeur>2248252</idActeur>
+            <personnage>Police Chief's Girlfriends</personnage>
+          </role>
+          <role place="41">
+            <idActeur>369699</idActeur>
+            <personnage>Hot Room Technicians</personnage>
+          </role>
+          <role place="51">
+            <idActeur>1314130</idActeur>
+            <personnage>Obanno's Lieutenant</personnage>
+          </role>
+          <role place="33">
+            <idActeur>1748274</idActeur>
+            <personnage>Schultz</personnage>
+          </role>
+          <role place="30">
+            <idActeur>398765</idActeur>
+            <personnage>Dealer</personnage>
+          </role>
+          <role place="56">
+            <idActeur>968243</idActeur>
+            <personnage>Croatian General</personnage>
+          </role>
+          <role place="44">
+            <idActeur>299911</idActeur>
+            <personnage>Police Commander</personnage>
+          </role>
+          <role place="27">
+            <idActeur>1493564</idActeur>
+            <personnage>Kaminofsky</personnage>
+          </role>
+          <role place="46">
+            <idActeur>488415</idActeur>
+            <personnage>Airport Policemen</personnage>
+          </role>
+          <role place="65">
+            <idActeur>2925977</idActeur>
+            <personnage>Waitress</personnage>
+          </role>
+          <role place="17">
+            <idActeur>1403596</idActeur>
+            <personnage>Mendel</personnage>
+          </role>
+          <role place="38">
+            <idActeur>1711852</idActeur>
+            <personnage>Tall Man</personnage>
+          </role>
+          <role place="11">
+            <idActeur>2636138</idActeur>
+            <personnage>Valenka</personnage>
+          </role>
+          <role place="35">
+            <idActeur>822647</idActeur>
+            <personnage>Card Players</personnage>
+          </role>
+          <role place="58">
+            <idActeur>1372760</idActeur>
+            <personnage>Bartender</personnage>
+          </role>
+          <role place="45">
+            <idActeur>218944</idActeur>
+            <personnage>Airport Policemen</personnage>
+          </role>
+          <role place="16">
+            <idActeur>1559434</idActeur>
+            <personnage>Adolph Gettler</personnage>
+          </role>
+          <role place="24">
+            <idActeur>106571</idActeur>
+            <personnage>Tomelli</personnage>
+          </role>
+          <role place="43">
+            <idActeur>1298032</idActeur>
+            <personnage>MI6 Technician</personnage>
+          </role>
+          <role place="15">
+            <idActeur>1645521</idActeur>
+            <personnage>Dryden</personnage>
+          </role>
+          <role place="31">
+            <idActeur>1007099</idActeur>
+            <personnage>Tournament Director</personnage>
+          </role>
+          <role place="2">
+            <idActeur>2348923</idActeur>
+            <personnage>Vesper Lynd</personnage>
+          </role>
+          <role place="50">
+            <idActeur>2702533</idActeur>
+            <personnage>Shop Assistant</personnage>
+          </role>
+          <role place="1">
+            <idActeur>370864</idActeur>
+            <personnage>James Bond</personnage>
+          </role>
+          <role place="28">
+            <idActeur>1668852</idActeur>
+            <personnage>Fukutu</personnage>
+          </role>
+          <role place="52">
+            <idActeur>448361</idActeur>
+            <personnage>Obanno's Liaison</personnage>
+          </role>
+          <role place="60">
+            <idActeur>2005134</idActeur>
+            <personnage>Tennis Girls</personnage>
+          </role>
+          <role place="5">
+            <idActeur>1941794</idActeur>
+            <personnage>Felix Leiter</personnage>
+          </role>
+          <role place="66">
+            <idActeur>1644947</idActeur>
+            <personnage>Disapproving Man</personnage>
+          </role>
+          <role place="9">
+            <idActeur>414353</idActeur>
+            <personnage>Steven Obanno</personnage>
+          </role>
+          <role place="25">
+            <idActeur>2153316</idActeur>
+            <personnage>Madame Wu</personnage>
+          </role>
+          <role place="61">
+            <idActeur>2401856</idActeur>
+            <personnage>Tennis Girls</personnage>
+          </role>
+          <role place="40">
+            <idActeur>185672</idActeur>
+            <personnage>Hot Room Doctors</personnage>
+          </role>
+          <role place="29">
+            <idActeur>2998542</idActeur>
+            <personnage>Gräfin von Wallenstein</personnage>
+          </role>
+          <role place="22">
+            <idActeur>295903</idActeur>
+            <personnage>Stockbroker</personnage>
+          </role>
+          <role place="62">
+            <idActeur>2309041</idActeur>
+            <personnage>Hotel Splendide Clerk</personnage>
+          </role>
+          <role place="42">
+            <idActeur>2325595</idActeur>
+            <personnage>Hot Room Technicians</personnage>
+          </role>
+          <role place="59">
+            <idActeur>1171383</idActeur>
+            <personnage>Treasury Bureaucrat</personnage>
+          </role>
+          <role place="14">
+            <idActeur>576848</idActeur>
+            <personnage>Mollaka</personnage>
+          </role>
+          <role place="19">
+            <idActeur>1620597</idActeur>
+            <personnage>Fisher</personnage>
+          </role>
+          <role place="68">
+            <idActeur>1020217</idActeur>
+            <personnage>Hotel Splendide Limo Driver</personnage>
+          </role>
+          <role place="8">
+            <idActeur>4607</idActeur>
+            <personnage>Alex Dimitrios</personnage>
+          </role>
+          <role place="26">
+            <idActeur>1027027</idActeur>
+            <personnage>Gallardo</personnage>
+          </role>
+          <role place="23">
+            <idActeur>11435</idActeur>
+            <personnage>Infante</personnage>
+          </role>
+          <role place="36">
+            <idActeur>2379317</idActeur>
+            <personnage>Card Players</personnage>
+          </role>
+          <role place="63">
+            <idActeur>495786</idActeur>
+            <personnage>Cola Kid</personnage>
+          </role>
+          <role place="7">
+            <idActeur>2667303</idActeur>
+            <personnage>Solange</personnage>
+          </role>
+          <role place="13">
+            <idActeur>1566810</idActeur>
+            <personnage>Carlos</personnage>
+          </role>
+          <role place="55">
+            <idActeur>2597588</idActeur>
+            <personnage>Police Chief's Girlfriends</personnage>
+          </role>
+          <role place="64">
+            <idActeur>1812821</idActeur>
+            <personnage>Barman</personnage>
+          </role>
+          <role place="57">
+            <idActeur>1294571</idActeur>
+            <personnage>Nambutu Embassy Official</personnage>
+          </role>
+          <role place="3">
+            <idActeur>1192260</idActeur>
+            <personnage>Le Chiffre</personnage>
+          </role>
+          <role place="34">
+            <idActeur>650188</idActeur>
+            <personnage>Card Players</personnage>
+          </role>
+          <role place="69">
+            <idActeur>842121</idActeur>
+            <personnage>Hermitage Waiter</personnage>
+          </role>
+          <role place="6">
+            <idActeur>633338</idActeur>
+            <personnage>Rene Mathis</personnage>
+          </role>
+          <role place="39">
+            <idActeur>157806</idActeur>
+            <personnage>Hot Room Doctors</personnage>
+          </role>
+          <role place="37">
+            <idActeur>2637370</idActeur>
+            <personnage>Dealer</personnage>
+          </role>
+          <role place="47">
+            <idActeur>852802</idActeur>
+            <personnage>Arresting Officer</personnage>
+          </role>
+          <role place="49">
+            <idActeur>2242968</idActeur>
+            <personnage>French News Reporter</personnage>
+          </role>
+          <role place="18">
+            <idActeur>1199473</idActeur>
+            <personnage>Carter</personnage>
+          </role>
+          <role place="9223372036854775807">
+            <idActeur>77354</idActeur>
+            <personnage>Airport Staff</personnage>
+          </role>
+          <role place="53">
+            <idActeur>1924788</idActeur>
+            <personnage>Chief of Police</personnage>
+          </role>
+          <role place="12">
+            <idActeur>1179146</idActeur>
+            <personnage>Villiers</personnage>
+          </role>
+          <role place="21">
+            <idActeur>82002</idActeur>
+            <personnage>Leo</personnage>
+          </role>
+        </roles>
+      </film>
+    </projection>
+    <projection id="7">
+      <date>Fri Apr 29 13:30:02 CEST 2016</date>
+      <film id="2235127">
+        <titre>GoldenEye</titre>
+        <synopsis>1986 - Soviet Russia has been arming international terrorists with chemical weapon technology, and a chemical weapons plant in the mountains is the target of James Bond and his closest compatriot, Alec Trevelyan. Infiltrating the compound, they are spotted and Alec is captured. When a ruthless Soviet officer, Oromov, executes Trevelyan, James pulls off a spectacular escape and succeeds in blowing up the compound. Now in 1995, he is assigned to tail former Red Air Force jet jockey Xenia Onatopp, who is working for a Russian crime syndicate known as Janus, but he is unable to stop her from stealing a powerful helicopter - a theft initially dismissed as a possibility by MI6's new leader, a woman who is a bureaucratic bean counter who, despite her acidic responses to grumbling from her ticked-off men, is having to learn her job as she goes, and who has to trust James Bond's instincts after a nuclear accident occurs over a Russian region housing the tracking station for a weapons satellite known as Goldeneye. James must track down the stolen gunship and all leads to a second Goldeneye system, and along the way he is horrified to find the true identity of the Janus syndicate, which leads to a spectacular running pursuit from the stolen gunship through a Soviet army prison to a wild street chase involving a tank and confrontation with a Soviet missile train, and eventually a showdown in the jungles of Cuba.</synopsis>
+        <duree>130</duree>
+        <roles>
+          <role place="8">
+            <idActeur>857208</idActeur>
+            <personnage>General Arkady Grigorovich Ourumov</personnage>
+          </role>
+          <role place="21">
+            <idActeur>2022331</idActeur>
+            <personnage>Anna</personnage>
+          </role>
+          <role place="6">
+            <idActeur>2220301</idActeur>
+            <personnage>M</personnage>
+          </role>
+          <role place="11">
+            <idActeur>1047090</idActeur>
+            <personnage>Q</personnage>
+          </role>
+          <role place="25">
+            <idActeur>1092287</idActeur>
+            <personnage>Valentin's Bodyguard</personnage>
+          </role>
+          <role place="1">
+            <idActeur>220515</idActeur>
+            <personnage>James Bond</personnage>
+          </role>
+          <role place="14">
+            <idActeur>2341708</idActeur>
+            <personnage>Caroline</personnage>
+          </role>
+          <role place="10">
+            <idActeur>895949</idActeur>
+            <personnage>Defense Minister Dmitri Mishkin</personnage>
+          </role>
+          <role place="7">
+            <idActeur>346345</idActeur>
+            <personnage>Valentin Dmitrovich Zukovsky</personnage>
+          </role>
+          <role place="15">
+            <idActeur>970460</idActeur>
+            <personnage>Severnaya Duty Officer</personnage>
+          </role>
+          <role place="13">
+            <idActeur>933908</idActeur>
+            <personnage>Bill Tanner</personnage>
+          </role>
+          <role place="9">
+            <idActeur>383183</idActeur>
+            <personnage>Boris Grishenko</personnage>
+          </role>
+          <role place="4">
+            <idActeur>2437457</idActeur>
+            <personnage>Xenia Onatopp</personnage>
+          </role>
+          <role place="24">
+            <idActeur>248748</idActeur>
+            <personnage>Train Driver</personnage>
+          </role>
+          <role place="3">
+            <idActeur>2854968</idActeur>
+            <personnage>Natalya Simonova</personnage>
+          </role>
+          <role place="20">
+            <idActeur>2242155</idActeur>
+            <personnage>Irina</personnage>
+          </role>
+          <role place="23">
+            <idActeur>1192950</idActeur>
+            <personnage>Croupier</personnage>
+          </role>
+          <role place="16">
+            <idActeur>470908</idActeur>
+            <personnage>French Warship Captain</personnage>
+          </role>
+          <role place="9223372036854775807">
+            <idActeur>104350</idActeur>
+            <personnage>Russian Scientist</personnage>
+          </role>
+          <role place="19">
+            <idActeur>678837</idActeur>
+            <personnage>Computer Store Manager</personnage>
+          </role>
+          <role place="12">
+            <idActeur>2083968</idActeur>
+            <personnage>Miss Moneypenny</personnage>
+          </role>
+          <role place="22">
+            <idActeur>827458</idActeur>
+            <personnage>MiG Pilot</personnage>
+          </role>
+          <role place="5">
+            <idActeur>95361</idActeur>
+            <personnage>Jack Wade</personnage>
+          </role>
+          <role place="18">
+            <idActeur>1205728</idActeur>
+            <personnage>Admiral Chuck Farrell</personnage>
+          </role>
+          <role place="17">
+            <idActeur>983359</idActeur>
+            <personnage>French Warship Officer</personnage>
+          </role>
+          <role place="2">
+            <idActeur>126963</idActeur>
+            <personnage>Alec Trevelyan</personnage>
+          </role>
+        </roles>
+      </film>
+    </projection>
+  </Projections>
+</cinema>

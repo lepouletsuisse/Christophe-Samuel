@@ -1,0 +1,32 @@
+{
+  "cinema": {
+    "Projections": [
+      {
+        "id": 8,
+        "titre": "Casino Royale",
+        "date": "2016-04-29 14:32:00",
+        "acteurs": [
+          {
+            "Place 1": "Craig, Daniel"
+          },
+          {
+            "Place 2": "Green, Eva"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "titre": "GoldenEye",
+        "date": "2016-04-29 14:32:04",
+        "acteurs": [
+          {
+            "Place 2": "Bean, Sean"
+          },
+          {
+            "Place 1": "Brosnan, Pierce"
+          }
+        ]
+      }
+    ]
+  }
+}

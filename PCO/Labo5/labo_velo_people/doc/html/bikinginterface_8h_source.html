@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Labo Vélo:  Fichier source de src/bikinginterface.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labo Vélo
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">src/bikinginterface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bikinginterface_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef BIKINGINTERFACE_H</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define BIKINGINTERFACE_H</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;QObject&gt;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="mainwindow_8h.html">mainwindow.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00031"></a><a class="code" href="class_biking_interface.html">00031</a> <span class="keyword">class </span><a class="code" href="class_biking_interface.html" title="Classe permettant aux threads d&#39;interagir avec la partie graphique.">BikingInterface</a> : <span class="keyword">public</span> QObject
+<a name="l00032"></a>00032 {
+<a name="l00033"></a>00033     Q_OBJECT
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="keyword">public</span>:
+<a name="l00036"></a>00036 
+<a name="l00042"></a>00042     <a class="code" href="class_biking_interface.html#a44b35b7ca253d649648a02191a591fd7" title="Constructeur simple.">BikingInterface</a>();
+<a name="l00043"></a>00043 
+<a name="l00052"></a>00052     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#a2ccf1cb82670bc369434a43c87af47ea" title="Initialisation à exécuter en début d&#39;application.">initialize</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbConsoles,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbSites);
+<a name="l00053"></a>00053 
+<a name="l00060"></a>00060     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#a32e712daa3fddd6588eb43fe1ed6c182" title="Fonction permettant d&#39;afficher du texte dans une console.">consoleAppendText</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> consoleId,QString text);
+<a name="l00061"></a>00061 
+<a name="l00071"></a>00071     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#a786c4d76932c4ef691f7c18d7a29fbf2" title="Définition du nombre de vélos sur un site.">setBikes</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbBike);
+<a name="l00072"></a>00072 
+<a name="l00084"></a>00084     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#a502771176d8d519b0c54303e7e251799" title="Définition du nombre de vélos sur un site.">setInitBikes</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbBike);
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086 
+<a name="l00099"></a>00099     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#a44442f87cc71c84505015e4dbac1f461" title="Place une personne sur un site.">setInitPerson</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> personID);
+<a name="l00100"></a>00100 
+<a name="l00116"></a>00116     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#abf720b09ca479e2adf4382fae3d2a7ed" title="Déplace un vélo d&#39;un site à l&#39;autre.">travel</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> personId,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site2,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);
+<a name="l00117"></a>00117 
+<a name="l00135"></a>00135     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#ac10c743ca48001f2d3eb87b30eda8942" title="Déplace la camionette d&#39;un site à l&#39;autre.">vanTravel</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site2,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137 <span class="keyword">private</span>:
+<a name="l00138"></a>00138 
+<a name="l00140"></a>00140     <span class="keyword">static</span> <span class="keywordtype">bool</span> sm_didInitialize;
+<a name="l00142"></a>00142     <span class="keyword">static</span> <a class="code" href="class_main_window.html">MainWindow</a> *mainWindow;
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144 signals:
+<a name="l00151"></a>00151     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#acf95831c4aedbb7cf7cba70d4ae14e1a">sig_consoleAppendText</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> consoleId,QString text);
+<a name="l00152"></a>00152 
+<a name="l00161"></a>00161     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#ae21d7fc4564188bda1f9c54ed148faeb">sig_setBikes</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbBike);
+<a name="l00162"></a>00162 
+<a name="l00175"></a>00175     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#a28796bfd422b3f3403eab8462c675c47">sig_travel</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> personId,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site2,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);
+<a name="l00176"></a>00176 
+<a name="l00188"></a>00188     <span class="keywordtype">void</span> <a class="code" href="class_biking_interface.html#a8b152ee3e4a890cc32e027c20a158d9b">sig_vanTravel</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> site2,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);
+<a name="l00189"></a>00189 };
+<a name="l00190"></a>00190 
+<a name="l00191"></a>00191 <span class="preprocessor">#endif // BIKINGINTERFACE_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Mai 1 2014 11:49:53 pour Labo Vélo par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="visites.xsl"?>
+<visites> 
+	<visite>
+		<date>2015/04/01</date>
+		<parcours>
+			<nom>Decouverte</nom>
+			<description>Le parcours le plus long</description>
+			<monuments>
+				<monument>
+					<nom_monument>Le poto</nom_monument>
+					<description_monument>C'est un beau poto</description_monument>
+				</monument>
+				<monument>
+					<nom_monument>L'antenne</nom_monument>
+					<description_monument>Vaut la peine</description_monument>
+				</monument>
+				<monument>
+					<nom_monument>Vue sur le banc</nom_monument>
+					<description_monument>A voir absolument</description_monument>
+				</monument>
+			</monuments>
+		</parcours>
+	</visite>
+	<visite>
+		<date>2015/04/02</date>
+		<parcours>
+			<nom>Insolite</nom>
+			<description>Le parcours le plus court</description>
+			<monuments>
+				<monument>
+					<nom_monument>Le poto</nom_monument>
+					<description_monument>C'est un beau poto</description_monument>
+				</monument>
+				<monument>
+					<nom_monument>Vue sur le banc</nom_monument>
+					<description_monument>A voir absolument</description_monument>
+				</monument>
+			</monuments>
+		</parcours>
+	</visite>
+	<visite>
+		<date>2015/04/03</date>
+		<parcours>
+			<nom>Decouverte</nom>
+			<description>Le parcours le plus long</description>
+			<monuments>
+				<monument>
+					<nom_monument>Le poto</nom_monument>
+					<description_monument>C'est un beau poto</description_monument>
+				</monument>
+				<monument>
+					<nom_monument>L'antenne</nom_monument>
+					<description_monument>Vaut la peine</description_monument>
+				</monument>
+				<monument>
+					<nom_monument>Vue sur le banc</nom_monument>
+					<description_monument>A voir absolument</description_monument>
+				</monument>
+			</monuments>
+		</parcours>
+	</visite>
+</visites>

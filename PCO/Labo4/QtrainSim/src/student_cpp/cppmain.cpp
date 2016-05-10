@@ -1,11 +1,44 @@
-/* Fichier  :   cppmain.cpp
- * Auteurs  :   Samuel Darcey & Christophe Peretti
- * Date     :   26.04.2016
- * But      :   Ce fichier est le fichier de définition des comportements des locomotives dans la
- *              simulation de train. Il définit la configuration initiale de la maquette, les parcours
- *              des locomotives, ainsi que la zone critique commune entre les loco et le comportement
- *              à adopter lorsqu'elles se retrouvent toutes les deux dedans en même temps.
- */
+/* PCO
+ * ---------------------------------------------------------------------------
+ * Labo:    04 QtrainSim
+ * Auteur:  Christophe Peretti & Samuel Darcey
+ * Date:    03.05.2016
+ * But :    Définir les comportements des locomotives dans la simulation
+ *          de train. Gérer la configuration initiale de la maquette, les
+ *          parcours des locomotives, ainsi que la zone critique commune
+ *          entre les loco.
+ * Rapport:
+ *      REMARQUE:
+ *          Nous avons utilisé la maquette A, le choix des parcours ne peuvent
+ *          jouer qu'avec cette maquette.
+ *          Dans la version testée sur la maquette, tout fonctionnait excepté
+ *          le changement de sens. Celui-ci ne fonctionnait pas bien car les
+ *          locomotives avaient très peu d'inertie. Lors du changement de sens
+ *          après un capteur, la loco devait repasser par le même capteur et
+ *          elle s'arrêtait sur celui-ci. Dans la version actuelle, la mise à
+ *          jour du trajet se fait de façon plus optimisée: la loco attend de
+ *          rejoindre le capteur suivant et non plus le même.
+ *      TESTS:
+ *        - L'arrêt d'urgence a été testé et fonctionne bien dans la simulation
+ *          ainsi que sur la maquette.
+ *        - Pour les vitesses, dans la simulation, celles-ci peuvent prendre
+ *          n'importe quelle valeur (testé jusqu'à 300), tant que l'inertie est
+ *          désactivée. En effet, lors d'un arrêt d'une loco celle-ci effectue
+ *          encore des kilomètres avant de s'arrêter si l'inertie est activée.
+ *          Sur la maquette, des vitesses entre 3 et 7 ont été testées. En
+ *          dessous, il y a un risque qu'une loco s'arrête sur un aiguillage
+ *          à cause du frottement. En dessus, un risque d'abîmer le matériel
+ *          est non-négligeable.
+ *        - La simulation a été testée pendant 45 minutes non-stop.
+ *      RESULTATS:
+ *        - Aucune collision intempestive n'a été détectée.
+ *        - Le changement d'aiguillage se fait correctement, toujours commandé
+ *          par la loco 1.
+ *        - La loco 1 prend la déviation lorsque la loco 2 est dans la zone critique.
+ *        - La loco 2 s'arrête lorsque la loco 1 est dans la zone critique.
+ *
+ * ---------------------------------------------------------------------------
+*/
 
 #include "ctrain_handler.h"
 #include "locomotive.h"
@@ -15,30 +48,45 @@
 #include <QSemaphore>
 #include <QMutex>
 
-/* Les numéros des trains doivent correspondre aux numéros des vraies locomotives dans la maquette, afin
- * que les capteurs reconnaissent bien les loco. Pour la simulation, deux numéros différents suffisent.
+/* Les numéros des trains doivent correspondre aux numéros des vraies
+ * locomotives dans la maquette, afin que les capteurs reconnaissent
+ * bien les loco. Pour la simulation, deux numéros différents suffisent.
+ *
+ * Utilisé uniquement en lecture
  */
 int numTrain1 = 2;
 int numTrain2 = 14;
 
-/* La vitesse des locomotives peuvent valoir n'importe quelle valeur dans la simulation (tant que l'inertie
- * est désactivée). Lors de l'utilisation de la maquette, celles-ci ne devraient pas dépasser 10, pour des raisons
- * mécaniques.
+/* La vitesse des locomotives peuvent valoir n'importe quelle valeur
+ * dans la simulation (tant que l'inertie est désactivée). Lors de
+ * l'utilisation de la maquette, celles-ci ne devraient pas dépasser
+ * 10, pour des raisons mécaniques.
+ *
+ * Utilisé uniquement en lecture
  */
-int vitesseLoco1 = 3;
-int vitesseLoco2 = 5;
+int vitesseLoco1 = 26;
+int vitesseLoco2 = 28;
 
-/* Les deux loco avertissent quand la zone est occupée, mais elles auront un comportement différent dans
- * celle-ci. Si la zone est libre lorsque la loco 1 arrive, elle entre normalement et la 2 va s'arrêter.
- * Dans l'autre situation, si la 2 entre dans la zone critique avant la 1, cela ne bloque pas la 1, mais
- * active la dérivation, donc la mise en parallèle des deux loco.
+/* Classe gérant la zone critique de la maquette
  *
- * A la sortie de la zone critique, la loco 2 remet la zone comme étant libre (dans tous les cas) et
- * pour la loco 1, elle le fait uniquement si elle n'a pas été déviée (donc pas de concurrence sur libre)
+ * Les deux loco avertissent quand la zone est occupée, mais elles
+ * ont un comportement différent dans celle-ci. Si la zone est libre
+ * lorsque la loco 1 arrive, elle entre normalement et empêche la 2
+ * d'y entrer. Dans l'autre situation, si la 2 entre dans la zone critique
+ * avant la 1, cela ne bloque pas la 1, mais active la dérivation, donc la
+ * mise en parallèle des deux loco.
+ *
+ * A la sortie de la zone critique, la loco 2 remet la zone comme étant
+ * libre (dans tous les cas) et pour la loco 1, elle le fait uniquement
+ * si elle n'a pas été déviée. Donc pas de problème de concurrence sur la
+ * variable libre lorsque les deux loco sont en parallèle dans la zone critique
+ *
+ * Si la loco 2 a été arrêtée, elle met la zone comme non-libre seulement après
+ * être repartie, donc après que la loco 1 ait libéré la zone. Il n'y a donc
+ * ici non plus de problème de concurrence sur la variable libre.
  *
  *
  */
-
 class ZoneCritique{
 private:
     QMutex* mutex;
@@ -46,20 +94,20 @@ private:
     bool libre;
     QPair<int, int> aiguillageCrit1;
     QPair<int, int> aiguillageCrit2;
-    int nbLoco;
     bool derivation;
 public:
-    ZoneCritique(QPair<int, int> aiguillageCrit1, QPair<int, int> aiguillageCrit2, QSemaphore* sem){
+    ZoneCritique(QPair<int, int> aiguillageCrit1,
+                 QPair<int, int> aiguillageCrit2, QSemaphore* sem){
         libre = true;
         derivation = false;
         mutex = new QMutex();
-        nbLoco = 0;
         this->sem = sem;
         this->aiguillageCrit1 = aiguillageCrit1;
         this->aiguillageCrit2 = aiguillageCrit2;
     }
 
     bool peutEntrer(int numLocomotive){
+
         afficher_message(qPrintable(QString("Entering the critical Area!")));
         mutex->lock();
         bool resultat = false;
@@ -91,16 +139,21 @@ public:
             diriger_aiguillage(aiguillageCrit2.second, TOUT_DROIT, 0);
 
             if(!derivation){
-                liberer();
                 libre = true;
+                liberer();
             }
             derivation = false;
         }
         if(numLocomotive == numTrain2){
-            liberer();
             libre = true;
+            liberer();
+
         }
         afficher_message(qPrintable(QString("Exiting the critical Area!")));
+    }
+
+    void setLibre(bool val){
+        libre = val;
     }
 
     void bloquer(){
@@ -112,6 +165,14 @@ public:
     }
 };
 
+/* Classe gérant les thread des locomotives. Ces thread ont une référence sur
+ * la même instance de la zone critique et font appel à ses méthodes.
+ *
+ * Les méthodes départ() et arreter() sont utiles car le fait d'arrêter ou non
+ * un thread n'a pas de conséquence "physique" sur les locomotives.
+ *
+ *
+ * */
 class LocomotiveThread : public QThread{
 private:
     Locomotive* locomotive;
@@ -119,11 +180,14 @@ private:
     QPair<int, int> capteurCritique;
     ZoneCritique* zoneCritique;
     bool sens; //true = marche avant
-    int nbTour;
+    int nbTour; // Utile pour changer de sens après 2 tours
 public:
 
     //Initialisation de la locomotive
-    LocomotiveThread(int id, int vitesse, QPair<int, int> departCapteur, bool phare, QList<int> parcours, QPair<int, int> capteurCritique, ZoneCritique* zoneCritique){
+    LocomotiveThread(int id, int vitesse, QPair<int, int> departCapteur,
+                     bool phare, QList<int> parcours,
+                     QPair<int, int> capteurCritique,
+                     ZoneCritique* zoneCritique){
         locomotive = new Locomotive();
         locomotive->fixerNumero(id);
         locomotive->fixerVitesse(vitesse);
@@ -149,30 +213,38 @@ public:
     void run() Q_DECL_OVERRIDE{
         depart();
 
-        /* Attente du passage sur les contacts. La zone critique n'a pas de début ou de fin, mais des bornes
-         * (utile pour gérer les deux sens)
-         *
+        /* Attente du passage sur les contacts. La zone critique n'a pas de début
+         * ou de fin, mais des bornes (utile pour gérer les deux sens).
          *
          */
         int pos = 0;
         while(true){
             contact(parcours.at(pos));
-            if(parcours.at(pos) == capteurCritique.first || parcours.at(pos) == capteurCritique.second){
-               if(!zoneCritique->peutEntrer(locomotive->numero()) && locomotive->numero() == numTrain2){
+            // Action à l'entrée de la zone critique
+            if(parcours.at(pos) == capteurCritique.first ||
+                    parcours.at(pos) == capteurCritique.second){
+                // Action spéciale pour la loco 2 si la zone est occupée:
+                // elle s'arrête et attend que l'autre sorte de la zone
+               if(!zoneCritique->peutEntrer(locomotive->numero()) &&
+                       locomotive->numero() == numTrain2){
                    arreter();
                    zoneCritique->bloquer();
+                   // Avant de repartir, la loco 2 indique qu'elle entre dans la zone critique
+                   zoneCritique->setLibre(false);
                    depart();
                }
                while(true){
                    pos = prochainePosition(pos);
-                   if(parcours.at(pos) == capteurCritique.first || parcours.at(pos) == capteurCritique.second) break;
+                   if(parcours.at(pos) == capteurCritique.first ||
+                           parcours.at(pos) == capteurCritique.second) break;
                }
                contact(parcours.at(pos));
                zoneCritique->sortir(locomotive->numero());
             }
             pos = prochainePosition(pos);
         }
-        locomotive->afficherMessage(QString("Yeah, piece of cake for locomotive %1 !").arg(locomotive->numero()));
+        locomotive->afficherMessage(QString("Yeah, piece of cake for locomotive %1 !")
+                                    .arg(locomotive->numero()));
         arreter();
     }
 
@@ -188,8 +260,9 @@ public:
            nbTour++;
         }
         if(nbTour == 2){
-            sens = (sens ? false : true);
+            sens = !sens;
             nbTour = 0;
+            // On saute un capteur lors du changement de sens, pour ne pas rester bloqué
             pos = (sens ? 1 : parcours.size() - 2);
             locomotive->inverserSens();
         }
@@ -236,11 +309,17 @@ int cmain()
     parcours2 << 12 << 10 << 3 << 2 << 1 << 31 << 30 << 29 << 28 << 21 << 20;
 
     //Zone critique partager
-    ZoneCritique* zoneCritique = new ZoneCritique(QPair<int, int>(1, 22), QPair<int, int>(2, 21), new QSemaphore(1));
+    ZoneCritique* zoneCritique = new ZoneCritique(QPair<int, int>(1, 22),
+                                                  QPair<int, int>(2, 21),
+                                                  new QSemaphore(1));
 
     //Initialisation des locomotives
-    locomotives.append(new LocomotiveThread(numTrain1, vitesseLoco1, QPair<int,int>(16,23), true, parcours1, critique1, zoneCritique));
-    locomotives.append(new LocomotiveThread(numTrain2, vitesseLoco2, QPair<int,int>(13,19), true, parcours2, critique2, zoneCritique));
+    locomotives.append(new LocomotiveThread(numTrain1, vitesseLoco1,
+                                            QPair<int,int>(16,23), true,
+                                            parcours1, critique1, zoneCritique));
+    locomotives.append(new LocomotiveThread(numTrain2, vitesseLoco2,
+                                            QPair<int,int>(13,19), true,
+                                            parcours2, critique2, zoneCritique));
 
     //Initialisation des aiguillages pour loco 1
     diriger_aiguillage(8,  DEVIE,       0);
