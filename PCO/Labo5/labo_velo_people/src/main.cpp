@@ -18,8 +18,9 @@ using namespace std;
 
 #define NBSITES 8
 #define NBHABITANTS 10
-
-
+#define NBVELOSDEPOT 3
+#define NBBORNES 4
+#define NBVELOS 19
 /**
  Inteface pour l'envoi de commandes à l'interface graphique.
  Elle peut sans problème être partagée entre les différents threads.
@@ -39,31 +40,91 @@ public:
 
 void run() Q_DECL_OVERRIDE {
     unsigned int t = id;
-    unsigned int sites[2];
-    sites[0]=t%NBSITES;
-    sites[1]=(t+1)%NBSITES;
-    unsigned int curSite=0;
+    position = t;
+
+    nbVelosCamionette = 0;
+    nbVelosDepot = NBVELOSDEPOT;
+    unsigned int sites[NBSITES];
     qsrand(t);
+    if (t==0){
+        position = NBSITES;
+        arrivee = 0;
+        prochainSite = 0;
+    }
+
+    for(int i=0; i < NBSITES; i++){
+        gui_interface->setBikes(i,NBBORNES - 1);
+        sites[i] = NBBORNES - 1;
+    }
 
     while(1) {
-        // Affichage d'un message
-        gui_interface->consoleAppendText(t,"Salut");
+
+
+
         if (t==0) {
+
+            gui_interface->setBikes(NBSITES,nbVelosDepot);
+            if(arrivee == prochainSite){
+                arrivee = (position + 1) % (NBSITES + 1);
+                prochainSite = arrivee;
+            } else {
+                arrivee = prochainSite;
+            }
+
+            unsigned int c;
+
+            if (position == NBSITES){
+                nbVelosDepot += nbVelosCamionette;
+                c = min((unsigned int)2,nbVelosDepot);
+                nbVelosCamionette = c;
+                nbVelosDepot -= c;
+                gui_interface->setBikes(position,nbVelosDepot);
+
+            } else{
+                if(sites[position] > NBBORNES - 2){
+                    c = min(sites[position] - (NBBORNES - 2), 4 - nbVelosCamionette);
+                    nbVelosCamionette += c;
+                    sites[position] -= c;
+
+                } else if(sites[position] < NBBORNES - 2){
+                    c = min((NBBORNES - 2) - sites[position], nbVelosCamionette);
+                    nbVelosCamionette -= c;
+                    sites[position] += c;
+                }
+                gui_interface->setBikes(position,sites[position]);
+            }
+            gui_interface->consoleAppendText(t, "Velos dans la camionette :");
+            gui_interface->consoleAppendText(t,QString::number(nbVelosCamionette));
+
+
+            /*
+            if (nbVelosCamionette == 4){
+                // direction Depot
+                arrivee = NBSITES;
+            }
+            */
+
             // Déplacement de la camionnette
-            gui_interface->vanTravel(t,NBSITES,2000);
-            gui_interface->setBikes(NBSITES,((float)qrand())*5.0/RAND_MAX);
+
+            gui_interface->vanTravel(position,arrivee,500);
+            position = arrivee;
+
+
         }
         else {
+            // Affichage d'un message
+            gui_interface->consoleAppendText(t, "Position du velo :");
+            gui_interface->consoleAppendText(t,QString::number(position));
+
+            arrivee = (position + 1) % NBSITES;
             // Déplacement d'un vélo
+
             gui_interface->travel(t,             // ID de la personne
-                                  t,             // Site de départ
-                                  (t+1)%NBSITES, // site d'arrivée
+                                  position,             // Site de départ
+                                  arrivee, // site d'arrivée
                                   (t+1)*1000);   // Temps en millisecondes
-            // On définit aléatoirement le nombre de vélos sur un site
-            gui_interface->setBikes((t+1)%NBSITES,((float)qrand())*5.0/RAND_MAX);
-            // On définit aléatoirement le nombre de vélos sur un site
-            gui_interface->setBikes(sites[1-curSite],((float)qrand())*5.0/RAND_MAX);
-            curSite=1-curSite;
+
+            position = ++position % NBSITES;
         }
 
         QThread::usleep(1000000);
@@ -72,6 +133,11 @@ void run() Q_DECL_OVERRIDE {
 
 private:
     unsigned int id;
+    unsigned int position;
+    unsigned int arrivee;
+    unsigned int nbVelosCamionette;
+    unsigned int nbVelosDepot;
+    unsigned int prochainSite;
 };
 
 int main(int argc, char *argv[])
@@ -85,6 +151,7 @@ int main(int argc, char *argv[])
     BikingInterface::initialize(nbHabitants,nbSites);
     // Création de l'interface pour les commandes à la partie graphique
     gui_interface=new BikingInterface();
+
 
     // Création de threads
     int NBTHREADS=nbHabitants;
