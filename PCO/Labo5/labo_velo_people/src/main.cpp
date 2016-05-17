@@ -150,10 +150,7 @@ void run() Q_DECL_OVERRIDE {
         prochainSite = 0;
     }
 
-    for(int i=0; i < NBSITES; i++){
-        gui_interface->setBikes(i,NBBORNES - 1);
-        sites[i] = NBBORNES - 1;
-    }
+
 
     while(1) {
 
@@ -161,7 +158,7 @@ void run() Q_DECL_OVERRIDE {
 
             gui_interface->setBikes(NBSITES,nbVelosDepot);
 
-            arrivee = (position + 1) % (NBSITES + 1);
+            arrivee = (position + 1) % NBSITES;
 
             unsigned int c;
 
@@ -175,19 +172,27 @@ void run() Q_DECL_OVERRIDE {
 
             } else{
                 // S'il y a trop de vélo sur le site
-                if(sites[position] > NBBORNES - 2){
-                    c = min(sites[position] - (NBBORNES - 2), 4 - nbVelosCamionette);
+                if(sites[position]->getNbVelo() > NBBORNES - 2){
+
+                    sites[position]->debutMaintenance();
+                    c = min(sites[position]->getNbVelo() - (NBBORNES - 2), 4 - nbVelosCamionette);
+                    for(int i = 0; i < c; i++){
+                        sites[position]->enleverVelo(id);
+                    }
+                    sites[position]->finMaintenance();
                     nbVelosCamionette += c;
-                    sites[position] -= c;
 
                 // S'il y en a pas assez
-                } else if(sites[position] < NBBORNES - 2){
-                    c = min((NBBORNES - 2) - sites[position], nbVelosCamionette);
+                } else if(sites[position]->getNbVelo() < NBBORNES - 2){
+
+                    sites[position]->debutMaintenance();
+                    c = min((NBBORNES - 2) - sites[position]->getNbVelo(), nbVelosCamionette);
+                    for(int i = 0; i < c; i++){
+                        sites[position]->ajouterVelo(id);
+                    }
+                    sites[position]->finMaintenance();
                     nbVelosCamionette -= c;
-                    sites[position] += c;
                 }
-                // Affichage des vélos
-                gui_interface->setBikes(position,sites[position]);
             }
             // Messages
             gui_interface->consoleAppendText(t, "Velos dans la camionette :");
@@ -248,6 +253,9 @@ int main(int argc, char *argv[])
     // Création de l'interface pour les commandes à la partie graphique
     gui_interface=new BikingInterface();
 
+    for(int i=0; i < NBSITES; i++){
+        gui_interface->setBikes(site[i]->getId(),site[i]->getNbVelo());
+    }
 
     // Création de threads
     int NBTHREADS=nbHabitants;
@@ -257,6 +265,10 @@ int main(int argc, char *argv[])
         cout << "Création du thread "<< t << endl;
         threads[t] = new Habitant(t);
         threads[t]->start();
+    }
+    while(1){
+        gui_interface->setBikes(site[i]->getId(),site[i]->getNbVelo());
+        QThread::usleep(1000000);
     }
 
     // Attention, il est obligatoire d'exécuter l'instruction suivante.
