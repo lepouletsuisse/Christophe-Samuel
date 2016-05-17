@@ -26,6 +26,13 @@ using namespace std;
 #define NBBORNES 4
 #define NBVELOS 19
 
+
+/**
+ Inteface pour l'envoi de commandes à l'interface graphique.
+ Elle peut sans problème être partagée entre les différents threads.
+ */
+BikingInterface *gui_interface;
+
 class Site{
 public:
     Site(unsigned int id, unsigned int nbBorne) : id(id), nbBorne(nbBorne) {
@@ -41,16 +48,20 @@ public:
     void ajouterVelo(unsigned int idHabitant){
         // La camionette à toujours l'id 0
         if(isMaintenance && idHabitant != 0){
+            gui_interface->consoleAppendText(idHabitant, "Camionette is here! waiting...");
             maintenance->wait(maintenanceMutex);
+            gui_interface->consoleAppendText(idHabitant, "Camionette is done! Let's continue");
         }
         mutex->lock();
         //Si les vélo sont plein, on met en attente l'habitant qui essaie d'ajouter un vélo
         if(nbVelo >= nbBorne){
+            gui_interface->consoleAppendText(idHabitant, "Too much bike! Waiting...");
             habitantEnAttente->push_back(idHabitant);
             moniteur->wait(mutex);
             while(habitantEnAttente->front() != idHabitant){
                 moniteur->wait(mutex);
             }
+            gui_interface->consoleAppendText(idHabitant, "Put the bike, see ya!");
             habitantEnAttente->pop_front();
             nbVelo++;
         }
@@ -66,16 +77,20 @@ public:
     void enleverVelo(unsigned int idHabitant){
         // La camionette à toujours l'id 0
         if(isMaintenance && idHabitant != 0){
+            gui_interface->consoleAppendText(idHabitant, "Camionette is here! waiting...");
             maintenance->wait(maintenanceMutex);
+            gui_interface->consoleAppendText(idHabitant, "Camionette is done! Let's continue");
         }
         mutex->lock();
         //Si les vélo sont vide, on met en attente l'habitant qui essaie de prendre un vélo
         if(nbVelo <= 0){
+            gui_interface->consoleAppendText(idHabitant, "Not enough bike! Waiting...");
             habitantEnAttente->push_back(idHabitant);
             moniteur->wait(mutex);
             while(habitantEnAttente->front() != idHabitant){
                 moniteur->wait(mutex);
             }
+            gui_interface->consoleAppendText(idHabitant, "Took the bike, see ya!");
             habitantEnAttente->pop_front();
             nbVelo--;
         }
@@ -123,11 +138,6 @@ private:
 
 };
 
-/**
- Inteface pour l'envoi de commandes à l'interface graphique.
- Elle peut sans problème être partagée entre les différents threads.
- */
-BikingInterface *gui_interface;
 Site* sites[NBSITES];
 
 /**
