@@ -47,7 +47,8 @@ public:
     }
 
     void ajouterVelo(unsigned int idHabitant){
-        if(isMaintenance){
+        // La camionette à toujours l'id 0
+        if(isMaintenance && idHabitant != 0){
             maintenance->wait(maintenanceMutex);
         }
         mutex->lock();
@@ -66,12 +67,13 @@ public:
             nbVelo++;
         }
         //On wakeAll si il reste des places libre car si la camionette prends plusieurs vélo, il faut que plusieurs utilisateurs soient capable de prendre les vélos ensuite
-        if(nbVelo < nbBorne) moniteur->wakeAll();
+        if(nbVelo < nbBorne && !isMaintenance) moniteur->wakeAll();
         mutex->unlock();
     }
 
     void enleverVelo(unsigned int idHabitant){
-        if(isMaintenance){
+        // La camionette à toujours l'id 0
+        if(isMaintenance && idHabitant != 0){
             maintenance->wait(maintenanceMutex);
         }
         mutex->lock();
@@ -91,7 +93,7 @@ public:
 
         }
         //On wakeAll si il y reste des vélo car si la camionette ramene plusieurs vélo, il faut que plusieurs utilisateurs soit capable de laisser leur vélo.++
-        if(nbVelo > 0) moniteur->wakeAll();
+        if(nbVelo > 0 && !isMaintenance) moniteur->wakeAll();
         mutex->unlock();
     }
 
@@ -103,6 +105,7 @@ public:
         maintenanceMutex->lock();
         isMaintenance = false;
         maintenance->wakeAll();
+        moniteur->wakeAll();
         maintenanceMutex->unlock();
     }
 
