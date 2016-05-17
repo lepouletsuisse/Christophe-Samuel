@@ -141,12 +141,16 @@ public:
 
 void run() Q_DECL_OVERRIDE {
     unsigned int t = id;
+    unsigned int tempsTrajet;
+    unsigned int tempsActivite;
+
     position = t;
     nbVelosCamionette = 0;
     nbVelosDepot = NBVELOSDEPOT;
 
     qsrand(t);
 
+    arrivee = 1;
     if (t==0){
         position = NBSITES;
         arrivee = 0;
@@ -181,6 +185,7 @@ void run() Q_DECL_OVERRIDE {
                     for(unsigned int i = 0; i < c; i++){
                         sites[position]->enleverVelo(id);
                     }
+
                     sites[position]->finMaintenance();
                     nbVelosCamionette += c;
 
@@ -216,12 +221,13 @@ void run() Q_DECL_OVERRIDE {
 
 
             arrivee = qrand() % NBSITES;
+            tempsTrajet = 5000 + qrand() % 5000;
             // Déplacement d'un vélo
 
             gui_interface->travel(t,             // ID de la personne
                                   position,             // Site de départ
                                   arrivee, // site d'arrivée
-                                  (t+1)*1000);   // Temps en millisecondes
+                                  tempsTrajet);   // Temps en millisecondes
             position = arrivee;
             sites[position]->ajouterVelo(id);
             gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
@@ -229,10 +235,13 @@ void run() Q_DECL_OVERRIDE {
 
         }
 
-        QThread::usleep(5000000);
         if (t != 0){
+            tempsActivite = 1000000 + qrand() % 500000;
+            QThread::usleep(tempsActivite);
             sites[position]->enleverVelo(id);
             gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
+        } else {
+            QThread::usleep(500000);
         }
     }
 }
