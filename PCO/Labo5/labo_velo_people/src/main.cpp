@@ -16,6 +16,7 @@
 #include <QSemaphore>
 #include <QThread>
 #include <iostream>
+#include <ctime>
 
 using namespace std;
 
@@ -145,6 +146,7 @@ void run() Q_DECL_OVERRIDE {
     nbVelosDepot = NBVELOSDEPOT;
 
     qsrand(t);
+
     if (t==0){
         position = NBSITES;
         arrivee = 0;
@@ -158,7 +160,7 @@ void run() Q_DECL_OVERRIDE {
 
             gui_interface->setBikes(NBSITES,nbVelosDepot);
 
-            arrivee = (position + 1) % NBSITES;
+            arrivee = (position + 1) % (NBSITES + 1);
 
             unsigned int c;
 
@@ -193,6 +195,7 @@ void run() Q_DECL_OVERRIDE {
                     sites[position]->finMaintenance();
                     nbVelosCamionette -= c;
                 }
+                gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
             }
             // Messages
             gui_interface->consoleAppendText(t, "Velos dans la camionette :");
@@ -205,24 +208,32 @@ void run() Q_DECL_OVERRIDE {
             position = arrivee;
 
 
-        }
-        else {
+        } else {
             // Affichage d'un message
             gui_interface->consoleAppendText(t, "Position du velo :");
             gui_interface->consoleAppendText(t,QString::number(position));
 
-            arrivee = (position + 1) % NBSITES;
+
+
+            arrivee = qrand() % NBSITES;
             // Déplacement d'un vélo
 
             gui_interface->travel(t,             // ID de la personne
                                   position,             // Site de départ
                                   arrivee, // site d'arrivée
                                   (t+1)*1000);   // Temps en millisecondes
+            position = arrivee;
+            sites[position]->ajouterVelo(id);
+            gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
 
-            position = ++position % NBSITES;
+
         }
 
-        QThread::usleep(1000000);
+        QThread::usleep(5000000);
+        if (t != 0){
+            sites[position]->enleverVelo(id);
+            gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
+        }
     }
 }
 
@@ -237,16 +248,19 @@ private:
 
 int main(int argc, char *argv[])
 {
+
     QApplication a(argc, argv);
 
     int nbHabitants=NBHABITANTS;
     int nbSites=NBSITES;
     int t;
 
+    std::cout << "sites:";
     for(t=0; t<nbSites; t++){
         cout << "Création du Site "<< t << endl;
         sites[t] = new Site(t, NBBORNES);
     }
+    std::cout << "sites ok";
 
     // Initialisation de la partie graphique de l'application
     BikingInterface::initialize(nbHabitants,nbSites);
@@ -266,12 +280,7 @@ int main(int argc, char *argv[])
         threads[t] = new Habitant(t);
         threads[t]->start();
     }
-    while(1){
-        for(int i=0; i < NBSITES; i++){
-            gui_interface->setBikes(sites[i]->getId(),sites[i]->getNbVelo());
-        }
-        QThread::usleep(1000000);
-    }
+
 
     // Attention, il est obligatoire d'exécuter l'instruction suivante.
     // C'est elle qui permet la gestion de la boucle des évévements de
