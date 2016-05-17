@@ -14,10 +14,9 @@
 #include <QWaitCondition>
 #include <QMutex>
 #include <QSemaphore>
-
-
-// Pour utiliser cout, cin
+#include <QThread>
 #include <iostream>
+
 using namespace std;
 
 #define NBSITES 8
@@ -25,14 +24,6 @@ using namespace std;
 #define NBVELOSDEPOT 3
 #define NBBORNES 4
 #define NBVELOS 19
-/**
- Inteface pour l'envoi de commandes à l'interface graphique.
- Elle peut sans problème être partagée entre les différents threads.
- */
-BikingInterface *gui_interface;
-unsigned int sites[NBSITES];
-
-#include <QThread>
 
 class Site{
 public:
@@ -132,6 +123,13 @@ private:
 };
 
 /**
+ Inteface pour l'envoi de commandes à l'interface graphique.
+ Elle peut sans problème être partagée entre les différents threads.
+ */
+BikingInterface *gui_interface;
+Site* sites[NBSITES];
+
+/**
   Tâche illustrant les différents appels pouvant être faits à l'interface
   graphique.
   */
@@ -150,7 +148,6 @@ void run() Q_DECL_OVERRIDE {
     if (t==0){
         position = NBSITES;
         arrivee = 0;
-        prochainSite = 0;
     }
 
 
@@ -179,7 +176,7 @@ void run() Q_DECL_OVERRIDE {
 
                     sites[position]->debutMaintenance();
                     c = min(sites[position]->getNbVelo() - (NBBORNES - 2), 4 - nbVelosCamionette);
-                    for(int i = 0; i < c; i++){
+                    for(unsigned int i = 0; i < c; i++){
                         sites[position]->enleverVelo(id);
                     }
                     sites[position]->finMaintenance();
@@ -190,7 +187,7 @@ void run() Q_DECL_OVERRIDE {
 
                     sites[position]->debutMaintenance();
                     c = min((NBBORNES - 2) - sites[position]->getNbVelo(), nbVelosCamionette);
-                    for(int i = 0; i < c; i++){
+                    for(unsigned int i = 0; i < c; i++){
                         sites[position]->ajouterVelo(id);
                     }
                     sites[position]->finMaintenance();
@@ -248,7 +245,7 @@ int main(int argc, char *argv[])
 
     for(t=0; t<nbSites; t++){
         cout << "Création du Site "<< t << endl;
-        sites[t] = new Site(NBBORNES);
+        sites[t] = new Site(t, NBBORNES);
     }
 
     // Initialisation de la partie graphique de l'application
@@ -257,7 +254,7 @@ int main(int argc, char *argv[])
     gui_interface=new BikingInterface();
 
     for(int i=0; i < NBSITES; i++){
-        gui_interface->setBikes(site[i]->getId(),site[i]->getNbVelo());
+        gui_interface->setBikes(sites[i]->getId(),sites[i]->getNbVelo());
     }
 
     // Création de threads
@@ -270,7 +267,9 @@ int main(int argc, char *argv[])
         threads[t]->start();
     }
     while(1){
-        gui_interface->setBikes(site[i]->getId(),site[i]->getNbVelo());
+        for(int i=0; i < NBSITES; i++){
+            gui_interface->setBikes(sites[i]->getId(),sites[i]->getNbVelo());
+        }
         QThread::usleep(1000000);
     }
 
