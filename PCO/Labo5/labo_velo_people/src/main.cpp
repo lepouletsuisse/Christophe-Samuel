@@ -13,6 +13,7 @@
 #include <deque>
 #include <QWaitCondition>
 #include <QMutex>
+#include <QSemaphore>
 
 
 // Pour utiliser cout, cin
@@ -35,14 +36,20 @@ unsigned int sites[NBSITES];
 
 class Site{
 public:
-    Site(unsigned int nbBorne) : nbBorne(nbBorne) {
+    Site(unsigned int id, unsigned int nbBorne) : id(id), nbBorne(nbBorne) {
         habitantEnAttente = new deque<unsigned int>();
         moniteur = new QWaitCondition();
         mutex = new QMutex();
+        maintenance = new QWaitCondition();
+        maintenanceMutex = new QMutex();
         nbVelo = nbBorne - 2;
+        isMaintenance = false;
     }
 
     void ajouterVelo(unsigned int idHabitant){
+        if(isMaintenance){
+            maintenance->wait(maintenanceMutex);
+        }
         mutex->lock();
         //Si les vélo sont plein, on met en attente l'habitant qui essaie d'ajouter un vélo
         if(nbVelo >= nbBorne){
@@ -64,6 +71,9 @@ public:
     }
 
     void enleverVelo(unsigned int idHabitant){
+        if(isMaintenance){
+            maintenance->wait(maintenanceMutex);
+        }
         mutex->lock();
         //Si les vélo sont vide, on met en attente l'habitant qui essaie de prendre un vélo
         if(nbVelo <= 0){
@@ -85,13 +95,36 @@ public:
         mutex->unlock();
     }
 
+    void debutMaintenance(){
+        isMaintenance = true;
+    }
+
+    void finMaintenance(){
+        maintenanceMutex->lock();
+        isMaintenance = false;
+        maintenance->wakeAll();
+        maintenanceMutex->unlock();
+    }
+
+    unsigned int getId(){
+        return id;
+    }
+
+    unsigned int getNbVelo(){
+        return nbVelo;
+    }
+
 private:
 
+    unsigned int id;
     unsigned int nbBorne;
     unsigned int nbVelo;
     std::deque<unsigned int>* habitantEnAttente;
     QWaitCondition* moniteur;
     QMutex* mutex;
+    QWaitCondition* maintenance;
+    QMutex* maintenanceMutex;
+    bool isMaintenance;
 
 };
 
