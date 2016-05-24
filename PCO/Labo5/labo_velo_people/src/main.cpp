@@ -20,8 +20,8 @@
 
 using namespace std;
 
-#define NBSITES 8
-#define NBHABITANTS 10
+#define NBSITES 2
+#define NBHABITANTS 6
 #define NBVELOSDEPOT 3
 #define NBBORNES 4
 #define NBVELOS 19
@@ -41,8 +41,9 @@ public:
         mutex = new QMutex();
         maintenance = new QWaitCondition();
         maintenanceMutex = new QMutex();
-        nbVelo = nbBorne - 2;
+        nbVelo = nbBorne - 0;
         isMaintenance = false;
+        tmpVelo = 0;
     }
 
     void ajouterVelo(unsigned int idHabitant){
@@ -60,6 +61,8 @@ public:
             moniteur->wait(mutex);
             while(habitantEnAttente->front() != idHabitant){
                 moniteur->wait(mutex);
+                gui_interface->consoleAppendText(6,"front :");
+                gui_interface->consoleAppendText(6,QString::number(habitantEnAttente->front()));
             }
             gui_interface->consoleAppendText(idHabitant, "Put the bike, see ya!");
             habitantEnAttente->pop_front();
@@ -70,7 +73,11 @@ public:
             nbVelo++;
         }
         //On wakeAll si il reste des places libre car si la camionette prends plusieurs vélo, il faut que plusieurs utilisateurs soient capable de prendre les vélos ensuite
-        if(nbVelo < nbBorne && !isMaintenance) moniteur->wakeAll();
+        if(nbVelo < nbBorne && !isMaintenance){
+            moniteur->wakeAll();
+        }
+
+        gui_interface->setBikes(getId(),getNbVelo());
         mutex->unlock();
     }
 
@@ -97,22 +104,25 @@ public:
         //Si les vélo ne sont pas vide, on réveille les potentiel habitant qui attendent d'ajouter un vélo
         else{
             nbVelo--;
-
         }
         //On wakeAll si il y reste des vélo car si la camionette ramene plusieurs vélo, il faut que plusieurs utilisateurs soit capable de laisser leur vélo.++
-        if(nbVelo > 0 && !isMaintenance) moniteur->wakeAll();
+        if(nbVelo > 0 && !isMaintenance){
+            moniteur->wakeAll();
+        }
+        gui_interface->setBikes(getId(),getNbVelo());
         mutex->unlock();
     }
 
     void debutMaintenance(){
         isMaintenance = true;
+        tmpVelo = nbVelo;
     }
 
     void finMaintenance(){
         maintenanceMutex->lock();
         isMaintenance = false;
         maintenance->wakeAll();
-        moniteur->wakeAll();
+        if(tmpVelo != nbVelo) moniteur->wakeAll();
         maintenanceMutex->unlock();
     }
 
@@ -135,6 +145,7 @@ private:
     QWaitCondition* maintenance;
     QMutex* maintenanceMutex;
     bool isMaintenance;
+    unsigned int tmpVelo;
 
 };
 
@@ -185,32 +196,29 @@ void run() Q_DECL_OVERRIDE {
                 nbVelosCamionette = c;
                 nbVelosDepot -= c;
                 gui_interface->setBikes(position,nbVelosDepot);
-
             } else{
+                sites[position]->debutMaintenance();
                 // S'il y a trop de vélo sur le site
                 if(sites[position]->getNbVelo() > NBBORNES - 2){
-
-                    sites[position]->debutMaintenance();
                     c = min(sites[position]->getNbVelo() - (NBBORNES - 2), 4 - nbVelosCamionette);
                     for(unsigned int i = 0; i < c; i++){
                         sites[position]->enleverVelo(id);
                     }
-
-                    sites[position]->finMaintenance();
                     nbVelosCamionette += c;
 
                 // S'il y en a pas assez
                 } else if(sites[position]->getNbVelo() < NBBORNES - 2){
-
-                    sites[position]->debutMaintenance();
                     c = min((NBBORNES - 2) - sites[position]->getNbVelo(), nbVelosCamionette);
                     for(unsigned int i = 0; i < c; i++){
                         sites[position]->ajouterVelo(id);
                     }
-                    sites[position]->finMaintenance();
                     nbVelosCamionette -= c;
                 }
+                gui_interface->consoleAppendText(t,"velos sur le site :");
+                gui_interface->consoleAppendText(t,QString::number(sites[position]->getNbVelo()));
                 gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
+                sites[position]->finMaintenance();
+
             }
             // Messages
             gui_interface->consoleAppendText(t, "Velos dans la camionette :");
@@ -228,10 +236,10 @@ void run() Q_DECL_OVERRIDE {
             gui_interface->consoleAppendText(t, "Position du velo :");
             gui_interface->consoleAppendText(t,QString::number(position));
 
-
-
-            arrivee = qrand() % NBSITES;
-            tempsTrajet = 5000 + qrand() % 5000;
+            do{
+                arrivee = qrand() % NBSITES;
+            }while(position == arrivee);
+            tempsTrajet = 2000 + (qrand() * 1000) % 2000;
             // Déplacement d'un vélo
 
             gui_interface->travel(t,             // ID de la personne
@@ -246,12 +254,11 @@ void run() Q_DECL_OVERRIDE {
         }
 
         if (t != 0){
-            tempsActivite = 1000000 + qrand() % 500000;
+            tempsActivite = 1000000 + (qrand() * 1000) % 3000000;
             QThread::usleep(tempsActivite);
             sites[position]->enleverVelo(id);
-            gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
         } else {
-            QThread::usleep(500000);
+            QThread::usleep(2000000);
         }
     }
 }
@@ -282,7 +289,7 @@ int main(int argc, char *argv[])
     std::cout << "sites ok";
 
     // Initialisation de la partie graphique de l'application
-    BikingInterface::initialize(nbHabitants,nbSites);
+    BikingInterface::initialize(nbHabitants + 1,nbSites);
     // Création de l'interface pour les commandes à la partie graphique
     gui_interface=new BikingInterface();
 
@@ -299,7 +306,6 @@ int main(int argc, char *argv[])
         threads[t] = new Habitant(t);
         threads[t]->start();
     }
-
 
     // Attention, il est obligatoire d'exécuter l'instruction suivante.
     // C'est elle qui permet la gestion de la boucle des évévements de

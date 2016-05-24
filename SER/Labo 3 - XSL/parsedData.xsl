@@ -4,7 +4,7 @@
 
 <xsl:variable name="document_cinema" select="document('parsedData.xml')"/>
 
-<xsl:template match="/Projections">
+<xsl:template match="/">
 <html>
     <head>
         <title>Listes des projections</title>
@@ -14,41 +14,36 @@
     </head>
     <body>
         <a name="home"/>
-        <xsl:apply-templates select="projections" mode="organisee_par_date"/>
+		<h1>Liste des projections</h1>
+        <xsl:apply-templates select="cinema" mode="organisee_par_date"/>
+		<xsl:apply-templates select="cinema" mode="organisee_par_titre"/>
     </body>
 </html>
 </xsl:template>
 
 <xsl:template name="entete_tableau">
     <thead>
-        <th>projection</th>
+        <th>Date</th>
+        <th>Titre</th>
+        <th>Durée</th>
     </thead>
 </xsl:template>
 
-<xsl:template match="film" mode="liste">
-    <xsl:variable name="titre_du_film" select="titre" />
-    <a name="{$titre_du_film}">
-        <li>
-            <b><xsl:value-of select="titre"/></b>
-            <br/>
-            <xsl:value-of select="duree"/>
-            <br/>
-            <a href="#home">Retour</a>
-            <br/><br/>
-        </li>
-    </a>
+<xsl:template match="film" mode="tableau">
+	<td><xsl:value-of select="../date"/></td>
+	<td><xsl:value-of select="titre"/></td>
+	<td><xsl:value-of select="duree"/></td>
+	<br/><br/>
 </xsl:template>
 
-<xsl:template match="projections" mode="organisee_par_date">
-    <h1>Liste organisée par date</h1>
+<xsl:template match="cinema" mode="organisee_par_date">
+    <h2>Liste organisée par date</h2>
     <table cellspacing="10">
         <xsl:call-template name="entete_tableau"/>
         <tbody>
-            <xsl:for-each select="projection">
+            <xsl:for-each select="//projection">
                 <xsl:sort order="ascending" select="date"/>
-                    <xsl:sort order="ascending" select="film/titre"/>
                 <tr>
-                    <td><xsl:value-of select="date"/></td>
                     <xsl:apply-templates select="film" mode="tableau"/>
                 </tr>
             </xsl:for-each>
@@ -56,6 +51,20 @@
     </table>
 </xsl:template>
 
+<xsl:template match="cinema" mode="organisee_par_titre">
+    <h2>Liste organisée par titre</h2>
+    <table cellspacing="10">
+        <xsl:call-template name="entete_tableau"/>
+        <tbody>
+            <xsl:for-each select="//projection">
+                <xsl:sort order="ascending" select="film/titre"/>
+                <tr>
+                    <xsl:apply-templates select="film" mode="tableau"/>
+                </tr>
+            </xsl:for-each>
+        </tbody>
+    </table>
+</xsl:template>
 
 
 </xsl:stylesheet>
