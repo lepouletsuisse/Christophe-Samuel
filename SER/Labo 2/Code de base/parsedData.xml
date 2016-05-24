@@ -1,410 +1,849 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <cinema>
-  <Projections>
-    <projection id="8">
-      <date>Fri Apr 29 14:32:00 CEST 2016</date>
-      <film id="2053403">
-        <titre>Casino Royale</titre>
-        <synopsis>Casino Royale introduces James Bond before he holds his license to kill. But Bond is no less dangerous, and with two professional assassinations in quick succession, he is elevated to '00' status. Bond's first 007 mission takes him to Uganda where he is to spy on a terrorist, Mollaka. Not everything goes to plan and Bond decides to investigate, independently of MI6, in order to track down the rest of the terrorist cell. Following a lead to the Bahamas, he encounters Dimitrios and his girlfriend, Solange. He learns that Dimitrios is involved with Le Chiffre, banker to the world's terrorist organizations. Secret Service intelligence reveals that Le Chiffre is planning to raise money in a high-stakes poker game in Montenegro at Le Casino Royale. MI6 assigns 007 to play against him, knowing that if Le Chiffre loses, it will destroy his organization. 'M' places Bond under the watchful eye of the beguiling Vesper Lynd. At first skeptical of what value Vesper can provide, Bond's interest in her deepens as they brave danger together and even torture at the hands of Le Chiffre. In Montenegro, Bond allies himself with Mathis MI6's local field agent, and Felix Leiter who is representing the interests of the CIA. The marathon game proceeds with dirty tricks and violence, raising the stakes beyond blood money and reaching a terrifying climax.</synopsis>
-        <duree>144</duree>
+  <projections>
+    <projection id="1">
+      <date>Fri May 20 13:58:29 CEST 2016</date>
+      <numéroSalle>Flon 1</numéroSalle>
+      <film id="2822603">
+        <titre>Tomorrow Never Dies</titre>
+        <synopsis>Agent 007, the unstoppable action hero must prevent a tremendous disaster ripped from tomorrow's headlines. Someone is pitting the world's superpowers against each other - and only James Bond can stop it. When a British warship is mysteriously destroyed in Chinese waters, the world teeters on the brink of World War III - until 007 zeros in on the true criminal mastermind. Bond's do-or-die mission takes him to Elliot Carver, a powerful media mogul who manipulates world events as easily as he changes headlines from his global media empire. After soliciting help from Carver's sexy wife, Paris, Bond join forces with a stunning yet lethal Chinese agent, Wai Lin, in a series of explosive chases, brutal confrontations and breathtaking escapes as they race to stop the presses on Carver's next planned news story: global pandemonium!</synopsis>
+        <duree>119</duree>
+        <critiques/>
+        <genres>Crime, Thriller, Adventure, Action</genres>
+        <motCle>chase, safecracker, gun-fu, heroin-addict, car-chase, politics, terrorism, hamburg-germany, walther-p99, red-china, motorcycle-stunt, old-flame, product-placement, chakra, secret-service, asian-agent, gadget-car, motorcycle, spy, machine-gun, terrorist-plot, satellite, shootout, funny-accent, assassin, damsel-in-distress, sequel, exotic-locale, asian, british-navy, british, black-dress, 1990s, ship, revenge, media-manipulation, exploding-ship, world-domination, brunette, media, female-spy, cult-figure, ex-girlfriend, media-tycoon, motor-car-park, husband-wife-relationship, female-agent, bmw, eighteenth-part, woman-spy, vietnam, asian-woman, man-with-glasses, stealth, tycoon, ship-wreck, nuclear-weapons, gatling-gun, tough-guy, rocket-launcher, automobile, mercenary, nuclear-threat, remote-control, grenade-launcher, missile, stealth-boat, pistol, china, exploding-car, woman-slaps-man, terrorist, parking-garage, sabotage, assassination-attempt, explosion, undercover, admiral, murder, exploding-plane, red-chinese-agent, action-hero, woman-agent, female-martial-artist, martial-arts, sea, oxford, tv-news, adultery, blockbuster, navy, tuxedo, afghanistan, asian-spy, british-intelligence, corpse, cult-film, saigon-vietnam, helicopter, remote-control-car, ex-boyfriend-ex-girlfriend-relationship, official-james-bond-series, air-base, torpedo, exploding-helicopter, london-england, bond-girl</motCle>
+        <langages>English, Danish, Mandarin, German, Cantonese</langages>
         <roles>
-          <role place="49">
-            <idActeur>2242968</idActeur>
-            <personnage>French News Reporter</personnage>
-          </role>
-          <role place="29">
-            <idActeur>2998542</idActeur>
-            <personnage>Gräfin von Wallenstein</personnage>
-          </role>
-          <role place="38">
-            <idActeur>1711852</idActeur>
-            <personnage>Tall Man</personnage>
-          </role>
-          <role place="23">
-            <idActeur>11435</idActeur>
-            <personnage>Infante</personnage>
-          </role>
-          <role place="6">
-            <idActeur>633338</idActeur>
-            <personnage>Rene Mathis</personnage>
-          </role>
-          <role place="24">
-            <idActeur>106571</idActeur>
-            <personnage>Tomelli</personnage>
+          <role place="21">
+            <idActeur>1679930</idActeur>
+            <personnage>Stealth Boat Captain</personnage>
           </role>
           <role place="28">
-            <idActeur>1668852</idActeur>
-            <personnage>Fukutu</personnage>
-          </role>
-          <role place="48">
-            <idActeur>1654011</idActeur>
-            <personnage>Pilot</personnage>
-          </role>
-          <role place="8">
-            <idActeur>4607</idActeur>
-            <personnage>Alex Dimitrios</personnage>
-          </role>
-          <role place="47">
-            <idActeur>852802</idActeur>
-            <personnage>Arresting Officer</personnage>
-          </role>
-          <role place="67">
-            <idActeur>598987</idActeur>
-            <personnage>Venice Hotel Concierge</personnage>
-          </role>
-          <role place="35">
-            <idActeur>822647</idActeur>
-            <personnage>Card Players</personnage>
-          </role>
-          <role place="14">
-            <idActeur>576848</idActeur>
-            <personnage>Mollaka</personnage>
-          </role>
-          <role place="41">
-            <idActeur>369699</idActeur>
-            <personnage>Hot Room Technicians</personnage>
-          </role>
-          <role place="30">
-            <idActeur>398765</idActeur>
-            <personnage>Dealer</personnage>
-          </role>
-          <role place="18">
-            <idActeur>1199473</idActeur>
-            <personnage>Carter</personnage>
-          </role>
-          <role place="46">
-            <idActeur>488415</idActeur>
-            <personnage>Airport Policemen</personnage>
-          </role>
-          <role place="56">
-            <idActeur>968243</idActeur>
-            <personnage>Croatian General</personnage>
-          </role>
-          <role place="2">
-            <idActeur>2348923</idActeur>
-            <personnage>Vesper Lynd</personnage>
-          </role>
-          <role place="31">
-            <idActeur>1007099</idActeur>
-            <personnage>Tournament Director</personnage>
-          </role>
-          <role place="16">
-            <idActeur>1559434</idActeur>
-            <personnage>Adolph Gettler</personnage>
-          </role>
-          <role place="26">
-            <idActeur>1027027</idActeur>
-            <personnage>Gallardo</personnage>
-          </role>
-          <role place="39">
-            <idActeur>157806</idActeur>
-            <personnage>Hot Room Doctors</personnage>
-          </role>
-          <role place="66">
-            <idActeur>1644947</idActeur>
-            <personnage>Disapproving Man</personnage>
-          </role>
-          <role place="43">
-            <idActeur>1298032</idActeur>
-            <personnage>MI6 Technician</personnage>
-          </role>
-          <role place="32">
-            <idActeur>2167366</idActeur>
-            <personnage>Ocean Club Receptionist</personnage>
-          </role>
-          <role place="57">
-            <idActeur>1294571</idActeur>
-            <personnage>Nambutu Embassy Official</personnage>
-          </role>
-          <role place="58">
-            <idActeur>1372760</idActeur>
-            <personnage>Bartender</personnage>
-          </role>
-          <role place="60">
-            <idActeur>2005134</idActeur>
-            <personnage>Tennis Girls</personnage>
-          </role>
-          <role place="21">
-            <idActeur>82002</idActeur>
-            <personnage>Leo</personnage>
-          </role>
-          <role place="22">
-            <idActeur>295903</idActeur>
-            <personnage>Stockbroker</personnage>
-          </role>
-          <role place="62">
-            <idActeur>2309041</idActeur>
-            <personnage>Hotel Splendide Clerk</personnage>
-          </role>
-          <role place="13">
-            <idActeur>1566810</idActeur>
-            <personnage>Carlos</personnage>
-          </role>
-          <role place="10">
-            <idActeur>319401</idActeur>
-            <personnage>Mr. White</personnage>
-          </role>
-          <role place="17">
-            <idActeur>1403596</idActeur>
-            <personnage>Mendel</personnage>
-          </role>
-          <role place="33">
-            <idActeur>1748274</idActeur>
-            <personnage>Schultz</personnage>
-          </role>
-          <role place="53">
-            <idActeur>1924788</idActeur>
-            <personnage>Chief of Police</personnage>
-          </role>
-          <role place="65">
-            <idActeur>2925977</idActeur>
-            <personnage>Waitress</personnage>
-          </role>
-          <role place="42">
-            <idActeur>2325595</idActeur>
-            <personnage>Hot Room Technicians</personnage>
-          </role>
-          <role place="61">
-            <idActeur>2401856</idActeur>
-            <personnage>Tennis Girls</personnage>
-          </role>
-          <role place="11">
-            <idActeur>2636138</idActeur>
-            <personnage>Valenka</personnage>
+            <idActeur>246829</idActeur>
+            <personnage>Leading Seaman - HMS Devonshire</personnage>
           </role>
           <role place="27">
-            <idActeur>1493564</idActeur>
-            <personnage>Kaminofsky</personnage>
-          </role>
-          <role place="9223372036854775807">
-            <idActeur>77354</idActeur>
-            <personnage>Airport Staff</personnage>
-          </role>
-          <role place="44">
-            <idActeur>299911</idActeur>
-            <personnage>Police Commander</personnage>
-          </role>
-          <role place="9">
-            <idActeur>414353</idActeur>
-            <personnage>Steven Obanno</personnage>
-          </role>
-          <role place="5">
-            <idActeur>1941794</idActeur>
-            <personnage>Felix Leiter</personnage>
-          </role>
-          <role place="50">
-            <idActeur>2702533</idActeur>
-            <personnage>Shop Assistant</personnage>
-          </role>
-          <role place="40">
-            <idActeur>185672</idActeur>
-            <personnage>Hot Room Doctors</personnage>
-          </role>
-          <role place="3">
-            <idActeur>1192260</idActeur>
-            <personnage>Le Chiffre</personnage>
-          </role>
-          <role place="15">
-            <idActeur>1645521</idActeur>
-            <personnage>Dryden</personnage>
-          </role>
-          <role place="1">
-            <idActeur>370864</idActeur>
-            <personnage>James Bond</personnage>
-          </role>
-          <role place="7">
-            <idActeur>2667303</idActeur>
-            <personnage>Solange</personnage>
-          </role>
-          <role place="52">
-            <idActeur>448361</idActeur>
-            <personnage>Obanno's Liaison</personnage>
-          </role>
-          <role place="36">
-            <idActeur>2379317</idActeur>
-            <personnage>Card Players</personnage>
-          </role>
-          <role place="25">
-            <idActeur>2153316</idActeur>
-            <personnage>Madame Wu</personnage>
-          </role>
-          <role place="51">
-            <idActeur>1314130</idActeur>
-            <personnage>Obanno's Lieutenant</personnage>
-          </role>
-          <role place="34">
-            <idActeur>650188</idActeur>
-            <personnage>Card Players</personnage>
-          </role>
-          <role place="54">
-            <idActeur>2248252</idActeur>
-            <personnage>Police Chief's Girlfriends</personnage>
-          </role>
-          <role place="69">
-            <idActeur>842121</idActeur>
-            <personnage>Hermitage Waiter</personnage>
-          </role>
-          <role place="4">
-            <idActeur>2220301</idActeur>
-            <personnage>M</personnage>
-          </role>
-          <role place="59">
-            <idActeur>1171383</idActeur>
-            <personnage>Treasury Bureaucrat</personnage>
-          </role>
-          <role place="63">
-            <idActeur>495786</idActeur>
-            <personnage>Cola Kid</personnage>
-          </role>
-          <role place="64">
-            <idActeur>1812821</idActeur>
-            <personnage>Barman</personnage>
+            <idActeur>1480940</idActeur>
+            <personnage>Yeoman - HMS Devonshire</personnage>
           </role>
           <role place="20">
-            <idActeur>1583928</idActeur>
-            <personnage>Kratt</personnage>
+            <idActeur>1136752</idActeur>
+            <personnage>Master Sergeant 3</personnage>
           </role>
-          <role place="19">
-            <idActeur>1620597</idActeur>
-            <personnage>Fisher</personnage>
+          <role place="3">
+            <idActeur>3047006</idActeur>
+            <personnage>Wai Lin</personnage>
           </role>
-          <role place="68">
-            <idActeur>1020217</idActeur>
-            <personnage>Hotel Splendide Limo Driver</personnage>
+          <role place="2">
+            <idActeur>1431310</idActeur>
+            <personnage>Elliot Carver</personnage>
           </role>
-          <role place="37">
-            <idActeur>2637370</idActeur>
-            <personnage>Dealer</personnage>
+          <role place="16">
+            <idActeur>2949256</idActeur>
+            <personnage>Professor Inga Bergstrom</personnage>
           </role>
           <role place="12">
-            <idActeur>1179146</idActeur>
-            <personnage>Villiers</personnage>
+            <idActeur>1556853</idActeur>
+            <personnage>Chief of Staff Charles Robinson</personnage>
           </role>
-          <role place="55">
-            <idActeur>2597588</idActeur>
-            <personnage>Police Chief's Girlfriends</personnage>
+          <role place="23">
+            <idActeur>674497</idActeur>
+            <personnage>Firing Officer - HMS Chester</personnage>
           </role>
-          <role place="45">
-            <idActeur>218944</idActeur>
-            <personnage>Airport Policemen</personnage>
+          <role place="34">
+            <idActeur>1147555</idActeur>
+            <personnage>Yeoman - HMS Bedford</personnage>
           </role>
-        </roles>
-      </film>
-    </projection>
-    <projection id="9">
-      <date>Fri Apr 29 14:32:04 CEST 2016</date>
-      <film id="2235127">
-        <titre>GoldenEye</titre>
-        <synopsis>1986 - Soviet Russia has been arming international terrorists with chemical weapon technology, and a chemical weapons plant in the mountains is the target of James Bond and his closest compatriot, Alec Trevelyan. Infiltrating the compound, they are spotted and Alec is captured. When a ruthless Soviet officer, Oromov, executes Trevelyan, James pulls off a spectacular escape and succeeds in blowing up the compound. Now in 1995, he is assigned to tail former Red Air Force jet jockey Xenia Onatopp, who is working for a Russian crime syndicate known as Janus, but he is unable to stop her from stealing a powerful helicopter - a theft initially dismissed as a possibility by MI6's new leader, a woman who is a bureaucratic bean counter who, despite her acidic responses to grumbling from her ticked-off men, is having to learn her job as she goes, and who has to trust James Bond's instincts after a nuclear accident occurs over a Russian region housing the tracking station for a weapons satellite known as Goldeneye. James must track down the stolen gunship and all leads to a second Goldeneye system, and along the way he is horrified to find the true identity of the Janus syndicate, which leads to a spectacular running pursuit from the stolen gunship through a Soviet army prison to a wild street chase involving a tank and confrontation with a Soviet missile train, and eventually a showdown in the jungles of Cuba.</synopsis>
-        <duree>130</duree>
-        <roles>
-          <role place="19">
-            <idActeur>678837</idActeur>
-            <personnage>Computer Store Manager</personnage>
-          </role>
-          <role place="9">
-            <idActeur>383183</idActeur>
-            <personnage>Boris Grishenko</personnage>
-          </role>
-          <role place="6">
-            <idActeur>2220301</idActeur>
-            <personnage>M</personnage>
-          </role>
-          <role place="10">
-            <idActeur>895949</idActeur>
-            <personnage>Defense Minister Dmitri Mishkin</personnage>
-          </role>
-          <role place="22">
-            <idActeur>827458</idActeur>
+          <role place="43">
+            <idActeur>1878376</idActeur>
             <personnage>MiG Pilot</personnage>
           </role>
-          <role place="5">
-            <idActeur>95361</idActeur>
-            <personnage>Jack Wade</personnage>
+          <role place="24">
+            <idActeur>197633</idActeur>
+            <personnage>Cmdr. Richard Day - HMS Devonshire</personnage>
+          </role>
+          <role place="37">
+            <idActeur>1599823</idActeur>
+            <personnage>Staff Officer #1</personnage>
+          </role>
+          <role place="13">
+            <idActeur>1345078</idActeur>
+            <personnage>Admiral Roebuck</personnage>
+          </role>
+          <role place="29">
+            <idActeur>108904</idActeur>
+            <personnage>Sonar Operator - HMS Devonshire</personnage>
+          </role>
+          <role place="19">
+            <idActeur>1706085</idActeur>
+            <personnage>Dr. Dave Greenwalt</personnage>
+          </role>
+          <role place="39">
+            <idActeur>2123418</idActeur>
+            <personnage>Beth Davidson</personnage>
           </role>
           <role place="1">
             <idActeur>220515</idActeur>
             <personnage>James Bond</personnage>
           </role>
-          <role place="2">
-            <idActeur>126963</idActeur>
-            <personnage>Alec Trevelyan</personnage>
+          <role place="8">
+            <idActeur>1583838</idActeur>
+            <personnage>Dr. Kaufman</personnage>
           </role>
-          <role place="3">
-            <idActeur>2854968</idActeur>
-            <personnage>Natalya Simonova</personnage>
+          <role place="4">
+            <idActeur>2381659</idActeur>
+            <personnage>Paris Carver</personnage>
           </role>
-          <role place="9223372036854775807">
-            <idActeur>104350</idActeur>
-            <personnage>Russian Scientist</personnage>
+          <role place="33">
+            <idActeur>1885226</idActeur>
+            <personnage>Principal Warfare Officer - HMS Bedford</personnage>
           </role>
-          <role place="14">
-            <idActeur>2341708</idActeur>
-            <personnage>Caroline</personnage>
+          <role place="38">
+            <idActeur>2095746</idActeur>
+            <personnage>Staff Officer #2</personnage>
           </role>
-          <role place="18">
-            <idActeur>1205728</idActeur>
-            <personnage>Admiral Chuck Farrell</personnage>
+          <role place="5">
+            <idActeur>846146</idActeur>
+            <personnage>Henry Gupta</personnage>
           </role>
-          <role place="23">
-            <idActeur>1192950</idActeur>
-            <personnage>Croupier</personnage>
+          <role place="41">
+            <idActeur>1265577</idActeur>
+            <personnage>Jeff Hobbs</personnage>
           </role>
           <role place="17">
-            <idActeur>983359</idActeur>
-            <personnage>French Warship Officer</personnage>
+            <idActeur>3050055</idActeur>
+            <personnage>Tamara Steel</personnage>
           </role>
-          <role place="21">
-            <idActeur>2022331</idActeur>
-            <personnage>Anna</personnage>
+          <role place="44">
+            <idActeur>974477</idActeur>
+            <personnage>General Chang</personnage>
           </role>
-          <role place="8">
-            <idActeur>857208</idActeur>
-            <personnage>General Arkady Grigorovich Ourumov</personnage>
+          <role place="32">
+            <idActeur>186569</idActeur>
+            <personnage>Air Warfare Officer - HMS Bedford</personnage>
           </role>
-          <role place="24">
-            <idActeur>248748</idActeur>
-            <personnage>Train Driver</personnage>
+          <role place="9223372036854775807">
+            <idActeur>187102</idActeur>
+            <personnage>Vietnamese Villager</personnage>
+          </role>
+          <role place="6">
+            <idActeur>1334064</idActeur>
+            <personnage>Stamper</personnage>
+          </role>
+          <role place="25">
+            <idActeur>740319</idActeur>
+            <personnage>Lt. Cmdr. Peter Hume - HMS Devonshire</personnage>
+          </role>
+          <role place="7">
+            <idActeur>95361</idActeur>
+            <personnage>Jack Wade</personnage>
+          </role>
+          <role place="14">
+            <idActeur>544030</idActeur>
+            <personnage>Minister of Defence</personnage>
+          </role>
+          <role place="31">
+            <idActeur>1787464</idActeur>
+            <personnage>Captain - HMS Bedford</personnage>
+          </role>
+          <role place="30">
+            <idActeur>249523</idActeur>
+            <personnage>Admiral Kelly - HMS Bedford</personnage>
+          </role>
+          <role place="15">
+            <idActeur>1489650</idActeur>
+            <personnage>General Bukharin</personnage>
+          </role>
+          <role place="10">
+            <idActeur>1047090</idActeur>
+            <personnage>Q</personnage>
+          </role>
+          <role place="26">
+            <idActeur>1620263</idActeur>
+            <personnage>Lieutenant Commander - HMS Devonshire</personnage>
+          </role>
+          <role place="18">
+            <idActeur>2214105</idActeur>
+            <personnage>PR Lady</personnage>
+          </role>
+          <role place="35">
+            <idActeur>369961</idActeur>
+            <personnage>Leading Seaman - HMS Bedford</personnage>
+          </role>
+          <role place="11">
+            <idActeur>2083968</idActeur>
+            <personnage>Miss Moneypenny</personnage>
+          </role>
+          <role place="36">
+            <idActeur>74079</idActeur>
+            <personnage>First Sea Lord</personnage>
+          </role>
+          <role place="22">
+            <idActeur>28287</idActeur>
+            <personnage>Captain - HMS Chester</personnage>
+          </role>
+          <role place="40">
+            <idActeur>2815625</idActeur>
+            <personnage>Mary Golson</personnage>
+          </role>
+          <role place="42">
+            <idActeur>1578223</idActeur>
+            <personnage>Philip Jones</personnage>
+          </role>
+          <role place="9">
+            <idActeur>2220301</idActeur>
+            <personnage>M</personnage>
+          </role>
+        </roles>
+      </film>
+      <acteurs>
+        <acteur id="21">
+          <nom>Spalding, Mark</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Jan 01 00:00:00 CET 1960</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="28">
+          <nom>Butler, Gerard</nom>
+          <nomNaissance>Butler, Gerard James</nomNaissance>
+          <biographie>Born in Paisley, Scotland, to Margaret and Edward Butler, Gerard Butler was raised, along with his older brother and sister, in his hometown of Paisley, Scotland. He also spent some of his youth in Canada. His parents divorced when he was a child, and he and his siblings were raised primarily by their mother, who later remarried. He had no contact with his father between the ages of two and 16 years old, after which time they became close. His father passed away when Gerard was in his early 20s. Butler went on to attend Glasgow University, where he studied to be a lawyer/solicitor. He was president of the school's law society thanks to his outgoing personality and great social skills. His acting career began when he was approached in a London coffee shop by actor 'Steven Berkoff (I)' (qv), who later appeared alongside Butler in _Attila (2001/I) (TV)_ (qv), who gave him a role in a stage production of "Coriolanus". After that, Butler decided to give up law for acting. He was cast as 'Ewan McGregor' (qv)'s character "Renton" in the stage adaptation of [i]Trainspotting[/i]. His film debut was as 'Billy Connolly (I)' (qv)'s younger brother in _Mrs Brown (1997)_ (qv). While filming the movie in Scotland, he was enjoying a picnic with his mother near the River Tay when they heard the shouts of a young boy, who had been swimming with a friend, who was in some trouble. Butler jumped in and saved the young boy from drowning. He received a Certificate of Bravery from the Royal Humane Society. He felt he only did what anyone in the situation would have done. His film career continued with small roles, first in the "James Bond" movie, _Tomorrow Never Dies (1997)_ (qv), and then 'Russell Mulcahy' (qv)'s _Tale of the Mummy (1998)_ (qv). In 2000, Butler was cast in two breakthrough roles, the first being "Attila the Hun" in the USA Network mini-series, _Attila (2001/I) (TV)_ (qv). The film's producers wanted a known actor to play the part but kept coming back to Butler's screen tests and decided he was their man. He had to lose the thick Scottish accent, but managed well. Around the time "Attila" was being filmed, casting was in progress for 'Wes Craven' (qv)'s new take on the "Dracula" legacy. Also wanting a known name, Butler wasn't much of a consideration, but his unending tenacity drove him to hounding the producers. Eventually, he sent them a clip of his portrayal of "Attila". Evidently, they saw something because _Dracula 2000 (2000)_ (qv) was cast in the form of Butler. Attila's producers, thinking that his big-screen role might help with their own film's ratings, finished shooting a little early so he could get to work on _Dracula 2000 (2000)_ (qv). Following these two roles, Butler developed quite a fan base, an Internet site and began appearing on lists everywhere. Since then, he has appeared in _Reign of Fire (2002)_ (qv) as "Creedy" and _Lara Croft Tomb Raider: The Cradle of Life (2003)_ (qv) as "Terry Sheridan", alongside 'Angelina Jolie' (qv). The role that garnered him the most attention from both moviegoers and movie makers, alike, was that of "Andre Marek" in the big-screen adaptation of 'Michael Crichton' (qv)'s novel, _Timeline (2003)_ (qv). Butler played an archaeologist who was sent back in time with a team of students to rescue a colleague. Last year, he appeared in 'Andrew Lloyd Webber' (qv)'s musical, _The Phantom of the Opera (2004)_ (qv), playing the title character in the successful adaptation of the stage musical. It was a role that brought him much international attention. Other projects include _Dear Frankie (2004)_ (qv), _The Game of Their Lives (2005)_ (qv) and _Beowulf &amp; Grendel (2005)_ (qv). In 2007, he starred as Spartan "King Leonidas" in the Warner Bros. production _300 (2006)_ (qv), based on the 'Frank Miller (II)' (qv) graphic novel, and _Butterfly on a Wheel (2007)_ (qv), co-starring 'Pierce Brosnan' (qv) and 'Maria Bello' (qv), which aired on network TV under the title, "Shattered". He most recently starred in _P.S. I Love You (2007)_ (qv), with Academy Award-winner 'Hilary Swank' (qv). In 2007, he appeared in _Nim's Island (2008)_ (qv) and _RocknRolla (2008)_ (qv), and completed the new 'Mark Neveldine' (qv) / 'Brian Taylor (V)' (qv) film, _Gamer (2009)_ (qv). His next films included _The Ugly Truth (2009)_ (qv), co-starring 'Katherine Heigl' (qv), which began filming in April 2008, _The Bounty Hunter (2010/I)_ (qv), _How to Train Your Dragon (2010)_ (qv), _Chasing Mavericks (2012)_ (qv) and _Olympus Has Fallen (2013)_ (qv). Butler is also a relative of rising animator and film director 'Mark Flood (III)' (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Nov 13 00:00:00 CET 1969</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="27">
+          <nom>Rhind-Tutt, Julian</nom>
+          <nomNaissance>Rhind-Tutt, Julian Alistair</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jul 20 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="20">
+          <nom>Matthews, Al</nom>
+          <biographie>Folk singer and musical performer who worked professionally while living in England. He later turned to acting, but continues to write and sing. Matthews is noted for having made two significant historical firsts. While on combat duty during the Vietnam War, Matthews became the first black Marine to be meritoriously promoted to the rank of Sergeant (E-5). Williams was also the first "black voice" on England's national station, 'Radio 1.'</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Nov 21 00:00:00 CET 1942</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="3">
+          <nom>Yeoh, Michelle</nom>
+          <nomNaissance>Chu-Kheng, Yeoh</nomNaissance>
+          <biographie>Born as Yang Zi Chong in the mining town of Ipoh in West Malaysia in the lunar year of the Tiger, she spoke English and Malay before Chinese. A ballet dancer since age 4, she moved to London, England to study at the Royal Academy as a teenager. After a brief dance career, she won the Miss Malaysia beauty pageant title in her native country and the Miss Moomba beauty pageant title in Melbourne, Australia in the early 1980s. Her first on camera work was a 1984 commercial with martial arts star 'Jackie Chan (I)' (qv). In 1985, she began making action movies with D&amp;B Films of Hong Kong. She was first billed as Michelle Khan, then later, Michelle Yeoh. Never a trained martial artist, she relied on her dance discipline and her on-set trainers to prepare for her martial arts action scenes. She uses many dance moves in her films. She still does most of her own stunts and has been injured many times. Ironically, she still cannot read Chinese and she has to have Chinese script read to her. In 1988, she married wealthy D&amp;B Films executive 'Dickson Poon' (qv) and retired from acting. Even though they divorced in 1992, she is close to Poon's second wife and a godmother to Poon's daughter. When she returned to acting, she became very popular to Chinese audiences and she became known to western audiences through her co-starring roles in the James Bond film _Tomorrow Never Dies (1997)_ (qv) and in the phenomenally successful _Wo hu cang long (2000)_ (qv) aka Crouching Tiger, Hidden Dragon' directed by 'Ang Lee' (qv). She turned down a role in a sequel to _The Matrix (1999)_ (qv). She has her own production company, Mythical Films and has trained with the Shen Yang Acrobatic team for her role in _Tian mai zhuan qi (2002)_ (qv), an English language film she is both starring in and producing. She hopes to use her company to discover and nurture new filmmaking talent. She also wants to act in roles that combine both action and deeper spiritual themes.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Mon Aug 06 00:00:00 CET 1962</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="2">
+          <nom>Pryce, Jonathan</nom>
+          <nomNaissance>Price, John</nomNaissance>
+          <biographie>Jonathan Pryce was born on June 1, 1947, in Holywell, Wales. His father, named Isaac Price, was a coal miner, who died in 1976. His mother, named Margaret Ellen (nee Williams), was a retail cashier. He left the home of his parents at age 16 to attend an art school, where he became interested in drama. At some point he changed the spelling of his last name from Price to Pryce. He studied acting on a scholarship at the Royal Academy of Dramatic Art in London. After graduation from RADA, he joined the Liverpool Everyman Theatre and eventually became its Artistic Director. In the 1970s Pryce established himself on the London stage with appearances in 'The Taming of the Shrew', 'Hamlet', and 'Measure for Measure' among other plays. He won the 1977 Tony Award for his Broadway debut in 'Comedians', for which he also earned the 1977 Theatre World Award and the 1977 nomination for Drama Desk Outstanding Actor Award. Pryce earned his second Tony Award 15 years later for the role as "The Engineer", a half-Vietnamese/half French pimp in 'Miss Saigon'. Pryce created the role in the original London production and agreed to reprise the role on Broadway in a transplant of the same production. Despite controversy over his appearance -- the actors union decried the long-standing practice of hiring white actors to play Asian or Eurasian characters, especially given the paucity of roles for Asian characters, and it also objected to the producer's refusal to even audition any Asian actors -- he gave a brilliant performance. In 1976 Pryce made his big screen debut in _Voyage of the Damned (1976)_ (qv). But it wasn't until 1983 that he made a strong impression with his scary performance as a freaky manipulative Mr. Dark in Ray Bradbury's _Something Wicked This Way Comes (1983)_ (qv). Pryce shot to fame with _Brazil (1985)_ (qv) and his role as Sam Lowry, a technocrat trying to correct an error caused by a bug and himself becomes entangled in psychopathic bureaucracy eventually becoming an enemy of the state. He also filled such strong and authoritative roles, as president Juan Peron opposite Madonna in _Evita (1996)_ (qv), then co-starred opposite Pierce Brosnan as Elliot Carver, the evil megalomaniac media mogul in the 18th Bond film, _Tomorrow Never Dies (1997)_ (qv). Pryce's versatility and multifaceted talent rarely had a chance to take him beyond playing freaks and villains in film, an imposed forte which he, however, managed to overcome in his numerous stage performances and in a few film and TV works. He went on playing a range of characters marked with sophistication and depth, such as his subtle and nuanced portrayal of author Lytton Strachey in _Carrington (1995)_ (qv), for which he won the Best Actor Award at Cannes. Pryce also shone in musicals 'My Fair Lady' and 'Oliver' to name just a few. Pryce made numerous works for television ranging from costume dramas to comedy, and from narrations to singing. In January 2006, he replaced John Lithgow as Lawrence Jameson in the acclaimed musical version of 'Dirty Rotten Scoundrels'. He appeared as the timid Jamaican Governor Wetherby Swann in _Pirates of the Caribbean: The Curse of the Black Pearl (2003)_ (qv), and the sequel _Pirates of the Caribbean: Dead Man's Chest (2006)_ (qv), and the third installment of the Pirates franchise, _Pirates of the Caribbean: At World's End (2007)_ (qv). Jonathan Pryce has been with his partner, actress Kate Fahy, since 1974 when they met at the Everyman Theatre Liverpool Company, though they have never married. They have two sons, Patrick (born 1983) and Gabriel (born 1986), and one daughter, Phoebe (born 1990). Pryce and Fahy also co-starred in the 2004 production of 'The Goat, or Who Is Sylvia?'. Fahy and Pryce reside with their family in England.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Jun 01 00:00:00 CEST 1947</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="16">
+          <nom>Thomsen, Cecilie</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Tue Oct 29 00:00:00 CET 1974</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="12">
+          <nom>Salmon, Colin</nom>
+          <biographie>Colin Salmon is one of Britain's most renowned actors. With a bold voice and posture, Colin makes his characters a favorite among audiences for every role he plays. He made his feature debut as Sgt. Robert Oswald in the British mega-hit mini-series _"Prime Suspect 2" (1992)_ (qv), which gave him much acclaim among British audiences. He has a recurring role in the James Bond films as Charles Robinson, M's Chief of Staff. He has also appeared as the Commander James "One" Shade in the video game-to-movie _Resident Evil (2002)_ (qv) and played Oonu, squad leader of the Skybax in the mini-series _"Dinotopia" (2002/I)_ (qv) . His other film credits include _Captives (1994)_ (qv), _The Wisdom of Crocodiles (1998)_ (qv), _Fanny and Elvis (1999)_ (qv), _Mind Games (2001) (TV)_ (qv), and _My Kingdom (2001)_ (qv). His theater credits include Ariadne at London's Queen Elizabeth Hall.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Dec 06 00:00:00 CET 1962</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="23">
+          <nom>Green, Anthony</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Apr 04 00:00:00 CET 1970</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="34">
+          <nom>McCarthy, Eoin</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Jan 01 00:00:00 CET 1963</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="43">
+          <nom>Wang, Vincent</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="24">
+          <nom>Bowen, Christopher</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="37">
+          <nom>Scott-Masson, William</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="13">
+          <nom>Palmer, Geoffrey</nom>
+          <nomNaissance>Palmer, Geoffrey Dyson</nomNaissance>
+          <biographie>Born in London on June 4th, 1927, Geoffrey Palmer worked in an imports office and then as an accountant before his girlfriend persuaded him to join the local amateur dramatics society. Eventually he became assistant stage manager at Croydon's Grand Theatre, and then spent several years touring with rep. His first roles on TV came in comedy series such as those of Harry Worth and Arthur Askey. He is now a familiar face on British television.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jun 04 00:00:00 CET 1927</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="29">
+          <nom>Barker, Adam</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jan 01 00:00:00 CET 1966</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="19">
+          <nom>Stinton, Colin</nom>
+          <biographie>Immigrated to the United States in 1952. Lived in a trailer -- traveling throughout the country with his family before settling in Kansas City, then suburban Chicago. Educated at Northern Illinois University. Began his professional career in Chicago, where he helped found The Theatre Building, then moved to New York in 1978. Now lives in London and Chicago.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Mar 10 00:00:00 CET 1947</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="39">
+          <nom>Cameron-Blakey, Nadia</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="1">
+          <nom>Brosnan, Pierce</nom>
+          <nomNaissance>Brosnan, Pierce Brendan</nomNaissance>
+          <biographie>Pierce Brosnan was born in Navan, County Meath, Ireland, and lived in Navan, County Meath, until he moved to England, UK, at an early age (thus explaining his ability to play men from both backgrounds convincingly). His father left the household when Pierce was a child and although reunited later in life, the two have never had a close relationship. His most popular role is that of British secret agent James Bond. The death, in 1991, of 'Cassandra Harris (I)' (qv), his wife of eleven years, left him with three children - Christopher and Charlotte from Cassandra's first marriage and Sean from their marriage. Since her death, he has had two children with his second wife, 'Keely Shaye Smith' (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat May 16 00:00:00 CET 1953</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="8">
+          <nom>Schiavelli, Vincent</nom>
+          <nomNaissance>Schiavelli, Vincent Andrew</nomNaissance>
+          <biographie>Vincent Schiavelli, selected in 1997 by Vanity Fair as one of the best character actors in America, had made over 120 film and television appearances. He studied acting at NYU's Theatre Program. Aside from his acting career, Vincent was the author of three cookbooks, and has written numerous articles on food for magazines and newspapers. In 2001, he received the 'James Beard (II)' (qv) Journalism Award.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Nov 11 00:00:00 CET 1948</dateNaissance>
+          <dateDeces>Mon Dec 26 00:00:00 CET 2005</dateDeces>
+        </acteur>
+        <acteur id="4">
+          <nom>Hatcher, Teri</nom>
+          <nomNaissance>Hatcher, Teri Lynn</nomNaissance>
+          <biographie>Teri Lynn Hatcher was born in Palo Alto, California, USA, as the only child of Owen and Esther Hatcher, and grew up in nearby Sunnyvale, California. Her father is a nuclear physicist and her mother is a computer programmer. She spent her childhood dancing and fishing with her father. While at Fremont High School, she was captain of the Featherettes, a dance team that had the look of regular cheerleaders, with the exception of the large headdresses they wore. She was voted "Most Likely to Become a _"Solid Gold" (1980)_ (qv) Dancer" by her graduating class in 1982. Hatcher studied acting at the American Conservatory Theater in San Francisco while taking a degree course in mathematics and engineering at De Anza College in Cupertino, California. She became a member of the 1984 Gold Rush, the name of the professional cheer leading squad of the American football San Francisco 49ers. Hatcher went to Hollywood to lend moral support to a friend during a open casting call. She, however, auditioned and won the role of the singing and dancing mermaid for the television series _"The Love Boat" (1977)_ (qv). She went on to play "Penny Parker," a ditsy but sweet-hearted struggling actress on _"MacGyver" (1985)_ (qv). When that show ended, she auditioned for and won the role of smart and savvy "Lois Lane" on _"Lois &amp; Clark: The New Adventures of Superman" (1993)_ (qv), saying that she didn't want to be stuck with the pretty airhead image she had acquired as "Penny Parker." She married actor 'Jon Tenney' (qv) in May 1994. She gave birth to daughter 'Emerson Tenney' (qv) on November 10, 1997. Later, she signed to play "Sally Bowles" in a road tour of Cabaret. The tour debuted in Los Angeles on March 2, 1999. Her final show was on September 4, 1999. She stayed out of the industry for a little bit before nabbing a role on the darkly comedic soap opera _"Desperate Housewives" (2004)_ (qv), which could have been a huge mistake. The show turned out to be a mega-hit, which skyrocketed Hatcher to the A-list. Her portrayal of a divorced mother, "Susan Mayer," was consistently named as America's favorite "Desperate Housewife." Hatcher won both a Golden Globe for Lead Actress in a Comedy Series and the SAG Award for Female Actor in a Comedy Series before the show's first season was even over.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Tue Dec 08 00:00:00 CET 1964</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="33">
+          <nom>Watkins, Jason</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jul 30 00:00:00 CET 1966</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="38">
+          <nom>Brattan, Laura</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="5">
+          <nom>Jay, Ricky</nom>
+          <nomNaissance>Potash, Richard Jay</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Jan 01 00:00:00 CET 1948</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="41">
+          <nom>Napier, Hugo</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Jun 18 00:00:00 CEST 1946</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="17">
+          <nom>Young, Nina</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sat Jan 01 00:00:00 CET 1966</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="44">
+          <nom>Kwok, Philip</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Oct 21 00:00:00 CET 1951</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="32">
+          <nom>Bonneville, Hugh</nom>
+          <nomNaissance>Williams, Hugh Richard Bonneville</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Nov 10 00:00:00 CET 1963</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="45">
+          <nom>Boo Khoo, Ian</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jun 26 00:00:00 CEST 1982</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="6">
+          <nom>Otto, Götz</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Oct 15 00:00:00 CET 1967</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="25">
+          <nom>Hawkins, Andrew</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="7">
+          <nom>Baker, Joe Don</nom>
+          <biographie>Tall, broad shouldered character actor with Texan drawl first appeared in support in several Western vehicles both on TV and the cinema in the mid 1960s. Got himself noticed playing Steve McQueen's younger brother in _Junior Bonner (1972)_ (qv), and then scored the lead role of Buford Pusser (!) in the unexpected hit _Walking Tall (1973)_ (qv), an allegedly true tale about a Southern sheriff confronting corruption &amp; gangsters with a large wooden club and a mean attitude. Followed it up by playing a sadistic hit man called Molly, in Don Siegel's bank heist drama _Charley Varrick (1973)_ (qv). Joe Don Baker's next few films were rather forgettable until he landed the role of police detective Earl Eischied in _To Kill a Cop (1978) (TV)_ (qv)....which led him into reprising the same character in the short lived TV series _"Eischied" (1979)_ (qv). Since then he has proved he is also quite adept at taking on comedy roles, as well as picking up plenty of work playing lawmen, military men, politicians etc. Keep your eye open for him as a nosy police chief in _Fletch (1985)_ (qv), a meglomanical general in _The Living Daylights (1987)_ (qv), as a redneck father in _Mars Attacks! (1996)_ (qv), and as intelligence operative Jack Wade in the 007 films _Tomorrow Never Dies (1997)_ (qv) and _GoldenEye (1995)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Feb 12 00:00:00 CET 1936</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="14">
+          <nom>Fellowes, Julian</nom>
+          <nomNaissance>Fellowes, Julian Alexander</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Aug 17 00:00:00 CEST 1949</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="31">
+          <nom>Torrens, Pip</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Jun 02 00:00:00 CET 1960</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="30">
+          <nom>Byrne, Michael</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Nov 07 00:00:00 CET 1943</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="15">
+          <nom>Rigby, Terence</nom>
+          <nomNaissance>Rigby, Terence Christopher</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jan 02 00:00:00 CET 1937</dateNaissance>
+          <dateDeces>Sun Aug 10 00:00:00 CEST 2008</dateDeces>
+        </acteur>
+        <acteur id="10">
+          <nom>Llewelyn, Desmond</nom>
+          <nomNaissance>Llewelyn, Desmond Wilkinson</nomNaissance>
+          <biographie>Desmond Llewelyn was born in South Wales in 1914, the son of a coal mining engineer. In high school, he worked as a stagehand in the school's productions and then picked up sporadic small parts. His family would not give up their effort to prevent him from a life on stage, so an uncle who was a high ranking police officer arranged for Llewelyn to take the department's physical exam. "Thank God, I flunked the eye test, and they wouldn't take me. I suspect the inspector had a hangover because he also failed this other chap I knew, who went out the same day and passed the physical for the Royal Navy, which had a lot tougher test." After failing the police exam, Llewelyn thought about becoming a minister, realizing after a week-long retreat of quiet and meditation that the ministry "was definitely not for me." Llewelyn persevered in his acting quest, and was accepted to the Royal Academy for the Dramatic Arts in the mid 1930s. The outbreak of World War II in September 1939, halted his acting career, and Llewelyn was commissioned as a second lieutenant in the British army. He was assigned to the Royal Welsh Fusiliers and was sent to France in early 1940. In a short time, his regiment was fighting the Germans, and Llewelyn's company was holding off a division of German tanks. Llewelyn explained that "eventually, the tanks broke through and many of us jumped into this canal and started swimming down it to the other side, figuring that our chaps were still over there. But the Germans were the only ones there," and Llewelyn was captured, and held as a prisoner of war for five years. At one prison camp, the prisoners had dug a tunnel and were planning to escape the next morning. Llewelyn was down in the tunnel doing some maintenance work in preparation of the escape when the Germans found out about the tunnel and caught him down in it, a crime that earned Llewelyn 10 days in solitary, which Llewelyn called "a blessing of sorts. After spending every day of several years sleeping in a room with 50 other people, the quiet and privacy was rather nice." After the war, Llewelyn returned to London and revived his career, eventually being cast as his trademark Q in _From Russia with Love (1963)_ (qv). Since 1963, Llewelyn has appeared as Q in every Eon Productions Bond film, except _Live and Let Die (1973)_ (qv). Llewelyn was omitted from _Live and Let Die (1973)_ (qv) because producers 'Harry Saltzman' (qv) and 'Albert R. Broccoli' (qv) felt that too much was being made of the gadgets and they would play it down. Llewelyn said he "was quite disappointed" at being left out of _Live and Let Die (1973)_ (qv). Fans, however, missed Q, and Llewelyn got a call shortly after the release of _Live and Let Die (1973)_ (qv) telling him that he would be in the next Bond film, _The Man with the Golden Gun (1974)_ (qv). Llewelyn, who admits that his mechanical abilities in real life are virtually nil, is geared up for the next Bond movie. "I'd love to be in the next one," Llewelyn said. "Of course, if you consider my age, they should have put me out to grass a long time ago."</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Sep 12 00:00:00 CET 1914</dateNaissance>
+          <dateDeces>Sun Dec 19 00:00:00 CET 1999</dateDeces>
+        </acteur>
+        <acteur id="26">
+          <nom>Shaun, Dominic</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="18">
+          <nom>Deckers, Daphne</nom>
+          <nomNaissance>Deckers, Daphne Muriël</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sun Nov 10 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="35">
+          <nom>Coyle, Brendan</nom>
+          <nomNaissance>Coyle, David</nomNaissance>
+          <biographie>Brendan Coyle was born in Corby, Northamptonshire to an Irish father and Scottish mother; his parents moved to Corby from County Tyrone, Ireland. Brendan holds Irish citizenship and has previously lived in Dublin and London. However, according to a video clip from the site for "Rockface" he resides in Norfolk. Brendan is also the great nephew of footballing (i.e. soccer) legend Sir Matt Busby of Manchester United fame. Brendan trained at drama school in Dublin, founded in the late 1960s as the Focus Theatre, was co-founded by his aunt Mary Elizabeth Burke-Kennedy. Brendan started there in 1981 and then received a scholarship to Mountview Theatre School in England in 1983. He has directed at least two plays at Mountview since graduating from there. Brendan has done a number of stage, television, and movie productions, including the play "The Weir" for which he won an Olivier Award for Best Supporting Performance award for his part as the bartender, Brendan. He continues to work on stage, in film and on television.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Dec 02 00:00:00 CET 1963</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="11">
+          <nom>Bond, Samantha</nom>
+          <nomNaissance>Bond, Samantha Jane</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Mon Nov 27 00:00:00 CET 1961</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="36">
+          <nom>Ashton, David</nom>
+          <nomNaissance>Scott, David</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="22">
+          <nom>Alexander, Bruce</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="40">
+          <nom>Ross, Liza</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="42">
+          <nom>Saxon, Rolf</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jan 01 00:00:00 CET 1955</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="9">
+          <nom>Dench, Judi</nom>
+          <nomNaissance>Dench, Judith Olivia</nomNaissance>
+          <biographie>Attended Mount School in York, and studied at the Central School of Speech and Drama. She has performed with Royal Shakespeare Company, the National Theatre, and at Old Vic Theatre. She is a ten-time BAFTA winner including Best Actress in a Comedy Series for _"A Fine Romance" (1981)_ (qv) in which she appeared with her husband, 'Michael Williams (I)' (qv), and Best Supporting Actress in _A Handful of Dust (1988)_ (qv) and _A Room with a View (1985)_ (qv) . She received an ACE award for her performance in the television series _Mr. and Mrs. Edgehill (1985) (TV)_ (qv). She was made an Officer of the Order of the British Empire in 1970, and was created Dame of Order of the British Empire in 1988.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sun Dec 09 00:00:00 CET 1934</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+      </acteurs>
+    </projection>
+    <projection id="2">
+      <date>Fri May 20 13:58:35 CEST 2016</date>
+      <numéroSalle>Flon 1</numéroSalle>
+      <film id="2235127">
+        <titre>GoldenEye</titre>
+        <synopsis>1986 - Soviet Russia has been arming international terrorists with chemical weapon technology, and a chemical weapons plant in the mountains is the target of James Bond and his closest compatriot, Alec Trevelyan. Infiltrating the compound, they are spotted and Alec is captured. When a ruthless Soviet officer, Oromov, executes Trevelyan, James pulls off a spectacular escape and succeeds in blowing up the compound. Now in 1995, he is assigned to tail former Red Air Force jet jockey Xenia Onatopp, who is working for a Russian crime syndicate known as Janus, but he is unable to stop her from stealing a powerful helicopter - a theft initially dismissed as a possibility by MI6's new leader, a woman who is a bureaucratic bean counter who, despite her acidic responses to grumbling from her ticked-off men, is having to learn her job as she goes, and who has to trust James Bond's instincts after a nuclear accident occurs over a Russian region housing the tracking station for a weapons satellite known as Goldeneye. James must track down the stolen gunship and all leads to a second Goldeneye system, and along the way he is horrified to find the true identity of the Janus syndicate, which leads to a spectacular running pursuit from the stolen gunship through a Soviet army prison to a wild street chase involving a tank and confrontation with a Soviet missile train, and eventually a showdown in the jungles of Cuba.</synopsis>
+        <duree>130</duree>
+        <critiques/>
+        <genres>Action, Crime, Thriller</genres>
+        <motCle>falling-from-height, boat, casino-card-game, evil-plot, soldier, exploding-tank, ak-47, secret-service, gatling-gun, motorcycle-stunt, pistol, terrorist, satellite, intelligence, chemical-weapons, britain, color-in-title, strangulation, museum, conspiracy, sequel, aston-martin, shot-in-the-chest, gun, russian-army, laser, spying, cemetery, helicopter, blood-splatter, colonel, revenge, general, shootout, woman-with-a-gun, player, murder, reboot-of-series, official-james-bond-series, british-secret-service, fire, partner, satellite-dish, hero-killing-woman, shot-in-the-foot, bullet-time, post-cold-war, female-assassin, unsubtitled-foreign-language, intelligence-agency, explosion, rough-sex, organized-crime, blood, female-killer, jungle, terrorism, one-man-army, lifting-someone-into-the-air, shot-in-the-forehead, train-wreck, army, cuba, fight, vengeance, car-chase, year-1995, sadist, blockbuster, evil-man, machine-gun, gadgetry, casino-owners, mixed-caps-in-title, ejection-seat, exploding-building, action-hero, baccarat, karate, cult-figure, assassin, gadget, gambling-house, grenade, gun-battle, sadism, good-versus-evil, shot-in-the-back, secret-service-agent, exploding-car, gambling-casino, returning-character-with-different-actor, mexican-standoff, fist-fight, friend-turned-foe, innuendo, lifting-a-female-into-the-air, wheelchair, mercenary, spy, spy-mission, violence, beach, showdown, seventeenth-part, bungee-jump, high-tech, airplane, russian, silencer, hostage, lifting-an-adult-into-the-air, train, card-game, agent, year-1986, warrior, nuclear-weapons, martial-arts, megalomaniac, bungee-jumping, tank, title-spoken-by-character, slow-motion-scene, electro-magnetic-pulse, post-soviet-russia, spy-turned-terrorist, poetic-justice, motorcycle, gadget-car, reverse-footage, russian-mafia, bathroom, suffocation, internet, rogue-agent, computer-cracker, hand-to-hand-combat, held-at-gunpoint, tattoo-on-butt, shot-to-death, train-explosion, russian-general, kissing-while-having-sex, villain, casino, cult-film, research-station, st.-petersburg-russia, timebomb, spy-camera, enemy, top-secret, revolving-door, riviera, machismo, trap, see-you-in-hell, dominant-woman, death, intelligence-agent, slide-locked-back, car-accident, elevator, loss-of-friend, military, russia, 1990s, british-intelligence, massacre, kidnapping, mixed-martial-arts, fistfight, british, villainess, 1980s, snow, laser-cutter, bond-girl, computer, gangster, former-soviet-union, one-word-title, gun-duel, head-butt, london-england, leg-scissors, tough-guy, brawl, disfigurement, plane-crash, missile, exploding-helicopter, secret-agent, cossack</motCle>
+        <langages>Spanish, Russian, English</langages>
+        <roles>
+          <role place="7">
+            <idActeur>346345</idActeur>
+            <personnage>Valentin Dmitrovich Zukovsky</personnage>
+          </role>
+          <role place="19">
+            <idActeur>678837</idActeur>
+            <personnage>Computer Store Manager</personnage>
           </role>
           <role place="25">
             <idActeur>1092287</idActeur>
             <personnage>Valentin's Bodyguard</personnage>
           </role>
-          <role place="15">
-            <idActeur>970460</idActeur>
-            <personnage>Severnaya Duty Officer</personnage>
+          <role place="21">
+            <idActeur>2022331</idActeur>
+            <personnage>Anna</personnage>
+          </role>
+          <role place="24">
+            <idActeur>248748</idActeur>
+            <personnage>Train Driver</personnage>
+          </role>
+          <role place="14">
+            <idActeur>2341708</idActeur>
+            <personnage>Caroline</personnage>
+          </role>
+          <role place="2">
+            <idActeur>126963</idActeur>
+            <personnage>Alec Trevelyan</personnage>
+          </role>
+          <role place="22">
+            <idActeur>827458</idActeur>
+            <personnage>MiG Pilot</personnage>
           </role>
           <role place="13">
             <idActeur>933908</idActeur>
             <personnage>Bill Tanner</personnage>
           </role>
-          <role place="12">
-            <idActeur>2083968</idActeur>
-            <personnage>Miss Moneypenny</personnage>
-          </role>
-          <role place="7">
-            <idActeur>346345</idActeur>
-            <personnage>Valentin Dmitrovich Zukovsky</personnage>
-          </role>
           <role place="16">
             <idActeur>470908</idActeur>
             <personnage>French Warship Captain</personnage>
           </role>
-          <role place="20">
-            <idActeur>2242155</idActeur>
-            <personnage>Irina</personnage>
-          </role>
-          <role place="11">
-            <idActeur>1047090</idActeur>
-            <personnage>Q</personnage>
+          <role place="1">
+            <idActeur>220515</idActeur>
+            <personnage>James Bond</personnage>
           </role>
           <role place="4">
             <idActeur>2437457</idActeur>
             <personnage>Xenia Onatopp</personnage>
           </role>
+          <role place="5">
+            <idActeur>95361</idActeur>
+            <personnage>Jack Wade</personnage>
+          </role>
+          <role place="9223372036854775807">
+            <idActeur>104350</idActeur>
+            <personnage>Russian Scientist</personnage>
+          </role>
+          <role place="18">
+            <idActeur>1205728</idActeur>
+            <personnage>Admiral Chuck Farrell</personnage>
+          </role>
+          <role place="12">
+            <idActeur>2083968</idActeur>
+            <personnage>Miss Moneypenny</personnage>
+          </role>
+          <role place="15">
+            <idActeur>970460</idActeur>
+            <personnage>Severnaya Duty Officer</personnage>
+          </role>
+          <role place="11">
+            <idActeur>1047090</idActeur>
+            <personnage>Q</personnage>
+          </role>
+          <role place="3">
+            <idActeur>2854968</idActeur>
+            <personnage>Natalya Simonova</personnage>
+          </role>
+          <role place="23">
+            <idActeur>1192950</idActeur>
+            <personnage>Croupier</personnage>
+          </role>
+          <role place="8">
+            <idActeur>857208</idActeur>
+            <personnage>General Arkady Grigorovich Ourumov</personnage>
+          </role>
+          <role place="9">
+            <idActeur>383183</idActeur>
+            <personnage>Boris Grishenko</personnage>
+          </role>
+          <role place="20">
+            <idActeur>2242155</idActeur>
+            <personnage>Irina</personnage>
+          </role>
+          <role place="10">
+            <idActeur>895949</idActeur>
+            <personnage>Defense Minister Dmitri Mishkin</personnage>
+          </role>
+          <role place="17">
+            <idActeur>983359</idActeur>
+            <personnage>French Warship Officer</personnage>
+          </role>
+          <role place="6">
+            <idActeur>2220301</idActeur>
+            <personnage>M</personnage>
+          </role>
         </roles>
       </film>
+      <acteurs>
+        <acteur id="384">
+          <nom>Coltrane, Robbie</nom>
+          <nomNaissance>McMillan, Anthony Robert</nomNaissance>
+          <biographie>Robbie Coltrane, one of Britain's most popular comedians who was head of debating society at school and won prizes for his art, is now a film star who played in two James Bond films and in the "Harry Potter" franchise. He was born Anthony Robert McMillan on March 30, 1950, in Rutherglen, a suburb of Glasgow, Scotland, UK. His father, Ian McMillan, was a general surgeon who also worked for police pathology. His mother, Jean, was a teacher and a pianist. Young Robbie was fond of art, music, films and cars. He was a voracious reader of his dad's books on medicine and crime. At age 12 he made his acting debut on stage at Glenalmond College, delivering rants from "Henry V". At that time he was fascinated with 'Marlon Brando' (qv) and 'Orson Welles' (qv). He attended Glasgow Art School, majoring in drawing, painting and film, then studied art at Edinburgh's Moray House College of Education for a year. In 1973 he made a documentary titled "Young Mental Health", which was voted Film Of The Year by the Scottish Education Council. At that time Robbie took the name Coltrane, due to his love of jazz, and began a career of a stand-up comedian at night clubs, at the Edinburgh Festival, as well as an actor with Edinburgh's renowned Traverse Theatre. In 1980 Coltrane made his debut on television as "Border Guard" in BBC's mini-series _"The Lost Tribe" (1980)_ (qv), then made his big screen debut as a limousine driver in _La mort en direct (1980)_ (qv). In 1981 he appeared in his first leading role as Detective Fritz Langley in _Subway Riders (1981)_ (qv), by famed underground director 'Amos Poe' (qv). He became a well-known face through appearances in The Comic Strip series, then in _"Alfresco" (1983)_ (qv) and Comic Strip movies _The Supergrass (1985)_ (qv) and _The Pope Must Die (1991)_ (qv), among other films. At that time Coltrane had a drinking problem, downing as much as a bottle of whiskey a day. In 1986 he flew to a clinic in Mexico and was treated for obesity. In 1987 his partner for 15 years, Robin Paine, left him for good, leaving her portrait in Coltrane's barn. In 1988 Coltrane met then 18-year-old Rhona Gemmell in a pub. They married and had a son, Spencer, and a daughter, Alice. His career took off during the early 1990s with the leading role as Dr. Eddie "Fitz" Fitzgerald, a forensic psychologist, in the popular TV series _"Cracker" (1993)_ (qv). He made such a good performance as Valentin Zukovsky, a KGB man turned St. Petersburg mafia lord, in _GoldenEye (1995)_ (qv) the producers called him back for the same character in _The World Is Not Enough (1999)_ (qv). Then Coltrane hit another lucrative franchise; he was personally selected by 'J.K. Rowling' (qv) as her choice to play half-giant Rubeus Hagrid in the 'Harry Potter' films. In early 1990s Coltrane wrote an autobiography, "Coltrane in a Cadillac", and also starred in the eponymous TV series, _"Coltrane in a Cadillac" (1993)_ (qv), in which he indulges his passion for vintage cars and tells with great humor about his 4000-mile journey across America from Los Angeles to New York. In 2003 he separated from his wife. His interests outside of his acting profession has been reading books, and rebuilding and collecting vintage cars. Robbie Coltrane resides in a converted farmhouse in Stirlingshire, Scotland, UK.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Mar 30 00:00:00 CET 1950</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="396">
+          <nom>Gregory, Constantine</nom>
+          <biographie>Actor and dialect coach, Constantine Gregory was born Constantine Liebert, or Leebaert to a Dutch father and Russian mother. As the son of a journalist/broadcaster father and an actress mother, Constantine attended school in England after moving there with his mother in 1950. After attending Dartington Hall School, Constantine went to Trinity College, Dublin from 1961-1965, studying Economics and Political Science. During his college years, he was President of the Trinity College Players and found huge success while at the Edinburgh Festival, performing at the still-newly opened Traverse Theatre. Constantine continued his stage work with performances across the London front. He began screen work in 1967 and cultivated a vast amount television credits. Constantine's film work ties itself to high-profile movies including the action-adventure spy thriller GoldenEye (1995) starring Pierce Brosnan, the Ancient Roman drama Titus (1999) starring Anthony Hopkins and into the early 2000s, appeared in the adventure comedy Shanghai Knights (2003) starring Jackie Chan and Owen Wilson.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Sep 16 00:00:00 CEST 1942</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="402">
+          <nom>Majer, Peter</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="398">
+          <nom>Arthur, Michelle</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="401">
+          <nom>Byfield, Trevor</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Oct 20 00:00:00 CET 1943</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="391">
+          <nom>Gordon, Serena</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Tue Sep 03 00:00:00 CET 1963</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="379">
+          <nom>Bean, Sean</nom>
+          <nomNaissance>Bean, Shaun Mark</nomNaissance>
+          <biographie>Sean Bean, England's most versatile actor, holds a stellar career spanning every medium for approximately 20 years, in theater, radio, television and movies. This soulful, green-eyed blonde's roles are so varied that his magnetic persona convincing plays angst-ridden villians, as in "Clarissa," passionate lovers like Mellors in "Lady Chatterley's Lover," rough-and-ready soldiers such as Richard Sharpe, heartwrenching warriors as the emotionally torn Boromir in "The Lord of the Rings," and noble Greeks, like Odysseus in "Troy," where his very presence in the film adds grace and validity to the rest of the movie. Recently, he did a turn in Shakespeare's "Macbeth," where as the principal lead, he so transfixed the audience that the show was extended in London and critically acclaimed. Bean, however, remains himself, a man's man, and in the glizty world of movies this is a rare thing indeed. Bean currently resides in London where he enjoys raising his beautiful daughters, his beloved football, and the occasional pint. In his home country of England, he was recently voted the second sexiest man in the UK, and seemed to enjoy this notoriety, stating, "I don't have any problems with women seeing me as their ideal bit of 'rough'. Why would I?" Well, good to know, because his legions of fans do not have a problem with it either.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Apr 17 00:00:00 CET 1959</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="399">
+          <nom>Isyanov, Ravil</nom>
+          <biographie>Born in 1962 in the Soviet Union in Greater Moscow area, the city of Voskresensk. Throughout childhood, Ravil attended classes in music, ballet, theater, as well as going for sports - ice hockey, boxing and soccer among them. After completing his 2 years national service in the Soviet Air Force, Ravil worked for two seasons in Khabarovsk Theater. Then, he studied in Moscow Art Theater School for four years. He simultaneously studied three summers at the Oxford branch of British American Drama Academy. In 1990 Ravil went to UK at the invitation of Theater Clwyd, Wales. After collapse of the USSR, he stayed in Britain and continued working there. In 1998 he moved to Los Angeles to pursue his film career and now works and lives there.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="390">
+          <nom>Kitchen, Michael</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Oct 31 00:00:00 CET 1948</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="393">
+          <nom>Douglas, Pavel</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Jan 05 00:00:00 CET 1951</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="378">
+          <nom>Brosnan, Pierce</nom>
+          <nomNaissance>Brosnan, Pierce Brendan</nomNaissance>
+          <biographie>Pierce Brosnan was born in Navan, County Meath, Ireland, and lived in Navan, County Meath, until he moved to England, UK, at an early age (thus explaining his ability to play men from both backgrounds convincingly). His father left the household when Pierce was a child and although reunited later in life, the two have never had a close relationship. His most popular role is that of British secret agent James Bond. The death, in 1991, of 'Cassandra Harris (I)' (qv), his wife of eleven years, left him with three children - Christopher and Charlotte from Cassandra's first marriage and Sean from their marriage. Since her death, he has had two children with his second wife, 'Keely Shaye Smith' (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat May 16 00:00:00 CET 1953</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="381">
+          <nom>Janssen, Famke</nom>
+          <nomNaissance>Janssen, Famke Beumer</nomNaissance>
+          <biographie>Famke Beumer Janssen was born on November 5, 1964 in Amsterdam, Netherlands, and has two other siblings. She studied economics for a year at the University of Amsterdam. Moving to America in 1984, Famke modeled for Chanel in New York City. Later, taking a break from modeling, she majored in writing and literature at Columbia University and studied acting with 'Harold Guskin' (qv). She then went to Los Angeles, California, where she continued to study acting under 'Roy London' (qv). Her first film was the crime drama _Fathers &amp; Sons (1992)_ (qv), where she played the love interest of 'Jeff Goldblum' (qv). Later, she became James Bond's enemy in _GoldenEye (1995)_ (qv) opposite 'Pierce Brosnan' (qv). Famke received strong critical acclaim for her electrifying performance as the femme fatale Xenia Onatopp. Her career has bloomed since then with her starring in such films as _House on Haunted Hill (1999)_ (qv), a reoccurring role on FX's _"Nip/Tuck" (2003)_ (qv) and the blockbuster trilogy _X-Men (2000)_ (qv), _X2 (2003)_ (qv), and _X-Men: The Last Stand (2006)_ (qv).</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Thu Nov 05 00:00:00 CET 1964</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="382">
+          <nom>Baker, Joe Don</nom>
+          <biographie>Tall, broad shouldered character actor with Texan drawl first appeared in support in several Western vehicles both on TV and the cinema in the mid 1960s. Got himself noticed playing Steve McQueen's younger brother in _Junior Bonner (1972)_ (qv), and then scored the lead role of Buford Pusser (!) in the unexpected hit _Walking Tall (1973)_ (qv), an allegedly true tale about a Southern sheriff confronting corruption &amp; gangsters with a large wooden club and a mean attitude. Followed it up by playing a sadistic hit man called Molly, in Don Siegel's bank heist drama _Charley Varrick (1973)_ (qv). Joe Don Baker's next few films were rather forgettable until he landed the role of police detective Earl Eischied in _To Kill a Cop (1978) (TV)_ (qv)....which led him into reprising the same character in the short lived TV series _"Eischied" (1979)_ (qv). Since then he has proved he is also quite adept at taking on comedy roles, as well as picking up plenty of work playing lawmen, military men, politicians etc. Keep your eye open for him as a nosy police chief in _Fletch (1985)_ (qv), a meglomanical general in _The Living Daylights (1987)_ (qv), as a redneck father in _Mars Attacks! (1996)_ (qv), and as intelligence operative Jack Wade in the 007 films _Tomorrow Never Dies (1997)_ (qv) and _GoldenEye (1995)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Feb 12 00:00:00 CET 1936</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="403">
+          <nom>Bannon, Paul</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="395">
+          <nom>Mitchell, Billy J.</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Jan 01 00:00:00 CEST 1942</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="389">
+          <nom>Bond, Samantha</nom>
+          <nomNaissance>Bond, Samantha Jane</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Mon Nov 27 00:00:00 CET 1961</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="392">
+          <nom>Kunz, Simon</nom>
+          <biographie>Actor Simon Kunz was born on 8 May 1954, the same year that his American-born, England domiciled grandfather, the pianist Charlie Kunz, had a Top Twenty hit with Piano Medley 114. After leaving the Latymer School Simon read Theatre Studies at Warwick University and in 1984 became the drummer in the band the Locomotives. However, rather than follow Charlie into the music business he left the group after a year to concentrate on acting. On stage he appeared with the National Theatre (Brackenbury in 'Richard III'), the Oxford Stage Company (Oliver in 'As You Like It', Edgar in 'King Lear')in 'The Caretaker' at the Bristol Old Vic, 'Live Like Pigs' at the Royal Court and 'The Park' with the Royal Shakespeare Company, making his film debut in 'Four Weddings and a Funeral'. On television he has appeared in most of the populist dramas where he seems to have played rather more than his fair share of policemen - of all ranks - and lawyers.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="388">
+          <nom>Llewelyn, Desmond</nom>
+          <nomNaissance>Llewelyn, Desmond Wilkinson</nomNaissance>
+          <biographie>Desmond Llewelyn was born in South Wales in 1914, the son of a coal mining engineer. In high school, he worked as a stagehand in the school's productions and then picked up sporadic small parts. His family would not give up their effort to prevent him from a life on stage, so an uncle who was a high ranking police officer arranged for Llewelyn to take the department's physical exam. "Thank God, I flunked the eye test, and they wouldn't take me. I suspect the inspector had a hangover because he also failed this other chap I knew, who went out the same day and passed the physical for the Royal Navy, which had a lot tougher test." After failing the police exam, Llewelyn thought about becoming a minister, realizing after a week-long retreat of quiet and meditation that the ministry "was definitely not for me." Llewelyn persevered in his acting quest, and was accepted to the Royal Academy for the Dramatic Arts in the mid 1930s. The outbreak of World War II in September 1939, halted his acting career, and Llewelyn was commissioned as a second lieutenant in the British army. He was assigned to the Royal Welsh Fusiliers and was sent to France in early 1940. In a short time, his regiment was fighting the Germans, and Llewelyn's company was holding off a division of German tanks. Llewelyn explained that "eventually, the tanks broke through and many of us jumped into this canal and started swimming down it to the other side, figuring that our chaps were still over there. But the Germans were the only ones there," and Llewelyn was captured, and held as a prisoner of war for five years. At one prison camp, the prisoners had dug a tunnel and were planning to escape the next morning. Llewelyn was down in the tunnel doing some maintenance work in preparation of the escape when the Germans found out about the tunnel and caught him down in it, a crime that earned Llewelyn 10 days in solitary, which Llewelyn called "a blessing of sorts. After spending every day of several years sleeping in a room with 50 other people, the quiet and privacy was rather nice." After the war, Llewelyn returned to London and revived his career, eventually being cast as his trademark Q in _From Russia with Love (1963)_ (qv). Since 1963, Llewelyn has appeared as Q in every Eon Productions Bond film, except _Live and Let Die (1973)_ (qv). Llewelyn was omitted from _Live and Let Die (1973)_ (qv) because producers 'Harry Saltzman' (qv) and 'Albert R. Broccoli' (qv) felt that too much was being made of the gadgets and they would play it down. Llewelyn said he "was quite disappointed" at being left out of _Live and Let Die (1973)_ (qv). Fans, however, missed Q, and Llewelyn got a call shortly after the release of _Live and Let Die (1973)_ (qv) telling him that he would be in the next Bond film, _The Man with the Golden Gun (1974)_ (qv). Llewelyn, who admits that his mechanical abilities in real life are virtually nil, is geared up for the next Bond movie. "I'd love to be in the next one," Llewelyn said. "Of course, if you consider my age, they should have put me out to grass a long time ago."</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Sep 12 00:00:00 CET 1914</dateNaissance>
+          <dateDeces>Sun Dec 19 00:00:00 CET 1999</dateDeces>
+        </acteur>
+        <acteur id="380">
+          <nom>Scorupco, Izabella</nom>
+          <nomNaissance>Skorupko, Izabella Dorota</nomNaissance>
+          <biographie>Born in the northern Polish town of Bialystok, 'Izabella Scorupco' (qv) moved to Sweden with her mother as a young child. She studied drama and music and, at 17, was discovered by a Swedish film director who cast her in the movie _Ingen kan älska som vi (1988)_ (qv), which made her a local teenage idol. She then became a successful model in Sweden and throughout Europe, where she made good use of her fluency in four languages. In 1989, Scorupco displayed another facet of her talents, launching her career as a pop singer with her first single, Substitute. The single and subsequent album, IZA, both went gold, and she followed with another hit single, Shame, Shame, which she recorded in 1991. Returning to acting in 1994, she immediately won the lead role in the Swedish film _Petri tårar (1995)_ (qv). Scorupco stars as a woman who lives her life as a man in the medieval drama, which was released in August 1995.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Thu Jun 04 00:00:00 CET 1970</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="400">
+          <nom>Milanovich, Vladimir</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="385">
+          <nom>John, Gottfried</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Aug 29 00:00:00 CEST 1942</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="386">
+          <nom>Cumming, Alan</nom>
+          <biographie>Alan Cumming was born on January 27, 1965, in Aberfeldy, Scotland. His family lived nearby in Dunkeld, where his father, Alex, was a forester for Atholl Estate. The family (Alex, mother Mary, big brother Tom and Alan) moved to Fassfern near Fort William soon after, before moving to the east coast of Scotland in 1969 where Alan's dad took up the position of Head Forester of Panmure Estate, and it was here Alan grew up. He went to Monikie Primary School and Carnoustie High School, where he began appearing in plays, and soon after that began working with with the Carnoustie Theatre Club and Carnoustie Musical Society. In 1981 he left high school with 8 'O' Grades and 4 Highers, but because he was too young to enter any university or drama school he worked for just over a year as a sub-editor at D.C. Thomson Publishers in Dundee. There he worked on the launch of a new magazine, "Tops", and was also the "Young Alan" who answered readers' letters. In September 1982 he began a three-year course at the Royal Scottish Academy of Music and Drama in Glasgow. He graduated in 1985 with a B.A. (Dramatic Studies) and awards for verse speaking and direction. He also had formed a cabaret double act with fellow student 'Forbes Masson' (qv) called Victor and Barry, which went on to become hugely successful with tours (including two Perrier Pick of the Fringe seasons in London and a month-long engagement at the Sydney Opera House as part of an Australian tour), records ("Hear Victor and Barry and Faint", "Are We Too Loud?") and many TV appearances throughout the UK. Before graduating Alan made his professional theater and film debuts in "Macbeth" at the Tron Theatre in Glasgow and in 'Gillies MacKinnon' (qv)'s "Passing Glory". After graduating Alan worked extensively in Scottish theater and television, including a stint on the soap opera _"Take the High Road" (1980)_ (qv) before moving to London when "Conquest of the South Pole", a play by German playwright 'Manfred Karge' (qv), transferred from the Traverse Theatre in, Edinburgh to the the Royal Court in London, earning him his first Olivier award nomination for Most Promising Newcomer of 1988. Alan performed with the Royal Shakespeare Company and then the Royal National Theatre, where he starred in "Accidental Death of an Anarchist", which he also adapted with director 'Tim Supple' (qv). The production was nominated for Best revival at the 1991 Olivier awards and Alan won for Comedy Performance of the Year. Then his film career began with 'Ian Sellar (I)' (qv)'s _Prague (1992)_ (qv), in which he starred with 'Sandrine Bonnaire' (qv) and 'Bruno Ganz' (qv). The film premiered at the 1992 Cannes film festival and went on to win him Best Actor award at the Atlantic Film Festival and a Scottish BAFTA Best Actor nomination. In the same year he made two films for the BBC - _"Screen Two" (1985) {The Last Romantics (#8.11)}_ (qv) and _Bernard and the Genie (1991) (TV)_ (qv), the latter winning him the Top Television Newcomer award at 1992 British Comedy Awards. In the 1992 Olivier awards he was also nominated for Comedy Performance of the Year for "La Bete". In 1993 he played Hamlet for the English Touring Theare to great critical acclaim ("An actor knocking on the door of greatness" - Daily Mail; ranked first and second--with his performance in "Cabaret"--in the Daily Telegraph's performances of the year) and then immediately went on to play the Emcee in 'Sam Mendes (I)' (qv)' revival of "Cabaret" at the same venue (London's Donmar Warehouse). He received a 1994 Olivier award nomination for Best Actor in a Musical for "Cabaret", and for Hamlet he received the 1994 TMA Best Actor award and a Shakespeare Globe award nomination. In 1994 he made his first Hollywood film, _Circle of Friends (1995)_ (qv), and his performance as the oleaginous Sean Walsh along with those in two films released in quick succession (_Emma (1996)_ (qv) and _GoldenEye (1995)_ (qv)) brought him to the attention of American producers, and he appeared in several Hollywood films, such as _Romy and Michele's High School Reunion (1997)_ (qv) and _Buddy (1997)_ (qv). He returned to the UK in 1997 to work with 'Stanley Kubrick' (qv) and the 'Spice Girls' (qv) before returning stateside in 1998 to reprise his role in "Cabaret" on Broadway. The show and his portrayal were a sensation, and he received the Tony, Drama Desk, Outer Critics' Circle, Theatre World, FANY, New York Press and New York Public Advocate's awards for his performance. Since then he has alternated between theater and films, and also between smaller independent films and more mainstream fare. His theater work includes 2001's "Design for Living" on Broadway and the hugely successful off-Broadway "Elle" by 'Jean Genet' (qv), which he adapted and played the lead in 2002. Films have included 'Julie Taymor' (qv)'s _Titus (1999)_ (qv), _Urbania (2000)_ (qv), the "Spy Kids" trilogy, _Josie and the Pussycats (2001)_ (qv), _X2 (2003)_ (qv), _Nicholas Nickleby (2002)_ (qv), _Son of the Mask (2005)_ (qv) and the Showtime movie musical _Reefer Madness: The Movie Musical (2005) (TV)_ (qv). He wrote, directed, produced and acted in _The Anniversary Party (2001)_ (qv) with 'Jennifer Jason Leigh' (qv), which premiered at the Cannes Film festival in 2002 and went on to win a National Board of Review award and two Independent Spirit award nominations. More recently he has produced the documentary Show People (2004) and the films _Sweet Land (2005)_ (qv) and _Full Grown Men (2006)_ (qv) (and appears in both) and acted in _Gray Matters (2006/I)_ (qv) opposite 'Heather Graham (I)' (qv) and _Bam Bam and Celeste (2005)_ (qv) opposite 'Margaret Cho' (qv). in 2006 he will return to Broadway as Macheath in "The Threepenny Opera". He has also found the time to write a novel, "Tommy's Tale", in 2002 and a fragrance, "Cumming" in 2005.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Jan 27 00:00:00 CET 1965</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="397">
+          <nom>Driver, Minnie</nom>
+          <nomNaissance>Driver, Amelia Fiona J.</nomNaissance>
+          <biographie>Amelia Fiona J. Driver was born January 31, 1970 in Finsbury Park, London. Her mother, 'Gaynor Churchward' (qv), was a designer and former couture model and her father, Ronnie Driver, was a businessman. She has a sister, 'Kate Driver' (qv), who is a model and a producer. Minnie's mother was her father's mistress. Minnie's father's wife did not know about his second family. Minnie is of English, and some Scottish, ancestry. Her father was born in Swansea, Wales, to parents from England, and her mother is English-born. Minnie was raised partly in Barbados. Her first major role was in the film _Circle of Friends (1995)_ (qv)opposite 'Chris O'Donnell (I)' (qv) and 'Colin Firth' (qv). In the next few years she had roles in films such has _GoldenEye (1995)_ (qv), _Sleepers (1996)_ (qv) and _Grosse Pointe Blank (1997)_ (qv). In 1997 she starred in the popular and financially successful film _Good Will Hunting (1997)_ (qv) opposite 'Matt Damon' (qv) and 'Ben Affleck' (qv), who also wrote the screenplay for the film and received Oscars for their achievement. The film also earned Minnie an Oscar nomination for best actress in a supporting role. She had a noted recurring role on _"Will &amp; Grace" (1998)_ (qv) in 2003-2004 and also appeared in films such as _An Ideal Husband (1999)_ (qv), _Return to Me (2000)_ (qv), _Owning Mahowny (2003)_ (qv), _Ella Enchanted (2004)_ (qv), _The Phantom of the Opera (2004)_ (qv), _Delirious (2006)_ (qv) and _Take (2007)_ (qv). She starred in the popular Tv-series _"The Riches" (2007)_ (qv) opposite 'Eddie Izzard' (qv). She now stars in the NBC sitcom, "About a Boy" (2014) Minnie has been romantically linked with several of her co-stars, including 'Matt Damon' (qv) and 'John Cusack (I)' (qv). She was engaged to marry 'Josh Brolin' (qv) before they broke up suddenly in 2001. In the last few years she has kept her private life, private. On March 13, 2008, during an appearance on _"The Tonight Show with Jay Leno" (1992)_ (qv), she announced that she was expecting her first child. On September 5, 2008, she gave birth to a boy named Henry Story Driver. The name of the baby's father has not been revealed.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sat Jan 31 00:00:00 CET 1970</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="387">
+          <nom>Karyo, Tchéky</nom>
+          <nomNaissance>Karyo, Baruh Djaki</nomNaissance>
+          <biographie>Born in Istanbul, Turkey, Tcheky Karyo grew up in Paris. He studied drama at the Cyrano Theatre and became a member of the Daniel Sorano Company, where he played numerous classical roles. He next joined the National Theatre of Strasbourg, where he starred in contemporary theatre as well as in such classical works as "Tartuffe", "Macbeth" and "Othello." He is one of France's most popular actors. Nominated for a Cesar Award for his starring role in _La balance (1982)_ (qv), Karyo received the prestigious Jean Gabin Prize in 1986 in recognition of his talent.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Oct 04 00:00:00 CET 1953</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="394">
+          <nom>Lajous, Olivier</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+        <acteur id="383">
+          <nom>Dench, Judi</nom>
+          <nomNaissance>Dench, Judith Olivia</nomNaissance>
+          <biographie>Attended Mount School in York, and studied at the Central School of Speech and Drama. She has performed with Royal Shakespeare Company, the National Theatre, and at Old Vic Theatre. She is a ten-time BAFTA winner including Best Actress in a Comedy Series for _"A Fine Romance" (1981)_ (qv) in which she appeared with her husband, 'Michael Williams (I)' (qv), and Best Supporting Actress in _A Handful of Dust (1988)_ (qv) and _A Room with a View (1985)_ (qv) . She received an ACE award for her performance in the television series _Mr. and Mrs. Edgehill (1985) (TV)_ (qv). She was made an Officer of the Order of the British Empire in 1970, and was created Dame of Order of the British Empire in 1988.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sun Dec 09 00:00:00 CET 1934</dateNaissance>
+          <dateDeces>Pas mort</dateDeces>
+        </acteur>
+      </acteurs>
     </projection>
-  </Projections>
+  </projections>
 </cinema>
