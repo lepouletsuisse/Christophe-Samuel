@@ -10,6 +10,7 @@ import views.*;
 
 import java.io.*;
 import java.text.DecimalFormat;
+import java.util.stream.Collectors;
 
 import com.thoughtworks.xstream.XStream;
 
@@ -35,15 +36,16 @@ public class ControleurXMLCreation {
                 Document doc = DocumentHelper.createDocument();
                 try {
                     globalData = ormAccess.GET_GLOBAL_DATA();
-                    mainGUI.setWarningMessage("Creation XML: Fonction en implémentation...");
 
                     Element root = doc.addElement("cinema");
-                    Element projections = root.addElement("Projections");
+                    Element projections = root.addElement("projections");
                     for (Projection p : globalData.getProjections()) {
                         Element projection = projections.addElement("projection")
                                 .addAttribute("id", Long.toString(p.getId()));
-                        Element date = projection.addElement("date")
+                        projection.addElement("date")
                                 .addText(p.getDateHeure().getTime().toString());
+                        projection.addElement("numéroSalle")
+                                .addText(p.getSalle().getNo());
                         Film f = p.getFilm();
                         Element film = projection.addElement("film")
                                 .addAttribute("id", Long.toString(f.getId()));
@@ -51,17 +53,45 @@ public class ControleurXMLCreation {
                                 .addText(f.getTitre());
                         Element synopsis = film.addElement("synopsis")
                                 .addText(f.getSynopsis());
-                        Element duree = film.addElement("duree")
+                        film.addElement("duree")
                                 .addText(Integer.toString(f.getDuree()));
+                        Element critiques = film.addElement("critiques");
+                        for(Critique c : f.getCritiques()){
+                            Element critique = critiques.addElement("critique");
+                            critique.addElement("note").addText(Integer.toString(c.getNote()));
+                            critique.addElement("texte").addText(c.getTexte());
+                        }
+                        film.addElement("genres").addText(f.getGenres().stream().map(Genre::getLabel).collect(Collectors.joining(", ")));
+                        film.addElement("motCle").addText(f.getMotcles().stream().map(Motcle::getLabel).collect(Collectors.joining(", ")));
+                        film.addElement("langages").addText(f.getLangages().stream().map(Langage::getLabel).collect(Collectors.joining(", ")));
+                        if(f.getPhoto() != null){
+                            film.addElement("image").addText(f.getPhoto());
+                        }
                         Element roles = film.addElement("roles");
+                        Element acteurs = projection.addElement("acteurs");
                         for(RoleActeur r : f.getRoles()){
                             Element role = roles.addElement("role")
                                     .addAttribute("place", Long.toString(r.getPlace()));
-                            Element idActeur = role.addElement("idActeur")
+                            role.addElement("idActeur")
                                     .addText(Long.toString(r.getActeur().getId()));
-                            Element personnage = role.addElement("personnage")
+                            role.addElement("personnage")
                                     .addText(r.getPersonnage());
+
+                            Element acteur = acteurs.addElement("acteur").addAttribute("id", Long.toString(r.getId()));
+                            acteur.addElement("nom").addText(r.getActeur().getNom());
+                            if(r.getActeur().getNomNaissance() != null){
+                                acteur.addElement("nomNaissance").addText(r.getActeur().getNomNaissance());
+                            }
+                            acteur.addElement("biographie").addText((r.getActeur().getBiographie() == null
+                                    ? "Unknown" : r.getActeur().getBiographie()));
+                            acteur.addElement("sexe").addText(r.getActeur().getSexe().toString());
+                            acteur.addElement("dateNaissance").addText((r.getActeur().getDateNaissance() == null
+                                    ? "Unknown" : r.getActeur().getDateNaissance().getTime().toString()));
+                            acteur.addElement("dateDeces").addText((r.getActeur().getDateDeces() == null
+                                    ? "Pas mort" : r.getActeur().getDateDeces().getTime().toString()));
+
                         }
+
                     }
 
                     //return;
