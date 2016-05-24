@@ -216,3 +216,5 @@ pip-log.txt
 .mr.developer.cfg
 .idea/
 ASD2/Labo3/Sources/largeEWD.txt
+out/
+production/
