@@ -44,6 +44,7 @@ public:
         nbVelo = nbBorne - 0;
         isMaintenance = false;
         tmpVelo = 0;
+        nbVeloWaited = 0;
     }
 
     void ajouterVelo(unsigned int idHabitant){
@@ -58,14 +59,30 @@ public:
         if(nbVelo >= nbBorne){
             gui_interface->consoleAppendText(idHabitant, "Too much bike! Waiting...");
             habitantEnAttente->push_back(idHabitant);
+            gui_interface->consoleAppendText(6,"Pushed :" + QString::number(habitantEnAttente->back()));
+            gui_interface->consoleAppendText(6,"New list:");
+            for(int i = 0 ; i < habitantEnAttente->size() ; i++){
+                gui_interface->consoleAppendText(6,"[" + QString::number(habitantEnAttente->at(i)) + "]");
+            }
+            nbVeloWaited++;
             moniteur->wait(mutex);
-            while(habitantEnAttente->front() != idHabitant){
+            nbVeloWaited--;
+            int tmpHabitant = habitantEnAttente->front();
+            gui_interface->consoleAppendText(6,"Waiting: " + QString::number(nbVeloWaited));
+            if(nbVeloWaited == 0){
+                habitantEnAttente->pop_front();
+                gui_interface->consoleAppendText(6,"Poped :" + QString::number(tmpHabitant));
+                gui_interface->consoleAppendText(6,"New list:");
+                for(int i = 0 ; i < habitantEnAttente->size() ; i++){
+                    gui_interface->consoleAppendText(6,"[" + QString::number(habitantEnAttente->at(i)) + "]");
+                }
+                nbVeloWaited = habitantEnAttente->size();
+            }
+            while(tmpHabitant != idHabitant){
+                gui_interface->consoleAppendText(idHabitant,"Not my turn! turn to " + QString::number(tmpHabitant));
                 moniteur->wait(mutex);
-                gui_interface->consoleAppendText(6,"front :");
-                gui_interface->consoleAppendText(6,QString::number(habitantEnAttente->front()));
             }
             gui_interface->consoleAppendText(idHabitant, "Put the bike, see ya!");
-            habitantEnAttente->pop_front();
             nbVelo++;
         }
         //Si les vélo ne sont pas plein, on ajoute simplement le vélo
@@ -93,12 +110,18 @@ public:
         if(nbVelo <= 0){
             gui_interface->consoleAppendText(idHabitant, "Not enough bike! Waiting...");
             habitantEnAttente->push_back(idHabitant);
+            nbVeloWaited++;
             moniteur->wait(mutex);
-            while(habitantEnAttente->front() != idHabitant){
+            nbVeloWaited--;
+            int tmpHabitant = habitantEnAttente->front();
+            if(nbVeloWaited == 0){
+                habitantEnAttente->pop_front();
+                nbVeloWaited = habitantEnAttente->size();
+            }
+            while(tmpHabitant != idHabitant){
                 moniteur->wait(mutex);
             }
             gui_interface->consoleAppendText(idHabitant, "Took the bike, see ya!");
-            habitantEnAttente->pop_front();
             nbVelo--;
         }
         //Si les vélo ne sont pas vide, on réveille les potentiel habitant qui attendent d'ajouter un vélo
@@ -146,7 +169,7 @@ private:
     QMutex* maintenanceMutex;
     bool isMaintenance;
     unsigned int tmpVelo;
-
+    unsigned int nbVeloWaited;
 };
 
 Site* sites[NBSITES];
