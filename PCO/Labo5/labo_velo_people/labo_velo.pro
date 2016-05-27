@@ -12,6 +12,8 @@ OBJECTS_DIR = obj
 
 QT += testlib gui widgets
 
+CONFIG += c++11
+
 # Input
 HEADERS += src/bikinginterface.h \
     src/display.h \
