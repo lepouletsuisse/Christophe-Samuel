@@ -87,7 +87,11 @@ public:
 
     void ajouterVelo(unsigned int idHabitant){
         // La camionette à toujours l'id 0 et la console à l'ID NBHABITANT
-        if(isMaintenance && idHabitant != 0 && idHabitant != nbHabitants + 1){
+        if(isMaintenance && idHabitant != 0){
+            if(idHabitant == nbHabitants + 1){
+                cout << "Il y a une maintenance! Veuillez réessayer plus tard..." << endl;
+                return;
+            }
             gui_interface->consoleAppendText(idHabitant, "La camionette est là! Attente...");
             maintenance->wait(maintenanceMutex);
             gui_interface->consoleAppendText(idHabitant, "La camionette a fini!");
@@ -129,7 +133,11 @@ public:
 
     void enleverVelo(unsigned int idHabitant){
         // La camionette à toujours l'id 0 et la console à l'ID NBHABITANT
-        if(isMaintenance && idHabitant != 0 && idHabitant != nbHabitants + 1){
+        if(isMaintenance && idHabitant != 0){
+            if(idHabitant == nbHabitants + 1){
+                cout << "Il y a une maintenance! Veuillez réessayer plus tard..." << endl;
+                return;
+            }
             gui_interface->consoleAppendText(idHabitant, "La camionette est là! Attente...");
             maintenance->wait(maintenanceMutex);
             gui_interface->consoleAppendText(idHabitant, "La camionette a fini!");
