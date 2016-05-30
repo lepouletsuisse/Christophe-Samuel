@@ -3,45 +3,49 @@
  * Labo:    05 labo_velo
  * Auteur:  Christophe Peretti & Samuel Darcey
  * Date:    30.05.2016
- * But :    Gérer un système de parcours d'habitant utilisant des vélo et
- *          se déplacant entre plusieurs sites de manière aléatoire. Une
+ * But :    Gérer un système de parcours d'habitants utilisant des vélos et
+ *          se déplaçant entre plusieurs sites de manière aléatoire. Une
  *          camionnette est également présente, permettant de réguler les
- *          vélo à chaque site afin qu'il n'y aie pas de débordement ou de
+ *          vélos à chaque site afin qu'il n'y ait pas de débordement ou de
  *          pénurie de vélo.
  *
  * Rapport:
  *      REMARQUE:
- *          L'application est principalement gérer par les sites. La logique
+ *          L'application est principalement gérée par les sites. La logique
  *          de bloquage se trouve également dans les sites. Cela nous permet
  *          d'avoir un système centralisé et d'éviter de devoir passer des
  *          mutex à tous vas.
  *
- *          Les sites on 2 fonctions principal: ajouterVelo() et enleverVelo()
+ *          Les sites ont 2 fonctions principales: ajouterVelo() et enleverVelo()
  *          Ces fonctions permettent d'ajouter ou de supprimer un vélo dans
- *          un site de manière controler. Malgrès sa, il y'a un système
+ *          un site de manière contrôlée. Malgrès cela, il y'a un système
  *          de bypass pour la camionette car elle ne devrait jamais se bloquer
- *          Il y'a également un bypass pour l'habitant NBHABITANT qui
- *          corresponds a la console de l'application et permet les saisie
- *          et modification utilisateur. De même, ce bypass n'est pas bloquant.
+ *          Il y'a également un bypass pour l'habitant NBHABITANT + 1 qui
+ *          correspond a la console de l'application et permet les saisies
+ *          et modifications utilisateur. De même, ce bypass n'est pas bloquant.
  *          Il aurait été possible de faire des fonctions à part pour ces
- *          entité là mais là encore, nous avons préférer une approche plus
- *          unifié.
+ *          entités là, mais là encore, nous avons préféré une approche plus
+ *          unifiée.
  *
- *          L'algorithme pour la camionette a été légérement modifier afin
- *          que on enlève les vélo de manière iterative (3 vélo à enlever
+ *          L'algorithme pour la camionette a été légérement modifiée afin
+ *          que l'on enlève les vélos de manière itérative (3 vélos à enlever
  *          = -1 -1 -1). Cela nous permet, une fois encore, de n'avoir
- *          qu'une seul fonction qui gère ceci. Nous avons donc une
+ *          qu'une seule fonction qui gère ceci. Nous avons donc une
  *          fonction de maintenance qui permet de mettre un site en maintenance
- *          et empèche les habitants de modifier un site.
+ *          et empèche les habitants de modifier un site. Bien sûr, le calcul
+ *          du nombre de vélos à ajouter ou enlevé se fait au début de la
+ *          maintenance, et non à chaque fois que la camionette pose ou enlève
+ *          un vélo.
  *      TESTS:
- *          Nous avons effectuer un maximum de test possible pour les fonctionnalité
- *          présente dans notre programme mais certaines fonctionnalité n'on
- *          pas pu être tester (Maintenance de la camionette: Cela se déroule
- *          sur un laps de temps trop court pour être tester).
+ *          Nous avons effectué un maximum de tests possibles pour les
+ *          fonctionnalités présentes dans notre programme mais certaines
+ *          fonctionnalités n'on pas pu être tester (Maintenance de la
+ *          camionette: Cela se déroule sur un laps de temps trop court pour
+ *          être testé).
  *
  *      RESULTATS:
- *          Aucun soucis visible n'a été détecter malgrès certain comportement
- *          qui n'ont pas pu être tester.
+ *          Aucun soucis visible n'a été détecté malgrès certains comportements
+ *          qui n'ont pas pu être testés.
  *
  * ---------------------------------------------------------------------------
 */
