@@ -144,33 +144,38 @@ public:
         }
         mutex->lock();
         if(idHabitant == nbHabitants + 1){
-            if(nbVelo > 0) nbVelo--;
+            if(nbVelo > 0) {
+                QString text = "Un vélo enlevé du site n°";
+                text.append(QString::number(getId() + 1));
+                gui_interface->consoleAppendText(idHabitant, text);
+                nbVelo--;
+            } else {
+                gui_interface->consoleAppendText(idHabitant, "Il n'y a pas de vélo sur ce site!");
+            }
+            gui_interface->setBikes(getId(),getNbVelo());
             mutex->unlock();
             return;
         }
         //Si les vélo sont vide, on met en attente l'habitant qui essaie de prendre un vélo
         if(nbVelo <= 0){
-            if (idHabitant != nbHabitants + 1){ // Test pour le retrait manuel d'un vélo
-                gui_interface->consoleAppendText(idHabitant, "Pas assez de vélos! Attente...");
-                habitantEnAttente->push_back(idHabitant);
+            gui_interface->consoleAppendText(idHabitant, "Pas assez de vélos! Attente...");
+            habitantEnAttente->push_back(idHabitant);
+            moniteur->wait(mutex);
+            while(habitantEnAttente->front() != idHabitant || nbVelo <= 0){
+                gui_interface->consoleAppendText(idHabitant,"Ce n'est pas mon tour! Tour de : " + QString::number(habitantEnAttente->front()));
                 moniteur->wait(mutex);
-                while(habitantEnAttente->front() != idHabitant || nbVelo <= 0){
-                    gui_interface->consoleAppendText(idHabitant,"Ce n'est pas mon tour! Tour de : " + QString::number(habitantEnAttente->front()));
-                    moniteur->wait(mutex);
-                }
-                habitantEnAttente->pop_front();
-                gui_interface->consoleAppendText(idHabitant, "Prise du vélo!");
-                nbVelo--;
-            } else {
-                gui_interface->consoleAppendText(idHabitant, "Il n'y a aucun vélo sur ce site");
             }
+            habitantEnAttente->pop_front();
+            gui_interface->consoleAppendText(idHabitant, "Prise du vélo!");
+            nbVelo--;
+
         }
         //Si les vélo ne sont pas vide, on réveille les potentiel habitant qui attendent d'ajouter un vélo
         else{
             nbVelo--;
         }
         //On wakeAll si il y reste des vélo car si la camionette ramene plusieurs vélo, il faut que plusieurs utilisateurs soit capable de laisser leur vélo.++
-        if(nbVelo > 0 && !isMaintenance && idHabitant != nbHabitants + 1){
+        if(nbVelo > 0 && !isMaintenance){
             moniteur->wakeAll();
         }
         gui_interface->setBikes(getId(),getNbVelo());
@@ -360,9 +365,6 @@ void run() Q_DECL_OVERRIDE {
                 c2 = atoi(choix2.c_str());
             } while ((c2 > nbSites || c2 == 0) && (cout << "Nombre invalide" << endl)); // 0 Si le caractère n'est pas un nombre
 
-            QString text = "Un vélo enlevé du site n°";
-            text.append(choix2.c_str());
-            gui_interface->consoleAppendText(nbHabitants + 1, text);
             sites.at(c2 - 1)->enleverVelo(nbHabitants + 1);
         } else{
             cout << "Choix invalide! veuillez réessayer!" << endl;
