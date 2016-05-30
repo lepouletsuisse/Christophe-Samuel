@@ -21,19 +21,19 @@
 
 using namespace std;
 
-#define NBSITES 5
-#define NBHABITANTS 6
-#define NBVELOSDEPOT 3
-#define NBBORNES 4
-#define NBVELOS 19
+QMutex* mutexDepot;
 unsigned int nbVelosDepot;
-QMutex mutexDepot;
+unsigned int nbSites;
+unsigned int nbHabitants;
+unsigned int nbBornes;
+unsigned int nbVelos;
+
 /**
+
  Inteface pour l'envoi de commandes à l'interface graphique.
  Elle peut sans problème être partagée entre les différents threads.
  */
 BikingInterface *gui_interface;
-//Site* sites[NBSITES];
 
 class Site{
 public:
@@ -51,28 +51,25 @@ public:
     void ajouterVelo(unsigned int idHabitant){
         // La camionette à toujours l'id 0
         if(isMaintenance && idHabitant != 0){
-            gui_interface->consoleAppendText(idHabitant, "Camionette is here! waiting...");
+            gui_interface->consoleAppendText(idHabitant, "La camionette est là! Attente...");
             maintenance->wait(maintenanceMutex);
-            gui_interface->consoleAppendText(idHabitant, "Camionette is done! Let's continue");
+            gui_interface->consoleAppendText(idHabitant, "La camionette a fini!");
         }
         mutex->lock();
         //Si les vélo sont plein, on met en attente l'habitant qui essaie d'ajouter un vélo
         if(nbVelo >= nbBorne){
-            gui_interface->consoleAppendText(idHabitant, "Too much bike! Waiting...");
+            gui_interface->consoleAppendText(idHabitant, "Trop de vélos! Attente...");
             habitantEnAttente->push_back(idHabitant);
 
             //bloqué jusqu'au passage de la camionette (ou qu'un autre cycliste enlève un velo)
             moniteur->wait(mutex);
 
             while(habitantEnAttente->front() != idHabitant || nbVelo >= nbBorne){
-                gui_interface->consoleAppendText(idHabitant,"Not my turn! turn to " + QString::number(habitantEnAttente->front()));
-                printList();
+                gui_interface->consoleAppendText(idHabitant,"Ce n'est pas mon tour! Tour de : " + QString::number(habitantEnAttente->front()));
                 moniteur->wait(mutex);
             }
-            gui_interface->consoleAppendText(6,"Poped :" + QString::number(habitantEnAttente->front()));
             habitantEnAttente->pop_front();
-            printList();
-            gui_interface->consoleAppendText(idHabitant, "Put the bike, see ya!");
+            gui_interface->consoleAppendText(idHabitant, "Placement du vélo!");
             nbVelo++;
         }
         //Si les vélo ne sont pas plein, on ajoute simplement le vélo
@@ -90,46 +87,39 @@ public:
 
     void enleverVelo(unsigned int idHabitant){
         // La camionette à toujours l'id 0
-        if(isMaintenance && idHabitant != 0){
-            gui_interface->consoleAppendText(idHabitant, "Camionette is here! waiting...");
+        if(isMaintenance && idHabitant != 0 && idHabitant != nbHabitants + 1){
+            gui_interface->consoleAppendText(idHabitant, "La camionette est là! Attente...");
             maintenance->wait(maintenanceMutex);
-            gui_interface->consoleAppendText(idHabitant, "Camionette is done! Let's continue");
+            gui_interface->consoleAppendText(idHabitant, "La camionette a fini!");
         }
         mutex->lock();
-        int tmpHabitant;
         //Si les vélo sont vide, on met en attente l'habitant qui essaie de prendre un vélo
         if(nbVelo <= 0){
-            gui_interface->consoleAppendText(idHabitant, "Not enough bike! Waiting...");
-            habitantEnAttente->push_back(idHabitant);
-            gui_interface->consoleAppendText(6,"Pushed :" + QString::number(habitantEnAttente->back()));
-            moniteur->wait(mutex);
-            while(habitantEnAttente->front() != idHabitant || nbVelo <= 0){
-                gui_interface->consoleAppendText(idHabitant,"Not my turn! turn to " + QString::number(habitantEnAttente->front()));
-                printList();
+            if (idHabitant != nbHabitants + 1){ // Test pour le retrait manuel d'un vélo
+                gui_interface->consoleAppendText(idHabitant, "Pas assez de vélos! Attente...");
+                habitantEnAttente->push_back(idHabitant);
                 moniteur->wait(mutex);
+                while(habitantEnAttente->front() != idHabitant || nbVelo <= 0){
+                    gui_interface->consoleAppendText(idHabitant,"Ce n'est pas mon tour! Tour de : " + QString::number(habitantEnAttente->front()));
+                    moniteur->wait(mutex);
+                }
+                habitantEnAttente->pop_front();
+                gui_interface->consoleAppendText(idHabitant, "Prise du vélo!");
+                nbVelo--;
+            } else {
+                gui_interface->consoleAppendText(idHabitant, "Il n'y a aucun vélo sur ce site");
             }
-            gui_interface->consoleAppendText(6,"Poped :" + QString::number(habitantEnAttente->front()));
-            habitantEnAttente->pop_front();
-            gui_interface->consoleAppendText(idHabitant, "Took the bike, see ya!");
-            nbVelo--;
         }
         //Si les vélo ne sont pas vide, on réveille les potentiel habitant qui attendent d'ajouter un vélo
         else{
             nbVelo--;
         }
         //On wakeAll si il y reste des vélo car si la camionette ramene plusieurs vélo, il faut que plusieurs utilisateurs soit capable de laisser leur vélo.++
-        if(nbVelo > 0 && !isMaintenance){
+        if(nbVelo > 0 && !isMaintenance && idHabitant != nbHabitants + 1){
             moniteur->wakeAll();
         }
         gui_interface->setBikes(getId(),getNbVelo());
         mutex->unlock();
-    }
-
-    void printList(){
-        gui_interface->consoleAppendText(6,"Actual list:");
-        for(int i = 0 ; i < habitantEnAttente->size() ; i++){
-            gui_interface->consoleAppendText(6,"[" + QString::number(habitantEnAttente->at(i)) + "]");
-        }
     }
 
     void debutMaintenance(){
@@ -185,31 +175,26 @@ void run() Q_DECL_OVERRIDE {
 
     position = t;
     nbVelosCamionette = 0;
-    nbVelosDepot = NBVELOSDEPOT;
+    nbVelosDepot = nbVelos - (nbSites * (nbBornes - 2));
 
 
     qsrand(t);
 
     arrivee = 1;
     if (t==0){
-        position = NBSITES;
+        position = nbSites;
         arrivee = 0;
     }
 
 
-
     while(1) {
-
-        if (t==0) {
-
-            gui_interface->setBikes(NBSITES,nbVelosDepot);
-
-            arrivee = (position + 1) % (NBSITES + 1);
-
+        if (t==0) {     // La camionette a l'id
+            gui_interface->setBikes(nbSites,nbVelosDepot);
+            arrivee = (position + 1) % (nbSites + 1);
             unsigned int c;
 
             // Gestion du dépôt
-            if (position == NBSITES){
+            if (position == nbSites){
                 mutexDepot->lock();
                 nbVelosDepot += nbVelosCamionette;
                 c = min((unsigned int)2,nbVelosDepot);
@@ -220,23 +205,21 @@ void run() Q_DECL_OVERRIDE {
             } else{
                 sites.at(position)->debutMaintenance();
                 // S'il y a trop de vélo sur le site
-                if(sites.at(position)->getNbVelo() > NBBORNES - 2){
-                    c = min(sites.at(position)->getNbVelo() - (NBBORNES - 2), 4 - nbVelosCamionette);
+                if(sites.at(position)->getNbVelo() > nbBornes - 2){
+                    c = min(sites.at(position)->getNbVelo() - (nbBornes - 2), 4 - nbVelosCamionette);
                     for(unsigned int i = 0; i < c; i++){
                         sites.at(position)->enleverVelo(id);
                     }
                     nbVelosCamionette += c;
 
                 // S'il y en a pas assez
-                } else if(sites.at(position)->getNbVelo() < NBBORNES - 2){
-                    c = min((NBBORNES - 2) - sites.at(position)->getNbVelo(), nbVelosCamionette);
+                } else if(sites.at(position)->getNbVelo() < nbBornes - 2){
+                    c = min((nbBornes - 2) - sites.at(position)->getNbVelo(), nbVelosCamionette);
                     for(unsigned int i = 0; i < c; i++){
                         sites.at(position)->ajouterVelo(id);
                     }
                     nbVelosCamionette -= c;
                 }
-                gui_interface->consoleAppendText(t,"velos sur le site :");
-                gui_interface->consoleAppendText(t,QString::number(sites.at(position)->getNbVelo()));
 
                 sites.at(position)->finMaintenance();
 
@@ -247,8 +230,8 @@ void run() Q_DECL_OVERRIDE {
 
 
             // Déplacement de la camionnette
-
-            gui_interface->vanTravel(position,arrivee,500);
+            tempsTrajet = 1000 + (qrand() * 1000) % 2000;
+            gui_interface->vanTravel(position,arrivee,tempsTrajet);
             position = arrivee;
 
 
@@ -258,15 +241,15 @@ void run() Q_DECL_OVERRIDE {
             gui_interface->consoleAppendText(t,QString::number(position));
 
             do{
-                arrivee = qrand() % NBSITES;
+                arrivee = qrand() % nbSites;
             }while(position == arrivee);
-            tempsTrajet = 2000 + (qrand() * 1000) % 2000;
+            tempsTrajet = 1000 + (qrand() * 1000) % 2000;
             // Déplacement d'un vélo
 
             gui_interface->travel(t,             // ID de la personne
-                                  position,             // Site de départ
-                                  arrivee, // site d'arrivée
-                                  tempsTrajet);   // Temps en millisecondes
+                                  position,      // Site de départ
+                                  arrivee,       // site d'arrivée
+                                  tempsTrajet);  // Temps en millisecondes
             position = arrivee;
             sites.at(position)->ajouterVelo(id);
             gui_interface->setBikes(sites.at(position)->getId(),sites.at(position)->getNbVelo());
@@ -274,12 +257,17 @@ void run() Q_DECL_OVERRIDE {
 
         }
 
+
         if (t != 0){
             tempsActivite = 1000000 + (qrand() * 1000) % 3000000;
             QThread::usleep(tempsActivite);
             sites.at(position)->enleverVelo(id);
         } else {
-            QThread::usleep(2000000);
+            // La camionette fait une pause uniquement au dépôt
+            if (position == nbSites){
+                QThread::usleep(2000000);
+            }
+
         }
     }
 }
@@ -306,24 +294,27 @@ void run() Q_DECL_OVERRIDE {
         if (c1 == 1){
             mutexDepot->lock();
             nbVelosDepot++;
-            gui_interface->setBikes(NBSITES,nbVelosDepot);
+            gui_interface->consoleAppendText(nbHabitants + 1, "Un vélo ajouté au dépôt");
+            gui_interface->setBikes(nbSites,nbVelosDepot);
             mutexDepot->unlock();
         } else {
-            cout << endl << "Sur quel site voulez-vous enlever un velo? (0-" << NBSITES - 1 << ")" << endl;
+            cout << endl << "Sur quel site voulez-vous enlever un velo? (1-" << nbSites << ")" << endl;
             do{
                 cin.clear();
                 cin >> choix2;
                 c2 = atoi(choix2.c_str());
-                cout << c2 << endl;
-            } while (c2 > NBSITES || c2 == 0);
+            } while ((c2 > nbSites || c2 == 0) && (cout << "Nombre invalide" << endl)); // 0 Si le caractère n'est pas un nombre
 
-            sites.at(c2)->enleverVelo(NBHABITANTS);
+            QString text = "Un vélo enlevé du site n°";
+            text.append(choix2.c_str());
+            gui_interface->consoleAppendText(nbHabitants + 1, text);
+            sites.at(c2 - 1)->enleverVelo(nbHabitants + 1);
         }
     }
 }
 private:
 string choix1, choix2;
-int c1, c2;
+unsigned int c1, c2;
 };
 
 
@@ -331,39 +322,57 @@ int c1, c2;
 int main(int argc, char *argv[])
 {
 
+    nbSites = atoi(argv[1]);
+    nbHabitants = atoi(argv[2]);
+    nbBornes = atoi(argv[3]);
+    nbVelos = atoi(argv[4]);
+    if (nbSites < 2){
+        cout << "Le nombre de site doit etre >= 2" << endl;
+        return 1;
+    }
+    if (nbBornes < 4){
+        cout << "Le nombre de bornes par site doit etre >= 4" << endl;
+        return 1;
+    }
+
+    if( nbVelos < (nbSites * (nbBornes - 2) + 3)){
+        cout << "Le nombre de velos doit etre >= S(B - 2) + 3" << endl;
+        return 1;
+    }
 
     QApplication a(argc, argv);
 
-    int nbHabitants=NBHABITANTS;
-    int nbSites=NBSITES;
-    int t;
+
+    unsigned int t;
     mutexDepot = new QMutex();
 
-    std::cout << "sites:";
+    std::cout << "sites:" << endl;
     for(t=0; t<nbSites; t++){
-        cout << "Création du Site "<< t << endl;
-        sites.push_back(new Site(t, NBBORNES));
+        cout << "Creation du Site "<< t << endl;
+        sites.push_back(new Site(t, nbBornes));
     }
-    std::cout << "sites ok";
+    std::cout << "sites ok" << endl;
 
     // Initialisation de la partie graphique de l'application
-    BikingInterface::initialize(nbHabitants + 1,nbSites);
+    BikingInterface::initialize(nbHabitants + 2,nbSites);   // + 2 car un pour la camionnette et un pour le God Mode
     // Création de l'interface pour les commandes à la partie graphique
     gui_interface=new BikingInterface();
 
-    for(int i=0; i < NBSITES; i++){
+    for(unsigned int i=0; i < nbSites; i++){
         gui_interface->setBikes(sites.at(i)->getId(),sites.at(i)->getNbVelo());
     }
 
     // Création de threads
-    int NBTHREADS=nbHabitants;
-    Habitant* threads[NBTHREADS];
+    Habitant* threads[nbHabitants + 1];     // + 1 pour la camionette
 
-    for(t=0; t<NBTHREADS; t++){
-        cout << "Création du thread "<< t << endl;
+    std::cout << "Threads :" << endl;
+    for(t=0; t<=nbHabitants; t++){
+        cout << "Creation du thread "<< t << endl;
         threads[t] = new Habitant(t);
         threads[t]->start();
     }
+    std::cout << "Threads ok" << endl;
+
     Console* c = new Console();
     c->start();
 
