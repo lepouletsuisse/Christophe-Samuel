@@ -1,12 +1,50 @@
-/******************************************************************************
-  \file main.cpp
-  \author Yann Thoma
-  \date 05.05.2011
-
-  Ce fichier propose un squelette pour l'application de gestion des vélos.
-  Il est évident qu'il doit être grandement modifié pour respecter la donnée,
-  mais vous y trouvez des exemples d'appels de fonctions de l'interface.
-  ****************************************************************************/
+/* PCO
+ * ---------------------------------------------------------------------------
+ * Labo:    05 labo_velo
+ * Auteur:  Christophe Peretti & Samuel Darcey
+ * Date:    30.05.2016
+ * But :    Gérer un système de parcours d'habitant utilisant des vélo et
+ *          se déplacant entre plusieurs sites de manière aléatoire. Une
+ *          camionnette est également présente, permettant de réguler les
+ *          vélo à chaque site afin qu'il n'y aie pas de débordement ou de
+ *          pénurie de vélo.
+ *
+ * Rapport:
+ *      REMARQUE:
+ *          L'application est principalement gérer par les sites. La logique
+ *          de bloquage se trouve également dans les sites. Cela nous permet
+ *          d'avoir un système centralisé et d'éviter de devoir passer des
+ *          mutex à tous vas.
+ *
+ *          Les sites on 2 fonctions principal: ajouterVelo() et enleverVelo()
+ *          Ces fonctions permettent d'ajouter ou de supprimer un vélo dans
+ *          un site de manière controler. Malgrès sa, il y'a un système
+ *          de bypass pour la camionette car elle ne devrait jamais se bloquer
+ *          Il y'a également un bypass pour l'habitant NBHABITANT qui
+ *          corresponds a la console de l'application et permet les saisie
+ *          et modification utilisateur. De même, ce bypass n'est pas bloquant.
+ *          Il aurait été possible de faire des fonctions à part pour ces
+ *          entité là mais là encore, nous avons préférer une approche plus
+ *          unifié.
+ *
+ *          L'algorithme pour la camionette a été légérement modifier afin
+ *          que on enlève les vélo de manière iterative (3 vélo à enlever
+ *          = -1 -1 -1). Cela nous permet, une fois encore, de n'avoir
+ *          qu'une seul fonction qui gère ceci. Nous avons donc une
+ *          fonction de maintenance qui permet de mettre un site en maintenance
+ *          et empèche les habitants de modifier un site.
+ *      TESTS:
+ *          Nous avons effectuer un maximum de test possible pour les fonctionnalité
+ *          présente dans notre programme mais certaines fonctionnalité n'on
+ *          pas pu être tester (Maintenance de la camionette: Cela se déroule
+ *          sur un laps de temps trop court pour être tester).
+ *
+ *      RESULTATS:
+ *          Aucun soucis visible n'a été détecter malgrès certain comportement
+ *          qui n'ont pas pu être tester.
+ *
+ * ---------------------------------------------------------------------------
+*/
 
 #include <QApplication>
 #include "bikinginterface.h"
@@ -29,7 +67,6 @@ unsigned int nbBornes;
 unsigned int nbVelos;
 
 /**
-
  Inteface pour l'envoi de commandes à l'interface graphique.
  Elle peut sans problème être partagée entre les différents threads.
  */
@@ -49,13 +86,18 @@ public:
     }
 
     void ajouterVelo(unsigned int idHabitant){
-        // La camionette à toujours l'id 0
-        if(isMaintenance && idHabitant != 0){
+        // La camionette à toujours l'id 0 et la console à l'ID NBHABITANT
+        if(isMaintenance && idHabitant != 0 && idHabitant != nbHabitants + 1){
             gui_interface->consoleAppendText(idHabitant, "La camionette est là! Attente...");
             maintenance->wait(maintenanceMutex);
             gui_interface->consoleAppendText(idHabitant, "La camionette a fini!");
         }
         mutex->lock();
+        if(idHabitant == nbHabitants + 1){
+            if(nbVelo < nbBorne) nbVelo++;
+            mutex->unlock();
+            return;
+        }
         //Si les vélo sont plein, on met en attente l'habitant qui essaie d'ajouter un vélo
         if(nbVelo >= nbBorne){
             gui_interface->consoleAppendText(idHabitant, "Trop de vélos! Attente...");
@@ -86,13 +128,18 @@ public:
     }
 
     void enleverVelo(unsigned int idHabitant){
-        // La camionette à toujours l'id 0
+        // La camionette à toujours l'id 0 et la console à l'ID NBHABITANT
         if(isMaintenance && idHabitant != 0 && idHabitant != nbHabitants + 1){
             gui_interface->consoleAppendText(idHabitant, "La camionette est là! Attente...");
             maintenance->wait(maintenanceMutex);
             gui_interface->consoleAppendText(idHabitant, "La camionette a fini!");
         }
         mutex->lock();
+        if(idHabitant == nbHabitants + 1){
+            if(nbVelo > 0) nbVelo--;
+            mutex->unlock();
+            return;
+        }
         //Si les vélo sont vide, on met en attente l'habitant qui essaie de prendre un vélo
         if(nbVelo <= 0){
             if (idHabitant != nbHabitants + 1){ // Test pour le retrait manuel d'un vélo
@@ -297,7 +344,7 @@ void run() Q_DECL_OVERRIDE {
             gui_interface->consoleAppendText(nbHabitants + 1, "Un vélo ajouté au dépôt");
             gui_interface->setBikes(nbSites,nbVelosDepot);
             mutexDepot->unlock();
-        } else {
+        } else if(c1 == 2) {
             cout << endl << "Sur quel site voulez-vous enlever un velo? (1-" << nbSites << ")" << endl;
             do{
                 cin.clear();
@@ -309,6 +356,8 @@ void run() Q_DECL_OVERRIDE {
             text.append(choix2.c_str());
             gui_interface->consoleAppendText(nbHabitants + 1, text);
             sites.at(c2 - 1)->enleverVelo(nbHabitants + 1);
+        } else{
+            cout << "Choix invalide! veuillez réessayer!" << endl;
         }
     }
 }
@@ -322,6 +371,10 @@ unsigned int c1, c2;
 int main(int argc, char *argv[])
 {
 
+    if(argc != 5){
+        std::cout << "Pas le bon nombre d'argument! [nbSites][nbHabitants][nbBornes][nbVelos]" << std::endl;
+        return 1;
+    }
     nbSites = atoi(argv[1]);
     nbHabitants = atoi(argv[2]);
     nbBornes = atoi(argv[3]);
@@ -381,4 +434,5 @@ int main(int argc, char *argv[])
     // l'application graphique.
     return a.exec();
 }
+
 

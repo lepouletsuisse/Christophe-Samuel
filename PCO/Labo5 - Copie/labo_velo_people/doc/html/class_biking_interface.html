@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Labo Vélo: Référence de la classe BikingInterface</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labo Vélo
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-static-methods">Fonctions membres publiques statiques</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe BikingInterface</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="BikingInterface" -->
+<p>Classe permettant aux threads d'interagir avec la partie graphique.  
+ <a href="class_biking_interface.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bikinginterface_8h_source.html">bikinginterface.h</a>&gt;</code></p>
+
+<p><a href="class_biking_interface-members.html">Liste de tous les membres</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#acf95831c4aedbb7cf7cba70d4ae14e1a">sig_consoleAppendText</a> (unsigned int consoleId, QString text)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#ae21d7fc4564188bda1f9c54ed148faeb">sig_setBikes</a> (unsigned int site, unsigned int nbBike)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a28796bfd422b3f3403eab8462c675c47">sig_travel</a> (unsigned int personId, unsigned int site1, unsigned int site2, unsigned int ms)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a8b152ee3e4a890cc32e027c20a158d9b">sig_vanTravel</a> (unsigned int site1, unsigned int site2, unsigned int ms)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a44b35b7ca253d649648a02191a591fd7">BikingInterface</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur simple.  <a href="#a44b35b7ca253d649648a02191a591fd7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a32e712daa3fddd6588eb43fe1ed6c182">consoleAppendText</a> (unsigned int consoleId, QString text)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d'afficher du texte dans une console.  <a href="#a32e712daa3fddd6588eb43fe1ed6c182"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a786c4d76932c4ef691f7c18d7a29fbf2">setBikes</a> (unsigned int site, unsigned int nbBike)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Définition du nombre de vélos sur un site.  <a href="#a786c4d76932c4ef691f7c18d7a29fbf2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a502771176d8d519b0c54303e7e251799">setInitBikes</a> (unsigned int site, unsigned int nbBike)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Définition du nombre de vélos sur un site.  <a href="#a502771176d8d519b0c54303e7e251799"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a44442f87cc71c84505015e4dbac1f461">setInitPerson</a> (unsigned int site, unsigned int personID)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Place une personne sur un site.  <a href="#a44442f87cc71c84505015e4dbac1f461"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#abf720b09ca479e2adf4382fae3d2a7ed">travel</a> (unsigned int personId, unsigned int site1, unsigned int site2, unsigned int ms)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Déplace un vélo d'un site à l'autre.  <a href="#abf720b09ca479e2adf4382fae3d2a7ed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#ac10c743ca48001f2d3eb87b30eda8942">vanTravel</a> (unsigned int site1, unsigned int site2, unsigned int ms)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Déplace la camionette d'un site à l'autre.  <a href="#ac10c743ca48001f2d3eb87b30eda8942"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biking_interface.html#a2ccf1cb82670bc369434a43c87af47ea">initialize</a> (unsigned int nbConsoles, unsigned int nbSites)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation à exécuter en début d'application.  <a href="#a2ccf1cb82670bc369434a43c87af47ea"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Classe permettant aux threads d'interagir avec la partie graphique. </p>
+<p>Cette classe permet d'interagir avec la partie graphique de l'application. Elle utilise le concept de signaux et slots afin d'envoyer les commandes à l'interface graphique, et peut donc être appelée par des threads, ce qui ne serait pas possible sinon.</p>
+<p>Les commandes permettent de: </p>
+<ul>
+<li>afficher un message dans un parmi plusieurs consoles </li>
+<li>définir le nombre de vélos présents sur un site </li>
+<li>faire se déplacer un vélo entre deux sites </li>
+<li>faire se déplacer la camionette entre deux sites </li>
+</ul>
+</div><hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a44b35b7ca253d649648a02191a591fd7"></a><!-- doxytag: member="BikingInterface::BikingInterface" ref="a44b35b7ca253d649648a02191a591fd7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_biking_interface.html#a44b35b7ca253d649648a02191a591fd7">BikingInterface::BikingInterface</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructeur simple. </p>
+<p>Une seule interface peut être partagée par plusieurs threads. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a32e712daa3fddd6588eb43fe1ed6c182"></a><!-- doxytag: member="BikingInterface::consoleAppendText" ref="a32e712daa3fddd6588eb43fe1ed6c182" args="(unsigned int consoleId, QString text)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#a32e712daa3fddd6588eb43fe1ed6c182">BikingInterface::consoleAppendText</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>consoleId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction permettant d'afficher du texte dans une console. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">consoleId</td><td>Identifiant de la console. Attention, doit être compris entre 0 et nombre_de_consoles-1. </td></tr>
+    <tr><td class="paramname">text</td><td>Texte à ajouter à la console. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ccf1cb82670bc369434a43c87af47ea"></a><!-- doxytag: member="BikingInterface::initialize" ref="a2ccf1cb82670bc369434a43c87af47ea" args="(unsigned int nbConsoles, unsigned int nbSites)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#a2ccf1cb82670bc369434a43c87af47ea">BikingInterface::initialize</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbConsoles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbSites</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialisation à exécuter en début d'application. </p>
+<p>Fonction statique devant être appelée avant toute construction d'objet de type <a class="el" href="class_biking_interface.html" title="Classe permettant aux threads d&#39;interagir avec la partie graphique.">BikingInterface</a>. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbConsoles</td><td>Nombre de consoles d'affichage </td></tr>
+    <tr><td class="paramname">nbSites</td><td>Nombre de sites où peuvent être trouvés les vélos </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a786c4d76932c4ef691f7c18d7a29fbf2"></a><!-- doxytag: member="BikingInterface::setBikes" ref="a786c4d76932c4ef691f7c18d7a29fbf2" args="(unsigned int site, unsigned int nbBike)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#a786c4d76932c4ef691f7c18d7a29fbf2">BikingInterface::setBikes</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbBike</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Définition du nombre de vélos sur un site. </p>
+<p>Fonction permettant de définir le nombre de vélos présents sur un site. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">site</td><td>Identifiant du site. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">nbBike</td><td>Nombre de vélos à affecter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a502771176d8d519b0c54303e7e251799"></a><!-- doxytag: member="BikingInterface::setInitBikes" ref="a502771176d8d519b0c54303e7e251799" args="(unsigned int site, unsigned int nbBike)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#a502771176d8d519b0c54303e7e251799">BikingInterface::setInitBikes</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbBike</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Définition du nombre de vélos sur un site. </p>
+<p>Fonction permettant de définir le nombre de vélos présents sur un site. Ne doit être appelé que depuis le <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a> avant le lancement de la boucle de gestion des événements. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">site</td><td>Identifiant du site. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">nbBike</td><td>Nombre de vélos à affecter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a44442f87cc71c84505015e4dbac1f461"></a><!-- doxytag: member="BikingInterface::setInitPerson" ref="a44442f87cc71c84505015e4dbac1f461" args="(unsigned int site, unsigned int personID)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#a44442f87cc71c84505015e4dbac1f461">BikingInterface::setInitPerson</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>personID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Place une personne sur un site. </p>
+<p>Fonction permettant de définir la position d'une personne. Ne doit être appelé que depuis le <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a> avant le lancement de la boucle de gestion des événements. Elle ne doit pas être appelée de nouveau. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">site</td><td>Identifiant du site. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">personID</td><td>Identifiant de la personne. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acf95831c4aedbb7cf7cba70d4ae14e1a"></a><!-- doxytag: member="BikingInterface::sig_consoleAppendText" ref="acf95831c4aedbb7cf7cba70d4ae14e1a" args="(unsigned int consoleId, QString text)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#acf95831c4aedbb7cf7cba70d4ae14e1a">BikingInterface::sig_consoleAppendText</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>consoleId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Signal envoyé à la fenêtre principale pour l'ajout d'un message </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">consoleId</td><td>Identifiant de la console. Attention, doit être compris entre 0 et nombre_de_consoles-1. </td></tr>
+    <tr><td class="paramname">text</td><td>Texte à ajouter à la console. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae21d7fc4564188bda1f9c54ed148faeb"></a><!-- doxytag: member="BikingInterface::sig_setBikes" ref="ae21d7fc4564188bda1f9c54ed148faeb" args="(unsigned int site, unsigned int nbBike)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#ae21d7fc4564188bda1f9c54ed148faeb">BikingInterface::sig_setBikes</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbBike</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Signal envoyé à la fenêtre principale pour la définition du nombre de vélos présents sur un site. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">site</td><td>Identifiant du site. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">nbBike</td><td>Nombre de vélos à affecter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a28796bfd422b3f3403eab8462c675c47"></a><!-- doxytag: member="BikingInterface::sig_travel" ref="a28796bfd422b3f3403eab8462c675c47" args="(unsigned int personId, unsigned int site1, unsigned int site2, unsigned int ms)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#a28796bfd422b3f3403eab8462c675c47">BikingInterface::sig_travel</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>personId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Signal envoyé à la fenêtre principale pour déplacer un vélo d'un site à l'autre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">personId</td><td>Identifiant de la personne empruntant le vélo </td></tr>
+    <tr><td class="paramname">site1</td><td>Identifiant du site de départ. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">site2</td><td>Identifiant du site d'arrivée. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">ms</td><td>Nombre de millisecondes de l'animation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b152ee3e4a890cc32e027c20a158d9b"></a><!-- doxytag: member="BikingInterface::sig_vanTravel" ref="a8b152ee3e4a890cc32e027c20a158d9b" args="(unsigned int site1, unsigned int site2, unsigned int ms)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#a8b152ee3e4a890cc32e027c20a158d9b">BikingInterface::sig_vanTravel</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Signal envoyé à la fenêtre principale pour déplacer la camionette de maintenance d'un site à l'autre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">site1</td><td>Identifiant du site de départ. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">site2</td><td>Identifiant du site d'arrivée. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">ms</td><td>Nombre de millisecondes de l'animation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abf720b09ca479e2adf4382fae3d2a7ed"></a><!-- doxytag: member="BikingInterface::travel" ref="abf720b09ca479e2adf4382fae3d2a7ed" args="(unsigned int personId, unsigned int site1, unsigned int site2, unsigned int ms)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#abf720b09ca479e2adf4382fae3d2a7ed">BikingInterface::travel</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>personId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Déplace un vélo d'un site à l'autre. </p>
+<p>Fonction permettant de visualiser le déplacement d'un vélo d'un site à l'autre. Le déplacement prend un certain nombre de millisecondes, et la fonction retourne lorsque le déplacement est terminé. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">personId</td><td>Identifiant de la personne empruntant le vélo </td></tr>
+    <tr><td class="paramname">site1</td><td>Identifiant du site de départ. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">site2</td><td>Identifiant du site d'arrivée. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">ms</td><td>Nombre de millisecondes de l'animation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac10c743ca48001f2d3eb87b30eda8942"></a><!-- doxytag: member="BikingInterface::vanTravel" ref="ac10c743ca48001f2d3eb87b30eda8942" args="(unsigned int site1, unsigned int site2, unsigned int ms)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_biking_interface.html#ac10c743ca48001f2d3eb87b30eda8942">BikingInterface::vanTravel</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>site2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Déplace la camionette d'un site à l'autre. </p>
+<p>Fonction permettant de visualiser le déplacement de la camionette de maintenance d'un site à l'autre. Le déplacement prend un certain nombre de millisecondes, et la fonction retourne lorsque le déplacement est terminé. Pour une application exploitant N sites, le site numéro N correspond au local de maintenance. Les sites standards ont les numéros de 0 à N-1. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">site1</td><td>Identifiant du site de départ. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">site2</td><td>Identifiant du site d'arrivée. Attention, doit être compris entre 0 et nombre_de_sites. Le site d'identifiant nombre_de_sites correspond au local de maintenance. </td></tr>
+    <tr><td class="paramname">ms</td><td>Nombre de millisecondes de l'animation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/<a class="el" href="bikinginterface_8h_source.html">bikinginterface.h</a></li>
+<li>src/<a class="el" href="bikinginterface_8cpp.html">bikinginterface.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Mai 1 2014 11:49:53 pour Labo Vélo par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
