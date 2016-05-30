@@ -981,6 +981,11 @@ obj/main.o: ../labo_velo_people/src/main.cpp C:/Qt/5.6/mingw49_32/include/QtWidg
 		C:/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h \
 		C:/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		C:/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/QWaitCondition \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qwaitcondition.h \
+		C:/Qt/5.6/mingw49_32/include/QtCore/QMutex \
+		C:/Qt/5.6/mingw49_32/include/QtCore/QSemaphore \
+		C:/Qt/5.6/mingw49_32/include/QtCore/qsemaphore.h \
 		C:/Qt/5.6/mingw49_32/include/QtCore/QThread \
 		C:/Qt/5.6/mingw49_32/include/QtCore/qthread.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o obj\main.o ..\labo_velo_people\src\main.cpp

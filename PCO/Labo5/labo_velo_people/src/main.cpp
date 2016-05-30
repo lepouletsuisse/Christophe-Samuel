@@ -17,6 +17,7 @@
 #include <QThread>
 #include <iostream>
 #include <ctime>
+#include <vector>
 
 using namespace std;
 
@@ -25,13 +26,14 @@ using namespace std;
 #define NBVELOSDEPOT 3
 #define NBBORNES 4
 #define NBVELOS 19
-
-
+unsigned int nbVelosDepot;
+QMutex mutexDepot;
 /**
  Inteface pour l'envoi de commandes à l'interface graphique.
  Elle peut sans problème être partagée entre les différents threads.
  */
 BikingInterface *gui_interface;
+//Site* sites[NBSITES];
 
 class Site{
 public:
@@ -165,7 +167,7 @@ private:
     unsigned int tmpVelo;
 };
 
-Site* sites[NBSITES];
+vector<Site*> sites;
 
 /**
   Tâche illustrant les différents appels pouvant être faits à l'interface
@@ -184,6 +186,7 @@ void run() Q_DECL_OVERRIDE {
     position = t;
     nbVelosCamionette = 0;
     nbVelosDepot = NBVELOSDEPOT;
+
 
     qsrand(t);
 
@@ -207,33 +210,35 @@ void run() Q_DECL_OVERRIDE {
 
             // Gestion du dépôt
             if (position == NBSITES){
+                mutexDepot->lock();
                 nbVelosDepot += nbVelosCamionette;
                 c = min((unsigned int)2,nbVelosDepot);
                 nbVelosCamionette = c;
                 nbVelosDepot -= c;
                 gui_interface->setBikes(position,nbVelosDepot);
+                mutexDepot->unlock();
             } else{
-                sites[position]->debutMaintenance();
+                sites.at(position)->debutMaintenance();
                 // S'il y a trop de vélo sur le site
-                if(sites[position]->getNbVelo() > NBBORNES - 2){
-                    c = min(sites[position]->getNbVelo() - (NBBORNES - 2), 4 - nbVelosCamionette);
+                if(sites.at(position)->getNbVelo() > NBBORNES - 2){
+                    c = min(sites.at(position)->getNbVelo() - (NBBORNES - 2), 4 - nbVelosCamionette);
                     for(unsigned int i = 0; i < c; i++){
-                        sites[position]->enleverVelo(id);
+                        sites.at(position)->enleverVelo(id);
                     }
                     nbVelosCamionette += c;
 
                 // S'il y en a pas assez
-                } else if(sites[position]->getNbVelo() < NBBORNES - 2){
-                    c = min((NBBORNES - 2) - sites[position]->getNbVelo(), nbVelosCamionette);
+                } else if(sites.at(position)->getNbVelo() < NBBORNES - 2){
+                    c = min((NBBORNES - 2) - sites.at(position)->getNbVelo(), nbVelosCamionette);
                     for(unsigned int i = 0; i < c; i++){
-                        sites[position]->ajouterVelo(id);
+                        sites.at(position)->ajouterVelo(id);
                     }
                     nbVelosCamionette -= c;
                 }
                 gui_interface->consoleAppendText(t,"velos sur le site :");
-                gui_interface->consoleAppendText(t,QString::number(sites[position]->getNbVelo()));
+                gui_interface->consoleAppendText(t,QString::number(sites.at(position)->getNbVelo()));
 
-                sites[position]->finMaintenance();
+                sites.at(position)->finMaintenance();
 
             }
             // Messages
@@ -263,8 +268,8 @@ void run() Q_DECL_OVERRIDE {
                                   arrivee, // site d'arrivée
                                   tempsTrajet);   // Temps en millisecondes
             position = arrivee;
-            sites[position]->ajouterVelo(id);
-            gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
+            sites.at(position)->ajouterVelo(id);
+            gui_interface->setBikes(sites.at(position)->getId(),sites.at(position)->getNbVelo());
 
 
         }
@@ -272,7 +277,7 @@ void run() Q_DECL_OVERRIDE {
         if (t != 0){
             tempsActivite = 1000000 + (qrand() * 1000) % 3000000;
             QThread::usleep(tempsActivite);
-            sites[position]->enleverVelo(id);
+            sites.at(position)->enleverVelo(id);
         } else {
             QThread::usleep(2000000);
         }
@@ -284,23 +289,60 @@ private:
     unsigned int position;
     unsigned int arrivee;
     unsigned int nbVelosCamionette;
-    unsigned int nbVelosDepot;
     unsigned int prochainSite;
 };
 
+class Console: public QThread
+{
+public:
+void run() Q_DECL_OVERRIDE {
+    while(1){
+        cout << "Que voulez-vous faire?" << endl;
+        cout << "1) Ajouter un velo au depot" << endl;
+        cout << "2) Enlever un velo sur un site" << endl;
+
+        cin >> choix1;
+        c1 = atoi(choix1.c_str());
+        if (c1 == 1){
+            mutexDepot->lock();
+            nbVelosDepot++;
+            gui_interface->setBikes(NBSITES,nbVelosDepot);
+            mutexDepot->unlock();
+        } else {
+            cout << endl << "Sur quel site voulez-vous enlever un velo? (0-" << NBSITES - 1 << ")" << endl;
+            do{
+                cin.clear();
+                cin >> choix2;
+                c2 = atoi(choix2.c_str());
+                cout << c2 << endl;
+            } while (c2 > NBSITES || c2 == 0);
+
+            sites.at(c2)->enleverVelo(NBHABITANTS);
+        }
+    }
+}
+private:
+string choix1, choix2;
+int c1, c2;
+};
+
+
+
 int main(int argc, char *argv[])
 {
+
 
     QApplication a(argc, argv);
 
     int nbHabitants=NBHABITANTS;
     int nbSites=NBSITES;
     int t;
+    mutexDepot = new QMutex();
 
     std::cout << "sites:";
     for(t=0; t<nbSites; t++){
         cout << "Création du Site "<< t << endl;
-        sites[t] = new Site(t, NBBORNES);
+        sites.push_back(new Site(t, NBBORNES));
     }
     std::cout << "sites ok";
 
@@ -310,7 +352,7 @@ int main(int argc, char *argv[])
     gui_interface=new BikingInterface();
 
     for(int i=0; i < NBSITES; i++){
-        gui_interface->setBikes(sites[i]->getId(),sites[i]->getNbVelo());
+        gui_interface->setBikes(sites.at(i)->getId(),sites.at(i)->getNbVelo());
     }
 
     // Création de threads
@@ -322,6 +364,8 @@ int main(int argc, char *argv[])
         threads[t] = new Habitant(t);
         threads[t]->start();
     }
+    Console* c = new Console();
+    c->start();
 
     // Attention, il est obligatoire d'exécuter l'instruction suivante.
     // C'est elle qui permet la gestion de la boucle des évévements de
