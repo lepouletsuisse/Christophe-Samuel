@@ -58,9 +58,10 @@ public:
         if(nbVelo >= nbBorne){
             gui_interface->consoleAppendText(idHabitant, "Too much bike! Waiting...");
             habitantEnAttente->push_back(idHabitant);
-            gui_interface->consoleAppendText(6,"Pushed :" + QString::number(habitantEnAttente->back()));
-            printList();
+
+            //bloqué jusqu'au passage de la camionette (ou qu'un autre cycliste enlève un velo)
             moniteur->wait(mutex);
+
             while(habitantEnAttente->front() != idHabitant || nbVelo >= nbBorne){
                 gui_interface->consoleAppendText(idHabitant,"Not my turn! turn to " + QString::number(habitantEnAttente->front()));
                 printList();
@@ -231,7 +232,7 @@ void run() Q_DECL_OVERRIDE {
                 }
                 gui_interface->consoleAppendText(t,"velos sur le site :");
                 gui_interface->consoleAppendText(t,QString::number(sites[position]->getNbVelo()));
-                gui_interface->setBikes(sites[position]->getId(),sites[position]->getNbVelo());
+
                 sites[position]->finMaintenance();
 
             }
