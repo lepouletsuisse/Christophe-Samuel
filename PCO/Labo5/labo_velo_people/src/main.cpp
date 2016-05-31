@@ -44,7 +44,11 @@
  *          être testé).
  *
  *      RESULTATS:
- *          Aucun soucis visible n'a été détecté malgrès certains comportements
+ *          Un étrange problème faisant crash l'application au démmarage selon
+ *          le nombre d'habitant et de sites spécifié a été constaté mais comme
+ *          le bug n'apparaissant pas toujours et la source n'ayant pas pu être
+ *          identifier, nous n'avons pas résolu ce problème.
+ *          Aucun autre soucis visible n'a été détecté malgrès certains comportements
  *          qui n'ont pas pu être testés.
  *
  * ---------------------------------------------------------------------------
