@@ -34,6 +34,37 @@ public:
 
     void multiply( SquareMatrix<T> &A,  SquareMatrix<T> &B, SquareMatrix<T> *C, int nbBlocks)
     {
+
+        int blockSize = A.size()/nbBlocks;
+        SquareMatrix<SquareMatrix<T>> blockMatrixA(A.size());
+
+        for(int i=0;i<nbBlocks;i++) {
+            for(int j=0;j<nbBlocks;j++) {
+                SquareMatrix<T> block(blockSize);
+                for(int k=0;k<blockSize;k++) {
+                    for(int l=0;l<blockSize;l++) {
+                        block.setElement(k,l,block.element(k,l) + A.element(i*blockSize + k,j * blockSize + l));
+                    }
+                }
+                blockMatrixA.setElement(i,j,block);
+            }
+        }
+        SquareMatrix<SquareMatrix<T>> blockMatrixB(A.size());
+        for(int i=0;i<nbBlocks;i++) {
+            for(int j=0;j<nbBlocks;j++) {
+                SquareMatrix<T> block(blockSize);
+                for(int k=0;k<blockSize;k++) {
+                    for(int l=0;l<blockSize;l++) {
+                        block.setElement(k,l,block.element(k,l) + A.element(i*blockSize + k,j * blockSize + l));
+                    }
+                }
+                blockMatrixB.setElement(i,j,block);
+            }
+        }
+
+
+
+
         for(int i=0;i<A.size();i++) {
             for(int j=0;j<A.size();j++) {
                 for(int k=0;k<A.size();k++) {
@@ -41,6 +72,7 @@ public:
                 }
             }
         }
+
     }
 
 protected:
