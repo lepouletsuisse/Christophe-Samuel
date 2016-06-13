@@ -1,33 +1,47 @@
 body {
-    background-image: linear-gradient(to bottom, #F0F0F0 40%, #CCFF99);
+    background-image: linear-gradient(to bottom, #F0F0F0 0%, #CCFF99);
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 30px;
 }
-
-
 h1 {
     margin-top: 50px;
     margin-left: 0px;
 }
-
 h2 {
     margin-top: 50px;
     margin-left: 0px;
 }
-
-
 td {
     text-align: left;
     vertical-align: top;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 th {
     border: 1px gray solid;
 }
-
-
+.infoActeur span {
+	display:none;
+	padding:15px;
+	max-width:70%;
+}
+.infoActeur:hover span {
+	display:block;
+	position:absolute;
+	background-color:white;
+	border:solid 1px black;
+	pointer-events: none;
+	font-weight:normal;
+}
+.infoActeur:hover {
+	font-weight:bold;
+}
+table.index {
+	margin-top:-100px;
+}
+footer {
+	height:500px;
+}

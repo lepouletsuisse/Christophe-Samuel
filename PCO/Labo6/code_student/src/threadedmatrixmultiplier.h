@@ -36,7 +36,6 @@ public:
 
     void multiply( SquareMatrix<T> &A,  SquareMatrix<T> &B, SquareMatrix<T> *C, int nbBlocks)
     {
-
     }
 
 protected:
