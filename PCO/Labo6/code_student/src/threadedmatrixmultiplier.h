@@ -6,9 +6,11 @@
 #include <QVector>
 #include <QMutex>
 
+#include "squarematrixwrapper.h"
 #include "hoaremonitor.h"
 #include "matrix.h"
 #include "abstractmatrixmultiplier.h"
+#include "worker.h"
 
 
 /**
@@ -34,18 +36,14 @@ public:
 
     void multiply( SquareMatrix<T> &A,  SquareMatrix<T> &B, SquareMatrix<T> *C, int nbBlocks)
     {
-        for(int i=0;i<A.size();i++) {
-            for(int j=0;j<A.size();j++) {
-                for(int k=0;k<A.size();k++) {
-                    C->setElement(i,j, C->element(i,j) + A.element(k,j)*B.element(i,k));
-                }
-            }
-        }
+
     }
 
 protected:
     int nbThreads;
     int nbBlocksPerRow;
+    QVector< SquareMatrixWrapper<T> > listMatrix;
+    QVector< Worker<T> > listWorker;
 };
 
 

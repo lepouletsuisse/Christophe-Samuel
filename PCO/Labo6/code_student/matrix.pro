@@ -15,5 +15,7 @@ HEADERS += \
     src/threadedmatrixmultiplier.h \
     src/multipliertester.h \
     src/multiplierthreadedtester.h \
-    src/hoaremonitor.h
+    src/hoaremonitor.h \
+    src/squarematrixwrapper.h \
+    src/worker.h
 
