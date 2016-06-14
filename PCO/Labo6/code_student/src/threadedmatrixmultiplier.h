@@ -58,6 +58,14 @@ protected:
     QList< SquareMatrixWrapper<T>* > *cutMatrix(SquareMatrix<T> matrixA, SquareMatrix<T> matrixB, SquareMatrix<T> *C, int nbBlocks){
         QList< SquareMatrixWrapper<T>* > *result = new QList< SquareMatrixWrapper<T>* >();
 
+        for(int i = 0; i < nbBlocks; i++){
+            for (int j = 0; j < nbblocks; j++){
+                blockA = new SquareMatrix<T>();
+                blockB = new SquareMatrix<T>();
+                blockC = new SquareMatrix<T>();
+
+            }
+        }
         //Cut the matrix here
 
         return result;
