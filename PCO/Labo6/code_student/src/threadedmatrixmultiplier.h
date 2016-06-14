@@ -43,7 +43,7 @@ public:
 
     void multiply( SquareMatrix<T> &A,  SquareMatrix<T> &B, SquareMatrix<T> *C, int nbBlocks)
     {
-        QList< SquareMatrixWrapper<T>* > *listMatrix = cutMatrix(A, B, C, nbBlocks);
+        QList< SquareMatrixWrapper<T>* > *listMatrix = cutMatrix(&A, &B, C, nbBlocks);
         for(SquareMatrixWrapper<T> *matrix: *listMatrix){
             manager->addMatrix(matrix);
         }
@@ -55,7 +55,7 @@ protected:
     QList< Worker<T>* > listWorker;
     WorkerManager<T>* manager;
 
-    QList< SquareMatrixWrapper<T>* > *cutMatrix(SquareMatrix<T> matrixA, SquareMatrix<T> matrixB, SquareMatrix<T> *C, int nbBlocks){
+    QList< SquareMatrixWrapper<T>* > *cutMatrix(SquareMatrix<T> *matrixA, SquareMatrix<T> *matrixB, SquareMatrix<T> *matrixC, int nbBlocks){
         QList< SquareMatrixWrapper<T>* > *result = new QList< SquareMatrixWrapper<T>* >();
 
         //Cut the matrix here
