@@ -19,10 +19,10 @@ private:
         while(true){
             //Caluler la matrix
             currentMatrix = manager->getMatrix();
-            for(int i=0;i<currentMatrix->matrixA.size();i++) {
-                for(int j=0;j<currentMatrix->matrixA.size();j++) {
-                    for(int k=0;k<currentMatrix->matrixA.size();k++) {
-                        currentMatrix->matrixC->setElement(i,j, currentMatrix->matrixC->element(i,j) + currentMatrix->matrixA.element(k,j)*currentMatrix->matrixB.element(i,k));
+            for(int i=0;i<currentMatrix->matrixA->size();i++) {
+                for(int j=0;j<currentMatrix->matrixA->size();j++) {
+                    for(int k=0;k<currentMatrix->matrixA->size();k++) {
+                        currentMatrix->matrixC->setElement(i,j, currentMatrix->matrixC->element(i,j) + currentMatrix->matrixA->element(k,j)*currentMatrix->matrixB->element(i,k));
                     }
                 }
             }
