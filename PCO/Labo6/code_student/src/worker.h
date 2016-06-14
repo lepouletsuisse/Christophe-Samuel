@@ -22,7 +22,7 @@ private:
             for(int i=0;i<currentMatrix->matrixA->size();i++) {
                 for(int j=0;j<currentMatrix->matrixA->size();j++) {
                     for(int k=0;k<currentMatrix->matrixA->size();k++) {
-                        currentMatrix->matrixC->setElement(i,j, currentMatrix->matrixC->element(i,j) + currentMatrix->matrixA->element(k,j)*currentMatrix->matrixB->element(i,k));
+                        currentMatrix->matrixC->setElement(currentMatrix->x + i,currentMatrix->y + j, currentMatrix->matrixC->element(currentMatrix->x + i,currentMatrix->y + j) + currentMatrix->matrixA->element(k,j)*currentMatrix->matrixB->element(i,k));
                     }
                 }
             }

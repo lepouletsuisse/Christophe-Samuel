@@ -9,11 +9,15 @@ public:
     SquareMatrix<T> *matrixA;
     SquareMatrix<T> *matrixB;
     SquareMatrix<T> *matrixC;
+    int x;
+    int y;
 
-    SquareMatrixWrapper<T>(SquareMatrixWrapper<T> *matrixA, SquareMatrix<T> *matrixB, SquareMatrix<T> *matrixC){
+    SquareMatrixWrapper<T>(SquareMatrixWrapper<T> *matrixA, SquareMatrix<T> *matrixB, SquareMatrix<T> *matrixC, int x, int y){
         this->matrixA = matrixA;
         this->matrixB = matrixB;
         this->matrixC = matrixC;
+        this->x = x;
+        this->y = y;
     }
 };
 
