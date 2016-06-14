@@ -3,6 +3,7 @@
 
 #include <QThread>
 #include <QSemaphore>
+#include <QList>
 #include <QVector>
 #include <QMutex>
 
@@ -23,6 +24,12 @@ class ThreadedMatrixMultiplier : public AbstractMatrixMultiplier<T>
 public:
     ThreadedMatrixMultiplier(int nbThreads, int nbBlocksPerRow = 0) : nbThreads(nbThreads), nbBlocksPerRow(nbBlocksPerRow)
     {
+        manager = new WorkerManager<T>();
+        for(int i = 0 ; i < nbThreads ; i++){
+            Worker<T> *worker = new Worker<T>(manager);
+            listWorker.append(worker);
+            worker->start();
+        }
     }
 
     ~ThreadedMatrixMultiplier()
@@ -36,13 +43,25 @@ public:
 
     void multiply( SquareMatrix<T> &A,  SquareMatrix<T> &B, SquareMatrix<T> *C, int nbBlocks)
     {
+        QList< SquareMatrixWrapper<T>* > *listMatrix = cutMatrix(A, B, C, nbBlocks);
+        for(SquareMatrixWrapper<T> *matrix: *listMatrix){
+            manager->addMatrix(matrix);
+        }
     }
 
 protected:
     int nbThreads;
     int nbBlocksPerRow;
-    QVector< SquareMatrixWrapper<T> > listMatrix;
-    QVector< Worker<T> > listWorker;
+    QList< Worker<T>* > listWorker;
+    WorkerManager<T>* manager;
+
+    QList< SquareMatrixWrapper<T>* > *cutMatrix(SquareMatrix<T> matrixA, SquareMatrix<T> matrixB, SquareMatrix<T> *C, int nbBlocks){
+        QList< SquareMatrixWrapper<T>* > *result = new QList< SquareMatrixWrapper<T>* >();
+
+        //Cut the matrix here
+
+        return result;
+    }
 };
 
 
