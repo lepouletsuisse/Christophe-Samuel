@@ -24,9 +24,10 @@ class ThreadedMatrixMultiplier : public AbstractMatrixMultiplier<T>
 public:
     ThreadedMatrixMultiplier(int nbThreads, int nbBlocksPerRow = 0) : nbThreads(nbThreads), nbBlocksPerRow(nbBlocksPerRow)
     {
+        std::cout << "NbThread: " << nbThreads << " // nbBlocksPerRow: " << nbBlocksPerRow << std::endl;
         manager = new WorkerManager<T>();
         for(int i = 0 ; i < nbThreads ; i++){
-            Worker<T> *worker = new Worker<T>(manager);
+            Worker<T> *worker = new Worker<T>(manager, i);
             listWorker.append(worker);
             worker->start();
         }
@@ -43,10 +44,16 @@ public:
 
     void multiply( SquareMatrix<T> &A,  SquareMatrix<T> &B, SquareMatrix<T> *C, int nbBlocks)
     {
-        QList< SquareMatrixWrapper<T>* > *listMatrix = cutMatrix(&A, &B, C, nbBlocks);
+        if(nbBlocks == 0){
+            nbBlocks = nbBlocksPerRow * nbBlocksPerRow;
+        }
+        std::cout << "nbBlocks: " << nbBlocks << std::endl;
+        Barriere *barriere = new Barriere(nbBlocks);
+        QList< SquareMatrixWrapper<T>* > *listMatrix = cutMatrix(&A, &B, C, nbBlocks, barriere);
         for(SquareMatrixWrapper<T> *matrix: *listMatrix){
             manager->addMatrix(matrix);
         }
+        barriere->await();
     }
 
 protected:
@@ -55,27 +62,16 @@ protected:
     QList< Worker<T>* > listWorker;
     WorkerManager<T>* manager;
 
-    QList< SquareMatrixWrapper<T>* > *cutMatrix(SquareMatrix<T> *matrixA, SquareMatrix<T> *matrixB, SquareMatrix<T> *matrixC, int nbBlocks){
+    QList< SquareMatrixWrapper<T>* > *cutMatrix(SquareMatrix<T> *matrixA, SquareMatrix<T> *matrixB, SquareMatrix<T> *matrixC, int nbBlocks, Barriere *barriere){
         QList< SquareMatrixWrapper<T>* > *result = new QList< SquareMatrixWrapper<T>* >();
 
-        int blockSize = matrixA->size()/nbBlocks;
-        for(int i = 0; i < nbBlocks; i++){
-            for (int j = 0; j < nbBlocks; j++){
-                SquareMatrix<T>* blockA = new SquareMatrix<T>(blockSize);
-                SquareMatrix<T>* blockB = new SquareMatrix<T>(blockSize);
-
-                for (int k = 0; k < blockSize; k++){
-                    for (int l = 0; l < blockSize; l++){
-                        blockA->setElement(k,l,matrixA->element(k + i,l + j));
-                        blockB->setElement(k,l,matrixB->element(k + i,l + j));
-
-                    }
-                }
-                SquareMatrixWrapper<T>* mat = new SquareMatrixWrapper<T>(blockA, blockB, matrixC, i * blockSize, j * blockSize);
+        int blockSize = matrixA->size()/nbBlocksPerRow;
+        for(int i = 0; i < nbBlocksPerRow; i++){
+            for (int j = 0; j < nbBlocksPerRow; j++){
+                SquareMatrixWrapper<T>* mat = new SquareMatrixWrapper<T>(matrixA, matrixB, matrixC, i * blockSize, j * blockSize, i * blockSize + blockSize, j * blockSize + blockSize, barriere);
                 result->append(mat);
             }
         }
-
         return result;
     }
 };

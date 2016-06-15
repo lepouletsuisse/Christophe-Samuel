@@ -19,5 +19,6 @@ HEADERS += \
     src/hoaremonitor.h \
     src/squarematrixwrapper.h \
     src/worker.h \
-    src/workermanager.h
+    src/workermanager.h \
+    src/barriere.h
 

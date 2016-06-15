@@ -57,7 +57,8 @@ DIST          =  ..\code_student\src\matrix.h \
 		..\code_student\src\hoaremonitor.h \
 		..\code_student\src\squarematrixwrapper.h \
 		..\code_student\src\worker.h \
-		..\code_student\src\workermanager.h ..\code_student\src\main.cpp \
+		..\code_student\src\workermanager.h \
+		..\code_student\src\barriere.h ..\code_student\src\main.cpp \
 		..\code_student\src\hoaremonitor.cpp
 QMAKE_TARGET  = matrix
 DESTDIR        = release\ #avoid trailing-slash linebreak
@@ -195,15 +196,17 @@ release/main.o: ../code_student/src/main.cpp ../code_student/src/multiplierteste
 		C:/Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
 		C:/Qt/5.5/mingw492_32/include/QtCore/QSemaphore \
 		C:/Qt/5.5/mingw492_32/include/QtCore/qsemaphore.h \
+		C:/Qt/5.5/mingw492_32/include/QtCore/QList \
 		C:/Qt/5.5/mingw492_32/include/QtCore/QVector \
 		C:/Qt/5.5/mingw492_32/include/QtCore/qvector.h \
 		C:/Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
 		C:/Qt/5.5/mingw492_32/include/QtCore/QMutex \
 		../code_student/src/squarematrixwrapper.h \
-		../code_student/src/hoaremonitor.h \
-		../code_student/src/worker.h \
+		../code_student/src/barriere.h \
 		C:/Qt/5.5/mingw492_32/include/QtCore/QWaitCondition \
 		C:/Qt/5.5/mingw492_32/include/QtCore/qwaitcondition.h \
+		../code_student/src/hoaremonitor.h \
+		../code_student/src/worker.h \
 		../code_student/src/workermanager.h \
 		../code_student/src/multiplierthreadedtester.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\code_student\src\main.cpp
