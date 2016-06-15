@@ -45,12 +45,11 @@ public class ClientGUI {
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        frame.setSize(200, 150);
+        frame.setSize(250, 70);
         //Add content to the window.
         frame.setContentPane(mainPanel);
         
         //Display the window.
-        frame.pack();
         frame.setVisible(true);
         frame.setResizable(false);
     }

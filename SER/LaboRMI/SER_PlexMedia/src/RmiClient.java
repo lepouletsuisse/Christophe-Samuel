@@ -11,7 +11,6 @@ import javax.xml.crypto.Data;
 import api.IClientApi2;
 import api.IServerApi2;
 
-
 /**
  * @author https://sites.google.com/site/jamespandavan/Home/java/sample-remote-observer-based-on-rmi
  */
@@ -39,6 +38,7 @@ public class RmiClient extends UnicastRemoteObject implements IClientApi2 {
 		try {
 			// On affiche dans la console le JSon des projections
 			System.out.println(remoteService.getData());
+			deserialize(remoteService.getData());
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -60,7 +60,7 @@ public class RmiClient extends UnicastRemoteObject implements IClientApi2 {
 		remoteService.addObserver(this);
 		
 		//display
-		System.out.println("Initial request: ");
+		System.out.println("Press button to get Data: ");
 	}
 	
 	protected void startCheckingThread() {
@@ -85,6 +85,39 @@ public class RmiClient extends UnicastRemoteObject implements IClientApi2 {
 			};
 		};
 		thread.start();
+	}
+	public void deserialize(String json){
+		int a = 1;
+		int b;
+		do{
+			b = json.indexOf('"',a + 1);
+			String name = json.substring(a + 1, b);
+			a = json.indexOf('"',b + 1);
+			
+			switch(name){
+				case "cinema":
+				case "Projections":
+					System.out.println(name);
+					break;
+				case "titre":
+				case "date":
+					System.out.print("\t" + name + " \t\t\t: ");
+					break;
+				case "acteurs":
+					System.out.println("\t" + name);
+					break;
+				case "Place 1":
+				case "Place 2":
+					System.out.print("\t\t" + name + " \t: ");
+					break;
+				case "id":
+					System.out.print("\t" + name + " \t\t\t: ");
+					System.out.println(json.substring(b + 2, b + 3));
+					break;
+				default:
+					System.out.println(name);
+			}
+		}while(b > 0 && a > 0);
 	}
 
 }
