@@ -1,5 +1,3 @@
-package ch.heigvd.iict.ser.rmi.client;
-
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

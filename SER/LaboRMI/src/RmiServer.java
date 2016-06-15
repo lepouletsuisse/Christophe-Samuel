@@ -1,6 +1,3 @@
-package ch.heigvd.iict.ser.rmi.server;
-
-
 import java.io.Serializable;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
