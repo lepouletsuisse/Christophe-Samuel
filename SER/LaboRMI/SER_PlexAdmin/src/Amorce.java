@@ -1,4 +1,11 @@
 
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+import ch.heigvd.iict.cours.ser.rmi.IServerApi;
+import api.IServerApi2;
 import controllers.*;
 
 class Amorce {
@@ -19,6 +26,7 @@ class Amorce {
 	
 	private void run() {
 
+	
 		while (controleurGeneral.isAlive()) {
 			try {Thread.sleep(1000);} 
 			catch(InterruptedException e) {}

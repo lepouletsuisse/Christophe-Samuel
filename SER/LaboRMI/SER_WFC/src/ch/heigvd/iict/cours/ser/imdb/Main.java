@@ -1,13 +1,18 @@
 package ch.heigvd.iict.cours.ser.imdb;
 
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.Scanner;
 
 import ch.heigvd.iict.cours.ser.imdb.db.MySQLAccess;
 import ch.heigvd.iict.cours.ser.imdb.models.Data;
+import ch.heigvd.iict.cours.ser.rmi.IServerApi;
 
 public class Main {
-
 	static {
+		
+		
 		// this will load the MySQL driver, each DB has its own driver
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -24,13 +29,23 @@ public class Main {
 	}
 
 	private static Scanner scanner = new Scanner(System.in);
-
+	private static RmiServer server;
 	public static void main(String[] args) {
 		Main main = new Main();
+		
+		try {
+	        Registry rmiRegistry = LocateRegistry.createRegistry(9999);
+	        server = new RmiServer(lastData);
+	        IServerApi rmiService = (IServerApi) UnicastRemoteObject.exportObject(server, 9999);
+	        rmiRegistry.bind("RmiService", rmiService);
+	    } catch (Exception ex) {
+	        ex.printStackTrace();
+	    }
+		
 		main.run();
 	}
 
-	private Data lastData = null;
+	private static Data lastData = null;
 
 	private void run() {
 
@@ -49,7 +64,7 @@ public class Main {
 				Worker worker = new Worker(choice);
 				this.lastData = worker.run();
 
-				//TODO notify client
+				server.notifyClients(lastData);
 				
 			}
 		}

@@ -16,11 +16,11 @@ public class ControleurProjections {
 
 	private ORMAccess ormAccess;						// Tampon avec l'ORM Hibernate
 
-	public ControleurProjections(ORMAccess ormAccess, MainGUI mainGUI ){
+	public ControleurProjections(ORMAccess ormAccess, MainGUI mainGUI2 ){
 		this.ormAccess=ormAccess;
-		this.mainGUI=mainGUI;
+		this.mainGUI=mainGUI2;
 		projectionsMainView = new ProjectionsGUIMainView(this);
-		mainGUI.addOnglet("Projections", projectionsMainView);
+		mainGUI2.addOnglet("Projections", projectionsMainView);
 		listView = projectionsMainView.getListView();
 		internalProjectionsListRefresh();
 	}

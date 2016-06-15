@@ -1,5 +1,1755 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <cinema>
-  <Projections/>
+  <projections>
+    <projection id="4" date="2016-06-15 15:20:44.0">
+      <date>Wed Jun 15 15:20:44 CEST 2016</date>
+      <numeroSalle>Flon 1</numeroSalle>
+      <film id="2053403">
+        <titre>Casino Royale</titre>
+        <synopsis>Casino Royale introduces James Bond before he holds his license to kill. But Bond is no less dangerous, and with two professional assassinations in quick succession, he is elevated to '00' status. Bond's first 007 mission takes him to Uganda where he is to spy on a terrorist, Mollaka. Not everything goes to plan and Bond decides to investigate, independently of MI6, in order to track down the rest of the terrorist cell. Following a lead to the Bahamas, he encounters Dimitrios and his girlfriend, Solange. He learns that Dimitrios is involved with Le Chiffre, banker to the world's terrorist organizations. Secret Service intelligence reveals that Le Chiffre is planning to raise money in a high-stakes poker game in Montenegro at Le Casino Royale. MI6 assigns 007 to play against him, knowing that if Le Chiffre loses, it will destroy his organization. 'M' places Bond under the watchful eye of the beguiling Vesper Lynd. At first skeptical of what value Vesper can provide, Bond's interest in her deepens as they brave danger together and even torture at the hands of Le Chiffre. In Montenegro, Bond allies himself with Mathis MI6's local field agent, and Felix Leiter who is representing the interests of the CIA. The marathon game proceeds with dirty tricks and violence, raising the stakes beyond blood money and reaching a terrifying climax.</synopsis>
+        <duree>144</duree>
+        <noteMoyenne>0.0</noteMoyenne>
+        <critiques/>
+        <genres>Thriller, Action, Adventure</genres>
+        <motCle>murder-by-gunshot, machete, horse, plot-twist, village, returning-character-with-different-actor, violence, attempted-poisoning, spa, flipping-car, surprise-ending, casino, parkour, cocktail, torture, beating, wager, computer, machine-gun, electrocution, gambling-syndicate, siren, hospital, swimming, balisong, male-nudity, free-running, blockbuster, prequel-to-sequel, explosion, shower, lifting-an-adult-into-the-air, money, blood-spatter, tanker, poison, exploding-bus, building-collapse, gunfight, airplane, uganda, car-chase, helicopter, prague-czech-republic, foot-chase, heart-attack, restaurant, playing-cards, drowning, held-at-gunpoint, bodyworks, british-secret-service, stairwell, shot-in-the-back, italy, beach-resort, terrorist, sailing-boat, horse-riding, beach, lifting-someone-into-the-air, black-and-white-prologue, cia-agent, title-spoken-by-character, pinball-machine, death, ak-47, shot-in-the-forehead, hotel, blood-on-shirt, bahamas, crane, altered-version-of-studio-logo, femme-fatale, dead-girl, body-bag, nassau-bahamas, martial-arts, walther-p99, henchman, bare-chested-male-bondage, mongoose, foot-pursuit, construction-site, hammock, super-villain, animated-credits, rogue-agent, stabbing, stabbed-in-the-chest, video-camera, shot-in-the-leg, taser, banker, hotel-receptionist, cell-phone, strangulation, lifting-male-in-air, venice-italy, shot-in-the-eye, terrorism, secret-agent, assassination, suspense, motorboat, penumbra, corpse, double-agent, corporal-punishment, based-on-novel, damsel-in-distress, slow-motion-scene, terrorist-base, exploding-body, prisoner, dead-woman, flashback, train, cult-film, neck-breaking, hostage, aston-martin, martini, shot-in-the-foot, pistol, drugged-drink, newspaper-headline, bomb, shotgun, airport, espionage, chase, secret-device, murder, action-hero, poisoned, eye-patch, killed-in-an-elevator, infidelity, laptop-computer, horse-and-carriage, south-africa, 2000s, exhibit, origin-story, shot-in-the-head, blood, yacht, fatal-attraction, money-laundering, surveillance, trapped-in-an-elevator, official-james-bond-series, shootout, silencer, hit-in-the-crotch, police-car, gadget, mass-murder, gambling, lost-love, sequel-mentioned-during-end-credits, miami-florida, soldier, snake, crushed-to-death, police-arrest, police-officer, fight, jungle, embassy, double-cross, cult-figure, tough-guy, poker-the-card-game, secret-service, security-camera, shot-in-the-chest, psychopath, london-england, sequel, gadget-car, adultery, villa, darkroom, off-screen-murder, arch-villain, army, reboot-of-series, bond-girl, dead-woman-with-eyes-open, madagascar, passport, lagoon, car-accident, fire-sprinkler, woman-drowned, africa, assassin, tied-to-a-chair, flood, montenegro</motCle>
+        <langages>French, English</langages>
+        <roles>
+          <role place="43">
+            <idActeur>1298032</idActeur>
+            <personnage>MI6 Technician</personnage>
+          </role>
+          <role place="31">
+            <idActeur>1007099</idActeur>
+            <personnage>Tournament Director</personnage>
+          </role>
+          <role place="69">
+            <idActeur>842121</idActeur>
+            <personnage>Hermitage Waiter</personnage>
+          </role>
+          <role place="53">
+            <idActeur>1924788</idActeur>
+            <personnage>Chief of Police</personnage>
+          </role>
+          <role place="61">
+            <idActeur>2401856</idActeur>
+            <personnage>Tennis Girls</personnage>
+          </role>
+          <role place="68">
+            <idActeur>1020217</idActeur>
+            <personnage>Hotel Splendide Limo Driver</personnage>
+          </role>
+          <role place="7">
+            <idActeur>2667303</idActeur>
+            <personnage>Solange</personnage>
+          </role>
+          <role place="22">
+            <idActeur>295903</idActeur>
+            <personnage>Stockbroker</personnage>
+          </role>
+          <role place="2">
+            <idActeur>2348923</idActeur>
+            <personnage>Vesper Lynd</personnage>
+          </role>
+          <role place="4">
+            <idActeur>2220301</idActeur>
+            <personnage>M</personnage>
+          </role>
+          <role place="40">
+            <idActeur>185672</idActeur>
+            <personnage>Hot Room Doctors</personnage>
+          </role>
+          <role place="39">
+            <idActeur>157806</idActeur>
+            <personnage>Hot Room Doctors</personnage>
+          </role>
+          <role place="38">
+            <idActeur>1711852</idActeur>
+            <personnage>Tall Man</personnage>
+          </role>
+          <role place="1">
+            <idActeur>370864</idActeur>
+            <personnage>James Bond</personnage>
+          </role>
+          <role place="54">
+            <idActeur>2248252</idActeur>
+            <personnage>Police Chief's Girlfriends</personnage>
+          </role>
+          <role place="56">
+            <idActeur>968243</idActeur>
+            <personnage>Croatian General</personnage>
+          </role>
+          <role place="17">
+            <idActeur>1403596</idActeur>
+            <personnage>Mendel</personnage>
+          </role>
+          <role place="24">
+            <idActeur>106571</idActeur>
+            <personnage>Tomelli</personnage>
+          </role>
+          <role place="29">
+            <idActeur>2998542</idActeur>
+            <personnage>Gräfin von Wallenstein</personnage>
+          </role>
+          <role place="33">
+            <idActeur>1748274</idActeur>
+            <personnage>Schultz</personnage>
+          </role>
+          <role place="12">
+            <idActeur>1179146</idActeur>
+            <personnage>Villiers</personnage>
+          </role>
+          <role place="44">
+            <idActeur>299911</idActeur>
+            <personnage>Police Commander</personnage>
+          </role>
+          <role place="32">
+            <idActeur>2167366</idActeur>
+            <personnage>Ocean Club Receptionist</personnage>
+          </role>
+          <role place="45">
+            <idActeur>218944</idActeur>
+            <personnage>Airport Policemen</personnage>
+          </role>
+          <role place="6">
+            <idActeur>633338</idActeur>
+            <personnage>Rene Mathis</personnage>
+          </role>
+          <role place="59">
+            <idActeur>1171383</idActeur>
+            <personnage>Treasury Bureaucrat</personnage>
+          </role>
+          <role place="47">
+            <idActeur>852802</idActeur>
+            <personnage>Arresting Officer</personnage>
+          </role>
+          <role place="62">
+            <idActeur>2309041</idActeur>
+            <personnage>Hotel Splendide Clerk</personnage>
+          </role>
+          <role place="3">
+            <idActeur>1192260</idActeur>
+            <personnage>Le Chiffre</personnage>
+          </role>
+          <role place="19">
+            <idActeur>1620597</idActeur>
+            <personnage>Fisher</personnage>
+          </role>
+          <role place="16">
+            <idActeur>1559434</idActeur>
+            <personnage>Adolph Gettler</personnage>
+          </role>
+          <role place="11">
+            <idActeur>2636138</idActeur>
+            <personnage>Valenka</personnage>
+          </role>
+          <role place="14">
+            <idActeur>576848</idActeur>
+            <personnage>Mollaka</personnage>
+          </role>
+          <role place="66">
+            <idActeur>1644947</idActeur>
+            <personnage>Disapproving Man</personnage>
+          </role>
+          <role place="13">
+            <idActeur>1566810</idActeur>
+            <personnage>Carlos</personnage>
+          </role>
+          <role place="15">
+            <idActeur>1645521</idActeur>
+            <personnage>Dryden</personnage>
+          </role>
+          <role place="18">
+            <idActeur>1199473</idActeur>
+            <personnage>Carter</personnage>
+          </role>
+          <role place="36">
+            <idActeur>2379317</idActeur>
+            <personnage>Card Players</personnage>
+          </role>
+          <role place="21">
+            <idActeur>82002</idActeur>
+            <personnage>Leo</personnage>
+          </role>
+          <role place="65">
+            <idActeur>2925977</idActeur>
+            <personnage>Waitress</personnage>
+          </role>
+          <role place="42">
+            <idActeur>2325595</idActeur>
+            <personnage>Hot Room Technicians</personnage>
+          </role>
+          <role place="48">
+            <idActeur>1654011</idActeur>
+            <personnage>Pilot</personnage>
+          </role>
+          <role place="50">
+            <idActeur>2702533</idActeur>
+            <personnage>Shop Assistant</personnage>
+          </role>
+          <role place="27">
+            <idActeur>1493564</idActeur>
+            <personnage>Kaminofsky</personnage>
+          </role>
+          <role place="35">
+            <idActeur>822647</idActeur>
+            <personnage>Card Players</personnage>
+          </role>
+          <role place="28">
+            <idActeur>1668852</idActeur>
+            <personnage>Fukutu</personnage>
+          </role>
+          <role place="58">
+            <idActeur>1372760</idActeur>
+            <personnage>Bartender</personnage>
+          </role>
+          <role place="5">
+            <idActeur>1941794</idActeur>
+            <personnage>Felix Leiter</personnage>
+          </role>
+          <role place="34">
+            <idActeur>650188</idActeur>
+            <personnage>Card Players</personnage>
+          </role>
+          <role place="37">
+            <idActeur>2637370</idActeur>
+            <personnage>Dealer</personnage>
+          </role>
+          <role place="51">
+            <idActeur>1314130</idActeur>
+            <personnage>Obanno's Lieutenant</personnage>
+          </role>
+          <role place="26">
+            <idActeur>1027027</idActeur>
+            <personnage>Gallardo</personnage>
+          </role>
+          <role place="10">
+            <idActeur>319401</idActeur>
+            <personnage>Mr. White</personnage>
+          </role>
+          <role place="8">
+            <idActeur>4607</idActeur>
+            <personnage>Alex Dimitrios</personnage>
+          </role>
+          <role place="41">
+            <idActeur>369699</idActeur>
+            <personnage>Hot Room Technicians</personnage>
+          </role>
+          <role place="46">
+            <idActeur>488415</idActeur>
+            <personnage>Airport Policemen</personnage>
+          </role>
+          <role place="60">
+            <idActeur>2005134</idActeur>
+            <personnage>Tennis Girls</personnage>
+          </role>
+          <role place="25">
+            <idActeur>2153316</idActeur>
+            <personnage>Madame Wu</personnage>
+          </role>
+          <role place="20">
+            <idActeur>1583928</idActeur>
+            <personnage>Kratt</personnage>
+          </role>
+          <role place="49">
+            <idActeur>2242968</idActeur>
+            <personnage>French News Reporter</personnage>
+          </role>
+          <role place="63">
+            <idActeur>495786</idActeur>
+            <personnage>Cola Kid</personnage>
+          </role>
+          <role place="23">
+            <idActeur>11435</idActeur>
+            <personnage>Infante</personnage>
+          </role>
+          <role place="64">
+            <idActeur>1812821</idActeur>
+            <personnage>Barman</personnage>
+          </role>
+          <role place="52">
+            <idActeur>448361</idActeur>
+            <personnage>Obanno's Liaison</personnage>
+          </role>
+          <role place="9223372036854775807">
+            <idActeur>77354</idActeur>
+            <personnage>Airport Staff</personnage>
+          </role>
+          <role place="30">
+            <idActeur>398765</idActeur>
+            <personnage>Dealer</personnage>
+          </role>
+          <role place="9">
+            <idActeur>414353</idActeur>
+            <personnage>Steven Obanno</personnage>
+          </role>
+          <role place="57">
+            <idActeur>1294571</idActeur>
+            <personnage>Nambutu Embassy Official</personnage>
+          </role>
+          <role place="55">
+            <idActeur>2597588</idActeur>
+            <personnage>Police Chief's Girlfriends</personnage>
+          </role>
+          <role place="67">
+            <idActeur>598987</idActeur>
+            <personnage>Venice Hotel Concierge</personnage>
+          </role>
+        </roles>
+      </film>
+      <acteurs>
+        <acteur id="1298032">
+          <nom>Notley, Peter</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1007099">
+          <nom>Leal, Carlos</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Jan 01 00:00:00 CET 1969</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="842121">
+          <nom>Jankovsky, Jaroslav</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1924788">
+          <nom>Wilson, Michael G.</nom>
+          <nomNaissance>Wilson, Michael Gregg</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Jan 21 00:00:00 CET 1943</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2401856">
+          <nom>Hladikova, Veronika</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1020217">
+          <nom>Lenc, Jirí</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2667303">
+          <nom>Murino, Caterina</nom>
+          <biographie>Caterina Murino was born on September 15, 1977, in Cagliari, Sardinia, Italy. In 1996 she reached the fourth place in the Miss Italy contest. Then she moved to Milan where she began working as a model in commercials for Mastercard, Swatch, Mercedes Benz, and Nescafe among other gigs. From 1999-2000 she studied acting at the Scuola di Cinema e Teatro di Francesca de Sapio in Italy. In 1999, Murino made her acting debut in a stage production of Richard III and also in several Italian language plays. In 2002 she began her film and television career with playing bit parts in Italian, German, and French productions. Her breakthrough came in 2004, when she co-starred opposite 'Jean Reno (I)' (qv) in a French comedy _L'enquête corse (2004)_ (qv). Ms. Murino is trilingual, she speaks French and English in addition to her native Italian. She is a versatile actress and a good athlete. Her talents include singing, dancing tango, flamenco and oriental dances, as well as horseback riding. She is co-starring as Solange, one of three Bond girls, opposite 'Daniel Craig (I)' (qv) in _Casino Royale (2006)_ (qv).</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Thu Sep 15 00:00:00 CET 1977</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="295903">
+          <nom>Chadbon, Tom</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Feb 27 00:00:00 CET 1946</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2348923">
+          <nom>Green, Eva</nom>
+          <nomNaissance>Green, Eva Gaëlle</nomNaissance>
+          <biographie>Eva Gaëlle Green was born on July 5, 1980, in Paris, France. She has a non-identical twin sister. Her father, Walter Green, is a dentist who appeared in the 1966 film _Au hasard Balthazar (1966)_ (qv). Her mother, 'Marlène Jobert' (qv), is an actress who retired from acting and became a writer of children's books. Eva's mother was born in Algeria, of Sephardi Jewish heritage (during that time, Algeria was part of France), and Eva's father is of Swedish and French descent. Eva left French school at 17. She switched to English in Ramsgate, Kent, and went to the American School in France for one year. She studied acting at Saint Paul Drama School in Paris for three years, then had a 10-week polishing course at the Weber Douglas Academy of dramatic Art in London. She also studied directing at the Tisch School of Arts at New York University. She returned to Paris as an accomplished young actress, and played on stage in several theater productions: "La Jalousie en Trois Fax" and "Turcaret". There she caught the eye of director 'Bernardo Bertolucci' (qv). Green followed a recommendation to work on her English. She studied for two months with an English coach before doing _The Dreamers (2003)_ (qv) with 'Bernardo Bertolucci' (qv). During their work Bertolucci described Green as being "so beautiful it's indecent." Green won critical acclaim for her role in _The Dreamers (2003)_ (qv). She also attracted a great deal of attention from male audiences for her full frontal nudity in several scenes of the film. Besides her work as an actress Green also composed original music and recorded several sound tracks for the film score. After The Dreamers Green's career ascended to the level where she revealed more of her multifaceted acting talent. She played the love interest of cult French gentleman stealer _Arsène Lupin (2004)_ (qv) opposite 'Romain Duris' (qv). In 2005 she co-starred opposite 'Orlando Bloom' (qv) and 'Liam Neeson' (qv) in _Kingdom of Heaven (2005)_ (qv) produced and directed by 'Ridley Scott' (qv). The film brought her a wider international exposure. She turned down the femme fatale role in The Black Dahlia that went to 'Hilary Swank' (qv) because she didn't want to end up always typecast as a femme fatale after her role in The Dreamers. Instead, Eva Green accepted the prestigious role of Vesper Lynd, one of three Bond girls, opposite 'Daniel Craig (I)' (qv) in _Casino Royale (2006)_ (qv) and became the 5th French actress to play a James Bond girl after 'Claudine Auger' (qv) in _Thunderball (1965)_ (qv), 'Corinne Cléry (I)' (qv) in _Moonraker (1979)_ (qv), 'Carole Bouquet' (qv) in _For Your Eyes Only (1981)_ (qv) and 'Sophie Marceau' (qv) in The World is not enough (1999). Since her school years Green has been a cosmopolitan multilingual and multicultural person. Yet, since her father always lived in France with them and her mother, she and her twin sister can't speak Swedish. She developed a wide scope of interests beyond her acting profession and became an aspiring art connoisseur and an avid museum visitor. Her other activities outside of acting include playing and composing music, cooking at home, walking her terrier, and collecting art. She shares time between her two residencies, one is in Paris, France, and one in London, England.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sat Jul 05 00:00:00 CEST 1980</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2220301">
+          <nom>Dench, Judi</nom>
+          <nomNaissance>Dench, Judith Olivia</nomNaissance>
+          <biographie>Attended Mount School in York, and studied at the Central School of Speech and Drama. She has performed with Royal Shakespeare Company, the National Theatre, and at Old Vic Theatre. She is a ten-time BAFTA winner including Best Actress in a Comedy Series for _"A Fine Romance" (1981)_ (qv) in which she appeared with her husband, 'Michael Williams (I)' (qv), and Best Supporting Actress in _A Handful of Dust (1988)_ (qv) and _A Room with a View (1985)_ (qv) . She received an ACE award for her performance in the television series _Mr. and Mrs. Edgehill (1985) (TV)_ (qv). She was made an Officer of the Order of the British Empire in 1970, and was created Dame of Order of the British Empire in 1988.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sun Dec 09 00:00:00 CET 1934</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="185672">
+          <nom>Bonham-Carter, Crispin</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Sep 23 00:00:00 CET 1969</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="157806">
+          <nom>Bhattacharjee, Paul</nom>
+          <nomNaissance>Bhattacharjee, Gautam Paul</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed May 04 00:00:00 CET 1960</dateNaissance>
+          <dateDeces>Fri Jan 01 00:00:00 CET 12</dateDeces>
+        </acteur>
+        <acteur id="1711852">
+          <nom>Stransky, Leo</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="370864">
+          <nom>Craig, Daniel</nom>
+          <nomNaissance>Craig, Daniel Wroughton</nomNaissance>
+          <biographie>Daniel Craig, one of British theatre's most famous faces who was waiting tables as a struggling teenage actor with the NYT, went on to star as "James Bond" in _Casino Royale (2006)_ (qv), _Quantum of Solace (2008)_ (qv) and _Skyfall (2012)_ (qv). He was born Daniel Wroughton Craig on March 2, 1968, at 41 Liverpool Road, Chester, Cheshire, England. His father, Tim Craig, was a merchant seaman turned steel erector, then became landlord of "Ring O' Bells" pub in Frodsham, Cheshire. His mother, Carol Olivia Craig, was an art teacher. His parents split up in 1972, and young Daniel Craig was raised with his older sister, Lea, in Liverpool, then in Hoylake, Wirral, in the home of his mother. His interest in acting was encouraged by visits to the Liverpool Everyman Theatre arranged by his mother. From the age of 6, Craig started acting in school plays, making his debut in the Frodsham Primary School production of "Oliver!", and his mother was the driving force behind his artistic aspirations. The first Bond movie he ever saw at the cinema was 'Roger Moore (I)' (qv)'s _Live and Let Die (1973)_ (qv); young Daniel Craig saw it with his father, so it took a special place in his heart. He was also a good athlete and was a rugby player at Hoylake Rugby Club. At the age of 14, Craig played roles in "Oliver", "Romeo and Juliet" and "Cinderella" at Hilbre High School in West Kirby, Wirral, UK. He left Hilbre High at 16 to audition at the National Youth Theatre's (NYT) troupe on their tour in Manchester in 1984. He was accepted and moved down to London. There, his mother and father watched his stage debut as "Agamemnon" in Shakespeare's "Troilus and Cressida". As a struggling actor with the NYT, he was toiling in restaurant kitchens and as a waiter. Craig performed with NYT on tours to Valencia, Spain, and to Moscow, Russia, under the leadership of director 'Edward Wilson (I)' (qv). He failed at repeated auditions at the Guildhall, but eventually his persistence paid off, and in 1988, he entered the Guildhall School of Music and Drama at the Barbican. There, he studied alongside 'Ewan McGregor' (qv) and 'Alistair McGowan' (qv), then later 'Damian Lewis (I)' (qv) and 'Joseph Fiennes' (qv), among others. He graduated in 1991, after a three-year course under the tutelage of 'Colin McCormack (I)' (qv), the actor from the Royal Shakespeare Company. From 1992-1994, he was married to Scottish actress Fiona Loudon, their daughter, named 'Ella Craig' (qv), was born in 1992. Daniel Craig made his film debut in _The Power of One (1992)_ (qv). His film career continued on television, notably the BBC2 serial _"Our Friends in the North" (1996)_ (qv). He shot to international fame after playing supporting roles in _Lara Croft: Tomb Raider (2001)_ (qv) and _Road to Perdition (2002)_ (qv). He was nominated for his performances in the leading role in _Layer Cake (2004)_ (qv), and received other awards and nominations. Craig was named as the sixth actor to portray "James Bond", in October of 2005, weeks after he finished his work in _Munich (2005)_ (qv), where he co-starred with 'Eric Bana' (qv) under the directorship of 'Steven Spielberg' (qv). Craig's reserved demeanor and his avoidance of the showbiz-party-red-carpet milieu makes him a cool "007". He is the first blonde actor to play Bond, and also the first to be born after the start of the film series, and also the first to be born after the death of author 'Ian Fleming (I)' (qv) in 1964. Four of the past Bond actors: 'Sean Connery' (qv), 'Roger Moore (I)' (qv), 'Timothy Dalton' (qv) and 'Pierce Brosnan' (qv) have indicated that Craig is a good choice as "Bond".</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Mar 02 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2248252">
+          <nom>Duravolá, Martina</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="968243">
+          <nom>Kulhavý, Vladimír</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1403596">
+          <nom>Pistor, Ludger</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Mar 16 00:00:00 CET 1959</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="106571">
+          <nom>Barberini, Urbano</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Sep 18 00:00:00 CET 1961</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2998542">
+          <nom>von Lehndorff, Veruschka</nom>
+          <nomNaissance>von Lehndorff, Countess Vera Gottliebe Anna</nomNaissance>
+          <biographie>Her father was a Prussian count (Count von Lehndorff-Steinort) who was involved in a plot to assassinate Hitler in 1944 and hanged that year, when Vera was three. Her mother was arrested, and Vera and her sisters spent the rest of the war in Gestapo camps. They were reunited with their mother after the war, but the family was destitute, and ostracised by other Germans for their father's treachery. She ended up studying textile design in Florence, where a fashion designer first asked her to model. She had first travelled to New York in 1961 as plain old Vera, but failed to secure a single booking. After retreating to Milan for a spell, she returned to take Manhattan under her new name.... Veruschka!</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sun May 14 00:00:00 CET 1939</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1748274">
+          <nom>Tarrach, Jürgen</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Dec 17 00:00:00 CET 1960</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1179146">
+          <nom>Menzies, Tobias</nom>
+          <biographie>Tobias was born in London. He graduated from the Royal Academy of Dramatic Art (RADA) in 1998 and began his acting career in popular UK series such as Foyle's War, Midsomer Murders, and Casualty. He also appeared in the controversial drama A Very Social Secretary. He is best known to international audiences as Marcus Junius Brutus in the television series Rome. He had a major film role in The Low Down with Aidan Gillen and featured in the 2006 reboot of the James Bond franchise, Casino Royale. 2007 sees him appearing as William Elliot in ITV's production of Jane Austin's classic book, Persuasion and as Derrick Sington in the Channel 4 drama The Relief of Belsen. On stage, his credits include the young teacher Irwin in Alan Bennett's The History Boys and Michael Blakemore's West End production of Three Sisters for which he was nominated for the Ian Charleson Award. He was a critically acclaimed Hamlet in Rupert Goold's Hamlet at the Royal Theatre.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Mar 07 00:00:00 CET 1974</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="299911">
+          <nom>Chancer, John</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2167366">
+          <nom>Cole, Christina</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sat May 08 00:00:00 CEST 1982</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="218944">
+          <nom>Brooke, Peter</nom>
+          <biographie>Born in Toronto of American and British parents, Peter lives and works internationally. In the USA drama series, The Fugitive Chronicles, he took on the title role in the Danny Ray Horning episode, portraying the wily but misunderstood convict who eluded his pursuers. His television credits also include Dr Who, Sherlock, Small Island, Blood in the Water, The Enemy Within, Billy the Kid, Over Here, The Increasingly Poor Decisions of Todd Margaret and Spooks (or MI5 as it is known in the USA). Peter first took over the role of Captain Jack Ross in the West End's A Few Good Men, written by Aaron Sorkin and also starring Rob Lowe. He then played Phil in the West End premiere of Arthur Miller's Resurrection Blues, directed by the late, great Robert Altman, and produced by Kevin Spacey. He appeared again in the West End as John Williamson in David Mamet's Glengarry Glen Ross with Jonathan Pryce and Aiden Gillen. Appearing in such films as Casino Royale and The Dark Knight, he also plays hippie activist Jerry Rubin in the upcoming Warner Brothers movie Hippie Hippie Shake opposite Cillian Murphy and Sienna Miller. In addition, he is the crazed DJ Phoenix Fox in the upcoming video game Forza Horizon. Recently, Peter has been shooting Red Lights with Robert De Niro, the Swiss film Trained, the 20th Century Fox horror Wrong Turn 5, and, of course, The Dinosaur Project with StudioCanal.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="633338">
+          <nom>Giannini, Giancarlo</nom>
+          <biographie>Giancarlo Giannini is an Oscar-nominated Italian actor, director and multilingual dubber who made an international reputation for his leading roles in Italian films as well as for his mastery of a variety of languages and dialects. He was born August 1, 1942, in La Spezia, Italy. For ten years young Giannini lived and studied in Naples, earning his degree in electronics. At the age of 18 he enrolled in the Academy of Dramatic Art D'Amico in Rome, making his stage acting debut there. His credits included performances in contemporary Italian plays, as well, as in Italian productions of 'William Shakespeare (I)' (qv)'s plays "Romeo and Juliet" and "A Midsummer's Night Dream". In 1965 he made his debut on television starring as David Copperfield in the TV mini-series made by RAI, the Italian national TV company. He made his big-screen debut in _Libido (1965)_ (qv), a Freudian psychological thriller. Since 1966 he has been in a successful collaboration with the legendary Italian director 'Lina Wertmüller' (qv), who made several award-winning films with Giannini as a male lead. He appears as peasant Tonino who prepares to assassinate dictator 'Benito Mussolini' (qv) in _Film d'amore e d'anarchia, ovvero 'stamattina alle 10 in via dei Fiori nella nota casa di tolleranza...' (1973)_ (qv), as a sailor in the irony-laden comedy _Travolti da un insolito destino nell'azzurro mare d'agosto (1974)_ (qv) and as a survivor of a concentration camp in the Oscar-nominated _Pasqualino Settebellezze (1975)_ (qv). He also starred as a Jewish musician arrested by the Nazis in 'Rainer Werner Fassbinder' (qv)'s masterpiece _Lili Marleen (1981)_ (qv). Giannini also made a reputation for dubbing international stars in films released on the Italian market, such as 'Jack Nicholson (I)' (qv), 'Al Pacino' (qv), 'Michael Douglas (I)' (qv), 'Dustin Hoffman' (qv), 'Gérard Depardieu' (qv) and 'Ian McKellen' (qv), among others. He received a compliment from 'Stanley Kubrick' for his dubbing of Nicholson in _The Shining (1980)_ (qv). Giannini's fluency in English and his mastery of dialects has brought him a number of supporting roles in Hollywood productions, such as _A Walk in the Clouds (1995)_ (qv), _Hannibal (2001)_ (qv), _Darkness (2002)_ (qv) and _Man on Fire (2004)_ (qv), among many others. He appears as Rene Mathis in the 21st James Bond film _Casino Royale (2006)_ (qv), and reprises the role in the sequel, _Quantum of Solace (2008)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Aug 01 00:00:00 CEST 1942</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1171383">
+          <nom>Meheux, Phil</nom>
+          <nomNaissance>Meheux, Philip</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Sep 17 00:00:00 CEST 1941</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="852802">
+          <nom>Jezek, Robert</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2309041">
+          <nom>Gabajová, Regina</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Wed Apr 21 00:00:00 CET 1971</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1192260">
+          <nom>Mikkelsen, Mads</nom>
+          <nomNaissance>Mikkelsen, Mads Dittman</nomNaissance>
+          <biographie>Mads Mikkelsen is a synonym to the great success the Danish film industry has had since the mid-1990s. Starting out as a low-life pusher/junkie in the 1996 success _Pusher (1996)_ (qv), he slowly grew to become one of Denmark's biggest movie actors. The success in his home country includes _Blinkende lygter (2000)_ (qv), _En kort en lang (2001)_ (qv) and the Emmy-winning police series _"Rejseholdet" (2000)_ (qv). His success has taken him abroad where he has played alongside 'Gérard Depardieu' (qv) in _I Am Dina (2002)_ (qv) as well as in the Spanish comedy _Torremolinos 73 (2003)_ (qv) and the American blockbuster _King Arthur (2004)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Nov 22 00:00:00 CET 1965</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1620597">
+          <nom>Shaw, Darwin</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1559434">
+          <nom>Sammel, Richard</nom>
+          <biographie>Born in Heidelberg; a curious and shy boy; found the key for his world through passion for music, dance and theater; Richard studied music and drama in Germany, acting and direction in France and method acting with Susan Strasberg and Francesca de Sapio in Italy. He first went on stage in 1981 at the local theater Hildesheim, then, from 1983 in France on independent stages, at national theaters and in the streets. In 1989 he moved to Italy and met Susan Strasberg: His cinema debut was in 1990 starring in "Il Piacere delle Carni" by Barbara Barni. In 1993, he moved to Paris and got the leading role in the film version of Brechts/Eislers" The Lindbergh's Flight". Since then he has worked on film, television, theater and dance productions all over Europe, in Canada, South Africa, USA, Macedonia, Morocco which brought him happiness and a lot of richly diversified creative and thrilling experiences Richard lives in Berlin and Paris since 2007. He speaks 5 languages fluently, travels a lot and loves to be challenged.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Jan 01 00:00:00 CET 1960</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2636138">
+          <nom>Milicevic, Ivana</nom>
+          <biographie>Ivana Milicevic was born on April 26, 1974, in Sarajevo, Bosnia (part of Yugoslavia at that time), into an ethnic Croatian family of Tonka and Damir Milicevic. Ivana has a younger brother, Tomo Milicevic. The family emigrated to the United States, and young Ivana Milicevic was raised in Michigan. She attended Athens High school in Troy, Michigan, and worked as a model during her school years. She became a naturalized citizen of the United States. In 1992, Milicevic graduated from high school and moved to Los Angeles in pursuit of an acting career. She was a struggling stand-up comedienne, trying to win over crowds with her stories of the modeling business. In 1996, she made her film debut under the name Ivana Marina with a one-line role as a Former Girlfriend of 'Tom Cruise' (qv) in _Jerry Maguire (1996)_ (qv). In 1997, she followed up with a guest role on NBC's _"Seinfeld" (1989)_ (qv) and made guest appearances on several other television shows. She played bit parts in _Vanilla Sky (2001)_ (qv) and _Love Actually (2003)_ (qv), among her many other cameo appearances. Milicevic capitalized on her experience as a comedienne in a supporting role as Russian model Roxana Milla Slasnikova in the romantic comedy _Head Over Heels (2001)_ (qv). She appeared as a lookalike of 'Uma Thurman' (qv) opposite 'Ben Affleck' (qv), trying to fool him into thinking she is Uma, in _Paycheck (2003)_ (qv). In a departure from her one-dimensional roles, Milicevic showed her dramatic talent in a supporting role as Milla Yugorsky in a dark and gritty drama _Running Scared (2006)_ (qv). In 2006, she started a recurring role on the CBS TV series _"Love Monkey" (2006)_ (qv). In 2006, Milicevic made a big step forward in her career appearing as Valenka, one of three Bond girls in _Casino Royale (2006)_ (qv), for which she did most of her scenes on locations in Prague and in London. She is currently residing in Los Angeles, California.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Fri Apr 26 00:00:00 CET 1974</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="576848">
+          <nom>Foucan, Sebastien</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon May 27 00:00:00 CET 1974</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1644947">
+          <nom>Simunek, Miroslav</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Apr 05 00:00:00 CET 1978</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1566810">
+          <nom>Santamaria, Claudio</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Jul 22 00:00:00 CET 1974</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1645521">
+          <nom>Sinclair, Malcolm</nom>
+          <biographie>Malcolm Sinclair read drama and theology at the University of Hull and then went on to do a one year post-graduate acting course at Bristol Old Vic Theatre School. After seven years in different repertory companies around the country he made his London debut in 1985 at the Notting Hill Gate Theatre in Arthur Schnitzler's play 'Anatole', which he describes as the first thing that got him noticed. Since then he has appeared with both the National and Royal Shakespeare companies and has taken on musical roles in the likes of 'Privates On Parade' and 'My Fair lady'. On television he has been bumped off several times in who-dunnit mystery dramas though he stayed the course as supercilious Assistant Chief Constable Freddie Fisher in 'Pie In the Sky'. In July 2010 he was elected the president of the Equity actors' union.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Jun 05 00:00:00 CET 1950</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1199473">
+          <nom>Millson, Joseph</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Jan 01 00:00:00 CET 1974</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2379317">
+          <nom>Hartford, Diane</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="82002">
+          <nom>Avena, Emmanuel</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2925977">
+          <nom>Svátková, Vlastina</nom>
+          <biographie>Ten years before Czechoslovakia separated, Vlastina was born to Czechoslovakian parents: a Slovak mother and Czech (or shall we say, Moravian) father. She attended elementary and a high school in the Slovak town of Myjava. She studied piano for fifteen years and also took in drawings and singing lessons. She also studied writing and reciting poems. Even though Vlastina had wanted become an actress since childhood, she made two detours along the way. She studied Mass Communication as well as the Commenius University in Bratislava, where she got her Master. Her first feature was Casino Royale by Martin Campbell, where she got a part in the casino. Then she continued in The Red Baron, Dark Spirits, Women in Temptation. She got a role of an American spy in television film The Rhythm at their heels. A story set in the early 1950s, when the communist regime in Czechoslovakia mercilessly wiped out the remaining elements of the free world. A bunch of naive young people associated with a coffee-house jazz band were easy prey for the pitiless State Security men. In 2009 she got a part of a nurse Tereza in thriller Unknown Hour - a not very fictive story of a man, known in fact as "the hospital murderer". In 2010 she started to shoot a historical epic The Danube Saga where she performed the main character of Elena Unger. Saga, a concatenation of stories of one's line. Vlastina is also performing in theater and writing books.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Tue Mar 09 00:00:00 CET 1982</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2325595">
+          <nom>Gethings, Rebecca</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1654011">
+          <nom>Slade, Robert G.</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2702533">
+          <nom>Ochotská, Michaela</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Wed Dec 19 00:00:00 CET 1984</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1493564">
+          <nom>Ristovski, Lazar</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Oct 26 00:00:00 CET 1952</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="822647">
+          <nom>Inzerillo, Jerry</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1668852">
+          <nom>So, Tom</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1372760">
+          <nom>Pelech, Dusan</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1941794">
+          <nom>Wright, Jeffrey</nom>
+          <biographie>Quite possibly the most underrated and underexposed actor of his caliber and generation, Jeffrey Wright's undeniable talent and ability to successfully bring to life any role he undertakes is on a par with the most praised and revered A-list actors in the business. Born and raised in Washington DC, Wright graduated from the prestigious Amherst college in 1987. Although he studied Political Science while at Amherst, Wright left the school with something that would prove to be more valuable: a love for acting. Shortly after graduating he won an acting scholarship to NYU, but dropped out after only two months to pursue acting full time. With roles in 1990's Presumed Innocent, and the Broadway production of Angels in America, (in which he won a well deserved Tony award), within a relatively short time Wright was able to show off his exceptional talent and ability on both stage and screen alike. His first major on-screen performance came in 1996 in the Julian Schnabel directed film Basquiat. Wright's harrowing performance as the late painter Jean Michele Basquiat was critically acclaimed for its haunting accuracy and raw emotion. With a Tony, a Golden Globe, and an AFI award under his belt, the intensity of Wright's skill has been proven over and over again. Hopefully the near future will bring an influx of more varied lead roles for black actors so that Wright can continue to astonish his colleagues, critics and fans alike with the intensity of his skill.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Dec 07 00:00:00 CET 1965</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="650188">
+          <nom>Gold, John</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2637370">
+          <nom>Miller, Jessica</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1314130">
+          <nom>Offei, Michael</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Oct 04 00:00:00 CET 1966</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1027027">
+          <nom>Levi Leroy, Charlie</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Sep 01 00:00:00 CEST 1946</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="319401">
+          <nom>Christensen, Jesper</nom>
+          <biographie>Born 1948 in central Copenhagen. Lived there ever since. Did 25 years of theatre, - like Alceste in the Misanthropist, Richard in Richard lll (solo), Faust in Faust, Astrov in Vanja, a lot of worried men,- stopped doing it in 1998. Since then only worried men on film. Worked on more than 100 films by Per Fly, Marc Forster, John Madden, Lone Scherfig, Sydney Pollack, Jan Troell, Martin Campbell, Anette K Olesen, Pernille Fischer Christensen, and others. Since 2000 lives with Tove Bornhoeft, wonderful Danish theatre manager/director/actress. Two grown up daughters. No animals. Dogs, pigs, chickens, cats, birds, horses, fish, rabbits - all gone now.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun May 16 00:00:00 CEST 1948</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="4607">
+          <nom>Abkarian, Simon</nom>
+          <nomNaissance>Abkarian, Simone</nomNaissance>
+          <biographie>Simon Abkarian was born Simone Abkarian on March 5, 1962, in Gonesse, a northeastern suburb of Paris, France, into a French - Armenian family. Young Simon Abkarian grew up in a trilingual environment, he learned French at school in addition to his native Armenian, and also learned English by watching American films since he was a kid. He spent most of his childhood in France until the age of nine, then went with his parents to Beirut, Lebanon. From 1971 to 1977 young Abkarian lived with his mother and father in Lebanon. He studied dancing with the Lori Dance Ensemble in Beirut. There he attended Armenian school and also studied French and English. In 1977, his father went to war in Lebanon, and 15-year-old Abkarian with his mother moved back to Paris. A few years later he moved to New York and continued his studies of dancing and acting at the Antranik company in New York, then moved to Los Angeles, California. In 1983-1985 he studied acting and joined the Armenian Theatre Company Artavadzt of the AGBU under the leadership of director Gerald Papazian. In 1984, he joined the workshop at renown Theatre du Soleil on tour in Los Angeles during the Olympics Art Festival. Abkarian took a month-long acting workshop from Mnouchkine's mask-maker, Georges Bigot, then was auditioned by Ariane Mnouchkine who invited him to join the company. In 1985 Abkarian returned to Paris, France. There he resumed a successful stage acting career, and had an eight-year-long collaboration with Ariane Mnouchkine, the legendary director of Théâtre du Soleil. There he played leading roles in Greek tragedies and became known for his charismatic performances. He also directed several stage plays in Paris, including Shakespeare's 'Love's Labour Lost' at the Bouffles du Nord, and Aeschylus's 'The Last Song of Troy' at Bobigny, among others. In 2001 Abkarian won the highest award in French theatre for an actor - the Prix Molière, for his performance in 'Une Bête Sur La Lune' (aka.. Beast on the Moon). Since 1993, Abkarian and his actress-director wife, Catherine Schaub, started their own theatre T.E.R.A. (Theatre Espace Recherche Acteur) in Paris. There he has been playing and directing classical and contemporary plays. In the season of 2005-2006, he was brought by The Actors' Gang to direct Shakespeare's 'Love's Labor's Lost' in Los Angeles. Abkarian made his film debut in 1989, in a short film 'Ce qui me meut' by director Cédric Klapisch. During his early film career, Abkarian enjoyed a fruitful collaboration with Cédric Klapisch in 6 French films, becoming noticed in the award winning _Chacun cherche son chat (1996)_ (qv). He earned critical acclaim for his portrayal of painter Archil Gorky in 'Atom Egoyan' (qv)'s award winning epic _Ararat (2002)_ (qv). Simon Abkarian won awards for his performance as Eliahou in 'To Take a Wife (2004) by director Ronit Elkabetz. That same year Abkarian gave a stellar performance in his first leading role in English, co-starring as He, a passionate Lebanese doctor turned cook who is in love with an American woman (Joan Allen) in _Yes (2004/I)_ (qv) directed by Sally Potter. He made a step forward in his film career with the supporting role as Alex Dimitros in _Casino Royale (2006)_ (qv), playing in several powerful scenes opposite 'Daniel Craig (I)' (qv). Simon Abkarian has been generously involved in the humanitarian causes of the Armenian people across the world. He has been a frequent participant, host and presenter at numerous charitable events and ceremonies related to the Armenian causes. He was also a member of French President Jacque Chirac's delegation to Armenia in October of 2006.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Mar 05 00:00:00 CET 1962</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="369699">
+          <nom>Cox, Simon</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="488415">
+          <nom>Durran, Jason</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2005134">
+          <nom>Ambrosio, Alessandra</nom>
+          <nomNaissance>Ambrósio, Alessandra Corine</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sat Apr 11 00:00:00 CEST 1981</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2153316">
+          <nom>Chin, Tsai</nom>
+          <nomNaissance>Zhou, Tsai Chin</nomNaissance>
+          <biographie>Tsai Chin, pinyin Zhou Caiqin is an actor, director, teacher and author, best known in America for her film role as Auntie Lindo in The Joy Luck Club. The third daughter of Zhou Xinfang, China's great actor in the last century, she was trained at the Royal Academy of Dramatic Art London (first Chinese student) and later earned a Master Degree at Tufts University, Boston. Her career spans more than five decades working in UK, USA and recently in China. She starred on stage on both sides of the atlantic, (a first for a Chinese actor) in London's West End,The World of Susie Wong and on Broadway, Golden Child; played the two most powerful women of 20th century China; for television, in The Subject of Struggle; for stage Memories of Madame Mao; was twice in Bond films, as Bond girl in You Only Live Twice, and later in Casino Royale. Her single The Ding Dong Song recorded for Decca was top of the charts in Asia. She was the first to be invited to teach acting in China after the Cultural Revolution when universities re-opened. She is now celebrated in China for her portrayal of Jia Mu in the recent TV drama series, The Dream of The Red Chamber. Her international best-selling autobiography, Daughter of Shanghai is to be a stage play by David Henry Hwang which will be produced by the Wallis Annenberg Center for the Perfoming Arts in Beverly Hills.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Mon Nov 30 00:00:00 CET 1936</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1583928">
+          <nom>Schick, Clemens</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Feb 15 00:00:00 CET 1972</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2242968">
+          <nom>Du Jeu, Félicité</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="495786">
+          <nom>Ebun-Cole, Olutunji</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="11435">
+          <nom>Ade</nom>
+          <biographie>Born in London, in the early seventies, Ade tried his hand at various trades; from selling shoes, tickets for concerts, managing bands, to publishing an international horse racing magazine. Ade was known by Guy Ritchie who cast him as Tyrone the getaway driver in _Snatch. (2000)_ (qv). He then set off on the European press jaunt &amp; traveled to the United States to preview the movie, addressing the audience at Harry Knowles' 24hr film festival at The Alamo, Texas. Ade has since been involved with several other film and TV projects; notably as Infante in the Bond movie _Casino Royale (2006)_ (qv) and Madonna's directorial debut _Filth and Wisdom (2008)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1812821">
+          <nom>Ucík, Martin</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Dec 05 00:00:00 CET 1955</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="448361">
+          <nom>Diaw, Makhoudia</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="77354">
+          <nom>Atkins, Lasco</nom>
+          <biographie>Lasco Atkins was born in Hong Kong in 1980. At an early age he already knew he loved films, mainly action movies starring Arnie, Sly, JCVD, etc. Once at film school he learned a new appreciation for classics, black &amp; whites, 70s, etc. He re-watched old films such as Blade Runner and no longer thought of them as boring but as visual masterpieces. He started making videos of skits with friends and skateboarding videos. At Art College (Surrey Institute in Farnham) he tried video editing for the first time, where he mainly made OTT videos. At Film School he shot on film stock for the first time and edited on Steen-beck also. He developed a wider understanding and appreciation for how films were/are made. Going in only wanting to be a director, he came out of LFS (London Film School) as a cameraman. Once he left film school, he began focus pulling/camera assistant. Eventually he caught the lighting bug. This is extremely helpful for young DP's since they must have a good knowledge of lights and camera. Occasionally directing, he also acts on bigger budget films. He is happy anywhere on a film set, either in front, behind or anywhere as long as the project is valuable and an experience. Lately he has even tried his hands at rapping, appearing in two of his own music videos this year already (2013) known as Lasco Tobasco.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="398765">
+          <nom>Daniel, Andreas</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="414353">
+          <nom>De Bankolé, Isaach</nom>
+          <biographie>Isaach De Bankole, C'sar award-winning actor, was born on the Ivory Coast. Isaach was discovered on the streets of Paris while studying to be an airline pilot. He has a degree in Acting from Cours Simon and a Masters in Mathematics from the Universite de Paris.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Aug 12 00:00:00 CET 1957</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1294571">
+          <nom>Nonyela, Valentine</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Jan 01 00:00:00 CET 1970</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2597588">
+          <nom>Martincáková, Marcela</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="598987">
+          <nom>G'Vera, Ivan</nom>
+          <nomNaissance>Splichal, Ivan</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Apr 01 00:00:00 CET 1959</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+      </acteurs>
+    </projection>
+    <projection id="5" date="2016-06-15 15:48:34.0">
+      <date>Wed Jun 15 15:48:34 CEST 2016</date>
+      <numeroSalle>Flon 1</numeroSalle>
+      <film id="2136717">
+        <titre>Django Unchained</titre>
+        <synopsis>In 1858, in Texas, the former German dentist Dr. King Schultz meets the slave Django in a lonely road while being transported by the slavers Speck Brothers. He asks if Django knows the Brittle Brothers and with the affirmative, he buys Django for him. Then Dr. Schultz tells that he is a bounty hunter chasing John, Ellis and Roger Brittle and proposes a deal to Django: if he helps him, he would give his freedom, a horse and US$ 75.00 for him. Django accepts the deal and Dr. Schultz trains him to be his deputy. They kill the brothers in Daughtray and Django tells that he would use the money to buy the freedom of his wife Broomhilda, who is a slave that speaks German. Dr. Schultz proposes another deal to Django: if he teams-up with him during the winter, he would give one-third of the rewards and help him to rescue Broomhilda. Django accepts his new deal and they become friends. After the winter, Dr. Schultz goes to Gatlinburgh and learns that Broomhilda was sold to the ruthless Calvin Candie von Shaft, who lives in the Candyland Farm, in Mississippi. Dr. Schultz plots a scheme with Django to lure Calvin and rescue Broomhilda from him. But his cruel minion Stephen is not easily fooled.</synopsis>
+        <duree>165</duree>
+        <noteMoyenne>0.0</noteMoyenne>
+        <critiques/>
+        <genres>Western</genres>
+        <motCle>herd-of-bison, whipping, tree-swing, dog, murder, german-accent, male-in-a-bathtub, spaghetti-western, ku-klux-klan, male-star-appears-nude, u.s.-marshal, bag-over-head, funeral, flogging-a-woman, grave-side-ceremony, shot-multiple-times, blood-on-hand, human-branding, seeing-father-killed, brawl, fistfight, male-frontal-nudity, dead-horse, racism, slavery, southern-accent, slurping-a-drink-with-a-straw, reunited-lovers, scenic-beauty, character-name-in-title, woods, dinner-party, partnership, fire, mauling, bar, exploitation, australian, deception, scars-on-back, freed-slave, shootout, dynamite, killed-by-a-dog, ambush, character-repeating-someone-else's-dialogue, bare-knuckle-fighting, cameo-appearance, canteen, torture-victim, bludgeoning, horse-drawn-wagon, character-says-i-love-you, kiss, killer-dog, reference-to-siegfried-and-brunhilde, crab-walking, blood-splatter, beer-on-tap, skull, dentist, shot-in-the-forehead, street-shootout, female-nudity, dual-role, broken-leg, escape, barn, double-barreled-shotgun, shot-in-the-butt, 19th-century, bloody-hand, last-man-standing, spelling-one's-name, kissing, horse, n-word, fingers-in-ears, topless-female-nudity, scraping-the-head-off-a-beer, saloon, slave, pistol, hanging-upside-down-naked, human-in-a-cage, shot-in-the-knee, torture, fight-to-the-death, blown-off-feet, hiding-place, knee-capped, training, massacre, interrogation, flogging-scar, star-appears-nude, snow, rope-swing, rifle, gun-duel, explosion, gambling, year-1859, brother-sister-relationship, letter, shot-in-the-crotch, exploding-house, shooting-practice, nudity, small-town, f-word, director-cameo, fake-identity, reference-to-the-three-musketeers, written-by-director, quick-draw, sex-slave, murder-of-a-police-officer, snowshoe, held-at-gunpoint, warrant, shot-in-the-back, riding-bareback, hero-kills-a-woman, herd-of-goats, horse-riding, blood-on-camera-lens, revolver, bare-fisted-fight, shadow, shot-of-tequilla, slow-motion-scene, forest, death-of-brother, camera-shot-of-feet, herd-of-elk, gunfight, bust-of-nefertiti, blood-spatter, beating, rescue, lens-flare, violence, seeing-one's-breath, castration, blood, bloodbath, birch-forest, gore, lighting-a-fuse, husband-wife-relationship, french-maid-costume, two-word-title, bounty-hunter, clothes-shopping, bare-chested-male, bound-and-gagged, blaxploitation, cigarette-holder, valet, chain-gang, slave-girl, texas, snowman, subtitled-scene, shooting-a-police-officer, hostage, killing-an-animal, riding-at-a-gallop, ball-peen-hammer, torch, broken-clavicle, german-abroad, reference-to-alexandre-dumas, sawed-off-shotgun, shooting-a-woman, horse-answers-to-its-name, screaming-in-pain, hooded-rider, target-practice, beaten-to-death, revenge, farm, racial-slur, derringer, flashback, sniper, alias, cotton-field, plantation, running-away, animal-attack, long-take, campfire, lantern, shot-in-the-chest, tennessee, hit-with-a-hammer, shot-point-blank-with-a-shotgun, winter, wanted-poster, montage, building-a-bird-house, male-nudity, exploding-body, slave-owner, covered-in-blood, male-bonding, setting-the-table, bullwhip, shot-to-death, murder-of-a-nude-man, sheriff, dual-wield, close-up-of-eyes, shot-in-the-head, shot-in-the-leg, blood-on-the-floor, actor-playing-multiple-roles, death-of-father, critically-acclaimed, kiss-on-both-cheeks, shot-in-the-shoulder, ethnic-slur, fight, 1850s, death-of-friend</motCle>
+        <langages>English, German, French</langages>
+        <roles>
+          <role place="46">
+            <idActeur>2916615</idActeur>
+            <personnage>Daughtrey Saloon Girl</personnage>
+          </role>
+          <role place="43">
+            <idActeur>752849</idActeur>
+            <personnage>Slave on Chain Gang</personnage>
+          </role>
+          <role place="79">
+            <idActeur>1647682</idActeur>
+            <personnage>Carl</personnage>
+          </role>
+          <role place="50">
+            <idActeur>1064111</idActeur>
+            <personnage>Daughtrey Rifleman</personnage>
+          </role>
+          <role place="56">
+            <idActeur>1481201</idActeur>
+            <personnage>Tennessee Redfish</personnage>
+          </role>
+          <role place="57">
+            <idActeur>527968</idActeur>
+            <personnage>O.B.</personnage>
+          </role>
+          <role place="58">
+            <idActeur>1041666</idActeur>
+            <personnage>Tennessee Harry</personnage>
+          </role>
+          <role place="60">
+            <idActeur>765156</idActeur>
+            <personnage></personnage>
+          </role>
+          <role place="35">
+            <idActeur>1272631</idActeur>
+            <personnage>Tracker</personnage>
+          </role>
+          <role place="29">
+            <idActeur>769153</idActeur>
+            <personnage>Bag Head #2</personnage>
+          </role>
+          <role place="1">
+            <idActeur>579122</idActeur>
+            <personnage>Django</personnage>
+          </role>
+          <role place="36">
+            <idActeur>1356052</idActeur>
+            <personnage>Tracker</personnage>
+          </role>
+          <role place="55">
+            <idActeur>344514</idActeur>
+            <personnage>Randy</personnage>
+          </role>
+          <role place="49">
+            <idActeur>2385337</idActeur>
+            <personnage>Daughtrey Saloon Girl</personnage>
+          </role>
+          <role place="6">
+            <idActeur>649366</idActeur>
+            <personnage>Billy Crash</personnage>
+          </role>
+          <role place="69">
+            <idActeur>1220324</idActeur>
+            <personnage>Overseer Johnny Jerome</personnage>
+          </role>
+          <role place="39">
+            <idActeur>844300</idActeur>
+            <personnage>The LeQuint Dickey Mining Co. Employee</personnage>
+          </role>
+          <role place="54">
+            <idActeur>152312</idActeur>
+            <personnage>Willard</personnage>
+          </role>
+          <role place="37">
+            <idActeur>1576908</idActeur>
+            <personnage>Tracker</personnage>
+          </role>
+          <role place="47">
+            <idActeur>1501619</idActeur>
+            <personnage>Saloon Keeper Pete</personnage>
+          </role>
+          <role place="80">
+            <idActeur>2955538</idActeur>
+            <personnage></personnage>
+          </role>
+          <role place="15">
+            <idActeur>570816</idActeur>
+            <personnage>Big Fred's Opponent</personnage>
+          </role>
+          <role place="18">
+            <idActeur>859533</idActeur>
+            <personnage>Big Daddy</personnage>
+          </role>
+          <role place="14">
+            <idActeur>1528288</idActeur>
+            <personnage>Rodney</personnage>
+          </role>
+          <role place="4">
+            <idActeur>3010290</idActeur>
+            <personnage>Broomhilda von Shaft</personnage>
+          </role>
+          <role place="20">
+            <idActeur>1540645</idActeur>
+            <personnage>Dicky Speck</personnage>
+          </role>
+          <role place="26">
+            <idActeur>602158</idActeur>
+            <personnage>Big John Brittle</personnage>
+          </role>
+          <role place="31">
+            <idActeur>2057402</idActeur>
+            <personnage>Tracker</personnage>
+          </role>
+          <role place="34">
+            <idActeur>609932</idActeur>
+            <personnage>Tracker</personnage>
+          </role>
+          <role place="63">
+            <idActeur>3012222</idActeur>
+            <personnage>Coco</personnage>
+          </role>
+          <role place="68">
+            <idActeur>222103</idActeur>
+            <personnage>Hoot Peters</personnage>
+          </role>
+          <role place="13">
+            <idActeur>522886</idActeur>
+            <personnage>D'Artagnan</personnage>
+          </role>
+          <role place="65">
+            <idActeur>468881</idActeur>
+            <personnage>Chicken Charlie</personnage>
+          </role>
+          <role place="38">
+            <idActeur>1356107</idActeur>
+            <personnage>The LeQuint Dickey Mining Co. Employee</personnage>
+          </role>
+          <role place="62">
+            <idActeur>337431</idActeur>
+            <personnage>Mr. Wigglesworth</personnage>
+          </role>
+          <role place="8">
+            <idActeur>1473802</idActeur>
+            <personnage>Butch Pooch</personnage>
+          </role>
+          <role place="17">
+            <idActeur>2333999</idActeur>
+            <personnage>Betina</personnage>
+          </role>
+          <role place="12">
+            <idActeur>2140838</idActeur>
+            <personnage>Lara Lee Candie-Fitzwilly</personnage>
+          </role>
+          <role place="19">
+            <idActeur>1276862</idActeur>
+            <personnage>Amerigo Vessepi</personnage>
+          </role>
+          <role place="32">
+            <idActeur>197775</idActeur>
+            <personnage>Tracker</personnage>
+          </role>
+          <role place="24">
+            <idActeur>2934444</idActeur>
+            <personnage>Daughter of a Son of a Gunfighter</personnage>
+          </role>
+          <role place="45">
+            <idActeur>926892</idActeur>
+            <personnage>Franklin</personnage>
+          </role>
+          <role place="76">
+            <idActeur>1662984</idActeur>
+            <personnage>Jinglebells Cody</personnage>
+          </role>
+          <role place="77">
+            <idActeur>1206466</idActeur>
+            <personnage></personnage>
+          </role>
+          <role place="33">
+            <idActeur>276467</idActeur>
+            <personnage>Tracker</personnage>
+          </role>
+          <role place="48">
+            <idActeur>2908688</idActeur>
+            <personnage>Daughtrey Bitty</personnage>
+          </role>
+          <role place="44">
+            <idActeur>323175</idActeur>
+            <personnage>Slave on Chain Gang</personnage>
+          </role>
+          <role place="27">
+            <idActeur>800396</idActeur>
+            <personnage>Lil Raj Brittle</personnage>
+          </role>
+          <role place="51">
+            <idActeur>2947897</idActeur>
+            <personnage>Daughtrey Woman</personnage>
+          </role>
+          <role place="78">
+            <idActeur>1117738</idActeur>
+            <personnage>House Servant</personnage>
+          </role>
+          <role place="40">
+            <idActeur>1747426</idActeur>
+            <personnage>The LeQuint Dickey Mining Co. Employee</personnage>
+          </role>
+          <role place="70">
+            <idActeur>403796</idActeur>
+            <personnage>Baghead</personnage>
+          </role>
+          <role place="7">
+            <idActeur>320928</idActeur>
+            <personnage>Leonide Moguy</personnage>
+          </role>
+          <role place="2">
+            <idActeur>1877030</idActeur>
+            <personnage>Dr. King Schultz</personnage>
+          </role>
+          <role place="66">
+            <idActeur>1354199</idActeur>
+            <personnage>Baghead</personnage>
+          </role>
+          <role place="75">
+            <idActeur>34807</idActeur>
+            <personnage>Dollar Bill</personnage>
+          </role>
+          <role place="41">
+            <idActeur>307527</idActeur>
+            <personnage>Roy</personnage>
+          </role>
+          <role place="59">
+            <idActeur>87869</idActeur>
+            <personnage>Smitty Bacall</personnage>
+          </role>
+          <role place="61">
+            <idActeur>136655</idActeur>
+            <personnage>Wilson</personnage>
+          </role>
+          <role place="53">
+            <idActeur>2747687</idActeur>
+            <personnage>Little Jody</personnage>
+          </role>
+          <role place="11">
+            <idActeur>2311576</idActeur>
+            <personnage>Sheba</personnage>
+          </role>
+          <role place="72">
+            <idActeur>226556</idActeur>
+            <personnage>Joshua</personnage>
+          </role>
+          <role place="23">
+            <idActeur>1743362</idActeur>
+            <personnage>Son of a Gunfighter</personnage>
+          </role>
+          <role place="42">
+            <idActeur>847571</idActeur>
+            <personnage>Pudgy Ralph</personnage>
+          </role>
+          <role place="9">
+            <idActeur>1695789</idActeur>
+            <personnage>Mr. Stonesipher</personnage>
+          </role>
+          <role place="9223372036854775807">
+            <idActeur>92345</idActeur>
+            <personnage>Mandingo Overseer</personnage>
+          </role>
+          <role place="81">
+            <idActeur>1149987</idActeur>
+            <personnage></personnage>
+          </role>
+          <role place="28">
+            <idActeur>482085</idActeur>
+            <personnage>Ellis Brittle</personnage>
+          </role>
+          <role place="25">
+            <idActeur>439850</idActeur>
+            <personnage>Old Man Carrucan</personnage>
+          </role>
+          <role place="74">
+            <idActeur>480910</idActeur>
+            <personnage>Tatum</personnage>
+          </role>
+          <role place="67">
+            <idActeur>1692706</idActeur>
+            <personnage>Pedestrian and Tommy Gilles</personnage>
+          </role>
+          <role place="5">
+            <idActeur>833480</idActeur>
+            <personnage>Stephen</personnage>
+          </role>
+          <role place="52">
+            <idActeur>2169275</idActeur>
+            <personnage>Grace Bennett</personnage>
+          </role>
+          <role place="21">
+            <idActeur>1939502</idActeur>
+            <personnage>U.S. Marshall Gill Tatum</personnage>
+          </role>
+          <role place="73">
+            <idActeur>1644719</idActeur>
+            <personnage></personnage>
+          </role>
+          <role place="71">
+            <idActeur>237233</idActeur>
+            <personnage>Banjo</personnage>
+          </role>
+          <role place="3">
+            <idActeur>449474</idActeur>
+            <personnage>Calvin Candie</personnage>
+          </role>
+          <role place="16">
+            <idActeur>1069549</idActeur>
+            <personnage>Big Fred</personnage>
+          </role>
+          <role place="22">
+            <idActeur>1715019</idActeur>
+            <personnage>Sheriff Bill Sharp</personnage>
+          </role>
+          <role place="10">
+            <idActeur>2343599</idActeur>
+            <personnage>Cora</personnage>
+          </role>
+          <role place="64">
+            <idActeur>529094</idActeur>
+            <personnage></personnage>
+          </role>
+          <role place="30">
+            <idActeur>791400</idActeur>
+            <personnage>Sheriff Gus</personnage>
+          </role>
+        </roles>
+      </film>
+      <acteurs>
+        <acteur id="2916615">
+          <nom>Stratten, Louise</nom>
+          <nomNaissance>Hoogstraten, Louise</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Wed May 08 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="752849">
+          <nom>Henderson, Marcus</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1647682">
+          <nom>Singleton, Carl</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1064111">
+          <nom>Lucarelli, Jack</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1481201">
+          <nom>Rhodes, Dane</nom>
+          <biographie>Dane is an actor and director in New Orleans La. He has appeared on stages and in films around the world. Some of his favorite experiences have included working on a world premier play called MAcbeth at the Gates with Roy Marsden and his friend David Lumsden and getting to work with John Travolta, Scarlette Johannson, and Shanie Gable on A Love Song for Bobby Long (the movie that launched his journey into film). When he isn't chasing his career, he is chasing his dog Hunter around the Big Easy... his home away from home.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="527968">
+          <nom>Evermore, J.D.</nom>
+          <biographie>J.D. was born in the delta town of Greenville, Mississippi (also the birthplace of Muppets creator Jim Henson) on the same day Richard Nixon was elected president. He is of Irish-French-German-Cherokee-Choctaw decent, the oldest of 7 siblings, and attended 17 different schools (public and private) while moving back and forth between his mother and father. His great-great-great-great uncle was Horace Mann, the founder of the American Public School system. His father (Puddin - yep, that's what they call him) is a welder/artist/amateur archaeologist and inventor. His mother (Sally) has had many professions, including concert promoter and owner of a country/western nightclub called The Headless Horseman, where as a young child, J.D. spent many school nights until the wee hours of the morning hanging out backstage and on stage with the likes of Hank Williams, Jr., Juice Newton, Jerry Lee Lewis, Johnny Paycheck, David Allen Coe, Ray Price, and many others. After a short stint in college and a 15 month stint in the Marine Corps stationed at 29 Palms, California and after hanging out with some actors in L.A., J.D. thought he would give acting a shot. His only experience with acting had been playing the Prince in his pre-school production of The Nutcracker, and getting kicked out of his senior play, Oklahoma, after his second rehearsal because he and a friend drank a beer before hand. After the Marine Corps, he returned to Mississippi and worked as a debt collector for his mother's collection agency. After a year of hating his job, he decided to return to college and get a degree in theatre at The University of Southern Mississippi. Once on stage at college, he knew acting was what he had to do. His second year in theatre, he was one of 20 finalists in the state selected to attend SETC (Southeastern Theatre Conference). In 1995, a friend offered J.D. a $1,000 to come to Los Angeles and perform a lead role in his play "Dylan's Ghost" at the Morgan-Wixson Theatre in Santa Monica. J.D. took him up on the offer and left college a semester before graduating and since then has lived back and forth between Hollywood, California, Austin, Texas, and Oxford, Mississippi, where he just completed writing and directing his first independent feature _Glorious Mail(2005)_. Even though he appeared on the short-lived game show, Hollywood Showdown with Todd Newton and won nearly $12,000, his friends like to tell him that he's almost one lucky son of a gun. Mainly because he's come so close to landing lead roles in major films so many times, usually being the director's second choice. In 2004 his luck proved true once again when he purchased a $100 raffle ticket and was 1st Runner Up (2nd Choice) for a $250,000 house in United Way's New Home Giveaway, where instead he won an artist's print worth $80.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Nov 05 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1041666">
+          <nom>Linn, Rex</nom>
+          <nomNaissance>Linn, Rex Maynard</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Nov 13 00:00:00 CET 1956</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="765156">
+          <nom>Hice, Ronan</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1272631">
+          <nom>Neeley, Ted</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Sep 20 00:00:00 CEST 1943</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="769153">
+          <nom>Hill, Jonah</nom>
+          <nomNaissance>Feldstein, Jonah Hill</nomNaissance>
+          <biographie>Jonah Hill was born and raised in Los Angeles, the son of Sharon (Chalkin), a fashion designer and costume stylist, and 'Richard Feldstein' (qv), a tour accountant for 'Guns N' Roses' (qv). He graduated from Crossroads School in Santa Monica and went on to The New School in New York to study drama. He began writing and performing in plays while at college in New York, and managed to get himself introduced to 'Dustin Hoffman' (qv), through whom he got an audition for his first film role in _I Heart Huckabees (2004)_ (qv). A succession of increasingly high profile film and TV parts followed until he eventually landed one of the starring roles in the teen hit, _Superbad (2007)_ (qv). Continuing to write and act, more roles followed as well as popular appearances on US TV talk shows.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Dec 20 00:00:00 CET 1983</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="579122">
+          <nom>Foxx, Jamie</nom>
+          <nomNaissance>Bishop, Eric Marlon</nomNaissance>
+          <biographie>Jamie's mother, Louise, was an adopted child. When her marriage to his father failed, his grandparents, Mark and Estelle Talley, stepped in and, at age 7 months, adopted him too. He says he had a very rigid upbringing that placed him in the Boy Scouts and the church choir. During high school, he played quarterback for his high school team and was good enough that he got press in Dallas newspapers. He studied music in college. He released a music album in 1994, "Peep This" and sings the theme song for his 1999 movie, _Any Given Sunday (1999)_ (qv). However, in 1989, his life changed when a girl friend challenged him to get up onstage at the Comedy Club. In fact, he says he took his androgynous stage name because he learned that women got preference for mike time on open stage nights. That led to his being cast in _"Roc" (1991)_ (qv) and _"In Living Color" (1990)_ (qv) and ultimately to his own WB network TV series. He has a daughter, Corrine, born in 1995, who lives with her mother.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Dec 13 00:00:00 CET 1967</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1356052">
+          <nom>Parks, James</nom>
+          <nomNaissance>Parks, James Jean</nomNaissance>
+          <biographie>James Parks is an American actor who has worked with distinguished independent film directors Quentin Tarantino, John Sayles, Robert Rodriguez, Kevin Smith and David Lynch. His career of over twenty years and his love for acting was inspired by his father, veteran actor Michael Parks, and began with classical training and work in Shakespearean theater. He has since worked consistently in film, television and theater, appearing most notably in "Kill Bill: Vol.1," "Amigo," "The Listening" and in episodes of "Deadwood" (pilot), "True Blood" and a number of other popular TV series. He stars alongside Caroline Goodall in "The Elevator," an English-language suspense film shot in Rome by Italian director Massimo Cogliotore. James is also a writer for film and movie events for television.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Nov 16 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="344514">
+          <nom>Collins, Kim</nom>
+          <biographie>Kim was born in Houston, Texas. He caught the acting bug early at the tender age of 5. He grew up in the theater in Houston and started acting in films at age 16. He acted in Los Angeles for over 20 years as a professional actor where he Guest Starred on General Hospital, was on such sitcoms as "Perfect Strangers" as well as "Cheers" and "Star Trek Next Generation". Kim now resides in New Orleans and has been in over 30 films as well as 4 television shows. He just completed a web series called "There Goes Honey Poo Poo" where he plays a leading role of Lloyd Earl Honey's Dad.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Jan 19 00:00:00 CET 1959</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2385337">
+          <nom>Hazlett, Shannon</nom>
+          <nomNaissance>Hazlett, Shannon Marie</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="649366">
+          <nom>Goggins, Walton</nom>
+          <nomNaissance>Jr., Walton Sanders Goggins</nomNaissance>
+          <biographie>Walton Goggins received an Emmy® nomination and two Broadcast Television Journalists Association (BTJA) nominations for Best Supporting Actor for his role as 'Boyd Crowder' on FX's Peabody Award-winning Drama series Justified. Goggins reprised his turn as the transgender escort 'Venus Van Dam' (a play on his character Shane's alias of 'Cletus Van Damme' on The Shield) on the highly-rated FX drama series Sons of Anarchy. The role reunites Goggins with series creator Kurt Sutter who was also a writer on The Shield. Goggins completed production on writer/director William Monahan's Mojave with Garrett Hedlund and Oscar Issacs. He plays 'Jim,' an entertainment lawyer experiencing an existential crisis. He has also completed production on writer/director Ross Clarke's adaptation of Craig Clevenger's novel Dermaphoria. Goggins plays 'Eliah Blanc,' a wealthy New Orleanian whose pastimes include the funding of meth labs. Goggins has had pivotal roles in films by two of Hollywood's most important auteurs: Quentin Tarantino, in Django Unchained; and Steven Spielberg in Lincoln. He also appeared in such diverse films as G.I. Joe: Rise of the Cobra, Robert Rodriguez's Predators and Machete Kills, Jon Favreau's Cowboys &amp; Aliens, and Rod Lurie's Straw Dogs. Goggins previously garnered much acclaim for his complex and edgy portrayal of 'Detective Shane Vendrell' on FX's gritty, award-winning drama series The Shield. In 2009, he was nominated for a Television Critics Association (TCA) Award in the category of "Individual Achievement in Drama." In the last ten years, Goggins has also taken his turn behind the camera. He recently collaborated with writer Adam Fierro ("The Shield") on the pilot "Gringo" which sold to FOX. Goggins' prior collaborations with his partners at Ginny Mule Pictures include winning an Academy Award® for their short film, The Accountant, which he produced and starred in. The team produced, directed and starred in their first feature, Chrystal, starring Billy Bob Thornton, which was accepted into the 2005 Sundance Film Festival's Dramatic Competition. For their third collaboration, Goggins produced and starred in the feature Randy and the Mob, which won the Audience Award for Best Feature at the 2007 Nashville Film Festival. Goggins and his Ginny Mule partners completed their fourth feature, That Evening Sun, starring Hal Holbrook and Goggins. The film made its world premiere at the South By Southwest (SXSW) Film Festival in Austin, TX in March 2009, where it won the Narrative Feature Audience Award and received the Special Jury Award for "Best Ensemble Cast." The film continued winning awards at over 14 film festivals, culminating with the honor of the "Wyatt Award" from the Southeastern Film Critics Association (SEFCA) and two Independent Spirit Award nominations. Goggins also takes time to lend a hand to various non-profit organizations and has joined forces with City Hearts, whose focus is bringing the arts to underfunded schools. He has also worked closely with Global Green USA, which is committed to sustainable development and the legislation to support it. He enjoys traveling the world and has spent time in Vietnam, Cambodia, Thailand, Central America, Morocco and India last spring. Goggins is an avid photographer and has captured many of his journeys on film.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Nov 10 00:00:00 CET 1971</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1220324">
+          <nom>Montgomery, Ritchie</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="844300">
+          <nom>Jarratt, John</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Aug 05 00:00:00 CET 1951</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="152312">
+          <nom>Berry, Christopher</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1576908">
+          <nom>Savini, Tom</nom>
+          <biographie>Pittsburgh-born actor/SFX wizard/stuntman/director Tom Savini did a tour of duty as a combat cameraman in Vietnam, and has since acquired a remarkable cult following among film fans, primarily due to his ground-breaking SFX in the "splatter movie" explosion of the early 1980s. Along with fellow special make-up legends 'Dick Smith (II)' (qv) and 'Rob Bottin' (qv), Savini was one of the key SFX people behind the startling make-up &amp; EFX seen in the fantasy/horror genre films of the 1980s-'90s. Savini was heavily influenced by the remarkable silent-era actor 'Lon Chaney' (qv), and he sought to emulate the amazing theatrical make-up effects that were a hallmark of Chaney's career. In Savini's insightful book "Grande Illusions", he speaks of his early attempts at applying prosthetics to his face using "spearmint gum", having misinterpreted that he was meant to actually use "spirit gum"! His first work was in low-budget fare, providing SFX and make-up for independently made horror films such as _Deranged (1974)_ (qv) and _Martin (1976)_ (qv). However, he really caught the attention of horror buffs with his grisly effects in the cult 'George A. Romero (I)' (qv)-directed zombie film _Dawn of the Dead (1978)_ (qv), and then in the controversial slasher film _Friday the 13th (1980)_ (qv), the movie generally identified as the kickstart for the aforementioned "splatter movie" genre. Savini also contributed the incredible EFX &amp; make-up to other splatter thrillers such as _Maniac (1980)_ (qv), _The Burning (1981)_ (qv), _Creepshow (1982)_ (qv) and Romero's third "Dead" film, _Day of the Dead (1985)_ (qv) (for which he won a Saturn Award). In 1990, Savini directed his feature film debut _Night of the Living Dead (1990)_ (qv), the remake of the original zombie-classic. Not content with just being behind the lens, however, Savini has appeared in dozens of films, and can be seen demonstrating his capable acting skills as "Morgan, the Black Knight" in _Knightriders (1981)_ (qv), as "Blades", one of the biker gang members in _Dawn of the Dead (1978)_ (qv) and as "Sex Machine", another leather-clad biker--but this time with a groin-mounted gun--in the wild vampire film _From Dusk Till Dawn (1996)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Nov 03 00:00:00 CET 1946</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1501619">
+          <nom>Robillard, Kim</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Jun 16 00:00:00 CET 1955</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2955538">
+          <nom>Toman, Ashley</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="570816">
+          <nom>Fontenot, Clay Donahue</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="859533">
+          <nom>Johnson, Don</nom>
+          <nomNaissance>Johnson, Donnie Wayne</nomNaissance>
+          <biographie>Best known for his starring role as Det. Sonny Crockett on the hugely successful TV series _"Miami Vice" (1984)_ (qv), Don Johnson is one of the stars who really defined the 1980s. As James "Sonny" Crockett he went toe-to-toe with drug dealers, pimps, prostitutes, assassins, illegal arms-dealers and crooked cops on a weekly basis from 1984 to 1989, appearing in a grand total of 110 episodes. The show, which was executive-produced by four time Oscar-nominated director, producer and writer 'Michael Mann (I)' (qv), paired Johnson with the equally cool 'Philip Michael Thomas' (qv) as Det. Ricardo Tubbs and the calm and stoic presence of 'Edward James Olmos' (qv) as Lt. Martin Castillo. It revolutionized television with its modern fashion, pop music, unique style and use of real locations. Johnson typically wore $1000 Armani, Versace and Hugo Boss suits over pastel cotton T-shirts, drove a Ferrari 365 GTS/4 Daytona (later a Ferrari Testarossa) and lived on an Endeavour 42-foot sailboat named "St. Vitus' Dance" with his pet alligator Elvis. He also had full use of an offshore powerboat. Still, "Miami Vice" had not only style but substance, and his portrayal of the Vietnam veteran turned vice detective turned Sonny Crockett into the world's favorite cop. For his work on "Miami Vice" Johnson won a Golden Globe for Best Performance by an Actor in a TV Series in 1986, and was nominated in the same category a year later. He also picked up an Emmy nomination for Outstanding Lead Actor in a Drama Series in 1985. Johnson was born in Flat Creek, Missouri, the son of a farmer and a beautician. As a kid he wanted to become a professional bowler. Later, after a few brushes with the law at a young age, he discovered acting. After working on the stage for a while he ventured into films and television, but was not able to break into stardom despite, among other things, starring in the sci-fi cult classic _A Boy and His Dog (1975)_ (qv). During the late 1960s and early 70s, Johnson had two short-lived marriages that were annulled; the names of his first two wives have never been made public. 'Tippi Hedren' (qv), Johnson's co-star in _The Harrad Experiment (1973)_ (qv), allowed him to date her daughter 'Melanie Griffith' (qv) despite the fact that she was only 14 and he was 22; the relationship culminated in a six-month marriage during 1976. In the 1980s he lived with actress 'Patti D'Arbanville' (qv) and they had one son together. He remarried Griffith in 1989, but divorced in 1996 when she left him for 'Antonio Banderas' (qv). Johnson has been married to fifth wife Kelly Phleger since 1999, and they have three children together. Johnson starred in four failed TV pilots before landing his career-high role on "Miami Vice", which propelled him to superstardom. He directed four highly praised episodes of the show, one of them co-starring Melanie Griffith. He balanced his work on the series by appearing in the critically acclaimed TV film _The Long Hot Summer (1985) (TV)_ (qv), an adaptation of the 'William Faulkner (I)' (qv) novel, and the film _Sweet Hearts Dance (1988)_ (qv) with 'Susan Sarandon' (qv). After the series ended he focused solely on his film career. Although movies like _Dead Bang (1989)_ (qv), _The Hot Spot (1990)_ (qv) and _Harley Davidson and the Marlboro Man (1991)_ (qv) did not fare well with the critics, quite a few of them have obtained a considerable cult following, with fans praising them as all being quality contributions to their genre. His film work has given Johnson the opportunity to work with legendary filmmakers like 'John Frankenheimer' (qv), 'Sidney Lumet' (qv) and 'Dennis Hopper' (qv). After working steadily, Johnson returned to TV in 1996 with the cop show _"Nash Bridges" (1996)_ (qv). The show, which Johnson created and produced, did very well. It co-starred 'Cheech Marin' (qv) and 'Jodi Lyn O'Keefe' (qv). Johnson played the title role, a captain in the San Francisco PD's Special Investigations Unit. He was again paired with a flashy vehicle, this time an electric-yellow 1971 Plymouth Barracuda convertible. After "Nash Bridges" went off the air Johnson kept a low profile, but continues to appear in films and on television. He starred in the failed WB courtroom drama _"Just Legal" (2005)_ (qv), which was produced by 'Jerry Bruckheimer' (qv), and has traveled to Europe to make such films as the Norwegian screwball comedy _Lange flate ballær II (2008)_ (qv) and the Italian films _Bastardi (2008)_ (qv) and _Torno a vivere da solo (2008)_ (qv). He will soon be seen in the romantic comedy _When in Rome (2010)_ (qv) with 'Anjelica Huston' (qv) and 'Danny DeVito' (qv), as well as the indie comedy _A Good Old Fashioned Orgy (2011)_ (qv). 'Don Johnson (I)' starred in the 2007 feature film, _"Moondance Alexander" (2007)_, along with 'Lori Loughlin' (qv), 'Kay Panabaker' (qv), 'James Best (I)' (qv), 'Sasha Cohen (I)' (qv), and 'Whitney Sloan' (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Dec 15 00:00:00 CET 1949</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1528288">
+          <nom>Rotibi, Sammi</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="3010290">
+          <nom>Washington, Kerry</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Mon Jan 31 00:00:00 CET 1977</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1540645">
+          <nom>Russo, James</nom>
+          <nomNaissance>Russo, James Vincent</nomNaissance>
+          <biographie>A Manhattan-born character player who attended New York University, actor James Russo wrote and starred in a prize-winning short film, "The Candy Store", while attending college. His first big film break was as a convenience store robber in _Fast Times at Ridgemont High (1982)_ (qv). Possessed with a stare that can bring shivers down one's back, he has been quite the accessible villain over the years, memorably portraying a number of gritty psychopaths and gangsters, among other undesirables. Surprisingly, Russo is not a name or commodity, yet an intense and dependable "tough guy" performer he has proven to be. One only needs to be reminded of his sadistic sexual animal role in "Extremities" on stage (in which he won a 1983 Theatre World) and in film (in which he terrorized 'Farrah Fawcett' (qv)), to recall how chillingly effective he can be. Other decent roles in films include 'Kevin Costner' (qv)'s _The Postman (1997)_ (qv) and _Open Range (2003)_ (qv), plus _Beverly Hills Cop (1984)_ (qv), _We're No Angels (1989)_ (qv), _Donnie Brasco (1997)_ (qv), _No Way Home (1996)_ (qv), and a number of low-budget crimers. On stage, he has "Welcome to Andromeda", "Deathwatch", "Marat/Sade" and the afore-mentioned "Extremities" to his credit. Russo appeared opposite 'Johnny Depp' (qv) in 'Roman Polanski' (qv)'s _The Ninth Gate (1999)_ (qv), and portrayed mobster "Victor Mura" in TV's short-lived, _"Falcone" (2000)_ (qv), the following year. More recently, he offered a penetrating cameo as 'Frank Sinatra' (qv) in _Stealing Sinatra (2003)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Apr 23 00:00:00 CET 1953</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="602158">
+          <nom>Gainey, M.C.</nom>
+          <nomNaissance>Gainey, Mike Connor</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Jan 18 00:00:00 CET 1948</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2057402">
+          <nom>Bell, Zoë</nom>
+          <biographie>As an established and extremely talented stunt double, Zoe Bell has made a name for herself through her unparalleled dedication, skills, and focus. Bell debuts her acting career, with her already famous stunt skills, in the highly anticipated double feature _Grindhouse (2007)_ (qv) written by 'Quentin Tarantino' (qv) and 'Robert Rodriguez (I)' (qv). She was hand picked, by Tarentino himself, to star in his segment of the double feature, Death Proof, about four women working on the movie set of their next big hit. All seems to be going well on set until a psychotic killer begins to stalk them. Bell began working with Tarantino well before Grindhouse hough, in _Kill Bill: Vol. 1 (2003)_ (qv) and _Kill Bill: Vol. 2 (2004)_ (qv) playing the stunt double for Uma Thurman's role, The Bride. Bell was nominated for her work in Kill Bill, Vol. 1 in the categories of Best Stunt by a Stunt Woman and Best Fight for the Taurus World Stunt Awards, both of which she would win the following year for Kill Bill: Vol. 2. Bell also showed off her stunt-woman skills as a double for Sharon Stone in Halle Barry's _Catwoman (2004)_ (qv). Bell's talent can not only be seen on the big screen but also in the cult television series _"Xena: Warrior Princess" (1995)_ (qv) where she was the stunt double for Lucy Lawless. Bell also appeared as a double in the ABC thriller _"Alias" (2001)_ (qv) and on an episode of Cleopatra 2525 in 2000 as a double for Vicki Pratti. In the action packed documentary _Double Dare (2004)_ (qv), Bell along with legendary stunt-woman 'Jeannie Epper' (qv) give an insight into the career of women who take falls and punches for a living. Double Dare also gives a glimpse into the struggles of stunt-women to stay thin, employed, and sane in a male dominated career. Bell, a native of New Zealand, currently resides in Los Angeles but hopes to someday own a home in New Zealand.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Fri Nov 17 00:00:00 CET 1978</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="609932">
+          <nom>Garber, Jake</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Apr 16 00:00:00 CET 1965</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="3012222">
+          <nom>Watts, Danièle</nom>
+          <biographie>Daniele Watts made her film debut in the critically acclaimed blockbuster hit Django Unchained, acting alongside Oscar nominated Christoph Waltz, Jamie Foxx, and Leonardo DiCaprio as "Coco." On TV, she is known as Angela Mullen-love interest to Shane Botwin on season 8 of Showtime's hit show Weeds, and plays Martin Lawrence's daughter on the upcoming FX show, The Partnership, also starring Kelsey Grammar. Watts studied performing arts at the North Springs Arts Magnet in Atlanta, GA-the same high school attended by Raven Simone and Usher-and went on to study theatre at the University of Southern California, and the British American Drama Academy in London. An award winning theater artist and advocate for arts education, Daniele has taught performance for the nationally recognized Spark Mentorship Program, Ices After-School Program, and the Young Storyteller's Foundation.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="222103">
+          <nom>Brown, Brian</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Mar 15 00:00:00 CET 1963</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="522886">
+          <nom>Essandoh, Ato</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jul 29 00:00:00 CET 1972</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="468881">
+          <nom>Dorsey, Omar J.</nom>
+          <biographie>Omar graduated from the Dekalb Center for the Performing Arts at Avondale High School (Decatur, Georgia) in 1994. Voted "Most Likely To Do Anything," Omar was always into performing everywhere possible from on stage to public access television to, now, the big screen.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Dec 22 00:00:00 CET 1975</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1356107">
+          <nom>Parks, Michael</nom>
+          <nomNaissance>Parks, Harry Samuel</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Apr 24 00:00:00 CEST 1940</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="337431">
+          <nom>Coennen, Dave</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1473802">
+          <nom>Remar, James</nom>
+          <nomNaissance>Remar, William James</nomNaissance>
+          <biographie>James is a rugged, intense character player with leading man good looks. Having first gained recognition in 1979 as 'Ajax' (qv), in his second film, _The Warriors (1979)_ (qv). That same year he garnered acclaim on Broadway with 'Richard Gere' (qv) in the concentration camp drama "Bent". In a career spanning nearly four decades, James has run the gamut of roles and solid career choices. Ranging from the psychopaths, 'Dutch Schultz' (qv) in 'Francis Copolla''s _The Cotton Club (1984)_ (qv) and 'Albert Ganz' in Walter Hill's _48 Hrs. (1982)_ (qv) to Samantha's lover, the billionaire playboy, Richard Wright, in the HBO series _"Sex and the City" (1998)_ (qv)." James has also garnered roles which highlight a more vulnerable side, such as his guitarist who gets a break in the Oscar-winning short, _Session Man (1991) (TV)_ (qv) or his artist who falls in love with a gargoyle come to life in the best segment of the horror anthology, _Tales from the Darkside: The Movie (1990)_ (qv) and as Mary Louise Parker's lover in Boys on the Side. More recently James starred along side Michael C. Hall in the hit Showtime series _"Dexter" (2006)_ (qv) where he played Dexter's wise, compassionate, adoptive father, Harry Morgan. Grey's Anatomy fans have recently enjoyed seeing James as Karev's long-lost Dad. While remaining active with top feature films James enjoys the distinction of being the only actor to die twice, as two different characters in Quentin Tarintino's smash hit Django Unchained. James won the 8th annual SAG award as a member of the Outstanding Comedy Ensemble for his work in Sex and the City. As a member of the ensemble cast of Dexter, James has been nominated for the SAG award and the Emmy. In recognition for his work in Sci-Fi Fantasy and Horror James was honored with the Saturn Lifetime Achievement Award in 2013.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Dec 31 00:00:00 CET 1953</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2333999">
+          <nom>Glover, Miriam F.</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2140838">
+          <nom>Cayouette, Laura</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sat Jul 11 00:00:00 CET 1964</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1276862">
+          <nom>Nero, Franco</nom>
+          <nomNaissance>Sparanero, Francesco</nomNaissance>
+          <biographie>Franco Nero, a leading actor in international cinema, was born in Parma (Northern Italy). His inclination for acting had already become obvious in his teenage years when he began organizing and participating in student plays. After a short stint at a leading theater school, he moved to Rome where he joined a small group of friends for the purpose of making some documentaries. Still unsure of his ultimate vocation, he worked various jobs on the crew. The role as Abel in John Houston's film "The Bible" marked a crucial point in his career. A few months later he had his big break with the internationally acclaimed cult-classic Spaghetti-Western "Django". The following year Joshua Logan cast him in the film version of "Camelot" (Warner Bros.), opposite Vanessa Redgrave, for which he was nominated for a Golden Globe award. Nero has appeared in more than 195 movies around the world and has worked with Europe's top directors, such as Luis Bunuel, Rainer Werner Fassbinder, Claude Chabrol, Sergei Bondarciuk, Michael Cacoyannis, Elio Petri, Marco Bellocchio, Enzo G. Castellari, just to mention a few. He has also payed the roles of leading national heroes, such as "Garibaldi" (Italy), "Arpad" (Hungary", "Banovic Strahinja" (Yugoslavia). In the USA he has been in successful mini-series such as "The Pirate" (Warner Bros), "The Last Days of Pompeii" (CBS), "Young Catherine" (TNT), "Bella Mafia" (CBS), "The Painted Lady", "Saint Augustine", and movies such as "The Legend of Valentino", "21 Hours to Munich", "Force 10 from Navarone", "Enter the Ninja", "The Versace Murder", "Die Hard 2", and recently "Letters to Juliet". At the beginning of the 80's, he also began producing, writing and directing. Between films, he participates in various theatrical events. Over the last 45 years he has been a benefactor of the Don Bosco orphanage in Tivoli. He has received many awards and in 1992 for his artistic merits a knighthood of the Italian Republic was bestowed on him by the President of Italy. In 2011 he was honored by Brunel University of London with the honorary degree of doctor of Letters honoris causa and in Toronto with a star on the walk of fame.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Nov 23 00:00:00 CEST 1941</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="197775">
+          <nom>Bowen, Michael</nom>
+          <nomNaissance>Jr., Michael Bowen</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Jun 21 00:00:00 CET 1953</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2934444">
+          <nom>Tamblyn, Amber</nom>
+          <nomNaissance>Tamblyn, Amber Rose</nomNaissance>
+          <biographie>Amber Rose Tamblyn was born May 14, 1983 in Santa Monica, California. Amber caught an agent's eye at the age of ten after a performance in "Pippi Longstocking". She has appeared in _Live Nude Girls (1995)_ (qv) and _Johnny Mysto: Boy Wizard (1997) (V)_ (qv). In addition, her most popular role has been the role of "Emily Bowen-Quartermaine" of the popular soap _"General Hospital" (1963)_ (qv). She originated the role of "Emily" in 1995. Amber is the daughter of actor 'Russ Tamblyn' (qv), and her mother, 'Bonnie Tamblyn' (qv), is a singer and artist. In addition, Amber writes poetry and has been published in the San Francisco publications, "Cups" and "Poetry USA". Amber also enjoys singing, dancing, and theater in addition to her life on _"General Hospital" (1963)_ (qv).</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Sat May 14 00:00:00 CEST 1983</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="926892">
+          <nom>Kinetic</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1662984">
+          <nom>Smith, Lewis</nom>
+          <nomNaissance>Smith, Lewis Collie</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Aug 01 00:00:00 CET 1956</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1206466">
+          <nom>Mitchell, Keniaryn</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="276467">
+          <nom>Carradine, Robert</nom>
+          <nomNaissance>Carradine, Robert Reed</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Mar 24 00:00:00 CET 1954</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2908688">
+          <nom>Stein, Shana</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="323175">
+          <nom>Chuuch, Lil</nom>
+          <biographie>William Hudson, an American actor from Chicago, is the son of Michael Hudson, a popular radio disc jockey on Chicago's number one urban station, WGCI 107.5. William attended St. Ignatius high school on West Roosevelt Rd. and played varsity basketball for the Wolfpack. His love and talent for the game ended him up at The University of Miami with the Hurricanes, however after just one year he decided to focus on entertainment instead. While on a trip to New York City in the summer of 2007 visiting friends of the family, Hudson found himself in the borough of Brooklyn at the exact same time as the academy award winning director, Ridley Scott was filming the 1970's based major motion picture, "American Gangster." Wearing his hair braided in cornrows at the time, Hudson decided to take them out and approach Mr. Scott with his own 70's style afro and ambition. Seeing the determination in Mr. Hudson's eyes and the hairstyle befitting of the period piece, Ridley decided to include William in the film as a drug dealer alongside fellow Chicago native and actor, "Common Sense." With the successful major motion picture, "American Gangster" under his belt, Mr. Hudson then found himself in Los Angeles, California on an audition for another period piece to be directed by yet another academy award winning director, Quentin Tarantino. The movie was "Django Unchained," and the role was that of the character named, "Blueberry," a slave turned killer deep in the woods of Texas in the year 1861. "Django Unchained" went on the be Mr. Tarantino's highest grossing film to date. Mr. Hudson still lives in Chicago Illinois.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="800396">
+          <nom>Huckabee, Cooper</nom>
+          <nomNaissance>Huckabee, Thomas Cooper</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue May 08 00:00:00 CET 1951</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2947897">
+          <nom>Thomas, Victoria</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1117738">
+          <nom>Marshall, Jakel</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1747426">
+          <nom>Tarantino, Quentin</nom>
+          <nomNaissance>Tarantino, Quentin Jerome</nomNaissance>
+          <biographie>In January of 1992, _Reservoir Dogs (1992)_ (qv) appeared at the Sundance Film Festival, by first-time writer-director Quentin Tarantino. The film garnered critical acclaim and the director became a legend immediately. Two years later, he followed up Dogs success with _Pulp Fiction (1994)_ (qv) which premiered at the Cannes film festival, winning the coveted Palme D'Or Award. At the 1995 Academy Awards, it was nominated for the best picture, best director and best original screenplay. Tarantino and writing partner 'Roger Avary' (qv) came away with the award only for best original screenplay. In 1995, Tarantino directed one fourth of the anthology _Four Rooms (1995)_ (qv) with friends and fellow auteurs 'Alexandre Rockwell' (qv), 'Robert Rodriguez (I)' (qv) and 'Allison Anders' (qv). The film opened on December 25th in the United States to very weak reviews. Tarantino's next film was _From Dusk Till Dawn (1996)_ (qv), a vampire/crime story which he wrote and co-starred with 'George Clooney' (qv). The film did fairly well theatrically.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Mar 27 00:00:00 CET 1963</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="403796">
+          <nom>Dashnaw, Nicholas</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="320928">
+          <nom>Christopher, Dennis</nom>
+          <nomNaissance>Carrelli, Dennis</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Dec 02 00:00:00 CET 1955</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1877030">
+          <nom>Waltz, Christoph</nom>
+          <biographie>Christoph Waltz was born to Elisabeth Urbancic, a costume designer, and Johannes Waltz, a stage builder. He has 3 siblings. He was born into a theater family. His grandmother was the Viennese Burgtheater actress Maria Mayen, and his step-grandfather was fellow Burgtheater actor Emmerich Reimers. Christoph attended the Theresianium and Billrothstrasse in Vienna. Upon graduation, he attended the Max-Reinhardt-Seminar before going to New York to the Lee Strasberg Institute. While in New York, Christoph met his first wife, and moved back to Vienna, then to London. During the 80s, Christoph worked primarily in theater, commuting from his home in London to Germany. Slowly he began to work in TV, taking one-off roles on series, and TV movies. Film roles soon followed, however, attempts to break into English-speaking film and TV were unsuccessful. Christoph has stated he is grateful to have made a living and supported his family through acting. For thirty years he worked steadily, tirelessly, in this manner. It was not until he met Quentin Tarantino that his career in Hollywood took off. The role of Colonel Hans Landa in Inglourious Basterds catapulted Christoph from a lifetime working in German TV/film to the new life of an international superstar, Academy Award winning actor. He won 27 awards for his performance as Hans Landa, including the Cannes prix d'interpretation Masculin for 2009, the Golden Globe for Best Supporting Actor and the BAFTA Best Supporting Actor award. Christoph resides in Berlin and Los Angeles. His partner is the costume builder Judith Holste.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Oct 04 00:00:00 CET 1956</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1354199">
+          <nom>Parke, Evan</nom>
+          <nomNaissance>Parke, Evan Dexter O'Neal</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Jan 02 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="34807">
+          <nom>Allen, Todd</nom>
+          <biographie>Actor/writer/producer Todd Allen counts 'Gregory Peck' (qv), 'Marlon Brando' (qv), 'Steve McQueen (I)' (qv), John Wayne, Alan Ladd, Ward Bond, Lee Marvin and 'Robert Mitchum' (qv) among those actors who both influenced and inspired him to be an actor. Allen has appeared in over 50 film and television productions and considers himself fortunate to have had the ability and opportunity to work in both film and television. He is filming the inspirational sports drama, "My All American" written and directed by Angelo Pizzo and most recently appeared in Quentin Tarantino's blockbuster Django Unchained as a very Gary Cooper-eque (according to Tarantino) plantation overseer named, "Dollar Bill." In another recent film, Allen completed a starring role in the independent feature, _Frontera (2010)_ (qv), playing a tough, driven Texas Ranger who brings down a powerful drug cartel. The film is yet to be released, but Allen remains hopeful that it will find a market. Recent television appearances include the NBC/Bruckheimer Pilot, _Chase (2010)_ (qv) and a recurring role on _"Friday Night Lights" (2006)_ (qv). Allen also co-starred with 'Robert Duvall' (qv) in Duvall's Academy Award-nominated film, _The Apostle (1997)_ (qv) and, more recently, co-starred with Duvall again in AMC's Emmy Award-winning original mini-series, _"Broken Trail" (2006)_ (qv), playing the well-reviewed role of "Marshal Bill Miller," a man who carries severed human ears on his watch chain. In _American Identity (2007)_ (qv), Allen both produced and co-starred as a battle-hardened Marine Master Sergeant, with a sly sense of humor and a definite command of the battle field, in the deserts of Afghanistan. Other career highlights include three films with 'Lawrence Kasdan' (qv), three films with 'Kevin Costner' (qv), and playing fighter ace 'Chuck Yeager' (qv) in a Hallmark Hall of Fame special presentation. He has many guest-starring roles on television, including appearances on _"CSI: Crime Scene Investigation" (2000)_ (qv), _"NCIS: Naval Criminal Investigative Service" (2003)_ (qv), _"Monk" (2002)_ (qv), and a movie for Hallmark entitled _Claire (2007) (TV)_ (qv). Allen will launch an independent media and production company in 2014 and has a number of exceptional feature film properties and television projects in development. Among them are two film projects he plans to direct. Allen has also written several highly regarded screenplays. His first screenplay, a gritty, film-noir styled Western, "The Deserters", was the subject of much competition among studios but Allen held the project for its original intent which was a starring role for himself. Since Allen is now gray headed and has low back problems, he is now considering directing the film rather than starring in it so he doesn't have to do any more of his own stunts. Other well received screenplays include, "Suicide Grip," a romantic thrill ride set against the exciting backdrop of the National Finals Rodeo in Las Vegas. "The Empty Quarter," is a cautionary tale set on an explosive gas well in Saudi Arabia's most barren desert and "Rio Grande" is based on the best selling memoir, One Ranger, which details the life and career of a legendary Texas Ranger along the volatile Texas/Mexico border. Allen maintains residences in Los Angeles and his hometown of Austin, Texas. Flight crews on Southwest Airlines love him.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Dec 09 00:00:00 CET 1960</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="307527">
+          <nom>Cheatom, Amari</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="87869">
+          <nom>Bacall, Michael</nom>
+          <nomNaissance>Buccellato, Michael Stephen</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Apr 19 00:00:00 CET 1973</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="136655">
+          <nom>Bellamy, Ned</nom>
+          <biographie>Ned was born in Dayton, Ohio to Bill and Nelle Bellamy. After spending his childhood in Joplin, Missouri, the family moved to La Jolla, California. Mark, his brother, is the U.S. Ambassador to Kenya. Anne, his sister, is president of African Travel in Los Angeles. After graduating from UCLA, Ned and classmates, founded the Los Angeles based theater company, "The Actors Gang". He has appeared in numerous film and television productions and continues to reside in Los Angeles.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue May 07 00:00:00 CET 1957</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2747687">
+          <nom>Pierre-Louis, Sharon</nom>
+          <biographie>Sharon Pierre-Louis is a multilingual Haitian-American fluent in Creole, American Sign Language, and conversational French. She is a classical/Opera singer and has 5 siblings, including a Deaf older brother. Her parents came to the United States during the 1980s in search of a better future. Years later, she was their first child to be born in America. Born and raised in Florida, Pierre-Louis ended up meeting her three older siblings, who were all born in Haiti, for the first time by the age of 6. She discovered her love of acting after performing a Langston Hughes poem in the 6th grade. That following year she was accepted into a performing arts middle/high school (Alexander W. Dreyfoos Jr. School of the Arts)that changed her life forever. Pierre-Louis went on to performing in churches, community theaters, schools, and various programs to positively impact inner city youth. She is also an avid reader, and actively involved within the Deaf community.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2311576">
+          <nom>Galicia, Nichole</nom>
+          <biographie>Nichole Galicia is a film and television actress whose journey to the big screen began as a high fashion model on the catwalks of Europe and New York. Most recently, acclaimed director Quentin Tarantino hand picked Galicia for his film, Django Unchained, starring Leonardo DiCaprio and Jamie Foxx. Galicia has garnered much buzz around the character she plays "Sheba," DiCaprio's love interest and since, she has been extremely well received in the fashion industry, with her photos running in Page Six, W and online fashion sites, noting her exceptional taste in clothing, versatile hairstyles among other trending aspects of her looks. Born in Panama and raised in New York, Galicia focused on her brains, not beauty. Nevertheless by high school, this girl with a 183 IQ, had rapidly evolved into a striking and vivacious young woman inexorably caught up in the highly competitive fashion industry. To date, Galicia's modeling credits include ad campaigns for: The Gap, Pepsi, Neutrogena and Hanes. Additionally, her unique face has graced the pages of GQ, Vogue and Elle magazines. Recently she was in an edgy shoot for W magazine with Tarantino promoting their film. After conquering the modeling world, Galicia discovered a new passion in acting. She starred alongside Cuba Gooding Jr, Hill Harper and Oliver Platt, to name a few When Galicia is not modeling or acting she devotes her time to charities focused on developing the esteem and confidence of youth. Nichole actively serves on the board of the Junior Committee of the New York Center for Children; a charity dedicated to raising awareness and fighting child abuse. As a sports fan, Galicia enjoys the power and fury of Formula One Racing. Even more fascinating however is Nichole's taste for art. Her favorite artist is Diego Velazquez and favorite museum is the Prado in Madrid. In fact, she owns dozens of engravings and serigraphs, a few of which appear in a book she wrote called "Equipo Cronica: The Nichole Kent Collection." It is named as such, as she sourced all of the works with the help of her mentor Kent Alessandro. Nichole owns all of the Equipo Cronica works discussed in the book. In her spare time, she visits art galleries, the web and private collections looking for new Equipo Cronicas. She maintains a residence in Madrid, New York and Los Angeles.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="226556">
+          <nom>Browne, Edrick</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1743362">
+          <nom>Tamblyn, Russ</nom>
+          <nomNaissance>Tamblyn, Russell Irving</nomNaissance>
+          <biographie>Russ Tamblyn might as well face it...he will be a Jet "till his last dying day." Indelibly linked to the "womb to tomb" role of Riff, the knife-wielding, rocket-tempered, Baryshnikov-styled gang leader of the streetwise Jets in the musical film masterpiece _West Side Story (1961)_ (qv), it's not a bad way to be remembered! Russ was actually 27 when he portrayed the teenage troublemaker who became the '50s equivalent of the Mercutio character in the Romeo and Juliet-inspired adaptation. To describe Tamblyn as talented and extremely agile is a huge understatement. This awesome musical performer was born in Los Angeles, California on December 30, 1934, and groomed early for stardom. Discovered at age ten by actor 'Lloyd Bridges (I)' (qv) for the play "Stone Jungle", Russ was soon performing on radio and in L.A.-based musical revues. Billed as "Rusty Tamblyn" then, the tousle-haired scrapper played a student extra in his first film _The Boy with Green Hair (1948)_ (qv) starring another child actor, 'Dean Stockwell' (qv). Having taken up dancing and acrobatics from the age of 6, Tamblyn marked his abilities with his very first TV appearance on the "The Ed Sullivan Show." Eventually handed a starring role in the "B" film _The Kid from Cleveland (1949)_ (qv), he was signed by an eager MGM who saw his potential as a juvenile actor. Featured in the popular family-oriented comedy _Father of the Bride (1950)_ (qv), and its sequel _Father's Little Dividend (1951)_ (qv), Tamblyn also had a prime role in the war drama _Take the High Ground! (1953)_ (qv) before taking off in musical films. Demonstrating exceptional athleticism in one of MGM's best, _Seven Brides for Seven Brothers (1954)_ (qv), Tamblyn's timing was regrettably off as musicals were quickly on the wane. He adjusted, however. A starring role in the low-budget _The Young Guns (1956)_ (qv) led to excellent reviews in the ensemble box-office soaper _Peyton Place (1957)_ (qv). Tamblyn, along with 'Lana Turner' (qv), 'Arthur Kennedy (I)' (qv), 'Hope Lange' (qv) and 'Diane Varsi' (qv), all received Oscar nominations for their participation. Russ scored quite well in the title role of _tom thumb (1958)_ (qv), which became a large stepping stone in his being cast as Riff in 1961. Following this achievement, however, the offers started dwindling. Tamblyn's last co-starring roles in quality films were shot overseas with the British-produced chiller _The Haunting (1963)_ (qv) with 'Julie Harris (I)' (qv) and 'Claire Bloom (I)' (qv), and the British-Yugoslavian Viking costumer _The Long Ships (1964)_ (qv) starring 'Richard Widmark' (qv) and 'Sidney Poitier' (qv). After that, his career grew quite dismal. Titles such as _The Female Bunch (1971)_ (qv), _Satan's Sadists (1969)_ (qv), _Scream Free! (1969)_ (qv), _Dracula vs. Frankenstein (1971)_ (qv) and _Blood Screams (1990)_ (qv) pretty much tells the story. On the road in the lean years with minor stage productions here and there, including the musical "Cabaret," Russ all but disappeared from the viewing audience. When he finally nabbed the role of the overtly weird (and who wasn't on that show?) psychiatrist Dr. Lawrence Jacoby in the popular TV cult series _"Twin Peaks" (1990)_ (qv), it was the first time Tamblyn had generated interest in over two decades. Barely recognizable with his wild-eyed look, mangy hair and frizzy beard, he has since gained employment off this eccentric image. Married three times, Tamblyn has lately taken on choreographic duties and the managing of actress/daughter 'Amber Tamblyn' (qv)'s career, she of _"Joan of Arcadia" (2003)_ (qv) fame.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Dec 30 00:00:00 CET 1934</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="847571">
+          <nom>Jefferson, Keith</nom>
+          <biographie>Houston native Keith Jefferson was born to perform to adoring parents Lovie and the Reverend Edward Jefferson. Keith graduated from Eisenhower High School and received a BFA in musical theatre from US International University/Performing Arts in San Diego, along with an MFA in Acting from The University of Arizona in Tucson. Keith had the honor to work with Jamie Foxx, Christoph Waltz and director Quentin Tarantino in the critically acclaimed hit "Django Unchained" as shotgun-wielding freed chain gang member 'Pudgy Ralph'. Keith relocated to Los Angeles to pursue his dreams following graduate school. Once in L.A., Keith was able to land his first co-starring role in the film "Buffalo Soldiers" as Private Andrew Boyer alongside the amazing Danny Glover. Keith's baritone singing voice is featured as part of a plot line within the film and he performs two solo songs on the Buffalo Soldier's soundtrack. A triple threat - singer, dancer and actor -Keith's resume brims with theatre credits. He toured and performed regionally in the title role in "Othello", Officer James Bailey in "Superior Donuts", Reverend Avery Johnson in the "Piano Lesson" and Jim in "Big River" to name a few. Television roles including starring in "The Last Free Man" as Jeremiah Jessup with the great Angela Lansbury and "The Jamie Foxx Show" as a pair of different characters, playing 'Stoney Jackson' in two episodes and 'CJ' in another. Keith resides in Los Angeles and along with being an actor, singer and dancer, he works as a voiceover artist and director. Keith is a proud member of Actors' Equity and Screen Actors Guild of America.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1695789">
+          <nom>Steen, David</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Jun 26 00:00:00 CET 1954</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="92345">
+          <nom>Bailey, Carl</nom>
+          <biographie>Carl recently transformed his life's purpose from being a longtime successful Texas High School football coach and administrator into a flourishing acting career. He rapidly started appearing in feature films such as the Quentin Tarantino film "Django Unchained and a host of other features including, "Now You See Me", "Texas Chainsaw Massacre 3D", and "The Iceman" to name a few. Carl was recently cast as assistant Coach Alumbaugh in "When The Game Stands Tall" working along side Jim Caviezel and Michael Chiklis in the high school football film. Carl continues training and working as much as possible in regional Indie's and small productions to hone his craft, developing his acting skills.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1149987">
+          <nom>McConnell, John</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Nov 13 00:00:00 CET 1958</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="482085">
+          <nom>Duhame, Doc</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="439850">
+          <nom>Dern, Bruce</nom>
+          <nomNaissance>Dern, Bruce MacLeish</nomNaissance>
+          <biographie>Bruce Dern had established himself as the movies' premier heavy, playing sociopaths, psychotics and just plain criminals by the time he was nominated for an Academy Award for Best Supporting Actor for _Coming Home (1978)_ (qv). Some perceptive critics had noted that Dern was a finer actor than his roles generally allowed one to believe, repelled as one was by the neurotic persona that Dern was able to project and that casting directors capitalized on. 'Jack Nicholson (I)' (qv), a close friend, claimed that Dern was the best of the new breed of actors who had been born just before World War II and were coming into their own in the 1970s. Unlike his screen image, Dern had come from a patrician background: his grandfather had been governor of Utah and a secretary of war under 'Franklin D. Roosevelt' (qv). When allowed to step out of his on-screen persona to assay the millionaire Tom Buchanan in the 1974 remake of _The Great Gatsby (1974)_ (qv), he acquitted himself quite well. Some critics said that "Gatsby" would have been better if Dern rather than 'Robert Redford (I)' (qv) had played the title role. Others pointed to his fine work as Nicholson's brother in _The King of Marvin Gardens (1972)_ (qv) to establish a case that he was an underappreciated and underutilized talent. By the time Dern appeared as the cuckolded Marine in "Coming Home," a consensus had emerged that Dern was a fine actor. He won an Oscar nod for the role, then fell victim to the infamous "Oscar curse" that has claimed other winners, most famously in the case of 1969 Best Supporting Actor winner 'Gig Young' (qv), Dern's co-star in _They Shoot Horses, Don't They? (1969)_ (qv). Dern, like Young before him, was determined to break out of supporting roles. Like Young, who had been cast repeatedly as a light comedian in his career, Dern had also become typecast, but as a psycho, surpassing even 'Anthony Perkins (I)' (qv) in those types of roles. Dern was determined to break out of the ghetto he had found himself in before "Coming Home." He failed, and his career suffered. Up through his Oscar nomination, Dern had starred in 26 films in 11 years since graduating to steady employment in A-pictures with _Waterhole #3 (1967)_ (qv). After the 1979 Oscar nod, he would appear in only a dozen feature films in the next 11 years, not counting TV movies. None of them brought him stardom or much acclaim, and his attempt at becoming a lead man, _Middle Age Crazy (1980)_ (qv), flopped badly (he did received a nomination for Best Performance by a Foreign Actor at the 1981 Genie Awards, the Canadian equivalent of the Oscars, for his work in that picture). It was back to psychos, this time as a lead, in _Tattoo (1981)_ (qv). The movie proved to be another flop, and his reputation was further damaged when he bragged that he had actually performed on-screen sexual intercourse with co-star 'Maud Adams' (qv), a boast that Adams heatedly denied. Dern's star was seriously dimmed. Although he landed a coveted role in the film adaptation of 'Jason Miller (I)' (qv)'s Pulitzer Prize-winning play _That Championship Season (1982)_ (qv), the film was a disappointment with critics and at the box office. He turned in a fine performance three years later in the TV movie _Toughlove (1985) (TV)_ (qv), but overall, his career was floundering. Another psycho role, that of Uncle Bud in _After Dark, My Sweet (1990)_ (qv), started buzz about another possible Best Supporting Oscar nod for him, but the film proved a box-office bust and the nomination never materialized. A predicted career renaissance for Dern faded, just as the careers of his ex-wife, 'Diane Ladd' (qv), and their daughter, 'Laura Dern' (qv), kicked into high gear. Since the 1990 high point of the second wave of his career, Dern has stayed steadily employed, but has never again generated much critical acclaim, nor made any inroads towards reclaiming his crown as the cinema's premier sociopath. A fine actor, who will be remembered most vividly for such psycho/killer roles such as the rustler leader who gunned down 'John Wayne (I)' (qv) in _The Cowboys (1972)_ (qv), Dern's career serves as a cautionary tale for those actors who try to escape the ghetto of typecasting. While nothing restricts an actor's artistic development as much as typecasting, unless like a Duke Wayne they can turn that type into superstardom, trying to break out of the type can prove to be career suicide.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Thu Jun 04 00:00:00 CET 1936</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="480910">
+          <nom>Duff, Jamal</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sat Mar 11 00:00:00 CET 1972</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1692706">
+          <nom>Stark, Craig</nom>
+          <biographie>Craig Stark grew up in a small town moving to Los Angeles at 18. Shortly thereafter, he worked for Marlon Brando as a bodyguard, where he learned an appreciation for the craft of acting. Jack Nicholson and Helena Kallianotes hired him next to build a notorious club. He made number of independent films as well as major roles on network television. After a sabbatical driven by musical aspirations in Joshua Tree, California, he returned to Los Angeles in 2011 to co-star in Allison Anders and Kurt Voss's new rock and roll film, "Strutter" and Quentin Tarantino's new western, "D'jango Unchained".</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="833480">
+          <nom>Jackson, Samuel L.</nom>
+          <nomNaissance>Jackson, Samuel Leroy</nomNaissance>
+          <biographie>Samuel L. Jackson usually played bad guys and drug addicts before becoming an action hero, as the character Mitch Henessey, in _The Long Kiss Goodnight (1996)_ (qv) and in _Die Hard: With a Vengeance (1995)_ (qv). From character player to leading man. His performance in _Pulp Fiction (1994)_ (qv) gave him an Oscar nomination for his character Jules Winnfield. He was active in the black student movement. In the seventies he joined the Negro Ensemble Company (together with 'Morgan Freeman (I)' (qv)). In the eighties he became well known by three movies made by 'Spike Lee' (qv) - _Do the Right Thing (1989)_ (qv), _Mo' Better Blues (1990)_ (qv) and _Jungle Fever (1991)_ (qv). He received a Silver Berlin Bear for his part in the movie _Jackie Brown (1997)_ (qv) as Ordell Robbi.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Tue Dec 21 00:00:00 CET 1948</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2169275">
+          <nom>Collins, Grace</nom>
+          <biographie>Unknown</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1939502">
+          <nom>Wopat, Tom</nom>
+          <nomNaissance>Wopat, Thomas S.</nomNaissance>
+          <biographie>He'll forever be remembered as strapping, good ol' boy Luke Duke, the virile, blue-eyed, dark-haired, plaid-shirted rascal (equally good-looking 'John Schneider (I)' (qv) was the strapping, plaid-shirted blond cousin) on the rough-and-tumble bucolic 80s series _"The Dukes of Hazzard" (1979)_ (qv). Where others may have fallen by the TV wayside, however, after the cancellation of such a popular series, Wopat moved on and reverted back to his first true love - music - successfully refocusing as a recording artist and musical leading man of Broadway and regional shows. The highly engaging Wisconsin native was born one of six brothers and sisters to a dairy farmer in 1951. Tom began singing and dancing in school musicals from age 12 and, following high school graduation, decided to avidly pursue music as a viable profession. Studying at the University of Wisconsin he dropped out to front a rock band as both guitarist and lead singer, and later gained on-stage experience in such musicals as "South Pacific", "West Side Story" and "Jesus Christ Superstar". Appearing off-Broadway in 1978 before making his Broadway debut that same year as a replacement actor in the musical "I Love My Wife", other book shows came his way including "The Robber Bridegroom" and the lead in "Oklahoma!" With solid, down-home good looks and appeal, it didn't take long for Hollywood to check him out. By 1979 Tom was co-starring in (and later sometimes directing) episodes of his own popular action-packed series while he and Schneider wrangled heartthrob status in the teen magazines. The backwoods show lasted six seasons, although at one point he and Schneider left the series after contract negotiations broke down. Briefly replaced, the show wasn't the same without them and they eventually were brought back. During the show's run, Tom kick-started his recording career with his first (and self-titled) country album release in 1983. His output went on to include six other country albums before finally releasing a 2000 album of standard love songs. After the end of his series, Wopat made do in a couple of mini-movie vehicles and a few short-lived series before scoring again on TV as 'Cybill Shepherd' (qv)' ex-husband/stuntman on her own sitcom series in 1995. Better yet, he resharpened his musical theater skills. He returned with commanding baritone leads in "Carousel" (1986), "City of Angels" (1990) and "Guys and Dolls" (1992) (as Skye Masterson). In 1999 he recreated the sharp-shooting Frank Butler role opposite 'Bernadette Peters' (qv) in the popular Broadway revival of "Annie Get Your Gun" and earned a Tony nomination in the process. It's only gotten sweeter. Guesting for the Cincinnati Symphony and Los Angeles Philharmonic orchestras in programs featuring Broadway's finest music, he has continued on the New York stage with successive roles in "42nd Street" and "Chicago" (as slick lawyer Billy Flynn). In 2005 he more than held his own in his first straight-acting Broadway part as part of the excellent ensemble in the Tony-winning (for "Best Revival of a Play") production of "Glengarry Glen Ross" starring acting heavyweights 'Alan Alda' (qv) and 'Liev Schreiber' (qv). That same year Wopat embarked on a 33-date national "Over The Rainbow" tour with 'Faith Prince' (qv) featuring the gorgeous songs of 'Harold Arlen' (qv), a tour that included Carnegie Hall.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun Sep 09 00:00:00 CET 1951</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1644719">
+          <nom>Sims, Kerry</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="237233">
+          <nom>Bunch, Jarrod</nom>
+          <biographie>Jarrod Bunch was an outstanding athelete that earned a football scholarship to attend the University of Michigan. An all-american running back, he was drafted in the first round of the NFL draft by the New York Giants in 1991. He went to the Raiders in 1994 and and retired from the NFL in 1995. He attended the Actor's Institute in New York City and shortly after began auditioning. His first break was playing George Foreman in, _Don King: Only in America (1997) (TV)_ (qv).</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Fri Aug 09 00:00:00 CET 1968</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="449474">
+          <nom>DiCaprio, Leonardo</nom>
+          <nomNaissance>DiCaprio, Leonardo Wilhelm</nomNaissance>
+          <biographie>Few actors in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom _"Growing Pains" (1985)_ (qv) and low budget horror movies, such as _Critters 3 (1991)_ (qv), to a major teenage heartthrob in the 1990s, as the hunky lead actor in movies such as _Romeo + Juliet (1996)_ (qv) and _Titanic (1997)_ (qv), to then become a leading man in Hollywood blockbusters, made by internationally renowned directors such as 'Martin Scorsese' (qv) and 'Christopher Nolan (I)' (qv). But such a rich, varied career is what you would expect from someone who has had such an unusual upbring as DiCaprio. Leonardo DiCaprio is the only child of former comic book artist 'George DiCaprio (I)' (qv) and 'Irmelin DiCaprio' (qv) (both born 1943). Leonardo's father, George, had achieved minor status as an artist and distributor of cult comic book titles, and was even depicted in several issues of American Splendor, the cult semi-autobiographical comic book series by the late 'Harvey Pekar', a friend of George's. However, Leonardo's performance skills became obvious to his parents early on, and after signing him up with a talent agent who wanted Leonardo to perform under the stage name "Lenny Williams", DiCaprio began appearing on a number of television commercials and educational programs. DiCaprio began attracting the attention of producers, who cast him in bit part roles in a number of television series, such as _"Roseanne" (1988)_ (qv) and _"The New Lassie" (1989)_ (qv), but it wasn't until 1991 that DiCaprio made his film debut in _Critters 3 (1991)_ (qv), a low-budget horror movie. While _Critters 3 (1991)_ (qv) did little to help showcase DiCaprio's acting abilities, it did help him develop his show-reel, and attract the attention of the people behind the hit sitcom _"Growing Pains" (1985)_ (qv), in which Leonardo was cast in the "Cousin Oliver" role of a young homeless boy who moves in with the Seavers. While DiCaprio's stint on _"Growing Pains" (1985)_ (qv) was very short, as the sitcom was axed the year after he joined, it helped bring DiCaprio into the public's attention and, after the show ended, DiCaprio began auditioning for roles in which he would get the chance to prove his acting chops. Leonardo took up a diverse range of roles in the early 1990s, including a mentally challenged youth in _What's Eating Gilbert Grape (1993)_ (qv), a young gunslinger in _The Quick and the Dead (1995)_ (qv) and a drug addict in one of his most challenging roles to date, "Jim Carroll", in _The Basketball Diaries (1995)_ (qv), a role which the late 'River Phoenix' (qv) originally expressed interest in. While these diverse roles helped establish Leonardo's reputation as an actor, it wasn't until his role as "Romeo" in 'Baz Luhrmann' (qv)'s _Romeo + Juliet (1996)_ (qv) that Leonardo became a household name, a true movie star. The following year, DiCaprio starred in another movie about doomed lovers, _Titanic (1997)_ (qv), which went on to beat all box office records held before then, as, at the time, _Titanic (1997)_ (qv) became the highest grossing movie of all time, and cemented DiCaprio's reputation as a teen heartthrob. Following his work on _Titanic (1997)_ (qv), DiCaprio kept a low profile for a number of years, with roles in _The Man in the Iron Mask (1998/I)_ (qv) and the low-budget _The Beach (2000/I)_ (qv) being some of his few notable roles during this period. However, in 2002, he burst back into screens throughout the world with leading roles in _Catch Me If You Can (2002)_ (qv) and _Gangs of New York (2002)_ (qv), his first of many collaborations with director 'Martin Scorsese' (qv). With a current salary of $20 million a movie, DiCaprio is now one of the biggest movie stars in the world. However, he has not limited his professional career to just acting in movies, as DiCaprio is a committed environmentalist, who is actively involved in many environmental causes, and his commitment to this issue led to his involvement in The 11th Hour, a documentary movie about the state of the natural environment. As someone who has gone from bit parts in television commercials to one of the most respected actors in the world, DiCaprio has had one of the most diverse careers in cinema. DiCaprio continues to defy conventions about the types of roles he will accept, and with his career now seeing him leading all star casts in action thrillers such as _The Departed (2006)_ (qv), _Shutter Island (2010)_ (qv) and 'Christopher Nolan (I)' (qv)'s _Inception (2010)_ (qv), DiCaprio continues to wow audiences by refusing to conform to any cliché about actors. DiCaprio is not merely a former teen heartthrob turned leading man, he is one of the most respected, daring and challenging actors working today.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Mon Nov 11 00:00:00 CET 1974</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1069549">
+          <nom>Lundy, Escalante</nom>
+          <biographie>Escalante Lundy is an American film and television actor and producer, from New Orleans, LA. His most notable role is as "Big Fred" in Quentin Tarantino's Oscar-Nominated film, Django Unchained. Lundy also appears as a prison guard in HBO's Emmy-Nominated television series Treme and in a Pampers commercial with Super Bowl Championship Quarterback, New Orleans Saints' Drew Brees. Escalante Lundy was born in New Orleans, LA the eldest of five brothers, to Merline (nee' Roy), retired real estate agent, of Rayne, LA, and Hughes Banks Lundy, a salesman from Innis, LA. Lundy graduated from St. Augustine High School, later receiving his Bachelor's degree in Urban Planning from the University of Southwestern Louisiana (USL). Lundy received Masters degrees in Urban Planning and Geographic Information Systems from the University of New Orleans. Escalante's career began as a stage producer in Sacramento, CA. When an actor failed to show-up, Lundy took the role', garnered success and later decided to focus on acting as a career path. Admittedly, shy by nature, Lundy used acting as a tool to face his fears of public speaking and improve his diction. He continued to hone his acting skills by taking parts in small productions in film and on-stage in Los Angeles and Las Vegas. Lundy returned to New Orleans in 2005, leaving his position with the California Department of Transportation in Sacramento. Lundy's family members were victims of Hurricane Katrina and his valiant character motivated him to permanently relocate. As the city began to rebuild, Lundy continued to pursue his new found acting passions including focusing on film roles. He studied with renowned acting coaches Veleka Grey (Young and the Restless), Lance Nichols (Curious Case of Benjamin Button and HBO Television Series, Treme) and became a fixture at the acclaimed Jerry Katz Joint (Ivana Chubback Technique). In 2007, Lundy joined the made his New Orleans theatrical debut as co-lead in the production of the "Papaya Man" with the Anthony Bean Community Theater (ABCT)in New Orleans. After having a challenging first rehearsal Lundy says, "I tried to quit but Mr. Bean wouldn't let me. He gave me legs until I was able to run" In 2012, Lundy made his major motion picture debut as "Big Fred" in Quentin Tarantino's spaghetti western, Django Unchained. Lundy's role as a Mandingo fighter reflects the contrast of the powerlessness of slavery against the super human strength it took to survive such atrocities. Additionally, the grueling fight scenes Lundy appears in are riveting. Although filming the scenes was long and arduous, the efforts paid off. Tarantino directed Lundy in some of the most memorable aspects of the film.</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="1715019">
+          <nom>Stroud, Don</nom>
+          <nomNaissance>Stroud, Donald Lee</nomNaissance>
+          <biographie>He's the son of Vaudeville great, 'Clarence Stroud' (qv), of the Stroud Twins and singer 'Ann McCormack (I)' (qv), who toured the world with 'Frank Sinatra' (qv). Don grew up on the beach in Honolulu, Hawaii, where his stepfather, 'Paul Livermore' (qv), and his mother, Ann, owned and operated the popular "Embers Steak House" and nightclub where Ann performed nightly. Don thrived on the beach in Waikiki under the watchful eyes of such mentors as Blackout, Mud, Buckshot, Rabbit and Steamboat. He learned much from these famous beach boys and in 1960, at the age of 17, he placed fourth in the "Duke Kahanamoku World Surfing Championship" at Makaha, Hawaii. Don was surfing at Waikiki when he was discovered. Actor 'Troy Donahue' (qv) was filming _"Hawaiian Eye" (1959)_ (qv) and needed a stunt double for his surfing scenes. Don, at 18, 6' 2" and 175 pounds, stepped up and was hired on the spot. He loved the gig so much, he decided to go to Hollywood to give it a try. Upon arriving in L.A., he landed a variety of jobs, including parking cars, bouncer and then manager of the world famous "Whiskey A Go-Go" nightclub on the Sunset Strip, where such greats as 'Janis Joplin' (qv), 'Jimi Hendrix' (qv) and 'Jim Morrison (I)' (qv) of the "Doors" appeared. It was at the "Whiskey" that actor 'Sidney Poitier' (qv) turned Don on to his acting career. Don went on to become one of Hollywood's great heavies and character actors. He has starred in over 100 movies and 175 television shows to date. He has also starred in four television series, notably 'Mickey Spillane' (qv)'s _"Mike Hammer" (1984)_ (qv) with 'Stacy Keach' (qv) and _"The New Gidget" (1986)_ (qv) where he was a natural to play the "Kahuna".</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Wed Sep 01 00:00:00 CEST 1943</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="2343599">
+          <nom>Gourrier, Dana</nom>
+          <biographie>Dana Gourrier (pronounced Gu-Ree-A) is a native of New Orleans with ancestry dating back 7 generations. Since 8 years old she has been in front of audiences performing: be it singing, dancing, or acting. Her true love of theater began when she was 14 years old at the New Orleans Recreational Department Theater under the program's long-time, late director, Ty Tracy. After receiving her BFA in Performance Art from UL Lafayette, she went to New York in higher pursuits. She continued her studies participating in a five week program studying acting in affiliation with NYU. That summer, Dana saw Shakespeare in the Park's Twelfth Night, which inspired her. At the end of the program and with no place to live, Dana made the bold decision to stay in New York. Eventually she found a tiny studio in Spanish Harlem, waited tables, auditioned, gigged, did background vocals, and even taught theater at a community center in Brooklyn. Dana has performed and also produced original work at: The Red Room Theater, Birdland, Lennox Lounge, Alvin Ailey Citigroup Theater, Under St. Mark's, The Cherry Lane Theater, Summer Stages in Central Park, and La Mama Theater. At La Mama Theater, Dana was apart of a project called Soulagraphie: a series of plays about genocide written by renowned playwright Eric Ehn. She played the title character Maria Kizito: a play about a Rwandan Nun that was tried and convicted of aiding in the death of thousands. In 2010, Dana completed her MFA in Acting from the reputable California Institute of the Arts, where she was in two world premieres and a long list of other full theatrical productions both Classic and Contemporary. Upon graduating, she came straight home and broke into Hollywood South, as Film and Television were also her great loves. Dana had one goal when deciding to move back home; it was to be on HBO's Treme; the David Simon executively produced show about her hometown. Not only was she on it, but she landed a recurring role. Since then Dana has worked with some of Hollywood's biggest Academy Award Winners and Nominees. It all began when she landed the role of Cora in Winner Quentin Tarantino's Django Unchained. She felt so welcomed and connected to Quentin. She pitched ideas about her character to him, including a song for the funeral scene, which was shot, but would eventually land on the cutting room floor. Her next endeavor was working with Nominee Lee Daniels' on his film, The Butler. She portrayed the role of Helen Holloway, wife of James Holloway, played by Lenny Kravitz. Additionally, Dana has worked directly with Academy Award Winners and Nominees: Angela Bassett, Leonardo DiCaprio, Jamie Foxx, Cuba Gooding, Jr., Woody Harrelson, Samuel L. Jackson, Jessica Lang, Christoph Waltz, Forest Whitaker, and Oprah Winfrey! Dana considers herself Tri-Costal, but currently resides in New Orleans, which will always be home.</biographie>
+          <sexe>FEMININ</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="529094">
+          <nom>Eyez, Jon</nom>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Unknown</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+        <acteur id="791400">
+          <nom>Horsley, Lee</nom>
+          <nomNaissance>Horsley, Lee Arthur</nomNaissance>
+          <biographie>Unknown</biographie>
+          <sexe>MASCULIN</sexe>
+          <dateNaissance>Sun May 15 00:00:00 CET 1955</dateNaissance>
+          <dateDeces>-</dateDeces>
+        </acteur>
+      </acteurs>
+    </projection>
+  </projections>
 </cinema>

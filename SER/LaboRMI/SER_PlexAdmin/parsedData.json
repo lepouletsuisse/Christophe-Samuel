@@ -1,0 +1,32 @@
+{
+  "cinema": {
+    "Projections": [
+      {
+        "id": 4,
+        "titre": "Casino Royale",
+        "date": "2016-06-15 15:20:44",
+        "acteurs": [
+          {
+            "Place 1": "Craig, Daniel"
+          },
+          {
+            "Place 2": "Green, Eva"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "titre": "Django Unchained",
+        "date": "2016-06-15 15:48:34",
+        "acteurs": [
+          {
+            "Place 1": "Foxx, Jamie"
+          },
+          {
+            "Place 2": "Waltz, Christoph"
+          }
+        ]
+      }
+    ]
+  }
+}

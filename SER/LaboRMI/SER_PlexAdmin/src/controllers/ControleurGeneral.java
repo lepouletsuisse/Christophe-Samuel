@@ -6,17 +6,25 @@ import ch.heigvd.iict.cours.ser.imdb.models.*;
 
 // Pour XStream
 import com.thoughtworks.xstream.*;
+
+import api.IServerApi2;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.net.URLDecoder;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.Map;
 
 public class ControleurGeneral {
 
 	private static MainGUI mainGUI;
+	private static MainGUI clientGUI;
 	private static ORMAccess ormAccess;
 	private ControleurProjections ctrProjections; 
 	private ControleurFilms ctrFilms;
+	private ControleurWFC ctrClient;
 
 	//private ControleurWFC ctrWFC;
 	private ControleurMedia ctrMedia; 
@@ -32,13 +40,24 @@ public class ControleurGeneral {
 
 		ctrMedia = new ControleurMedia(this, mainGUI, ormAccess);
 		ctrXMLCreation = new ControleurXMLCreation(this, mainGUI, ormAccess);
+		ctrClient = new ControleurWFC(this, clientGUI);
+		
+		try {
+            Registry rmiRegistry = LocateRegistry.createRegistry(8888);
+            RmiServer server = new RmiServer(this);
+            IServerApi2 rmiService = (IServerApi2) UnicastRemoteObject.exportObject(server, 8888);
+            rmiRegistry.bind("RmiService", rmiService);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+		
 	}
 
 	public void createXStreamXML(){ctrXMLCreation.createXStreamXML();}
 
 	public void createXML(){ctrXMLCreation.createXML();}
 
-	public void sendJSONToMedia(){ctrMedia.sendJSONToMedia();}
+	public String sendJSONToMedia(){return ctrMedia.sendJSONToMedia();}
 
 	public void initBaseDeDonnees() {
 		new Thread(){

@@ -7,6 +7,7 @@
 <hibernate-configuration>
 
     <session-factory>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
         <mapping class="models.Acteur"/>
         <mapping class="models.Critique"/>
         <mapping class="models.Film"/>
